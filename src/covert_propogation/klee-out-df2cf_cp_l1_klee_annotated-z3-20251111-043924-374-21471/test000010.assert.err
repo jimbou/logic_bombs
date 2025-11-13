@@ -1,0 +1,8 @@
+Error: ASSERTION FAIL: 0 && "Path without the bomb"
+File: src/covert_propogation/df2cf_cp_l1_klee_annotated.c
+Line: 60
+assembly.ll line: 127
+State: 5
+Stack: 
+	#000000127 in logic_bomb(s=97116970165272) at src/covert_propogation/df2cf_cp_l1_klee_annotated.c:60
+	#100000161 in main(argc=1, argv=97116970329216) at src/covert_propogation/df2cf_cp_l1_klee_annotated.c:67

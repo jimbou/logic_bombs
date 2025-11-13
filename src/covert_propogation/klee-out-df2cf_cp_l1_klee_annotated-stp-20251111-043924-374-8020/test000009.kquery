@@ -1,0 +1,7 @@
+array s[5] : w32 -> w8 = symbolic
+(query [(Eq 0 (Read w8 4 s))
+         (Eq 8
+             (Extract w8 0 (SRem w32 (Add w32 4294967248
+                                              (SExt w32 (Read w8 0 s)))
+                                     10)))]
+        false)

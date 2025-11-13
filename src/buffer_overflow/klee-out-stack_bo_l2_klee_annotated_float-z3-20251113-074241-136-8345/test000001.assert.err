@@ -1,0 +1,7 @@
+Error: ASSERTION FAIL: 0 && "Path without the bomb"
+File: /home/klee/logic_bombs/src/buffer_overflow/stack_bo_l2_klee_annotated.c
+Line: 16
+assembly.ll line: 155
+Stack: 
+	#000000155 in logic_bomb (symvar=86622912) at /home/klee/logic_bombs/src/buffer_overflow/stack_bo_l2_klee_annotated.c:16
+	#100000196 in main (argc=1, argv=86179056) at /home/klee/logic_bombs/src/buffer_overflow/stack_bo_l2_klee_annotated.c:23

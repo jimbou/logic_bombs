@@ -1,0 +1,4 @@
+array symvar[257] : w32 -> w8 = symbolic
+(query [(Eq 0 (Read w8 256 symvar))
+         (Eq 0 (Read w8 0 symvar))]
+        false)

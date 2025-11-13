@@ -1,0 +1,7 @@
+Error: ASSERTION FAIL: 0 && "Path without the bomb"
+File: /home/klee/logic_bombs/src/floating_point/float3_fp_l2_klee_annotated.c
+Line: 13
+assembly.ll line: 53
+Stack: 
+	#000000053 in logic_bomb (symvar=352476112) at /home/klee/logic_bombs/src/floating_point/float3_fp_l2_klee_annotated.c:13
+	#100000090 in main (argc=1, argv=351826896) at /home/klee/logic_bombs/src/floating_point/float3_fp_l2_klee_annotated.c:20

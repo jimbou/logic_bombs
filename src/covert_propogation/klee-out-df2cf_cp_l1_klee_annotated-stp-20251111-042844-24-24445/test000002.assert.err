@@ -1,0 +1,8 @@
+Error: ASSERTION FAIL: 0 && "Logic bomb triggered"
+File: df2cf_cp_l1_klee_annotated.c
+Line: 58
+assembly.ll line: 122
+State: 3
+Stack: 
+	#000000122 in logic_bomb(s=104183927489560) at df2cf_cp_l1_klee_annotated.c:58
+	#100000159 in main(argc=1, argv=104183927653504) at df2cf_cp_l1_klee_annotated.c:67

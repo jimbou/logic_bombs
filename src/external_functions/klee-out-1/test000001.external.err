@@ -1,0 +1,8 @@
+Error: failed external call: klee_assert_msg
+File: ln_ef_l2_klee_annotated.c
+Line: 17
+assembly.ll line: 45
+State: 1
+Stack: 
+	#000000045 in logic_bomb(s=109674181632768) at ln_ef_l2_klee_annotated.c:17
+	#100000084 in main(argc=1, argv=109674181796704) at ln_ef_l2_klee_annotated.c:25

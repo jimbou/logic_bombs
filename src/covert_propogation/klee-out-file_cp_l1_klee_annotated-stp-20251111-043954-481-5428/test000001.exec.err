@@ -1,0 +1,8 @@
+Error: external call with symbolic argument: fprintf
+File: file_cp_l1_klee_annotated.c
+Line: 23
+assembly.ll line: 58
+State: 1
+Stack: 
+	#000000058 in logic_bomb(s=111019362542928) at file_cp_l1_klee_annotated.c:23
+	#100000131 in main(argc=1, argv=111019362706560) at file_cp_l1_klee_annotated.c:41
