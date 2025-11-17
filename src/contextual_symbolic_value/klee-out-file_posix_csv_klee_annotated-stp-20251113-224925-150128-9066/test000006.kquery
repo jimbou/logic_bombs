@@ -1,0 +1,11 @@
+array s[17] : w32 -> w8 = symbolic
+(query [(Eq 0 (Read w8 16 s))
+         (Eq false
+             (Eq 47 N0:(Read w8 0 s)))
+         (Eq false (Eq 0 N0))
+         (Eq 47 (Read w8 1 s))
+         (Eq false
+             (Eq 0 N1:(Read w8 2 s)))
+         (Eq false (Eq 47 N1))
+         (Eq 0 (Read w8 3 s))]
+        false)

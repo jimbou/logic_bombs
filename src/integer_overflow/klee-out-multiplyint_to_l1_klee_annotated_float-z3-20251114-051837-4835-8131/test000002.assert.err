@@ -1,0 +1,9 @@
+Error: ASSERTION FAIL: 0 && "Logic bomb triggered"
+File: /home/klee/logic_bombs/src/integer_overflow/multiplyint_to_l1_klee_annotated.c
+Line: 8
+assembly.ll line: 197
+Stack: 
+	#000000197 in logic_bomb (s=718569552) at /home/klee/logic_bombs/src/integer_overflow/multiplyint_to_l1_klee_annotated.c:8
+	#100000242 in __user_main (argc=1, argv=719638592) at /home/klee/logic_bombs/src/integer_overflow/multiplyint_to_l1_klee_annotated.c:17
+	#200001776 in __uClibc_main (main=698016960, argc=1, argv=719638592, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#300003381 in main (=1, =719638592)

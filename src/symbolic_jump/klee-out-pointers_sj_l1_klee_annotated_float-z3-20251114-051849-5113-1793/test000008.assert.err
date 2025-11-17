@@ -1,0 +1,9 @@
+Error: ASSERTION FAIL: 0 && "Logic bomb triggered"
+File: /home/klee/logic_bombs/src/symbolic_jump/pointers_sj_l1_klee_annotated.c
+Line: 22
+assembly.ll line: 252
+Stack: 
+	#000000252 in logic_bomb (s=716448768) at /home/klee/logic_bombs/src/symbolic_jump/pointers_sj_l1_klee_annotated.c:22
+	#100000299 in __user_main (argc=1, argv=714583920) at /home/klee/logic_bombs/src/symbolic_jump/pointers_sj_l1_klee_annotated.c:31
+	#200001833 in __uClibc_main (main=706090976, argc=1, argv=714583920, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#300003438 in main (=1, =714583920)

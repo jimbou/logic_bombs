@@ -26,9 +26,12 @@ int ThreadProp(int in){
 int logic_bomb(char* s) {
     int symvar = s[0] - 48;
     int i=ThreadProp(symvar);
-    if(i == 50)
+    if(i == 50){
         klee_assert(0 && "Logic bomb triggered");
+    	return 0;
+    }
     klee_assert(0 && "Path without the bomb");
+    return 0;
 }
 
 int main(int argc, char** argv) {

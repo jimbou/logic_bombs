@@ -1,0 +1,72 @@
+{
+  "/home/klee/logic_bombs/src/loop/paraloop_lo_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T04:25:10Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-paraloop_lo_l2_klee_annotated-stp-20251114-042508-25-18048",
+      "log": "logs/paraloop_lo_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T04:25:12Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-paraloop_lo_l2_klee_annotated-z3-20251114-042510-25-24773",
+      "log": "logs/paraloop_lo_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "/home/klee/logic_bombs/src/integer_overflow/addint_to_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T04:25:14Z",
+      "outdir": "/home/klee/logic_bombs/src/integer_overflow/klee-out-addint_to_l1_klee_annotated-stp-20251114-042512-90-3524",
+      "log": "logs/addint_to_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T04:25:15Z",
+      "outdir": "/home/klee/logic_bombs/src/integer_overflow/klee-out-addint_to_l1_klee_annotated-z3-20251114-042514-90-12754",
+      "log": "logs/addint_to_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "/home/klee/logic_bombs/src/integer_overflow/multiplyint_to_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T04:25:16Z",
+      "outdir": "/home/klee/logic_bombs/src/integer_overflow/klee-out-multiplyint_to_l1_klee_annotated-stp-20251114-042515-136-27903",
+      "log": "logs/multiplyint_to_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T04:25:17Z",
+      "outdir": "/home/klee/logic_bombs/src/integer_overflow/klee-out-multiplyint_to_l1_klee_annotated-z3-20251114-042516-136-15297",
+      "log": "logs/multiplyint_to_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "/home/klee/logic_bombs/src/crypto_functions/aes_cf_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T04:25:18Z",
+      "outdir": "/home/klee/logic_bombs/src/crypto_functions/klee-out-aes_cf_klee_annotated-stp-20251114-042517-186-10487",
+      "log": "logs/aes_cf_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T04:25:19Z",
+      "outdir": "/home/klee/logic_bombs/src/crypto_functions/klee-out-aes_cf_klee_annotated-z3-20251114-042518-186-29452",
+      "log": "logs/aes_cf_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "/home/klee/logic_bombs/src/crypto_functions/sha_cf_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T04:25:20Z",
+      "outdir": "/home/klee/logic_bombs/src/crypto_functions/klee-out-sha_cf_klee_annotated-stp-20251114-042519-386-2766",
+      "log": "logs/sha_cf_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T04:25:21Z",
+      "outdir": "/home/klee/logic_bombs/src/crypto_functions/klee-out-sha_cf_klee_annotated-z3-20251114-042520-386-24238",
+      "log": "logs/sha_cf_klee_annotated/z3/runner_stdout.log"
+    }
+  }
+}

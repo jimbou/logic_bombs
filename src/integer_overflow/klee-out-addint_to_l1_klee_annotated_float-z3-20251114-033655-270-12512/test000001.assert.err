@@ -1,0 +1,7 @@
+Error: ASSERTION FAIL: 0 && "Logic bomb triggered"
+File: /home/klee/logic_bombs/src/integer_overflow/addint_to_l1_klee_annotated.c
+Line: 8
+assembly.ll line: 144
+Stack: 
+	#000000144 in logic_bomb (s=389045104) at /home/klee/logic_bombs/src/integer_overflow/addint_to_l1_klee_annotated.c:8
+	#100000189 in main (argc=1, argv=388774688) at /home/klee/logic_bombs/src/integer_overflow/addint_to_l1_klee_annotated.c:17

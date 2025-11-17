@@ -13,18 +13,23 @@ long f(long x){
 int logic_bomb(char* s) {
     int symvar = s[0] - 48;
     symvar = symvar + 670617272;
-    if(symvar>999999999)
-	klee_assert(0 && "Path without the bomb");
+    if(symvar>999999999){
+        klee_assert(0 && "Path without the bomb");
+        return 0;
+    }
     long j = f(symvar);
     int loopcount = 1;
     while(j != 1){
 	j = f(j);
         loopcount ++;
     }
-    if(loopcount == 986)
+    if(loopcount == 986){
         klee_assert(0 && "Logic bomb triggered");
-    else
+        return 0;
+    } else {
         klee_assert(0 && "Path without the bomb");
+        return 0;
+    }
 }
 
 int main(int argc, char** argv) {

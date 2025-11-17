@@ -21,8 +21,10 @@ int logic_bomb(char* s) {
     close(fd);
     if(j == 7){
         klee_assert(0 && "Logic bomb triggered");
+        return 0;
     } else{
         klee_assert(0 && "Path without the bomb");
+        return 0;
     }
 }
 

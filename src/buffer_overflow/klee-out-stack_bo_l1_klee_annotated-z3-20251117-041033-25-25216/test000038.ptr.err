@@ -1,0 +1,55 @@
+Error: memory error: out of bound pointer
+File: libc/string/strcpy.c
+Line: 27
+assembly.ll line: 13509
+State: 58
+Stack: 
+	#000013509 in strcpy(99397893777376, 99397894239152) at libc/string/strcpy.c:27
+	#100008940 in logic_bomb(symvar=99397894239152) at stack_bo_l1_klee_annotated.c:11
+	#200008983 in __klee_posix_wrapped_main(argc=1, argv=99397893845808) at stack_bo_l1_klee_annotated.c:24
+	#300007213 in __user_main(argcPtr=1, argvPtr=99397885542688, envp=99397885542704) at klee_src/runtime/POSIX/klee_init_env.c:245
+	#400000531 in __uClibc_main(99397893618336, 1, 99397885542688, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#500000696 in main(1, 99397885542688)
+Info: 
+	address: (ReadLSB w64 0 U0:[(Extract w32 0 (Add w64 18446644675815774227
+                                            N0:(Concat w64 0
+                                                           (Concat w56 0
+                                                                       (Concat w48 90
+                                                                                   (Concat w40 102
+                                                                                               (Concat w32 224
+                                                                                                           (Concat w24 38
+                                                                                                                       (Concat w16 103 (Read w8 8 symvar))))))))))=(Read w8 (Extract w32 0 (Add w64 18446644675815312464
+                                                                                                                                                                                                    N1:(ReadLSB w64 0 U1:[(Extract w32 0 (Add w64 18446644675815774226 N0))=(Read w8 (Extract w32 0 (Add w64 18446644675815312464
+                                                                                                                                                                                                                                                                                                             N2:(ReadLSB w64 0 U2:[(Extract w32 0 (Add w64 18446644675815774225 N0))=(Read w8 (Extract w32 0 (Add w64 18446644675815312464
+                                                                                                                                                                                                                                                                                                                                                                                                                      N3:(ReadLSB w64 0 U3:[(Extract w32 0 (Add w64 18446644675815774224 N0))=(Read w8 9 symvar)] @ const_arr1)))
+                                                                                                                                                                                                                                                                                                                                                                                              symvar),
+                                                                                                                                                                                                                                                                                                                                   7=(Extract w8 56 N4:(Add w64 1 N3)),
+                                                                                                                                                                                                                                                                                                                                   6=(Extract w8 48 N4),
+                                                                                                                                                                                                                                                                                                                                   5=(Extract w8 40 N4),
+                                                                                                                                                                                                                                                                                                                                   4=(Extract w8 32 N4),
+                                                                                                                                                                                                                                                                                                                                   3=(Extract w8 24 N4),
+                                                                                                                                                                                                                                                                                                                                   2=(Extract w8 16 N4),
+                                                                                                                                                                                                                                                                                                                                   1=(Extract w8 8 N4),
+                                                                                                                                                                                                                                                                                                                                   0=(Extract w8 0 N4)] @ U3)))
+                                                                                                                                                                                                                                                                                     symvar),
+                                                                                                                                                                                                                          7=(Extract w8 56 N5:(Add w64 1 N2)),
+                                                                                                                                                                                                                          6=(Extract w8 48 N5),
+                                                                                                                                                                                                                          5=(Extract w8 40 N5),
+                                                                                                                                                                                                                          4=(Extract w8 32 N5),
+                                                                                                                                                                                                                          3=(Extract w8 24 N5),
+                                                                                                                                                                                                                          2=(Extract w8 16 N5),
+                                                                                                                                                                                                                          1=(Extract w8 8 N5),
+                                                                                                                                                                                                                          0=(Extract w8 0 N5)] @ U2)))
+                                                                                                                                                                            symvar),
+                    7=(Extract w8 56 N6:(Add w64 1 N1)),
+                    6=(Extract w8 48 N6),
+                    5=(Extract w8 40 N6),
+                    4=(Extract w8 32 N6),
+                    3=(Extract w8 24 N6),
+                    2=(Extract w8 16 N6),
+                    1=(Extract w8 8 N6),
+                    0=(Extract w8 0 N6)] @ U1)
+	example: 99396065522621
+	range: [1541359367101, 71875516955456445]
+	next: object at 99397843866080 of size 400
+		MO445[400] allocated at global:static_utmp

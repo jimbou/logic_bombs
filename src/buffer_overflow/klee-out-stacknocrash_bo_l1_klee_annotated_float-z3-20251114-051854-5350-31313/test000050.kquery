@@ -1,0 +1,105 @@
+array model_version[4] : w32 -> w8 = symbolic
+array symvar[65] : w32 -> w8 = symbolic
+(query [(Eq 1
+             (ReadLSB w32 0 model_version))
+         (Eq 0 (Read w8 64 symvar))
+         (Eq false
+             (Eq 0 (Read w8 0 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 1 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 2 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 3 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 4 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 5 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 6 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 7 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 8 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 9 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 10 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 11 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 12 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 13 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 14 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 15 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 16 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 17 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 18 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 19 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 20 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 21 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 22 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 23 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 24 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 25 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 26 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 27 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 28 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 29 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 30 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 31 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 32 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 33 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 34 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 35 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 36 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 37 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 38 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 39 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 40 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 41 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 42 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 43 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 44 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 45 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 46 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 47 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 48 symvar)))
+         (Eq 0 (Read w8 49 symvar))]
+        false)

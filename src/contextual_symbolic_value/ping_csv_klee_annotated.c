@@ -54,10 +54,10 @@ int ping_it(struct in_addr *dst)
     rc = select(sock + 1, &read_set, NULL, NULL, &timeout);
     if (rc == 0) {
         puts("Got no reply\n");
-    	return 0;
+    	        return 0;
     } else if (rc < 0) {
         perror("Select");
-    	return 0;
+    	        return 0;
     }
 
     //we don't care about the sender address in this example..
@@ -88,12 +88,15 @@ int logic_bomb(char* s) {
         perror("inet_aton");
         //printf("%s isn't a valid IP address\n", s);
         klee_assert(0 && "Path without the bomb");
+        return 0;
     }
 
     if (ping_it(&dst) == 1){
         klee_assert(0 && "Logic bomb triggered");
+        return 0;
     }else{
         klee_assert(0 && "Path without the bomb");
+        return 0;
     }
 }
 

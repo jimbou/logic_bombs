@@ -1,0 +1,57 @@
+{
+  "src/buffer_overflow/stack_bo_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_only_no_bomb"
+  },
+  "src/symbolic_memory/stackarray_sm_ln_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "no_trigger",
+    "klee_float_z3": "triggered_both"
+  },
+  "src/buffer_overflow/stacknocrash_bo_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb"
+  },
+  "src/floating_point/float2_fp_l1_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_both"
+  },
+  "src/external_functions/printfloat_ef_l1_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_both"
+  },
+  "src/symbolic_memory/heapoutofbound_sm_l2_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_both"
+  },
+  "src/external_functions/printint_int_l1_klee_annotated.c": {
+    "klee_stp": "no_trigger",
+    "klee_z3": "no_trigger",
+    "klee_float_z3": "triggered_both"
+  },
+  "src/covert_propogation/file_cp_l1_klee_annotated.c": {
+    "klee_stp": "no_trigger",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "no_trigger"
+  },
+  "src/covert_propogation/echofile_cp_l1_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "no_trigger"
+  },
+  "src/floating_point/float1_fp_l1_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_both"
+  },
+  "src/loop/5n+1_lo_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_both"
+  }
+}

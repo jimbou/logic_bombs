@@ -1,0 +1,11 @@
+Error: ASSERTION FAIL: 0 && "Path without the bomb"
+File: socket_cp_l1_klee_annotated.c
+Line: 88
+assembly.ll line: 9166
+State: 1
+Stack: 
+	#000009166 in logic_bomb(s=95372961182048) at socket_cp_l1_klee_annotated.c:88
+	#100009233 in __klee_posix_wrapped_main(argc=1, argv=95372962030016) at socket_cp_l1_klee_annotated.c:109
+	#200007258 in __user_main(argcPtr=1, argvPtr=95372956692128, envp=95372956692144) at klee_src/runtime/POSIX/klee_init_env.c:245
+	#300000576 in __uClibc_main(95372960661616, 1, 95372956692128, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#400000741 in main(1, 95372956692128)

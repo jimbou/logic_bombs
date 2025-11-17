@@ -1,0 +1,9 @@
+Error: failed external call: __isoc99_fscanf
+File: /home/klee/logic_bombs/src/covert_propogation/file_cp_l1_klee_annotated.c
+Line: 27
+assembly.ll line: 248
+Stack: 
+	#000000248 in logic_bomb (s=274303440) at /home/klee/logic_bombs/src/covert_propogation/file_cp_l1_klee_annotated.c:27
+	#100000311 in __user_main (argc=1, argv=268226080) at /home/klee/logic_bombs/src/covert_propogation/file_cp_l1_klee_annotated.c:41
+	#200005585 in __uClibc_main (main=253355552, argc=1, argv=268226080, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#300008672 in main (=1, =268226080)

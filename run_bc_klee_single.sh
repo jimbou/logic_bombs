@@ -77,7 +77,6 @@ run_one_solver() {
   mkdir -p "$logdir"
 
   echo "==> KLEE ($solver) on $BC_PATH (budget=${TIME_BUDGET}s)"
-
 (
   set -x
   cd "$BC_DIR"
@@ -98,13 +97,13 @@ run_one_solver() {
       --watchdog \
       --max-time="$TIME_BUDGET"s \
       --emit-all-errors \
-      --write-cov \
+      --max-solver-time=60 \
       "$BC_BASE" &
 
   KPID=$!
 
-  # Wait for KLEE (so trap is active!)
-  wait $KPID
+  # Wait for KLEE — BUT DO NOT FAIL IF timeout kills it.
+  wait $KPID || true
 ) 2>&1 | tee "$logdir/runner_stdout.log"
 
 

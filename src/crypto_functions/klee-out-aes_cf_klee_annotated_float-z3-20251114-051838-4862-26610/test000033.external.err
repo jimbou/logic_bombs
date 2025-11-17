@@ -1,0 +1,9 @@
+Error: failed external call: AES128_ECB_decrypt
+File: /home/klee/logic_bombs/src/crypto_functions/aes_cf_klee_annotated.c
+Line: 52
+assembly.ll line: 263
+Stack: 
+	#000000263 in logic_bomb (s=376902304) at /home/klee/logic_bombs/src/crypto_functions/aes_cf_klee_annotated.c:52
+	#100000321 in __user_main (argc=1, argv=386342432) at /home/klee/logic_bombs/src/crypto_functions/aes_cf_klee_annotated.c:66
+	#200001932 in __uClibc_main (main=366305296, argc=1, argv=386342432, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#300003507 in main (=1, =386342432)

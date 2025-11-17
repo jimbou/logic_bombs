@@ -17,8 +17,10 @@ int logic_bomb(char* s) {
     float v = sin(symvar*PI/30);
     if(v > 0.5){
         klee_assert(0 && "Logic bomb triggered");
+        return 0;
     }else{
         klee_assert(0 && "Path without the bomb");
+        return 0;
     }
 }
 

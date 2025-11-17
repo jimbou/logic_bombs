@@ -1,0 +1,23 @@
+klee --output-dir=klee-out-5n+1_lo_l1_klee_annotated-z3-20251114-030414-16875-14123 --solver-backend=z3 --libc=uclibc --posix-runtime --external-calls=concrete --watchdog --max-time=900s --emit-all-errors --max-solver-time=60 5n+1_lo_l1_klee_annotated.bc
+PID: 26697
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-11-14 03:04:14
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-11-14 03:19:15
+Elapsed: 00:15:01
+KLEE: done: explored paths = 256
+KLEE: done: avg. constructs per query = 88
+KLEE: done: total queries = 4005
+KLEE: done: valid queries = 3748
+KLEE: done: invalid queries = 257
+KLEE: done: query cex = 4005
+
+KLEE: done: total instructions = 58337
+KLEE: done: completed paths = 0
+KLEE: done: partially completed paths = 256
+KLEE: done: generated tests = 256

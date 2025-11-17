@@ -43,7 +43,6 @@ set -e
 ./run_bc_klee_single.sh "/home/klee/logic_bombs/src/symbolic_jump/pointers_sj_l1_klee_annotated.bc"
 ./run_bc_klee_single.sh "/home/klee/logic_bombs/src/symbolic_jump/arrayjmp_sj_l2_klee_annotated.bc"
 ./run_bc_klee_single.sh "/home/klee/logic_bombs/src/symbolic_jump/jmp_sj_l1_klee_annotated.bc"
-# ./run_bc_klee_single.sh "/home/klee/logic_bombs/src/buffer_overflow/test.bc"
 ./run_bc_klee_single.sh "/home/klee/logic_bombs/src/buffer_overflow/heap_bo_l1_klee_annotated.bc"
 ./run_bc_klee_single.sh "/home/klee/logic_bombs/src/buffer_overflow/stacknocrash_bo_l1_klee_annotated.bc"
 ./run_bc_klee_single.sh "/home/klee/logic_bombs/src/buffer_overflow/stack_bo_l1_klee_annotated.bc"

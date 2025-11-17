@@ -1,0 +1,18 @@
+{
+  "/home/klee/logic_bombs/src/buffer_overflow/stack_bo_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-17T04:10:33Z",
+      "outdir": "/home/klee/logic_bombs/src/buffer_overflow/klee-out-stack_bo_l1_klee_annotated-stp-20251117-041032-25-26448",
+      "log": "logs/stack_bo_l1_klee_annotated/stp/runner_stdout.log"
+    }
+  },
+  "/home/klee/logic_bombs/src/symbolic_memory/stackarray_sm_ln_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-17T04:13:54Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-stackarray_sm_ln_klee_annotated-stp-20251117-041330-98-21713",
+      "log": "logs/stackarray_sm_ln_klee_annotated/stp/runner_stdout.log"
+    }
+  }
+}

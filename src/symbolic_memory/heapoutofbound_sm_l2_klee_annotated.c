@@ -14,8 +14,10 @@ int logic_bomb(char* s) {
     }
     if(array[symvar]<0 || array[symvar]>10){
        klee_assert(0 && "Logic bomb triggered");
+        return 0;
     }
     klee_assert(0 && "Path without the bomb");
+    return 0;
 }
 
 int main(int argc, char** argv) {

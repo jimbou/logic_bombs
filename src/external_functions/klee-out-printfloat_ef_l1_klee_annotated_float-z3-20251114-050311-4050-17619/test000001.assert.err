@@ -1,0 +1,9 @@
+Error: ASSERTION FAIL: 0 && "Path without the bomb"
+File: /home/klee/logic_bombs/src/external_functions/printfloat_ef_l1_klee_annotated.c
+Line: 18
+assembly.ll line: 207
+Stack: 
+	#000000207 in logic_bomb (s=697979904) at /home/klee/logic_bombs/src/external_functions/printfloat_ef_l1_klee_annotated.c:18
+	#100000250 in __user_main (argc=1, argv=708156864) at /home/klee/logic_bombs/src/external_functions/printfloat_ef_l1_klee_annotated.c:26
+	#200001784 in __uClibc_main (main=696480416, argc=1, argv=708156864, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#300003389 in main (=1, =708156864)

@@ -21,6 +21,7 @@ int logic_bomb(char* s) {
     if(strlen(s) != 32){
         //printf("please input the 128-bit keys\n");
 	klee_assert(0 && "Path without the bomb");
+    return 0;
     }
 
     uint8_t key[16];
@@ -54,8 +55,10 @@ int logic_bomb(char* s) {
     //aes_print(decodetext);
     if(0 == memcmp((char*) plaintext, (char*) decodetext, 16)){
         klee_assert(0 && "Logic bomb triggered");
+        return 0;
     }else{
         klee_assert(0 && "Path without the bomb");
+        return 0;
     }
 }
 

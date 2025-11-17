@@ -1,0 +1,12 @@
+libc/stdio/_vfprintf.c:1620
+libc/stdio/_vfprintf.c:1621
+libc/stdio/_vfprintf.c:1786
+libc/stdio/_vfprintf.c:1788
+libc/stdio/_vfprintf.c:1789
+libc/stdio/_vfprintf.c:1792
+libc/stdio/_vfprintf.c:1793
+libc/stdio/_vfprintf.c:1795
+libc/stdio/_vfprintf.c:1802
+libc/stdio/fputs.c:27
+libc/stdio/fwrite.c:36
+libc/stdio/fwrite.c:37

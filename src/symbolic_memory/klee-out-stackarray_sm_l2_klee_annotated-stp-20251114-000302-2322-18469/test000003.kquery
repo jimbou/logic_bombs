@@ -1,0 +1,16 @@
+array const_arr1[20] : w32 -> w8 = [1 0 0 0 2 0 0 0 3 0 0 0 4 0 0 0 5 0 0 0]
+array const_arr2[20] : w32 -> w8 = [6 0 0 0 7 0 0 0 8 0 0 0 9 0 0 0 10 0 0 0]
+array s[5] : w32 -> w8 = symbolic
+(query [(Eq 0 (Read w8 4 s))
+         (Ult N0:(Mul w64 4
+                          (SExt w64 (SRem w32 (Add w32 4294967248
+                                                       (SExt w32 (Read w8 0 s)))
+                                              5)))
+              17)
+         (Ult N1:(Mul w64 4
+                          (SExt w64 (ReadLSB w32 N2:(Extract w32 0 N0) const_arr1)))
+              17)
+         (Eq false
+             (Eq 9
+                 (ReadLSB w32 N3:(Extract w32 0 N1) const_arr2)))]
+        false)

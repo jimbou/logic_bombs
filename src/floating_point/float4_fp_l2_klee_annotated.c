@@ -7,10 +7,13 @@
 int logic_bomb(char* symvar) {
     float x = atof(symvar);
     x = x/-10000.0;
-    if(1024+x == 1024 && x>0)
+    if(1024+x == 1024 && x>0){
         klee_assert(0 && "Logic bomb triggered");
-    else
+        return 0;
+    } else {
         klee_assert(0 && "Path without the bomb");
+        return 0;
+    }
 }
 
 int main(int argc, char** argv) {

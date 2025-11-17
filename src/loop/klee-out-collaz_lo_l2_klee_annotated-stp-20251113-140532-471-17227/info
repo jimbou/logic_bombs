@@ -1,0 +1,23 @@
+klee --output-dir=klee-out-collaz_lo_l2_klee_annotated-stp-20251113-140532-471-17227 --solver-backend=stp --libc=uclibc --posix-runtime --external-calls=concrete --watchdog --max-time=900s --emit-all-errors --write-cov collaz_lo_l2_klee_annotated.bc
+PID: 482
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-11-13 14:05:32
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-11-13 14:20:32
+Elapsed: 00:15:00
+KLEE: done: explored paths = 256
+KLEE: done: avg. constructs per query = 267
+KLEE: done: total queries = 22956
+KLEE: done: valid queries = 22699
+KLEE: done: invalid queries = 257
+KLEE: done: query cex = 22956
+
+KLEE: done: total instructions = 294170
+KLEE: done: completed paths = 0
+KLEE: done: partially completed paths = 256
+KLEE: done: generated tests = 256

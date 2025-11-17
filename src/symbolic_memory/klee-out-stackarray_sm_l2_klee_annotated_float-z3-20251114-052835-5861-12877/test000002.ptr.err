@@ -1,0 +1,22 @@
+Error: memory error: out of bound pointer
+File: /home/klee/logic_bombs/src/symbolic_memory/stackarray_sm_l2_klee_annotated.c
+Line: 17
+assembly.ll line: 208
+Stack: 
+	#000000208 in logic_bomb (s=278967584) at /home/klee/logic_bombs/src/symbolic_memory/stackarray_sm_l2_klee_annotated.c:17
+	#100000261 in __user_main (argc=1, argv=286551152) at /home/klee/logic_bombs/src/symbolic_memory/stackarray_sm_l2_klee_annotated.c:28
+	#200001795 in __uClibc_main (main=278367152, argc=1, argv=286551152, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#300003400 in main (=1, =286551152)
+Info: 
+	address: (Add w64 281515424
+          (Mul w64 4
+                   (SExt w64 (ReadLSB w32 N0:(Extract w32 0 (Mul w64 4
+                                                                     (SExt w64 (SRem w32 (Add w32 4294967248
+                                                                                                  (SExt w32 (Read w8 0 s)))
+                                                                                         5)))) const_arr1))))
+	example: 281515444
+	range: [281515444, 281515444]
+	next: object at 284240224 of size 41
+		MO64[41] allocated at global:__PRETTY_FUNCTION__.write
+	prev: object at 281515424 of size 20
+		MO3108[20] allocated at logic_bomb():  %l2_ary = alloca [5 x i32], align 16

@@ -1,0 +1,12 @@
+{
+  "z3": {
+    "triggered_both": 14,
+    "triggered_only_no_bomb": 25,
+    "no_trigger": 14
+  },
+  "stp": {
+    "triggered_both": 17,
+    "no_trigger": 14,
+    "triggered_only_no_bomb": 22
+  }
+}

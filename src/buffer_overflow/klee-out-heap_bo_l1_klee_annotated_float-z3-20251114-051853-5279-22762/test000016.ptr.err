@@ -1,0 +1,16 @@
+Error: memory error: out of bound pointer
+File: /home/user/uclibc/libc/string/strcpy.c
+Line: 27
+assembly.ll line: 1113
+Stack: 
+	#000001113 in strcpy (s1=446808976, s2=458291120) at /home/user/uclibc/libc/string/strcpy.c:27
+	#100000190 in logic_bomb (symvar=458291120) at /home/klee/logic_bombs/src/buffer_overflow/heap_bo_l1_klee_annotated.c:13
+	#200000251 in __user_main (argc=1, argv=439174496) at /home/klee/logic_bombs/src/buffer_overflow/heap_bo_l1_klee_annotated.c:28
+	#300001809 in __uClibc_main (main=437562928, argc=1, argv=439174496, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#400003384 in main (=1, =439174496)
+Info: 
+	address: 446808992
+	next: object at 448105680 of size 8
+		MO3078[8] allocated at strcpy():  %s1.addr = alloca i8*, align 8
+	prev: object at 446808976 of size 16
+		MO3072[16] allocated at logic_bomb():  %call = call noalias i8* @malloc(i64 16) #13, !dbg !2156

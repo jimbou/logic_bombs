@@ -14,8 +14,10 @@ int logic_bomb(char* s) {
     int r = rand()%100;
     if(r == 77){
         klee_assert(0 && "Logic bomb triggered");
+        return 0;
     }else{
         klee_assert(0 && "Path without the bomb");
+        return 0;
     }
 }
 

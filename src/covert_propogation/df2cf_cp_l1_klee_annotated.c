@@ -54,10 +54,13 @@ int logic_bomb(char* s) {
     int a = df2cf(symvar%10);
     a++;
     int b = symvar + a;
-    if(b == 15)
+    if(b == 15){
         klee_assert(0 && "Logic bomb triggered");
-    else
+        return 0;
+    } else {
         klee_assert(0 && "Path without the bomb");
+        return 0;
+    }
 }
 
 int main(int argc, char** argv) {

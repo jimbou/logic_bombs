@@ -27,10 +27,13 @@ int logic_bomb(char* s) {
     sprintf(cmd, "echo %d\n", symvar); 
     char* rs = shell(cmd);
 
-   if(atoi(rs) == 7)
+   if(atoi(rs) == 7){
     klee_assert(0 && "Logic bomb triggered");
-   else
+    return 0;
+   } else {
     klee_assert(0 && "Path without the bomb");
+    return 0;
+   }
 }
 
 int main(int argc, char** argv) {

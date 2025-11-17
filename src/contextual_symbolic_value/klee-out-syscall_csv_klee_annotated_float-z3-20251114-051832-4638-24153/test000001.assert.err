@@ -1,0 +1,9 @@
+Error: ASSERTION FAIL: 0 && "Path without the bomb"
+File: /home/klee/logic_bombs/src/contextual_symbolic_value/syscall_csv_klee_annotated.c
+Line: 15
+assembly.ll line: 274
+Stack: 
+	#000000274 in logic_bomb (s=315279648) at /home/klee/logic_bombs/src/contextual_symbolic_value/syscall_csv_klee_annotated.c:15
+	#100000332 in __user_main (argc=1, argv=321728400) at /home/klee/logic_bombs/src/contextual_symbolic_value/syscall_csv_klee_annotated.c:29
+	#200002084 in __uClibc_main (main=305115856, argc=1, argv=321728400, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#300003991 in main (=1, =321728400)

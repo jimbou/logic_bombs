@@ -15,10 +15,13 @@ int logic_bomb(char* s) {
   flag_0:
     if (symvar > 0){
         symvar++;
-        if(symvar == 0)
+        if(symvar == 0){
             klee_assert(0 && "Logic bomb triggered");
+            return 0;
+        }
     }
     klee_assert(0 && "Path without the bomb");
+    return 0;
 }
 
 int main(int argc, char** argv) {

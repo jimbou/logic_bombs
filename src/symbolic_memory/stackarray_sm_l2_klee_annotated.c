@@ -16,11 +16,13 @@ int logic_bomb(char* s) {
     int x = symvar%5;
     if(l2_ary[l1_ary[x]] == 9){
         klee_assert(0 && "Logic bomb triggered");
+        return 0;
      }
-    else
+    else{
         klee_assert(0 && "Path without the bomb");
+        return 0;
+    }
 }
-
 int main(int argc, char** argv) {
 char s[5];
 klee_make_symbolic(&s, sizeof(s), "s");

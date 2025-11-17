@@ -1,0 +1,79 @@
+array const_arr3[8] : w32 -> w8 = [0 0 0 0 0 0 0 0]
+array symvar[65] : w32 -> w8 = symbolic
+(query [(Eq 0 (Read w8 64 symvar))
+         (Eq false
+             (Eq 0 (Read w8 0 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 1 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 2 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 3 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 4 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 5 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 6 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 7 symvar)))
+         (Eq false
+             (Eq 0 N0:(Read w8 8 symvar)))
+         (Eq false
+             (Ult (Add w64 18446644675815774224
+                           N1:(Concat w64 0
+                                          (Concat w56 0
+                                                      (Concat w48 90
+                                                                  (Concat w40 102
+                                                                              (Concat w32 224
+                                                                                          (Concat w24 38 (Concat w16 103 N0))))))))
+                  8))
+         (Ult N2:(Add w64 18446644675815774232 N1) 8)
+         (Eq false
+             (Eq 0 N3:(Read w8 9 symvar)))
+         (Eq false
+             (Ult (Add w64 18446644675815774232
+                           N4:(ReadLSB w64 0 U0:[(Extract w32 0 N2)=N3,
+                                                 7=(Extract w8 56 N5:(Add w64 1 N1)),
+                                                 6=(Extract w8 48 N5),
+                                                 5=(Extract w8 40 N5),
+                                                 4=(Extract w8 32 N5),
+                                                 3=(Extract w8 24 N5),
+                                                 2=(Extract w8 16 N5),
+                                                 1=(Extract w8 8 N5),
+                                                 0=(Extract w8 0 N5)] @ const_arr3))
+                  8))
+         (Eq false
+             (Ult (Add w64 18446644675815774240 N4) 8))
+         (Eq false
+             (Ult (Add w64 18446644675815774256 N4) 8))
+         (Eq false
+             (Ult (Add w64 18446644675815774272 N4) 8))
+         (Eq false
+             (Ult (Add w64 18446644675815774288 N4) 4))
+         (Eq false
+             (Ult (Add w64 18446644675815776024 N4) 8))
+         (Eq false
+             (Ult (Add w64 18446644675815779104 N4) 18))
+         (Eq false
+             (Ult (Add w64 18446644675815779872 N4) 18))
+         (Eq false
+             (Ult (Add w64 18446644675815780128 N4) 17))
+         (Eq false
+             (Ult (Add w64 18446644675815781152 N4) 29))
+         (Eq false
+             (Ult (Add w64 18446644675815783200 N4) 18))
+         (Eq false
+             (Ult (Add w64 18446644675815784224 N4) 24))
+         (Eq false
+             (Ult (Add w64 18446644675815788880 N4) 65))
+         (Eq false
+             (Ult (Add w64 18446644675815793440 N4) 33))
+         (Eq false
+             (Ult (Add w64 18446644675815794208 N4) 33))
+         (Eq false
+             (Ult (Add w64 18446644675815796800 N4) 47))
+         (Eq false
+             (Ult (Add w64 18446644675815774224 N4) 8))
+         (Ult (Add w64 18446644675815765040 N4) 45)]
+        false)

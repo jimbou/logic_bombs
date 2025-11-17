@@ -19,10 +19,13 @@ int logic_bomb(char* s) {
 	j = f(j);
         loopcount ++;
     }
-    if(loopcount == 25)
+    if(loopcount == 25){
         klee_assert(0 && "Logic bomb triggered");
-    else
+        return 0;
+    } else {
         klee_assert(0 && "Path without the bomb");
+        return 0;
+    }
 }
 
 int main(int argc, char** argv) {

@@ -1,0 +1,9 @@
+Error: ASSERTION FAIL: 0 && "Path without the bomb"
+File: /home/klee/logic_bombs/src/covert_propogation/socket_cp_l1_klee_annotated.c
+Line: 88
+assembly.ll line: 457
+Stack: 
+	#000000457 in logic_bomb (s=616815200) at /home/klee/logic_bombs/src/covert_propogation/socket_cp_l1_klee_annotated.c:88
+	#100000525 in __user_main (argc=1, argv=604345600) at /home/klee/logic_bombs/src/covert_propogation/socket_cp_l1_klee_annotated.c:109
+	#200006133 in __uClibc_main (main=597854144, argc=1, argv=604345600, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#300009824 in main (=1, =604345600)

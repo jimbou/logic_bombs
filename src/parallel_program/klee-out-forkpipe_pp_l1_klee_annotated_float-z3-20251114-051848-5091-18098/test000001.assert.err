@@ -1,0 +1,9 @@
+Error: ASSERTION FAIL: 0 && "Path without the bomb"
+File: /home/klee/logic_bombs/src/parallel_program/forkpipe_pp_l1_klee_annotated.c
+Line: 11
+assembly.ll line: 251
+Stack: 
+	#000000251 in logic_bomb (s=668317920) at /home/klee/logic_bombs/src/parallel_program/forkpipe_pp_l1_klee_annotated.c:11
+	#100000330 in __user_main (argc=1, argv=668886336) at /home/klee/logic_bombs/src/parallel_program/forkpipe_pp_l1_klee_annotated.c:33
+	#200001864 in __uClibc_main (main=648450432, argc=1, argv=668886336, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#300003466 in main (=1, =668886336)

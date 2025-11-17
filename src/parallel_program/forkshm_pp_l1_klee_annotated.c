@@ -15,8 +15,10 @@ int logic_bomb(char* symvar) {
     char *p_addr, *c_addr;
     int flag = 0;
     key_t shmid = shmget(IPC_PRIVATE, 1024, S_IRUSR|S_IWUSR);
-    if (shmid < 0)
+    if (shmid < 0){
 	klee_assert(0 && "Path without the bomb");
+    return 0;
+    }
     pid_t pid = fork();
     if(pid == 0){
 	p_addr = shmat(shmid,0,0);
@@ -33,8 +35,10 @@ int logic_bomb(char* symvar) {
         shmctl(shmid,IPC_RMID,0);
         if(flag == 1){
 	    klee_assert(0 && "Logic bomb triggered");
+        return 0;
 	}
 	klee_assert(0 && "Path without the bomb");
+    return 0;
     }
 }
 

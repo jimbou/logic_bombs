@@ -1,0 +1,23 @@
+klee --output-dir=klee-out-stackarray_sm_ln_klee_annotated-stp-20251117-041330-98-21713 --solver-backend=stp --libc=uclibc --posix-runtime --external-calls=concrete --watchdog --max-time=900s --emit-all-errors --max-solver-time=60 stackarray_sm_ln_klee_annotated.bc
+PID: 109
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-11-17 04:13:30
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-11-17 04:13:53
+Elapsed: 00:00:23
+KLEE: done: explored paths = 8
+KLEE: done: avg. constructs per query = 197
+KLEE: done: total queries = 407
+KLEE: done: valid queries = 387
+KLEE: done: invalid queries = 20
+KLEE: done: query cex = 407
+
+KLEE: done: total instructions = 13731
+KLEE: done: completed paths = 0
+KLEE: done: partially completed paths = 8
+KLEE: done: generated tests = 8

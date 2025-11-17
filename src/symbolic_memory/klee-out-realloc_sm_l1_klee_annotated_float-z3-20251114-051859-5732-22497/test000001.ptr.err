@@ -1,0 +1,21 @@
+Error: memory error: out of bound pointer
+File: /home/klee/logic_bombs/src/symbolic_memory/realloc_sm_l1_klee_annotated.c
+Line: 19
+assembly.ll line: 248
+Stack: 
+	#000000248 in logic_bomb (s=321269296) at /home/klee/logic_bombs/src/symbolic_memory/realloc_sm_l1_klee_annotated.c:19
+	#100000301 in __user_main (argc=1, argv=313452912) at /home/klee/logic_bombs/src/symbolic_memory/realloc_sm_l1_klee_annotated.c:30
+	#200001832 in __uClibc_main (main=305341344, argc=1, argv=313452912, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#300003437 in main (=1, =313452912)
+Info: 
+	address: (Add w64 326187408
+          (Mul w64 4
+                   (SExt w64 (SRem w32 (Add w32 4294967248
+                                                (SExt w32 (Read w8 0 s)))
+                                       10))))
+	example: 326187376
+	range: [326187372, 326187404]
+	next: object at 326187408 of size 40
+		MO3135[40] allocated at logic_bomb():  %call3 = call i8* @realloc(i8* %9, i64 40) #13, !dbg !2161
+	prev: object at 325371440 of size 18
+		MO86[18] allocated at global:.str23

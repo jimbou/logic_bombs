@@ -9,10 +9,13 @@ int logic_bomb(char* s) {
     float x = symvar + 0.0000005;
     if(x != 7){
         float x = symvar + 1;
-        if (x == 8)
+        if (x == 8){
             klee_assert(0 && "Logic bomb triggered");
+            return 0;
+        }
     }
     klee_assert(0 && "Path without the bomb");
+    return 0;
 }
 
 int main(int argc, char** argv) {

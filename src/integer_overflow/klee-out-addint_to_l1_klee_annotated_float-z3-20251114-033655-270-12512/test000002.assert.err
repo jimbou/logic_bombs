@@ -1,0 +1,7 @@
+Error: ASSERTION FAIL: 0 && "Path without the bomb"
+File: /home/klee/logic_bombs/src/integer_overflow/addint_to_l1_klee_annotated.c
+Line: 10
+assembly.ll line: 148
+Stack: 
+	#000000148 in logic_bomb (s=389045104) at /home/klee/logic_bombs/src/integer_overflow/addint_to_l1_klee_annotated.c:10
+	#100000189 in main (argc=1, argv=388774688) at /home/klee/logic_bombs/src/integer_overflow/addint_to_l1_klee_annotated.c:17

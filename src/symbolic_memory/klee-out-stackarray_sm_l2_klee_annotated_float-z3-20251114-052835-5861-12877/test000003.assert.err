@@ -1,0 +1,9 @@
+Error: ASSERTION FAIL: 0 && "Path without the bomb"
+File: /home/klee/logic_bombs/src/symbolic_memory/stackarray_sm_l2_klee_annotated.c
+Line: 21
+assembly.ll line: 217
+Stack: 
+	#000000217 in logic_bomb (s=278967584) at /home/klee/logic_bombs/src/symbolic_memory/stackarray_sm_l2_klee_annotated.c:21
+	#100000261 in __user_main (argc=1, argv=286551152) at /home/klee/logic_bombs/src/symbolic_memory/stackarray_sm_l2_klee_annotated.c:28
+	#200001795 in __uClibc_main (main=278367152, argc=1, argv=286551152, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#300003400 in main (=1, =286551152)

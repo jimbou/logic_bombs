@@ -1,0 +1,21 @@
+klee --output-dir=klee-out-stackarray_sm_l2_klee_annotated_float-z3-20251114-052835-5861-12877 --solver-backend=z3 --libc=uclibc --posix-runtime --allow-external-sym-calls --watchdog --max-time=900 --emit-all-errors --max-solver-time=60 stackarray_sm_l2_klee_annotated_float.bc
+PID: 5873
+Started: 2025-11-14 05:28:35
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-11-14 05:28:36
+Elapsed: 00:00:01
+KLEE: done: explored paths = 4
+KLEE: done: avg. constructs per query = 25
+KLEE: done: total queries = 105
+KLEE: done: valid queries = 91
+KLEE: done: invalid queries = 14
+KLEE: done: query cex = 105
+
+KLEE: done: total instructions = 6317
+KLEE: done: completed paths = 4
+KLEE: done: generated tests = 4

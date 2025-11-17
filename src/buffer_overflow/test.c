@@ -15,9 +15,11 @@ int logic_bomb(char* symvar) {
     if (n != 5){
         free(p);
         klee_assert(0 && "Logic bomb triggered");
+        return 0;
     }else {
         free(p);
         klee_assert(0 && "Logic bomb triggered");
+        return 0;
     }
 }
 

@@ -10,10 +10,12 @@
 int logic_bomb(char* s) {
    int symvar = s[0] - 48;
    int pid = (int) getpid();
-   if(pid%78 == symvar)
+   if(pid%78 == symvar){
     klee_assert(0 && "Logic bomb triggered");
-   else
+    return 0;}
+   else{
     klee_assert(0 && "Path without the bomb");
+    return 0;}
 }
 
 int main(int argc, char** argv) {

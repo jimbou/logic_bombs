@@ -86,6 +86,7 @@ int logic_bomb(char* s) {
     pid1=fork();
     if(pid1 < 0){
     klee_assert(0 && "Path without the bomb");
+    return 0;
     }
     else if(pid1 == 0){
         server();
@@ -96,8 +97,10 @@ int logic_bomb(char* s) {
         i=client_send(s[0]);
         if(i == 7){
             klee_assert(0 && "Logic bomb triggered");
+            return 0;
          }else{
             klee_assert(0 && "Path without the bomb");
+            return 0;
          }
     }
 }

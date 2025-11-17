@@ -1,0 +1,21 @@
+Error: memory error: out of bound pointer
+File: /home/klee/logic_bombs/src/symbolic_memory/stackarray_sm_l1_klee_annotated.c
+Line: 10
+assembly.ll line: 198
+Stack: 
+	#000000198 in logic_bomb (s=571691456) at /home/klee/logic_bombs/src/symbolic_memory/stackarray_sm_l1_klee_annotated.c:10
+	#100000251 in __user_main (argc=1, argv=562744400) at /home/klee/logic_bombs/src/symbolic_memory/stackarray_sm_l1_klee_annotated.c:21
+	#200001785 in __uClibc_main (main=552534688, argc=1, argv=562744400, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#300003390 in main (=1, =562744400)
+Info: 
+	address: (Add w64 563601248
+          (Mul w64 4
+                   (SExt w64 (SRem w32 (Add w32 4294967248
+                                                (SExt w32 (Read w8 0 s)))
+                                       5))))
+	example: 563601236
+	range: [563601232, 563601244]
+	next: object at 563601248 of size 20
+		MO3106[20] allocated at logic_bomb():  %ary = alloca [5 x i32], align 16
+	prev: object at 562746032 of size 22
+		MO4[22] allocated at main():  call void @__uClibc_main(i32 (i32, i8**, i8**)* bitcast (i32 (i32, i8**)* @__user_main to i32 (i32, i8**, i8**)*), i32 %0, i8** %1, void ()* null, void ()* null, void ()* null, i8* null)

@@ -8,13 +8,17 @@
 int logic_bomb(char* symvar) {
     int flag = 0;
     char buf[8];
-    if(strlen(symvar) > 9)
+    if(strlen(symvar) > 9){
         klee_assert(0 && "Path without the bomb");
+        return 0;
+    }
     strcpy(buf, symvar);
     if(flag == 1){
         klee_assert(0 && "Logic bomb triggered");
+        return 0;
     }
     klee_assert(0 && "Path without the bomb");
+    return 0;
 }
 
 int main(int argc, char** argv) {

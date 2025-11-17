@@ -1,0 +1,11 @@
+Error: ASSERTION FAIL: 0 && "Path without the bomb"
+File: realloc_sm_l1_klee_annotated.c
+Line: 22
+assembly.ll line: 9016
+State: 3
+Stack: 
+	#000009016 in logic_bomb(s=109866180347880) at realloc_sm_l1_klee_annotated.c:22
+	#100009047 in __klee_posix_wrapped_main(argc=1, argv=109866180432768) at realloc_sm_l1_klee_annotated.c:30
+	#200007213 in __user_main(argcPtr=1, argvPtr=109866160221568, envp=109866160221584) at klee_src/runtime/POSIX/klee_init_env.c:245
+	#300000531 in __uClibc_main(109866180205616, 1, 109866160221568, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#400000696 in main(1, 109866160221568)

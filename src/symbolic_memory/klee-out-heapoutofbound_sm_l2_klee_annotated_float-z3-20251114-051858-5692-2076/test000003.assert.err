@@ -1,0 +1,9 @@
+Error: ASSERTION FAIL: 0 && "Path without the bomb"
+File: /home/klee/logic_bombs/src/symbolic_memory/heapoutofbound_sm_l2_klee_annotated.c
+Line: 18
+assembly.ll line: 237
+Stack: 
+	#000000237 in logic_bomb (s=414903632) at /home/klee/logic_bombs/src/symbolic_memory/heapoutofbound_sm_l2_klee_annotated.c:18
+	#100000278 in __user_main (argc=1, argv=409655872) at /home/klee/logic_bombs/src/symbolic_memory/heapoutofbound_sm_l2_klee_annotated.c:25
+	#200001809 in __uClibc_main (main=397976560, argc=1, argv=409655872, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#300003414 in main (=1, =409655872)

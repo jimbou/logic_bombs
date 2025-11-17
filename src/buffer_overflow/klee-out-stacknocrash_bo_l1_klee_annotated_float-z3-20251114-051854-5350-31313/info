@@ -1,0 +1,21 @@
+klee --output-dir=klee-out-stacknocrash_bo_l1_klee_annotated_float-z3-20251114-051854-5350-31313 --solver-backend=z3 --libc=uclibc --posix-runtime --allow-external-sym-calls --watchdog --max-time=900 --emit-all-errors --max-solver-time=60 stacknocrash_bo_l1_klee_annotated_float.bc
+PID: 5362
+Started: 2025-11-14 05:18:54
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-11-14 05:18:54
+Elapsed: 00:00:00
+KLEE: done: explored paths = 65
+KLEE: done: avg. constructs per query = 2
+KLEE: done: total queries = 67
+KLEE: done: valid queries = 0
+KLEE: done: invalid queries = 67
+KLEE: done: query cex = 67
+
+KLEE: done: total instructions = 7460
+KLEE: done: completed paths = 65
+KLEE: done: generated tests = 65

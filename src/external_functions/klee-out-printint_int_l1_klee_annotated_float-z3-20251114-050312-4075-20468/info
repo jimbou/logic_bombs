@@ -1,0 +1,21 @@
+klee --output-dir=klee-out-printint_int_l1_klee_annotated_float-z3-20251114-050312-4075-20468 --solver-backend=z3 --libc=uclibc --posix-runtime --allow-external-sym-calls --watchdog --max-time=900 --emit-all-errors --max-solver-time=60 printint_int_l1_klee_annotated_float.bc
+PID: 4087
+Started: 2025-11-14 05:03:12
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-11-14 05:03:12
+Elapsed: 00:00:00
+KLEE: done: explored paths = 2
+KLEE: done: avg. constructs per query = 3
+KLEE: done: total queries = 4
+KLEE: done: valid queries = 0
+KLEE: done: invalid queries = 4
+KLEE: done: query cex = 4
+
+KLEE: done: total instructions = 5652
+KLEE: done: completed paths = 2
+KLEE: done: generated tests = 2

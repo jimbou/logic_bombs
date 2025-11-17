@@ -7,8 +7,10 @@
 int logic_bomb(char* s) {
     int pid, fd[2];
     pipe(fd);
-    if ((pid = fork()) == -1)
+    if ((pid = fork()) == -1){
         klee_assert(0 && "Path without the bomb");
+        return 0;
+    }
     if (pid == 0) {
         close(fd[0]);
         write(fd[1], s, sizeof(s));
@@ -21,8 +23,10 @@ int logic_bomb(char* s) {
         read(fd[0], content, 8);
         if (strcmp(content, "7") == 0) {
             klee_assert(0 && "Logic bomb triggered");
+            return 0;
         }
-        klee_assert(0 && "Path without the bomb"); 
+        klee_assert(0 && "Path without the bomb");
+        return 0; 
     }
 }
 

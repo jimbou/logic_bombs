@@ -1,0 +1,55 @@
+array const_arr1[44] : w32 -> w8 = [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+array s[5] : w32 -> w8 = symbolic
+(query [(Eq 0 (Read w8 4 s))
+         (Sle 0
+              N0:(SRem w32 (Add w32 4294967248
+                                    N1:(SExt w32 (Read w8 0 s)))
+                           11))
+         (Eq false
+             (Ult (Mul w64 4
+                           (SExt w64 (ReadLSB w32 N2:(Extract w32 0 (Mul w64 4 (SExt w64 N0))) U0:[43=(Extract w8 24 N3:(SRem w32 (Add w32 4294967252 N1) 11)),
+                                                                                                   42=(Extract w8 16 N3),
+                                                                                                   41=(Extract w8 8 N3),
+                                                                                                   40=(Extract w8 0 N3),
+                                                                                                   39=(Extract w8 24 N4:(SRem w32 (Add w32 4294967251 N1) 11)),
+                                                                                                   38=(Extract w8 16 N4),
+                                                                                                   37=(Extract w8 8 N4),
+                                                                                                   36=(Extract w8 0 N4),
+                                                                                                   35=(Extract w8 24 N5:(SRem w32 (Add w32 4294967250 N1) 11)),
+                                                                                                   34=(Extract w8 16 N5),
+                                                                                                   33=(Extract w8 8 N5),
+                                                                                                   32=(Extract w8 0 N5),
+                                                                                                   31=(Extract w8 24 N6:(SRem w32 (Add w32 4294967249 N1) 11)),
+                                                                                                   30=(Extract w8 16 N6),
+                                                                                                   29=(Extract w8 8 N6),
+                                                                                                   28=(Extract w8 0 N6),
+                                                                                                   27=(Extract w8 24 N0),
+                                                                                                   26=(Extract w8 16 N0),
+                                                                                                   25=(Extract w8 8 N0),
+                                                                                                   24=(Extract w8 0 N0),
+                                                                                                   23=(Extract w8 24 N7:(SRem w32 (Add w32 4294967258 N1) 11)),
+                                                                                                   22=(Extract w8 16 N7),
+                                                                                                   21=(Extract w8 8 N7),
+                                                                                                   20=(Extract w8 0 N7),
+                                                                                                   19=(Extract w8 24 N8:(SRem w32 (Add w32 4294967257 N1) 11)),
+                                                                                                   18=(Extract w8 16 N8),
+                                                                                                   17=(Extract w8 8 N8),
+                                                                                                   16=(Extract w8 0 N8),
+                                                                                                   15=(Extract w8 24 N9:(SRem w32 (Add w32 4294967256 N1) 11)),
+                                                                                                   14=(Extract w8 16 N9),
+                                                                                                   13=(Extract w8 8 N9),
+                                                                                                   12=(Extract w8 0 N9),
+                                                                                                   11=(Extract w8 24 N10:(SRem w32 (Add w32 4294967255 N1) 11)),
+                                                                                                   10=(Extract w8 16 N10),
+                                                                                                   9=(Extract w8 8 N10),
+                                                                                                   8=(Extract w8 0 N10),
+                                                                                                   7=(Extract w8 24 N11:(SRem w32 (Add w32 4294967254 N1) 11)),
+                                                                                                   6=(Extract w8 16 N11),
+                                                                                                   5=(Extract w8 8 N11),
+                                                                                                   4=(Extract w8 0 N11),
+                                                                                                   3=(Extract w8 24 N12:(SRem w32 (Add w32 4294967253 N1) 11)),
+                                                                                                   2=(Extract w8 16 N12),
+                                                                                                   1=(Extract w8 8 N12),
+                                                                                                   0=(Extract w8 0 N12)] @ const_arr1)))
+                  41))]
+        false)

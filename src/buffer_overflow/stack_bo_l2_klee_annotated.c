@@ -5,6 +5,7 @@
 
 int trigger(){
     klee_assert(0 && "Logic bomb triggered");
+    return 0;
 }
 
 // {"symvar":{"length": 128}}
@@ -14,6 +15,7 @@ int logic_bomb(char* symvar) {
     if(buf < 0)
         return trigger();
     klee_assert(0 && "Path without the bomb");
+    return 0;
 }
 
 int main(int argc, char** argv) {

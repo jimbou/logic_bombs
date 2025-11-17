@@ -1,0 +1,426 @@
+{
+  "src/covert_propogation/df2cf_cp_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T04:31:21Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-df2cf_cp_l1_klee_annotated_float-z3-20251114-043120-3439-18462",
+      "log": "logs/df2cf_cp_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/covert_propogation/file_cp_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T04:47:52Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-file_cp_l1_klee_annotated_float-z3-20251114-043121-3501-4110",
+      "log": "logs/file_cp_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/covert_propogation/stack_cp_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T04:47:53Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-stack_cp_l1_klee_annotated_float-z3-20251114-044752-3623-29668",
+      "log": "logs/stack_cp_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/covert_propogation/echo_cp_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T04:47:54Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-echo_cp_l1_klee_annotated_float-z3-20251114-044753-3645-21158",
+      "log": "logs/echo_cp_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/covert_propogation/echofile_cp_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T04:47:56Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-echofile_cp_l1_klee_annotated_float-z3-20251114-044754-3698-18296",
+      "log": "logs/echofile_cp_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/covert_propogation/socket_cp_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T04:47:57Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-socket_cp_l1_klee_annotated_float-z3-20251114-044756-3741-11680",
+      "log": "logs/socket_cp_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/covert_propogation/file_posix_cp_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T04:47:58Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-file_posix_cp_l1_klee_annotated_float-z3-20251114-044757-3763-22050",
+      "log": "logs/file_posix_cp_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/loop/paraloop_lo_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T04:48:00Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-paraloop_lo_l2_klee_annotated_float-z3-20251114-044758-3785-16149",
+      "log": "logs/paraloop_lo_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/floating_point/float2_fp_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T04:48:01Z",
+      "outdir": "/home/klee/logic_bombs/src/floating_point/klee-out-float2_fp_l1_klee_annotated_float-z3-20251114-044800-3806-4750",
+      "log": "logs/float2_fp_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/floating_point/float5_fp_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T04:48:02Z",
+      "outdir": "/home/klee/logic_bombs/src/floating_point/klee-out-float5_fp_l2_klee_annotated_float-z3-20251114-044801-3833-3430",
+      "log": "logs/float5_fp_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/floating_point/float3_fp_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T04:48:03Z",
+      "outdir": "/home/klee/logic_bombs/src/floating_point/klee-out-float3_fp_l2_klee_annotated_float-z3-20251114-044802-3855-3324",
+      "log": "logs/float3_fp_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/floating_point/float1_fp_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T04:48:05Z",
+      "outdir": "/home/klee/logic_bombs/src/floating_point/klee-out-float1_fp_l1_klee_annotated_float-z3-20251114-044803-3877-15928",
+      "log": "logs/float1_fp_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/floating_point/float4_fp_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T04:48:06Z",
+      "outdir": "/home/klee/logic_bombs/src/floating_point/klee-out-float4_fp_l2_klee_annotated_float-z3-20251114-044805-3904-13466",
+      "log": "logs/float4_fp_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/external_functions/rand_ef_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T05:03:11Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-rand_ef_l2_klee_annotated_float-z3-20251114-044806-3926-22257",
+      "log": "logs/rand_ef_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/external_functions/printfloat_ef_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T05:03:12Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-printfloat_ef_l1_klee_annotated_float-z3-20251114-050311-4050-17619",
+      "log": "logs/printfloat_ef_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/external_functions/printint_int_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T05:03:13Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-printint_int_l1_klee_annotated_float-z3-20251114-050312-4075-20468",
+      "log": "logs/printint_int_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/external_functions/pow_ef_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T05:03:14Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-pow_ef_l2_klee_annotated_float-z3-20251114-050313-4100-2958",
+      "log": "logs/pow_ef_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/external_functions/atoi_ef_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T05:03:15Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-atoi_ef_l2_klee_annotated_float-z3-20251114-050314-4122-6603",
+      "log": "logs/atoi_ef_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/external_functions/ln_ef_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T05:03:16Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-ln_ef_l2_klee_annotated_float-z3-20251114-050315-4144-31023",
+      "log": "logs/ln_ef_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/external_functions/atof_ef_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T05:03:17Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-atof_ef_l2_klee_annotated_float-z3-20251114-050316-4166-11081",
+      "log": "logs/atof_ef_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/external_functions/sin_ef_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T05:03:18Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-sin_ef_l2_klee_annotated_float-z3-20251114-050317-4188-8693",
+      "log": "logs/sin_ef_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/contextual_symbolic_value/ping_csv_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T05:18:32Z",
+      "outdir": "/home/klee/logic_bombs/src/contextual_symbolic_value/klee-out-ping_csv_klee_annotated_float-z3-20251114-050318-4210-13573",
+      "log": "logs/ping_csv_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/contextual_symbolic_value/syscall_csv_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T05:18:33Z",
+      "outdir": "/home/klee/logic_bombs/src/contextual_symbolic_value/klee-out-syscall_csv_klee_annotated_float-z3-20251114-051832-4638-24153",
+      "log": "logs/syscall_csv_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/contextual_symbolic_value/pid_csv_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T05:18:34Z",
+      "outdir": "/home/klee/logic_bombs/src/contextual_symbolic_value/klee-out-pid_csv_klee_annotated_float-z3-20251114-051833-4664-20307",
+      "log": "logs/pid_csv_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/contextual_symbolic_value/file_posix_csv_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T05:18:35Z",
+      "outdir": "/home/klee/logic_bombs/src/contextual_symbolic_value/klee-out-file_posix_csv_klee_annotated_float-z3-20251114-051834-4690-7414",
+      "log": "logs/file_posix_csv_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/contextual_symbolic_value/file_csv_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T05:18:36Z",
+      "outdir": "/home/klee/logic_bombs/src/contextual_symbolic_value/klee-out-file_csv_klee_annotated_float-z3-20251114-051835-4749-11921",
+      "log": "logs/file_csv_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/integer_overflow/addint_to_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T05:18:37Z",
+      "outdir": "/home/klee/logic_bombs/src/integer_overflow/klee-out-addint_to_l1_klee_annotated_float-z3-20251114-051836-4808-12175",
+      "log": "logs/addint_to_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/integer_overflow/multiplyint_to_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T05:18:38Z",
+      "outdir": "/home/klee/logic_bombs/src/integer_overflow/klee-out-multiplyint_to_l1_klee_annotated_float-z3-20251114-051837-4835-8131",
+      "log": "logs/multiplyint_to_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/crypto_functions/aes_cf_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T05:18:39Z",
+      "outdir": "/home/klee/logic_bombs/src/crypto_functions/klee-out-aes_cf_klee_annotated_float-z3-20251114-051838-4862-26610",
+      "log": "logs/aes_cf_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/crypto_functions/sha_cf_klee_annotated_float.bc": {
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T05:18:40Z",
+      "outdir": "/home/klee/logic_bombs/src/crypto_functions/klee-out-sha_cf_klee_annotated_float-z3-20251114-051839-4981-14996",
+      "log": "logs/sha_cf_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/parallel_program/2thread_pp_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T05:18:43Z",
+      "outdir": "/home/klee/logic_bombs/src/parallel_program/klee-out-2thread_pp_l1_klee_annotated_float-z3-20251114-051841-5003-30986",
+      "log": "logs/2thread_pp_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/parallel_program/forkshm_pp_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T05:18:44Z",
+      "outdir": "/home/klee/logic_bombs/src/parallel_program/klee-out-forkshm_pp_l1_klee_annotated_float-z3-20251114-051843-5025-16708",
+      "log": "logs/forkshm_pp_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/parallel_program/mthread_pp_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T05:18:46Z",
+      "outdir": "/home/klee/logic_bombs/src/parallel_program/klee-out-mthread_pp_l2_klee_annotated_float-z3-20251114-051844-5047-32742",
+      "log": "logs/mthread_pp_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/parallel_program/2thread_pp_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T05:18:48Z",
+      "outdir": "/home/klee/logic_bombs/src/parallel_program/klee-out-2thread_pp_l2_klee_annotated_float-z3-20251114-051846-5069-9144",
+      "log": "logs/2thread_pp_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/parallel_program/forkpipe_pp_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T05:18:49Z",
+      "outdir": "/home/klee/logic_bombs/src/parallel_program/klee-out-forkpipe_pp_l1_klee_annotated_float-z3-20251114-051848-5091-18098",
+      "log": "logs/forkpipe_pp_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_jump/pointers_sj_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T05:18:50Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_jump/klee-out-pointers_sj_l1_klee_annotated_float-z3-20251114-051849-5113-1793",
+      "log": "logs/pointers_sj_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_jump/arrayjmp_sj_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T05:18:51Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_jump/klee-out-arrayjmp_sj_l2_klee_annotated_float-z3-20251114-051850-5168-26163",
+      "log": "logs/arrayjmp_sj_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_jump/jmp_sj_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T05:18:52Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_jump/klee-out-jmp_sj_l1_klee_annotated_float-z3-20251114-051851-5188-9215",
+      "log": "logs/jmp_sj_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/buffer_overflow/heap_bo_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T05:18:54Z",
+      "outdir": "/home/klee/logic_bombs/src/buffer_overflow/klee-out-heap_bo_l1_klee_annotated_float-z3-20251114-051853-5279-22762",
+      "log": "logs/heap_bo_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/buffer_overflow/stacknocrash_bo_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T05:18:55Z",
+      "outdir": "/home/klee/logic_bombs/src/buffer_overflow/klee-out-stacknocrash_bo_l1_klee_annotated_float-z3-20251114-051854-5350-31313",
+      "log": "logs/stacknocrash_bo_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/buffer_overflow/stack_bo_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T05:18:56Z",
+      "outdir": "/home/klee/logic_bombs/src/buffer_overflow/klee-out-stack_bo_l1_klee_annotated_float-z3-20251114-051855-5565-12092",
+      "log": "logs/stack_bo_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/buffer_overflow/stack_bo_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T05:18:57Z",
+      "outdir": "/home/klee/logic_bombs/src/buffer_overflow/klee-out-stack_bo_l2_klee_annotated_float-z3-20251114-051856-5612-28065",
+      "log": "logs/stack_bo_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_memory/stackoutofbound_sm_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T05:18:58Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-stackoutofbound_sm_l2_klee_annotated_float-z3-20251114-051857-5659-13892",
+      "log": "logs/stackoutofbound_sm_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_memory/heapoutofbound_sm_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T05:18:59Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-heapoutofbound_sm_l2_klee_annotated_float-z3-20251114-051858-5692-2076",
+      "log": "logs/heapoutofbound_sm_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_memory/realloc_sm_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T05:19:00Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-realloc_sm_l1_klee_annotated_float-z3-20251114-051859-5732-22497",
+      "log": "logs/realloc_sm_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_memory/malloc_sm_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T05:19:01Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-malloc_sm_l1_klee_annotated_float-z3-20251114-051900-5766-21810",
+      "log": "logs/malloc_sm_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_memory/stackarray_sm_ln_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T05:28:35Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-stackarray_sm_ln_klee_annotated_float-z3-20251114-051902-5800-30904",
+      "log": "logs/stackarray_sm_ln_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_memory/stackarray_sm_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T05:28:37Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-stackarray_sm_l2_klee_annotated_float-z3-20251114-052835-5861-12877",
+      "log": "logs/stackarray_sm_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_memory/stackarray_sm_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T05:28:38Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-stackarray_sm_l1_klee_annotated_float-z3-20251114-052837-5901-3094",
+      "log": "logs/stackarray_sm_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/loop/collaz_lo_l2_klee_annotated_float.bc": {
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T05:43:39Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-collaz_lo_l2_klee_annotated_float-z3-20251114-052838-5935-21343",
+      "log": "logs/collaz_lo_l2_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/loop/7n+1_lo_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T05:58:40Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-7n+1_lo_l1_klee_annotated_float-z3-20251114-054339-30123-20969",
+      "log": "logs/7n+1_lo_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/loop/collaz_lo_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T06:13:41Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-collaz_lo_l1_klee_annotated_float-z3-20251114-055840-43197-9712",
+      "log": "logs/collaz_lo_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  },
+  "src/loop/5n+1_lo_l1_klee_annotated_float.bc": {
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T06:28:43Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-5n+1_lo_l1_klee_annotated_float-z3-20251114-061341-63276-22704",
+      "log": "logs/5n+1_lo_l1_klee_annotated_float/z3/runner_stdout.log"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+array const_arr1[56] : w32 -> w8 = [224 10 22 42 0 0 0 0 144 11 22 42 0 0 0 0 64 8 22 42 0 0 0 0 96 14 22 42 0 0 0 0 64 15 22 42 0 0 0 0 112 16 22 42 0 0 0 0 32 17 22 42 0 0 0 0]
+array model_version[4] : w32 -> w8 = symbolic
+array s[5] : w32 -> w8 = symbolic
+(query [(Eq 1
+             (ReadLSB w32 0 model_version))
+         (Eq 0 (Read w8 4 s))
+         (Ult N0:(Mul w64 8
+                          (SExt w64 (SRem w32 (Add w32 4294967248
+                                                       (SExt w32 (Read w8 0 s)))
+                                              7)))
+              49)
+         (Eq 706086976
+             (ReadLSB w64 N1:(Extract w32 0 N0) const_arr1))]
+        false)

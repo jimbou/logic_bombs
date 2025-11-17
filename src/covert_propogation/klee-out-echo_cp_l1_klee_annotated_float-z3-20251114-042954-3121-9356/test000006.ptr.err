@@ -1,0 +1,15 @@
+Error: memory error: out of bound pointer
+File: /home/user/uclibc/libc/stdio/fgets.c
+Line: 36
+assembly.ll line: 4066
+Stack: 
+	#000004066 in fgets_unlocked (s=795877824, n=1023, stream=0) at /home/user/uclibc/libc/stdio/fgets.c:36
+	#100000292 in shell (cmd=782510112) at /home/klee/logic_bombs/src/covert_propogation/echo_cp_l1_klee_annotated.c:14
+	#200000333 in logic_bomb (s=787586944) at /home/klee/logic_bombs/src/covert_propogation/echo_cp_l1_klee_annotated.c:28
+	#300000383 in __user_main (argc=1, argv=799483904) at /home/klee/logic_bombs/src/covert_propogation/echo_cp_l1_klee_annotated.c:40
+	#400005734 in __uClibc_main (main=781954080, argc=1, argv=799483904, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#500009594 in main (=1, =799483904)
+Info: 
+	address: 24
+	next: object at 782510112 of size 256
+		MO3115[256] allocated at logic_bomb():  %cmd = alloca [256 x i8], align 16

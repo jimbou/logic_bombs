@@ -1,0 +1,21 @@
+klee --output-dir=klee-out-df2cf_cp_l1_klee_annotated_float-z3-20251114-043120-3439-18462 --solver-backend=z3 --libc=uclibc --posix-runtime --allow-external-sym-calls --watchdog --max-time=900 --emit-all-errors --max-solver-time=60 df2cf_cp_l1_klee_annotated_float.bc
+PID: 3451
+Started: 2025-11-14 04:31:20
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-11-14 04:31:20
+Elapsed: 00:00:00
+KLEE: done: explored paths = 13
+KLEE: done: avg. constructs per query = 10
+KLEE: done: total queries = 27
+KLEE: done: valid queries = 9
+KLEE: done: invalid queries = 18
+KLEE: done: query cex = 27
+
+KLEE: done: total instructions = 5780
+KLEE: done: completed paths = 13
+KLEE: done: generated tests = 13

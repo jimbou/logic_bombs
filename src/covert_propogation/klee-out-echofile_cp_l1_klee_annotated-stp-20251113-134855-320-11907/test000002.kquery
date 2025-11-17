@@ -1,0 +1,10 @@
+array s[5] : w32 -> w8 = symbolic
+(query [(Eq 0 (Read w8 4 s))
+         (Ult 9223372036854775807
+              N0:(SExt w64 (Add w32 4294967248
+                                    (SExt w32 (Read w8 0 s)))))
+         (Eq 0
+             (Or w32 (UDiv w32 (Extract w32 0 N1:(Sub w64 0 N0))
+                               10)
+                     (Extract w32 0 (LShr w64 N1 32))))]
+        false)

@@ -1,0 +1,114 @@
+{
+  "/home/klee/logic_bombs/src/covert_propogation/df2cf_cp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T13:32:16Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-df2cf_cp_l1_klee_annotated-stp-20251113-133215-25-9874",
+      "log": "logs/df2cf_cp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T13:32:17Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-df2cf_cp_l1_klee_annotated-z3-20251113-133216-25-25920",
+      "log": "logs/df2cf_cp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "/home/klee/logic_bombs/src/covert_propogation/file_cp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T13:48:50Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-file_cp_l1_klee_annotated-stp-20251113-133217-136-7132",
+      "log": "logs/file_cp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T13:48:51Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-file_cp_l1_klee_annotated-z3-20251113-134850-136-18353",
+      "log": "logs/file_cp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "/home/klee/logic_bombs/src/covert_propogation/stack_cp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T13:48:52Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-stack_cp_l1_klee_annotated-stp-20251113-134851-203-12201",
+      "log": "logs/stack_cp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T13:48:53Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-stack_cp_l1_klee_annotated-z3-20251113-134852-203-23345",
+      "log": "logs/stack_cp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "/home/klee/logic_bombs/src/covert_propogation/echo_cp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T13:48:54Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-echo_cp_l1_klee_annotated-stp-20251113-134853-241-13901",
+      "log": "logs/echo_cp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T13:48:55Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-echo_cp_l1_klee_annotated-z3-20251113-134854-241-19349",
+      "log": "logs/echo_cp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "/home/klee/logic_bombs/src/covert_propogation/echofile_cp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T13:48:56Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-echofile_cp_l1_klee_annotated-stp-20251113-134855-320-11907",
+      "log": "logs/echofile_cp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T14:05:27Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-echofile_cp_l1_klee_annotated-z3-20251113-134856-320-28308",
+      "log": "logs/echofile_cp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "/home/klee/logic_bombs/src/covert_propogation/socket_cp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T14:05:28Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-socket_cp_l1_klee_annotated-stp-20251113-140527-395-8758",
+      "log": "logs/socket_cp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T14:05:29Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-socket_cp_l1_klee_annotated-z3-20251113-140528-395-21546",
+      "log": "logs/socket_cp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "/home/klee/logic_bombs/src/covert_propogation/file_posix_cp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T14:05:30Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-file_posix_cp_l1_klee_annotated-stp-20251113-140529-433-11804",
+      "log": "logs/file_posix_cp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T14:05:32Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-file_posix_cp_l1_klee_annotated-z3-20251113-140530-433-24743",
+      "log": "logs/file_posix_cp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "/home/klee/logic_bombs/src/loop/collaz_lo_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T14:20:32Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-collaz_lo_l2_klee_annotated-stp-20251113-140532-471-17227",
+      "log": "logs/collaz_lo_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T14:35:34Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-collaz_lo_l2_klee_annotated-z3-20251113-142032-471-8415",
+      "log": "logs/collaz_lo_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  }
+}

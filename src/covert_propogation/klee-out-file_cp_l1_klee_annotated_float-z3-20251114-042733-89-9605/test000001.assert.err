@@ -1,0 +1,7 @@
+Error: ASSERTION FAIL: 0 && "Path without the bomb"
+File: /home/klee/logic_bombs/src/covert_propogation/file_cp_l1_klee_annotated.c
+Line: 33
+assembly.ll line: 181
+Stack: 
+	#000000181 in logic_bomb (s=1073363808) at /home/klee/logic_bombs/src/covert_propogation/file_cp_l1_klee_annotated.c:33
+	#100000239 in main (argc=1, argv=1073233488) at /home/klee/logic_bombs/src/covert_propogation/file_cp_l1_klee_annotated.c:41

@@ -1,0 +1,18 @@
+{
+  "/home/klee/logic_bombs/src/loop/7n+1_lo_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T03:51:04Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-7n+1_lo_l1_klee_annotated-stp-20251114-033603-27374-29490",
+      "log": "logs/7n+1_lo_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T03:51:04Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-7n+1_lo_l1_klee_annotated-z3-20251114-033603-27374-29490",
+      "log": "logs/7n+1_lo_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  }
+  
+}
+

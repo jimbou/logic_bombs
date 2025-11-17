@@ -1,0 +1,35 @@
+array symvar[129] : w32 -> w8 = symbolic
+(query [(Eq 0 (Read w8 128 symvar))
+         (Eq false
+             (Eq 0 (Read w8 0 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 1 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 2 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 3 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 4 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 5 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 6 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 7 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 8 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 9 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 10 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 11 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 12 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 13 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 14 symvar)))
+         (Eq false
+             (Eq 0 (Read w8 15 symvar)))]
+        false)

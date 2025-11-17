@@ -20,7 +20,7 @@ SOLVERS=(z3)
 TRIGGER_PHRASE='Logic bomb triggered'
 
 # Where to store results JSON (override by RESULTS_JSON env var if you like)
-RESULTS_JSON="${RESULTS_JSON:-klee_float_matrix_results.json}"
+RESULTS_JSON="${RESULTS_JSON:-klee_matrix_results_float.json}"
 
 command -v jq >/dev/null || { echo "Please install 'jq'."; exit 1; }
 [ -f "$BC_PATH" ] || { echo "BC not found: $BC_PATH"; exit 1; }
@@ -29,7 +29,7 @@ BC_DIR="$(cd "$(dirname "$BC_PATH")" && pwd)"
 BC_BASE="$(basename "$BC_PATH")"
 BASE_NOEXT="${BC_BASE%.*}"
 
-mkdir -p "logs/$BC_DIR/$BASE_NOEXT" 2>/dev/null || true
+mkdir -p "logs/$BASE_NOEXT" 2>/dev/null || true
 [ -f "$RESULTS_JSON" ] || echo "{}" > "$RESULTS_JSON"
 
 update_json_atomic() {
@@ -37,6 +37,7 @@ update_json_atomic() {
   local tmp; tmp="$(mktemp "${RESULTS_JSON}.tmp.XXXXX")"
   jq "$jq_filter" "$RESULTS_JSON" > "$tmp" && mv "$tmp" "$RESULTS_JSON"
 }
+
 detect_trigger_type_from_klee_out() {
   local outdir_path="$1"
   local bomb_phrase='Logic bomb triggered'
@@ -75,30 +76,37 @@ run_one_solver() {
   local logdir="logs/$BASE_NOEXT/$solver"
   mkdir -p "$logdir"
 
- echo "==> KLEE ($solver) on $BC_PATH (budget=${TIME_BUDGET}s)"
-
+  echo "==> KLEE ($solver) on $BC_PATH (budget=${TIME_BUDGET}s)"
 (
   set -x
   cd "$BC_DIR"
+
+  # Create new process group
   set -m
 
-  # Kill solver group on Ctrl-C
-  trap "echo 'INT received, terminating KLEE...'; pkill -TERM -P $$; exit 1" INT
+  # Trap Ctrl-C inside subshell and kill whole group
+  trap "echo 'INT received, killing KLEE...'; pkill -TERM -P $$; exit 1" INT
 
+  # Run KLEE in background so trap can kill it
   timeout "${TIME_BUDGET}s" $KLEE_BIN \
       --output-dir="$outdir" \
       --solver-backend="$solver" \
+      --libc=uclibc \
       --posix-runtime \
       --allow-external-sym-calls \
       --watchdog \
-      --max-time="${TIME_BUDGET}" \
+      --max-time="$TIME_BUDGET" \
       --emit-all-errors \
-      --write-cov \
+      --max-solver-time=60 \
       "$BC_BASE" &
 
   KPID=$!
-  wait $KPID
-) 2>&1 | stdbuf -oL -eL tee "$logdir/runner_stdout.log"
+
+  # Wait for KLEE — BUT DO NOT FAIL IF timeout kills it.
+  wait $KPID || true
+) 2>&1 | tee "$logdir/runner_stdout.log"
+
+
 
 
   local abs_outdir="$BC_DIR/$outdir"

@@ -1,0 +1,9 @@
+Error: inline assembly is unsupported
+File: /home/klee/logic_bombs/src/covert_propogation/stack_cp_l1_klee_annotated.c
+Line: 10
+assembly.ll line: 189
+Stack: 
+	#000000189 in logic_bomb (s=837520832) at /home/klee/logic_bombs/src/covert_propogation/stack_cp_l1_klee_annotated.c:10
+	#100000241 in __user_main (argc=1, argv=835861760) at /home/klee/logic_bombs/src/covert_propogation/stack_cp_l1_klee_annotated.c:23
+	#200001775 in __uClibc_main (main=827434560, argc=1, argv=835861760, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#300003380 in main (=1, =835861760)

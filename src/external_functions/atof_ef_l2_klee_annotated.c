@@ -12,8 +12,10 @@ int logic_bomb(char* symvar) {
     float i = atof(symvar);
     if(i - 7 == 0){
         klee_assert(0 && "Logic bomb triggered");
+        return 0;
     }else{
         klee_assert(0 && "Path without the bomb");
+        return 0;
     }
 }
 
