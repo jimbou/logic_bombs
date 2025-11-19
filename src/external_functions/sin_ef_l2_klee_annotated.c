@@ -1,7 +1,6 @@
 #include <klee/klee.h>
 /*
 TOY:
-Solution: 30
 */
 #include <string.h> 
 #include <math.h>

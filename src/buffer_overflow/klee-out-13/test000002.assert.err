@@ -1,0 +1,11 @@
+Error: ASSERTION FAIL: 0 && "Path without the bomb"
+File: stacknocrash_bo_l1_klee_annotated_correct.c
+Line: 20
+assembly.ll line: 8962
+State: 2
+Stack: 
+	#000008962 in logic_bomb(symvar=106550690142144) at stacknocrash_bo_l1_klee_annotated_correct.c:20
+	#100009053 in __klee_posix_wrapped_main() at stacknocrash_bo_l1_klee_annotated_correct.c:38
+	#200007213 in __user_main(argcPtr=1, argvPtr=106550681428256, envp=106550681428272) at klee_src/runtime/POSIX/klee_init_env.c:245
+	#300000531 in __uClibc_main(106550689528880, 1, 106550681428256, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#400000696 in main(1, 106550681428256)

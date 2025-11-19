@@ -1,0 +1,33 @@
+array decodetext[16] : w32 -> w8 = symbolic
+array s[33] : w32 -> w8 = symbolic
+(query [(Eq 0 (Read w8 32 s))
+         (Eq false
+             (Eq 0 (Read w8 0 s)))
+         (Eq false
+             (Eq 0 (Read w8 1 s)))
+         (Eq false
+             (Eq 0 (Read w8 2 s)))
+         (Eq false
+             (Eq 0 (Read w8 3 s)))
+         (Eq false
+             (Eq 0 (Read w8 4 s)))
+         (Eq false
+             (Eq 0 (Read w8 5 s)))
+         (Eq 0 (Read w8 6 s))
+         (Eq 107 (Read w8 0 decodetext))
+         (Eq 193 (Read w8 1 decodetext))
+         (Eq 190 (Read w8 2 decodetext))
+         (Eq 226 (Read w8 3 decodetext))
+         (Eq 46 (Read w8 4 decodetext))
+         (Eq 64 (Read w8 5 decodetext))
+         (Eq 159 (Read w8 6 decodetext))
+         (Eq 150 (Read w8 7 decodetext))
+         (Eq 233 (Read w8 8 decodetext))
+         (Eq 61 (Read w8 9 decodetext))
+         (Eq 126 (Read w8 10 decodetext))
+         (Eq 17 (Read w8 11 decodetext))
+         (Eq 115 (Read w8 12 decodetext))
+         (Eq 147 (Read w8 13 decodetext))
+         (Eq 23 (Read w8 14 decodetext))
+         (Eq 42 (Read w8 15 decodetext))]
+        false)

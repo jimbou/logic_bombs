@@ -1,7 +1,6 @@
 #include <klee/klee.h>
 /*
 TOY:
-Solution: 7
 */
 #include <string.h> 
 #include "utils.h"

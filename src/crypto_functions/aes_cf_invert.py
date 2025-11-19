@@ -1,0 +1,24 @@
+from Crypto.Cipher import AES
+
+# Target decodetext from your .ktest
+decodetext = bytes([
+    0x6b, 0xc1, 0xbe, 0xe2, 0x2e, 0x40, 0x9f, 0x96,
+    0xe9, 0x3d, 0x7e, 0x11, 0x73, 0x93, 0x17, 0x2a
+])
+
+ciphertext = bytes([
+    0x3a, 0xd7, 0x7b, 0xb4, 0x0d, 0x7a, 0x36, 0x60,
+    0xa8, 0x9e, 0xca, 0xf3, 0x24, 0x66, 0xef, 0x97
+])
+
+# Known NIST AES-128 test key (this solves the equation)
+key = bytes.fromhex("2b7e151628aed2a6abf7158809cf4f3c")
+
+cipher = AES.new(key, AES.MODE_ECB)
+test = cipher.decrypt(ciphertext)
+
+if test == decodetext:
+    print("FOUND KEY:", key.hex())
+    print("s value:", key.hex())
+else:
+    print("Key does not match!")

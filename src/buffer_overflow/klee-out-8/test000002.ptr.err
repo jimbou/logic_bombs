@@ -1,0 +1,12 @@
+Error: memory error: out of bound pointer
+File: stacknocrash_bo_l1_klee_annotated_correct.c
+Line: 20
+assembly.ll line: 49
+State: 9
+Stack: 
+	#000000049 in logic_bomb(symvar=108174737727296) at stacknocrash_bo_l1_klee_annotated_correct.c:20
+	#100000131 in main(argc=1, argv=108174736868192) at stacknocrash_bo_l1_klee_annotated_correct.c:43
+Info: 
+	address: 108174736704528
+	next: object at 108174736419056 of size 174
+		MO24[174] allocated at main():  %retval = alloca i32, align 4

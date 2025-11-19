@@ -1,0 +1,8 @@
+Error: failed external call: __asm__5
+File: tmp.c
+Line: 13
+assembly.ll line: 40
+State: 6
+Stack: 
+	#000000040 in logic_bomb(s=95087684576600) at tmp.c:13
+	#100000143 in main() at tmp.c:40

@@ -1,0 +1,7 @@
+Error: Wrong size given to klee_make_symbolic
+File: tmp_new.c
+Line: 33
+assembly.ll line: 116
+State: 1
+Stack: 
+	#000000116 in main() at tmp_new.c:33

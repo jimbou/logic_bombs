@@ -1,0 +1,8 @@
+Error: ASSERTION FAIL: 0 && "Path without the bomb"
+File: stacknocrash_bo_l1_klee_annotated.c
+Line: 20
+assembly.ll line: 48
+State: 1
+Stack: 
+	#000000048 in logic_bomb(symvar=110766797848304) at stacknocrash_bo_l1_klee_annotated.c:20
+	#100000092 in main(argc=1, argv=110766796997472) at stacknocrash_bo_l1_klee_annotated.c:28

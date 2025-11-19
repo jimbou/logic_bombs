@@ -1,0 +1,23 @@
+klee tmp1.bc
+PID: 482
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-11-18 02:53:38
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-11-18 02:53:39
+Elapsed: 00:00:01
+KLEE: done: explored paths = 11
+KLEE: done: avg. constructs per query = 114
+KLEE: done: total queries = 267
+KLEE: done: valid queries = 246
+KLEE: done: invalid queries = 21
+KLEE: done: query cex = 267
+
+KLEE: done: total instructions = 148267
+KLEE: done: completed paths = 1
+KLEE: done: partially completed paths = 10
+KLEE: done: generated tests = 11

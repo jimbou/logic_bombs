@@ -1,0 +1,21 @@
+array plaintext[16] : w32 -> w8 = symbolic
+array s[33] : w32 -> w8 = symbolic
+(query [(Eq 0 (Read w8 32 s))
+         (Eq 0 (Read w8 0 s))
+         (Eq 171 (Read w8 0 plaintext))
+         (Eq 171 (Read w8 1 plaintext))
+         (Eq 171 (Read w8 2 plaintext))
+         (Eq 171 (Read w8 3 plaintext))
+         (Eq 171 (Read w8 4 plaintext))
+         (Eq 171 (Read w8 5 plaintext))
+         (Eq 171 (Read w8 6 plaintext))
+         (Eq 171 (Read w8 7 plaintext))
+         (Eq 171 (Read w8 8 plaintext))
+         (Eq 171 (Read w8 9 plaintext))
+         (Eq 171 (Read w8 10 plaintext))
+         (Eq 171 (Read w8 11 plaintext))
+         (Eq 171 (Read w8 12 plaintext))
+         (Eq 171 (Read w8 13 plaintext))
+         (Eq 171 (Read w8 14 plaintext))
+         (Eq 171 (Read w8 15 plaintext))]
+        false)

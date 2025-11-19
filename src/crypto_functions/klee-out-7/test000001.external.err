@@ -1,0 +1,11 @@
+Error: failed external call: SHA1_COMP
+File: sha_cf_klee_annotated_simplified.c
+Line: 48
+assembly.ll line: 9194
+State: 1
+Stack: 
+	#000009194 in find_plaintext_preimage() at sha_cf_klee_annotated_simplified.c:48
+	#100009089 in __klee_posix_wrapped_main(argc=1, argv=100984198666928) at sha_cf_klee_annotated_simplified.c:61
+	#200007308 in __user_main(argcPtr=1, argvPtr=100984142523200, envp=100984142523216) at klee_src/runtime/POSIX/klee_init_env.c:245
+	#300000626 in __uClibc_main(100984183657376, 1, 100984142523200, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#400000791 in main(1, 100984142523200)

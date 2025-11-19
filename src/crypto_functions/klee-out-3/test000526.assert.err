@@ -1,0 +1,9 @@
+Error: ASSERTION FAIL: 0 && "Logic bomb triggered"
+File: aes_cf_klee_simplified.c
+Line: 36
+assembly.ll line: 1175
+State: 532
+Stack: 
+	#000001175 in logic_bomb(s=99793816722272) at aes_cf_klee_simplified.c:36
+	#100001212 in __klee_posix_wrapped_main(argc=1, argv=99793816409872) at aes_cf_klee_simplified.c:46
+	#200001072 in main(argcPtr=1, argvPtr=99793795428000, envp=99793795428016) at klee_src/runtime/POSIX/klee_init_env.c:245
