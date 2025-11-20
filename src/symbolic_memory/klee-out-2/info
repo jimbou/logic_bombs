@@ -1,0 +1,21 @@
+klee --libc=uclibc --posix-runtime --max-time=900 --emit-all-errors --max-solver-time=60 --solver-backend=z3 stackoutofbound_sm_l2_simple.bc
+PID: 151
+Started: 2025-11-20 02:48:12
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-11-20 02:48:12
+Elapsed: 00:00:00
+KLEE: done: explored paths = 2
+KLEE: done: avg. constructs per query = 13
+KLEE: done: total queries = 56
+KLEE: done: valid queries = 49
+KLEE: done: invalid queries = 7
+KLEE: done: query cex = 56
+
+KLEE: done: total instructions = 6616
+KLEE: done: completed paths = 2
+KLEE: done: generated tests = 2

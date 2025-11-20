@@ -1,0 +1,9 @@
+Error: ASSERTION FAIL: 0 && "Logic bomb triggered"
+File: /home/klee/logic_bombs/src/floating_point/float4_fp_l2_klee_simple.c
+Line: 14
+assembly.ll line: 199
+Stack: 
+	#000000199 in logic_bomb (symvar=103523488) at /home/klee/logic_bombs/src/floating_point/float4_fp_l2_klee_simple.c:14
+	#100000248 in __user_main (argc=1, argv=122097696) at /home/klee/logic_bombs/src/floating_point/float4_fp_l2_klee_simple.c:26
+	#200001780 in __uClibc_main (main=100472944, argc=1, argv=122097696, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#300003385 in main (=1, =122097696)

@@ -9,12 +9,12 @@ TOY:
 
 // {"s":{"length": 16}}
 int logic_bomb(char* s) {
-    if(s == NULL)
+    if(s == NULL){
 	klee_assert(0 && "Path without the bomb");
-    return 0;
-    if(s[0]=='\0')
+    return 0;}
+    if(s[0]=='\0'){
 	klee_assert(0 && "Path without the bomb");
-    return 0;
+    return 0;}
     int trigger = -1;
     trigger = system(s);
     if(trigger == 0) {

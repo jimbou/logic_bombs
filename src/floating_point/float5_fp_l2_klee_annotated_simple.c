@@ -1,0 +1,30 @@
+#include <klee/klee.h>
+#include<stdio.h>
+#include <stdlib.h>
+#include "a_tester.h"
+
+// {"s":{"length": 8}}
+int logic_bomb(char* symvar) {
+    float x ;
+    klee_make_symbolic(&x, sizeof(x), "x");
+    x = x/10.0;
+    x = x + 0.1;
+    x = x * x;
+    // if (x > 0.1)
+    // x -= x;
+    
+        if(x == 8){
+            klee_assert(0 && "Logic bomb triggered");
+            return 0;
+        }
+    
+    klee_assert(0 && "Path without the bomb");
+    return 0;
+}
+
+int main(int argc, char** argv) {
+char symvar[1];
+klee_make_symbolic(&symvar, sizeof(symvar), "symvar");
+klee_assume(symvar[0]=='\0');
+return logic_bomb(symvar);
+}

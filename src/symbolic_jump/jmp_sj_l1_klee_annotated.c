@@ -9,8 +9,9 @@
 // {"s":{"length": 4}}
 int logic_bomb(char* s) {
     int symvar = s[0] - 48;
-    if (symvar%6 != 1 || symvar < 10|| symvar > 40 || symvar == 19)
-	symvar = 13;
+    if (!(symvar%6 != 1 || symvar < 10|| symvar > 40 || symvar == 19)){
+        //nothing
+	symvar = 29;}
     long long addr = &&flag_0 + symvar;
     jmp(addr);
   flag_0:

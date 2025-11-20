@@ -463,13 +463,13 @@
   },
   "src/symbolic_jump/jmp_sj_l1_klee_annotated.bc": {
     "stp": {
-      "status": "no_trigger",
+      "status": "triggered_both",
       "ts": "2025-11-13T23:44:18Z",
       "outdir": "/home/klee/logic_bombs/src/symbolic_jump/klee-out-jmp_sj_l1_klee_annotated-stp-20251113-234417-505-23555",
       "log": "logs/jmp_sj_l1_klee_annotated/stp/runner_stdout.log"
     },
     "z3": {
-      "status": "no_trigger",
+      "status": "triggered_both",
       "ts": "2025-11-13T23:44:19Z",
       "outdir": "/home/klee/logic_bombs/src/symbolic_jump/klee-out-jmp_sj_l1_klee_annotated-z3-20251113-234418-505-27032",
       "log": "logs/jmp_sj_l1_klee_annotated/z3/runner_stdout.log"
