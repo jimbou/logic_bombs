@@ -1,0 +1,9 @@
+Error: ASSERTION FAIL: 0 && "Logic bomb triggered"
+File: /home/klee/logic_bombs/src_new/external_functions/atoi_ef_l2_klee_annotated.c
+Line: 14
+assembly.ll line: 195
+Stack: 
+	#000000195 in logic_bomb (symvar=975389504) at /home/klee/logic_bombs/src_new/external_functions/atoi_ef_l2_klee_annotated.c:14
+	#100000242 in __user_main (argc=1, argv=986491504) at /home/klee/logic_bombs/src_new/external_functions/atoi_ef_l2_klee_annotated.c:26
+	#200002066 in __uClibc_main (main=969093008, argc=1, argv=986491504, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#300003671 in main (=1, =986491504)

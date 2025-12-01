@@ -9,7 +9,8 @@
     "klee_stp": "triggered_only_no_bomb",
     "klee_z3": "triggered_only_no_bomb",
     "klee_float_z3": "triggered_only_no_bomb",
-    "way": "model"
+    "way": "model",
+    "done": "claude, gpt, deepseek"
   },
   "src/external_functions/rand_ef_l2_klee_annotated.c": {
     "klee_stp": "no_trigger",
@@ -21,7 +22,9 @@
     "klee_stp": "triggered_both",
     "klee_z3": "triggered_both",
     "klee_float_z3": "no_trigger",
-    "way": "use normal klee"
+    "way": "partition",
+    "done": "claude, gpt, deepseek",
+    "note":"coverage is tricked by asm but it does cover itt rhough replay"
   },
   "src/buffer_overflow/heap_bo_l1_klee_annotated.c": {
     "klee_stp": "triggered_only_no_bomb",
@@ -39,7 +42,8 @@
     "klee_stp": "triggered_only_no_bomb",
     "klee_z3": "triggered_only_no_bomb",
     "klee_float_z3": "triggered_only_no_bomb",
-    "way": "model"
+    "way": "partition",
+    "done": "claude, gpt, deepseek"
   },
   "src/floating_point/float3_fp_l2_klee_annotated.c": {
     "klee_stp": "triggered_only_no_bomb",
@@ -51,7 +55,7 @@
     "klee_stp": "triggered_only_no_bomb",
     "klee_z3": "triggered_only_no_bomb",
     "klee_float_z3": "triggered_only_no_bomb",
-    "way": "model have made it in simple"
+    "way": "model have made it in simple maybe partition"
   },
   "src/floating_point/float5_fp_l2_klee_annotated.c": {
     "klee_stp": "triggered_only_no_bomb",
@@ -69,31 +73,36 @@
     "klee_stp": "no_trigger",
     "klee_z3": "triggered_only_no_bomb",
     "klee_float_z3": "no_trigger",
-    "way": "model"
+    "way": "partition",
+    "done": "claude, gpt, deepseek"
   },
   "src/loop/collaz_lo_l2_klee_annotated.c": {
     "klee_stp": "no_trigger",
     "klee_z3": "no_trigger",
     "klee_float_z3": "no_trigger",
-    "way": "partition"
+    "way": "partition",
+    "done": "claude, gpt, deepseek"
   },
   "src/contextual_symbolic_value/syscall_csv_klee_annotated.c": {
     "klee_stp": "triggered_only_no_bomb",
     "klee_z3": "triggered_only_no_bomb",
     "klee_float_z3": "triggered_only_no_bomb",
-    "way": "model with a single command like l otherwise partition with valid commands"
+    "way": "partition",
+    "done": "claude, gpt, deepseek"
   },
   "src/parallel_program/forkpipe_pp_l1_klee_annotated.c": {
     "klee_stp": "triggered_only_no_bomb",
     "klee_z3": "triggered_only_no_bomb",
     "klee_float_z3": "triggered_only_no_bomb",
-    "way": "model"
+    "way": "model",
+    "done": "claude, gpt, deepseek"
   },
   "src/parallel_program/mthread_pp_l2_klee_annotated.c": {
     "klee_stp": "no_trigger",
     "klee_z3": "no_trigger",
     "klee_float_z3": "no_trigger",
-    "way": "partition / model"
+    "way": "model",
+    "done": "claude, gpt"
   },
   "src/floating_point/float4_fp_l2_klee_annotated.c": {
     "klee_stp": "triggered_only_no_bomb",
@@ -105,13 +114,16 @@
     "klee_stp": "no_trigger",
     "klee_z3": "no_trigger",
     "klee_float_z3": "no_trigger",
-    "way": "model"
+    "way": "model",
+    "done": "claude, gpt, deepseek",
+    "comment": "replay not deterministic de to memmory garbage"
   },
   "src/crypto_functions/sha_cf_klee_annotated.c": {
     "klee_stp": "no_trigger",
     "klee_z3": "no_trigger",
     "klee_float_z3": "no_trigger",
-    "way": "partition"
+    "way": "partition",
+    "done": "claude, gpt, deepseek"
   },
   "src/external_functions/sin_ef_l2_klee_annotated.c": {
     "klee_stp": "triggered_only_no_bomb",
@@ -123,7 +135,8 @@
     "klee_stp": "triggered_only_no_bomb",
     "klee_z3": "triggered_only_no_bomb",
     "klee_float_z3": "no_trigger",
-    "way": "model"
+    "way": "model",
+    "done": "claude, gpt, deepseek"
   },
   "src/loop/paraloop_lo_l2_klee_annotated.c": {
     "klee_stp": "no_trigger",
@@ -135,19 +148,21 @@
     "klee_stp": "no_trigger",
     "klee_z3": "no_trigger",
     "klee_float_z3": "no_trigger",
-    "way": "partition"
+    "way": "partition",
+    "done": "claude, gpt, deepseek"
   },
   "src/parallel_program/forkshm_pp_l1_klee_annotated.c": {
     "klee_stp": "no_trigger",
     "klee_z3": "no_trigger",
     "klee_float_z3": "no_trigger",
-    "way": "model"
+    "way": "model",
+    "done": "claude, gpt, deepseek"
   },
   "src/external_functions/atoi_ef_l2_klee_annotated.c": {
-    "klee_stp": "triggered_only_no_bomb",
-    "klee_z3": "triggered_only_no_bomb",
-    "klee_float_z3": "triggered_only_no_bomb",
-    "way": "model"
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "klee"
   },
   "src/external_functions/pow_ef_l2_klee_annotated.c": {
     "klee_stp": "triggered_only_no_bomb",
@@ -159,13 +174,15 @@
     "klee_stp": "no_trigger",
     "klee_z3": "no_trigger",
     "klee_float_z3": "no_trigger",
-    "way": "model"
+    "way": "model",
+    "done": "claude, gpt"
   },
   "src/covert_propogation/stack_cp_l1_klee_annotated.c": {
     "klee_stp": "no_trigger",
     "klee_z3": "no_trigger",
     "klee_float_z3": "no_trigger",
-    "way": "model"
+    "way": "model",
+    "done": "claude, gpt, deepseek"
   },
   "src/buffer_overflow/stack_bo_l2_klee_annotated.c": {
     "klee_stp": "triggered_only_no_bomb",
@@ -177,25 +194,48 @@
     "klee_stp": "no_trigger",
     "klee_z3": "no_trigger",
     "klee_float_z3": "no_trigger",
-    "way": "model"
+    "way": "model",
+    "done": "claude, gpt, deepseek"
   },
   "src/covert_propogation/socket_cp_l1_klee_annotated.c": {
     "klee_stp": "triggered_only_no_bomb",
     "klee_z3": "triggered_only_no_bomb",
     "klee_float_z3": "triggered_only_no_bomb",
-    "way": "model see the normal too"
+    "way": "model see the normal too",
+    "done": "claude, gpt, deepseek"
   },
   "src/loop/5n+1_lo_l1_klee_annotated.c": {
     "klee_stp": "triggered_both",
     "klee_z3": "triggered_only_no_bomb",
     "klee_float_z3": "triggered_both",
-    "way": "invert or klee float"
+    "way": "invert "
   },
   "src/buffer_overflow/stacknocrash_bo_l1_klee_annotated.c": {
     "klee_stp": "triggered_both",
     "klee_z3": "triggered_only_no_bomb",
     "klee_float_z3": "triggered_only_no_bomb",
-    "way": "partition"
+    "way": "partition",
+    "done":"claude"
+  },
+  "src/loop/7n+1_lo_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "invert "
+  },
+  "src/symbolic_memory/heapoutofbound_sm_l2_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "partition see smart",
+    "done": "gpt, claude, deepseek"
+  },
+  "src/symbolic_memory/stackarray_sm_ln_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "no_trigger",
+    "klee_float_z3": "triggered_both",
+    "way": "exhaustive partition see smart",
+    "done": "gpt, claude, deepseek"
   }
 }
 

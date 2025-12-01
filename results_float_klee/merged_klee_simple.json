@@ -343,11 +343,11 @@
       "log": "logs/stackoutofbound_sm_l2_klee_annotated_float/z3/runner_stdout.log"
     }
   },
-  "src/symbolic_memory/heapoutofbound_sm_l2_klee_annotated_float.bc": {
+   "/home/klee/logic_bombs/src/symbolic_memory/heapoutofbound_sm_l2_klee_annotated_float.bc": {
     "z3": {
-      "status": "triggered_both",
-      "ts": "2025-11-14T05:18:59Z",
-      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-heapoutofbound_sm_l2_klee_annotated_float-z3-20251114-051858-5692-2076",
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-25T05:27:46Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-heapoutofbound_sm_l2_klee_annotated_float-z3-20251125-052745-44-24663",
       "log": "logs/heapoutofbound_sm_l2_klee_annotated_float/z3/runner_stdout.log"
     }
   },

@@ -20,8 +20,8 @@ int logic_bomb(char* symvar) {
 }
 
 int main(int argc, char** argv) {
-char symvar[1];
+char symvar[2];
 klee_make_symbolic(&symvar, sizeof(symvar), "symvar");
-klee_assume(symvar[0]=='\0');
+klee_assume(symvar[1]=='\0');
 return logic_bomb(symvar);
 }
