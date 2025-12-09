@@ -1,0 +1,9 @@
+Error: memory error: out of bound pointer
+Stack: 
+	#000000311 in pone(x=0)
+	#100000131 in __ieee754_j1(x=symbolic)
+	#200000768 in main()
+Info: 
+	address: 12370169555311111083
+	next: object at 98322378437576 of size 8
+		MO19[8] allocated at global:zero

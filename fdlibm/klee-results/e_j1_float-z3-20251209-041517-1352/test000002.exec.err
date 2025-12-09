@@ -1,0 +1,7 @@
+Error: external call with symbolic argument: sin
+File: /home/klee/logic_bombs/fdlibm/./e_j1.c
+Line: 104
+assembly.ll line: 81
+Stack: 
+	#000000081 in __ieee754_j1 (x) at /home/klee/logic_bombs/fdlibm/./e_j1.c:104
+	#100000769 in main () at /home/klee/logic_bombs/fdlibm/./e_j1.c:485
