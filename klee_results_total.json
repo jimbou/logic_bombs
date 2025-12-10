@@ -232,7 +232,7 @@
   "src/symbolic_memory/heapoutofbound_sm_l2_klee_annotated.c": {
     "klee_stp": "triggered_only_no_bomb",
     "klee_z3": "triggered_only_no_bomb",
-    "klee_float_z3": "triggered_both"
+    "klee_float_z3": "triggered_only_no_bomb"
   },
   "src/symbolic_memory/malloc_sm_l1_klee_annotated.c": {
     "klee_stp": "triggered_both",
@@ -260,8 +260,8 @@
     "klee_float_z3": "triggered_both"
   },
   "src/symbolic_memory/stackoutofbound_sm_l2_klee_annotated.c": {
-    "klee_stp": "triggered_only_no_bomb",
-    "klee_z3": "triggered_only_no_bomb",
-    "klee_float_z3": "triggered_only_no_bomb"
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both"
   }
 }

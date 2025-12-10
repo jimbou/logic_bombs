@@ -1,0 +1,47 @@
+array a0[8] : w32 -> w8 = symbolic
+array a1[8] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Eq 0
+                 (Or w32 N0:(And w32 (ReadLSB w32 0 a1)
+                                     2147483647)
+                         N1:(ReadLSB w32 4 a1))))
+         (Eq false
+             (Ult 2146435072
+                  (Or w32 N0
+                          (LShr w32 (Or w32 N1 (Sub w32 0 N1))
+                                    31))))
+         (Sle 0 N0)
+         (Eq false (Slt 0 N0))
+         (Eq false
+             (Ult N2:(ReadLSB w32 4 a0)
+                  N1))
+         (Eq false (Eq N2 N1))
+         (Eq 0
+             (Xor w32 N3:(ReadLSB w32 0 a0)
+                      (And w32 N3 2147483648)))
+         (Eq false (Slt 0 N2))
+         (Slt 0 N1)
+         (Slt 0 N4:(Shl w32 N1 1))
+         (Slt 0 N5:(Shl w32 N4 1))
+         (Slt 0 N6:(Shl w32 N5 1))
+         (Slt 0 N7:(Shl w32 N6 1))
+         (Slt 0 N8:(Shl w32 N7 1))
+         (Eq false
+             (Slt 0 (Shl w32 N8 1)))
+         (Eq false
+             (Ult N9:(Shl w32 N2 21) N10:(Shl w32 N1 27)))
+         (Slt (Sub w32 N11:(LShr w32 N2 11)
+                       N12:(Or w32 (Shl w32 N0 27) (LShr w32 N1 5)))
+              0)
+         (Eq false
+             (Ult N13:(Add w32 N9 N9) N10))
+         (Ult (Add w32 N14:(Sub w32 N13 N10) N14)
+              N10)
+         (Slt (Add w32 4294967295
+                       (Sub w32 (Add w32 (Add w32 N15:(Sub w32 (Add w32 (Add w32 N11 N11) (LShr w32 N9 31))
+                                                               N12)
+                                                  N15)
+                                         (LShr w32 N14 31))
+                                N12))
+              0)]
+        false)

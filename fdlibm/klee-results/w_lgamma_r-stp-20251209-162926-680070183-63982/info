@@ -1,0 +1,4 @@
+klee --solver-backend=stp --output-dir=klee-results/w_lgamma_r-stp-20251209-162926-680070183-63982 --external-calls=all --watchdog --max-time=900 --emit-all-errors --write-cov w_lgamma_r.bc
+PID: 63993
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-09 16:29:26

@@ -1,0 +1,160 @@
+; ModuleID = 'w_sinh.bc'
+source_filename = "./w_sinh.c"
+target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
+target triple = "x86_64-unknown-linux-gnu"
+
+@_fdlib_version = external dso_local global i32, align 4
+@.str = private unnamed_addr constant [3 x i8] c"a0\00", align 1
+
+; Function Attrs: noinline nounwind optnone uwtable
+define dso_local double @sinh(double %x) #0 !dbg !17 {
+entry:
+  %retval = alloca double, align 8
+  %x.addr = alloca double, align 8
+  %z = alloca double, align 8
+  store double %x, double* %x.addr, align 8
+  call void @llvm.dbg.declare(metadata double* %x.addr, metadata !23, metadata !DIExpression()), !dbg !24
+  call void @llvm.dbg.declare(metadata double* %z, metadata !25, metadata !DIExpression()), !dbg !26
+  %0 = load double, double* %x.addr, align 8, !dbg !27
+  %call = call double @__ieee754_sinh(double %0), !dbg !28
+  store double %call, double* %z, align 8, !dbg !29
+  %1 = load i32, i32* @_fdlib_version, align 4, !dbg !30
+  %cmp = icmp eq i32 %1, -1, !dbg !32
+  br i1 %cmp, label %if.then, label %if.end, !dbg !33
+
+if.then:                                          ; preds = %entry
+  %2 = load double, double* %z, align 8, !dbg !34
+  store double %2, double* %retval, align 8, !dbg !35
+  br label %return, !dbg !35
+
+if.end:                                           ; preds = %entry
+  %3 = load double, double* %z, align 8, !dbg !36
+  %4 = call double @llvm.fabs.f64(double %3) #3, !dbg !38
+  %cmpinf = fcmp one double %4, 0x7FF0000000000000, !dbg !38
+  br i1 %cmpinf, label %if.else, label %land.lhs.true, !dbg !39
+
+land.lhs.true:                                    ; preds = %if.end
+  %5 = load double, double* %x.addr, align 8, !dbg !40
+  %6 = call double @llvm.fabs.f64(double %5) #3, !dbg !41
+  %cmpinf1 = fcmp one double %6, 0x7FF0000000000000, !dbg !41
+  br i1 %cmpinf1, label %if.then2, label %if.else, !dbg !42
+
+if.then2:                                         ; preds = %land.lhs.true
+  %7 = load double, double* %x.addr, align 8, !dbg !43
+  %8 = load double, double* %x.addr, align 8, !dbg !45
+  %call3 = call double @__kernel_standard(double %7, double %8, i32 25), !dbg !46
+  store double %call3, double* %retval, align 8, !dbg !47
+  br label %return, !dbg !47
+
+if.else:                                          ; preds = %land.lhs.true, %if.end
+  %9 = load double, double* %z, align 8, !dbg !48
+  store double %9, double* %retval, align 8, !dbg !49
+  br label %return, !dbg !49
+
+return:                                           ; preds = %if.else, %if.then2, %if.then
+  %10 = load double, double* %retval, align 8, !dbg !50
+  ret double %10, !dbg !50
+}
+
+; Function Attrs: nofree nosync nounwind readnone speculatable willreturn
+declare void @llvm.dbg.declare(metadata, metadata, metadata) #1
+
+declare dso_local double @__ieee754_sinh(double) #2
+
+; Function Attrs: nofree nosync nounwind readnone speculatable willreturn
+declare double @llvm.fabs.f64(double) #1
+
+declare dso_local double @__kernel_standard(double, double, i32) #2
+
+; Function Attrs: noinline nounwind optnone uwtable
+define dso_local i32 @main() #0 !dbg !51 {
+entry:
+  %retval = alloca i32, align 4
+  %a0 = alloca double, align 8
+  %r = alloca double, align 8
+  store i32 0, i32* %retval, align 4
+  call void @llvm.dbg.declare(metadata double* %a0, metadata !54, metadata !DIExpression()), !dbg !55
+  %0 = bitcast double* %a0 to i8*, !dbg !56
+  call void @klee_make_symbolic(i8* %0, i64 8, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str, i64 0, i64 0)), !dbg !57
+  call void @llvm.dbg.declare(metadata double* %r, metadata !58, metadata !DIExpression()), !dbg !59
+  %1 = load double, double* %a0, align 8, !dbg !60
+  %call = call double @sinh(double %1) #4, !dbg !61
+  store double %call, double* %r, align 8, !dbg !59
+  ret i32 0, !dbg !62
+}
+
+declare dso_local void @klee_make_symbolic(i8*, i64, i8*) #2
+
+attributes #0 = { noinline nounwind optnone uwtable "frame-pointer"="all" "min-legal-vector-width"="0" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #1 = { nofree nosync nounwind readnone speculatable willreturn }
+attributes #2 = { "frame-pointer"="all" "no-trapping-math"="true" "stack-protector-buffer-size"="8" "target-cpu"="x86-64" "target-features"="+cx8,+fxsr,+mmx,+sse,+sse2,+x87" "tune-cpu"="generic" }
+attributes #3 = { readnone }
+attributes #4 = { nounwind }
+
+!llvm.dbg.cu = !{!0}
+!llvm.module.flags = !{!11, !12, !13, !14, !15}
+!llvm.ident = !{!16}
+
+!0 = distinct !DICompileUnit(language: DW_LANG_C99, file: !1, producer: "clang version 13.0.1 (https://github.com/llvm/llvm-project.git 75e33f71c2dae584b13a7d1186ae0a038ba98838)", isOptimized: false, runtimeVersion: 0, emissionKind: FullDebug, enums: !2, splitDebugInlining: false, nameTableKind: None)
+!1 = !DIFile(filename: "w_sinh.c", directory: "/home/klee/logic_bombs/fdlibm")
+!2 = !{!3}
+!3 = !DICompositeType(tag: DW_TAG_enumeration_type, name: "fdversion", file: !4, line: 48, baseType: !5, size: 32, elements: !6)
+!4 = !DIFile(filename: "./fdlibm.h", directory: "/home/klee/logic_bombs/fdlibm")
+!5 = !DIBasicType(name: "int", size: 32, encoding: DW_ATE_signed)
+!6 = !{!7, !8, !9, !10}
+!7 = !DIEnumerator(name: "fdlibm_ieee", value: -1)
+!8 = !DIEnumerator(name: "fdlibm_svid", value: 0)
+!9 = !DIEnumerator(name: "fdlibm_xopen", value: 1)
+!10 = !DIEnumerator(name: "fdlibm_posix", value: 2)
+!11 = !{i32 7, !"Dwarf Version", i32 4}
+!12 = !{i32 2, !"Debug Info Version", i32 3}
+!13 = !{i32 1, !"wchar_size", i32 4}
+!14 = !{i32 7, !"uwtable", i32 1}
+!15 = !{i32 7, !"frame-pointer", i32 2}
+!16 = !{!"clang version 13.0.1 (https://github.com/llvm/llvm-project.git 75e33f71c2dae584b13a7d1186ae0a038ba98838)"}
+!17 = distinct !DISubprogram(name: "sinh", scope: !18, file: !18, line: 21, type: !19, scopeLine: 26, flags: DIFlagPrototyped, spFlags: DISPFlagDefinition, unit: !0, retainedNodes: !22)
+!18 = !DIFile(filename: "./w_sinh.c", directory: "/home/klee/logic_bombs/fdlibm")
+!19 = !DISubroutineType(types: !20)
+!20 = !{!21, !21}
+!21 = !DIBasicType(name: "double", size: 64, encoding: DW_ATE_float)
+!22 = !{}
+!23 = !DILocalVariable(name: "x", arg: 1, scope: !17, file: !18, line: 21, type: !21)
+!24 = !DILocation(line: 21, column: 21, scope: !17)
+!25 = !DILocalVariable(name: "z", scope: !17, file: !18, line: 30, type: !21)
+!26 = !DILocation(line: 30, column: 9, scope: !17)
+!27 = !DILocation(line: 31, column: 21, scope: !17)
+!28 = !DILocation(line: 31, column: 6, scope: !17)
+!29 = !DILocation(line: 31, column: 4, scope: !17)
+!30 = !DILocation(line: 32, column: 5, scope: !31)
+!31 = distinct !DILexicalBlock(scope: !17, file: !18, line: 32, column: 5)
+!32 = !DILocation(line: 32, column: 18, scope: !31)
+!33 = !DILocation(line: 32, column: 5, scope: !17)
+!34 = !DILocation(line: 32, column: 36, scope: !31)
+!35 = !DILocation(line: 32, column: 29, scope: !31)
+!36 = !DILocation(line: 33, column: 13, scope: !37)
+!37 = distinct !DILexicalBlock(scope: !17, file: !18, line: 33, column: 5)
+!38 = !DILocation(line: 33, column: 6, scope: !37)
+!39 = !DILocation(line: 33, column: 15, scope: !37)
+!40 = !DILocation(line: 33, column: 24, scope: !37)
+!41 = !DILocation(line: 33, column: 17, scope: !37)
+!42 = !DILocation(line: 33, column: 5, scope: !17)
+!43 = !DILocation(line: 34, column: 31, scope: !44)
+!44 = distinct !DILexicalBlock(scope: !37, file: !18, line: 33, column: 28)
+!45 = !DILocation(line: 34, column: 33, scope: !44)
+!46 = !DILocation(line: 34, column: 13, scope: !44)
+!47 = !DILocation(line: 34, column: 6, scope: !44)
+!48 = !DILocation(line: 36, column: 13, scope: !37)
+!49 = !DILocation(line: 36, column: 6, scope: !37)
+!50 = !DILocation(line: 38, column: 1, scope: !17)
+!51 = distinct !DISubprogram(name: "main", scope: !18, file: !18, line: 42, type: !52, scopeLine: 42, spFlags: DISPFlagDefinition, unit: !0, retainedNodes: !22)
+!52 = !DISubroutineType(types: !53)
+!53 = !{!5}
+!54 = !DILocalVariable(name: "a0", scope: !51, file: !18, line: 43, type: !21)
+!55 = !DILocation(line: 43, column: 12, scope: !51)
+!56 = !DILocation(line: 44, column: 24, scope: !51)
+!57 = !DILocation(line: 44, column: 5, scope: !51)
+!58 = !DILocalVariable(name: "r", scope: !51, file: !18, line: 46, type: !21)
+!59 = !DILocation(line: 46, column: 12, scope: !51)
+!60 = !DILocation(line: 46, column: 21, scope: !51)
+!61 = !DILocation(line: 46, column: 16, scope: !51)
+!62 = !DILocation(line: 47, column: 5, scope: !51)

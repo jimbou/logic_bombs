@@ -1,0 +1,8 @@
+Error: failed external call: __kernel_tan
+File: ./s_tan.c
+Line: 61
+assembly.ll line: 37
+State: 1
+Stack: 
+	#000000037 in tan(x=symbolic) at ./s_tan.c:61
+	#100000094 in main() at ./s_tan.c:80

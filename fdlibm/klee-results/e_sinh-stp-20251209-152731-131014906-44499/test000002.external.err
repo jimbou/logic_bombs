@@ -1,0 +1,8 @@
+Error: failed external call: __ieee754_exp
+File: ./e_sinh.c
+Line: 70
+assembly.ll line: 126
+State: 4
+Stack: 
+	#000000126 in __ieee754_sinh(x=symbolic) at ./e_sinh.c:70
+	#100000203 in main() at ./e_sinh.c:90

@@ -1,0 +1,8 @@
+Error: failed external call: __ieee754_log
+File: ./s_asinh.c
+Line: 52
+assembly.ll line: 67
+State: 3
+Stack: 
+	#000000067 in asinh(x=symbolic) at ./s_asinh.c:52
+	#100000164 in main() at ./s_asinh.c:69

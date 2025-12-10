@@ -1,0 +1,12 @@
+array x[8] : w32 -> w8 = symbolic
+(query [(FOGe N0:(ReadLSB w64 0 x)
+               -2.0E+0)
+         (FOLe N0 2.0E+0)
+         (Sle 1072693248
+              N1:(And w32 N2:(ReadLSB w32 0 x)
+                          2147483647))
+         (Eq 0
+             (Or w32 (Add w32 3222274048 N1)
+                     (ReadLSB w32 4 x)))
+         (Eq false (Slt 0 N2))]
+        false)

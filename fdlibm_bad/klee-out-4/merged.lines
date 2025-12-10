@@ -1,0 +1,17 @@
+/home/klee/logic_bombs/fdlibm/e_acos.c:108
+/home/klee/logic_bombs/fdlibm/e_acos.c:112
+/home/klee/logic_bombs/fdlibm/e_acos.c:115
+/home/klee/logic_bombs/fdlibm/e_acos.c:116
+/home/klee/logic_bombs/fdlibm/e_acos.c:118
+/home/klee/logic_bombs/fdlibm/e_acos.c:121
+/home/klee/logic_bombs/fdlibm/e_acos.c:122
+/home/klee/logic_bombs/fdlibm/e_acos.c:125
+/home/klee/logic_bombs/fdlibm/e_acos.c:72
+/home/klee/logic_bombs/fdlibm/e_acos.c:73
+/home/klee/logic_bombs/fdlibm/e_acos.c:74
+/home/klee/logic_bombs/fdlibm/e_acos.c:75
+/home/klee/logic_bombs/fdlibm/e_acos.c:76
+/home/klee/logic_bombs/fdlibm/e_acos.c:77
+/home/klee/logic_bombs/fdlibm/e_acos.c:79
+/home/klee/logic_bombs/fdlibm/e_acos.c:81
+/home/klee/logic_bombs/fdlibm/e_acos.c:82

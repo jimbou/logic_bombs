@@ -1,0 +1,23 @@
+klee --solver-backend=z3 --output-dir=klee-results/e_fmod-z3-20251209-164443-439674812-65030 --external-calls=all --watchdog --max-time=900 --emit-all-errors --write-cov e_fmod.bc
+PID: 65041
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-09 16:44:43
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-09 16:59:56
+Elapsed: 00:15:13
+KLEE: done: explored paths = 17595
+KLEE: done: avg. constructs per query = 144
+KLEE: done: total queries = 27660
+KLEE: done: valid queries = 8890
+KLEE: done: invalid queries = 18770
+KLEE: done: query cex = 27660
+
+KLEE: done: total instructions = 538609
+KLEE: done: completed paths = 3851
+KLEE: done: partially completed paths = 13744
+KLEE: done: generated tests = 17595

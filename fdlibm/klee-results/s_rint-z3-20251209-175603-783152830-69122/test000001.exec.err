@@ -1,0 +1,7 @@
+Error: unimplemented intrinsic
+File: ./s_rint.c
+Line: 92
+assembly.ll line: 296
+State: 1
+Stack: 
+	#000000296 in main() at ./s_rint.c:92

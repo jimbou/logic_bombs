@@ -1,0 +1,4 @@
+klee --solver-backend=stp --output-dir=klee-results/w_gamma_r-stp-20251209-162320-184094441-63778 --external-calls=all --watchdog --max-time=900 --emit-all-errors --write-cov w_gamma_r.bc
+PID: 63789
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-09 16:23:20

@@ -1,0 +1,8 @@
+Error: failed external call: __ieee754_rem_pio2
+File: ./s_sin.c
+Line: 69
+assembly.ll line: 56
+State: 3
+Stack: 
+	#000000056 in sin(x=symbolic) at ./s_sin.c:69
+	#100000130 in main() at ./s_sin.c:86

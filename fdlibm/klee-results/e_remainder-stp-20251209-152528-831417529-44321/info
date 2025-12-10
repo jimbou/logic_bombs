@@ -1,0 +1,23 @@
+klee --solver-backend=stp --output-dir=klee-results/e_remainder-stp-20251209-152528-831417529-44321 --external-calls=all --watchdog --max-time=900 --emit-all-errors --write-cov e_remainder.bc
+PID: 44332
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-09 15:25:28
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-09 15:25:28
+Elapsed: 00:00:00
+KLEE: done: explored paths = 7
+KLEE: done: avg. constructs per query = 82
+KLEE: done: total queries = 11
+KLEE: done: valid queries = 4
+KLEE: done: invalid queries = 7
+KLEE: done: query cex = 11
+
+KLEE: done: total instructions = 208
+KLEE: done: completed paths = 6
+KLEE: done: partially completed paths = 1
+KLEE: done: generated tests = 7

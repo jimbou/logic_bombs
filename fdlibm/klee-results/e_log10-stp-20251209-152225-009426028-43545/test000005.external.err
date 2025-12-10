@@ -1,0 +1,8 @@
+Error: failed external call: __ieee754_log
+File: ./e_log10.c
+Line: 89
+assembly.ll line: 121
+State: 5
+Stack: 
+	#000000121 in __ieee754_log10(x=symbolic) at ./e_log10.c:89
+	#100000154 in main() at ./e_log10.c:99

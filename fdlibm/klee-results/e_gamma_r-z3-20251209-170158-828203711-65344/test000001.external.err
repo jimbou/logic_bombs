@@ -1,0 +1,7 @@
+Error: failed external call: __ieee754_lgamma_r
+File: ./e_gamma_r.c
+Line: 42
+assembly.ll line: 45
+State: 1
+Stack: 
+	#000000045 in main() at ./e_gamma_r.c:42

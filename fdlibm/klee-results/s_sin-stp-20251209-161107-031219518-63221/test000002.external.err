@@ -1,0 +1,8 @@
+Error: failed external call: __kernel_sin
+File: ./s_sin.c
+Line: 62
+assembly.ll line: 37
+State: 1
+Stack: 
+	#000000037 in sin(x=symbolic) at ./s_sin.c:62
+	#100000130 in main() at ./s_sin.c:86

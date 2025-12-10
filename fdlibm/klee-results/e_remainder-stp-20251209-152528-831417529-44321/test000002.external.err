@@ -1,0 +1,8 @@
+Error: failed external call: __ieee754_fmod
+File: ./e_remainder.c
+Line: 59
+assembly.ll line: 110
+State: 4
+Stack: 
+	#000000110 in __ieee754_remainder(x=symbolic, p=symbolic) at ./e_remainder.c:59
+	#100000247 in main() at ./e_remainder.c:87

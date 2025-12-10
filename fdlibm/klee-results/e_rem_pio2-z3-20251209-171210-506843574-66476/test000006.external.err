@@ -1,0 +1,8 @@
+Error: failed external call: __kernel_rem_pio2
+File: ./e_rem_pio2.c
+Line: 172
+assembly.ll line: 452
+State: 6
+Stack: 
+	#000000452 in __ieee754_rem_pio2(x=symbolic, y=102019085405560) at ./e_rem_pio2.c:172
+	#100000512 in main() at ./e_rem_pio2.c:185

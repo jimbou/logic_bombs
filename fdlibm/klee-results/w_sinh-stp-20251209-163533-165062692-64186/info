@@ -1,0 +1,4 @@
+klee --solver-backend=stp --output-dir=klee-results/w_sinh-stp-20251209-163533-165062692-64186 --external-calls=all --watchdog --max-time=900 --emit-all-errors --write-cov w_sinh.bc
+PID: 64197
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-09 16:35:33

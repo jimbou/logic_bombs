@@ -1,0 +1,62 @@
+version: 1
+creator: klee
+pid: 67719
+cmd: s_copysign.bc
+
+
+positions: instr line
+event: Icov : CoveredInstructions
+event: Forks : Forks
+event: Ireal : InstructionRealTimes
+event: Itime : InstructionTimes
+event: I : Instructions
+event: UCdist : MinDistToUncovered
+event: Rtime : ResolveTime
+event: States : States
+event: Iuncov : UncoveredInstructions
+event: Q : Queries
+event: Qiv : QueriesInvalid
+event: Qv : QueriesValid
+event: Qtime : QueryTime
+events: Icov Forks Ireal Itime I UCdist Rtime States Iuncov Q Qiv Qv Qtime 
+ob=assembly.ll
+fl=./s_copysign.c
+fn=copysign
+12 23 1 0 0 0 1 0 0 0 0 0 0 0 0 
+13 23 1 0 0 0 1 0 0 0 0 0 0 0 0 
+14 23 1 0 0 0 1 0 0 0 0 1 0 0 0 
+15 23 1 0 0 0 1 0 0 0 0 0 0 0 0 
+16 23 1 0 0 0 1 0 0 0 0 1 0 0 0 
+17 23 1 0 0 0 1 0 0 0 0 0 0 0 0 
+18 29 1 0 0 0 1 0 0 0 0 0 0 0 0 
+19 29 1 0 0 0 1 0 0 0 0 1 0 0 0 
+20 29 1 0 0 0 1 0 0 0 0 0 0 0 0 
+21 29 1 0 0 0 1 0 0 0 0 0 0 0 0 
+22 29 1 0 0 0 1 0 0 0 0 1 0 0 0 
+23 29 1 0 0 0 1 0 0 0 0 0 0 0 0 
+24 29 1 0 0 0 1 0 0 0 0 0 0 0 0 
+25 29 1 0 0 0 1 0 0 0 0 0 0 0 0 
+26 29 1 0 0 0 1 0 0 0 0 1 0 0 0 
+27 30 1 0 0 0 1 0 0 0 0 1 0 0 0 
+28 30 1 0 0 0 1 0 0 0 0 0 0 0 0 
+fn=main
+37 35 1 0 0 0 1 0 0 0 0 0 0 0 0 
+38 35 1 0 0 0 1 0 0 0 0 0 0 0 0 
+39 35 1 0 0 0 1 0 0 0 0 0 0 0 0 
+40 35 1 0 0 0 1 0 0 0 0 0 0 0 0 
+41 35 1 0 0 0 1 0 0 0 0 1 0 0 0 
+42 36 1 0 0 0 1 0 0 0 0 0 0 0 0 
+43 37 1 0 0 0 1 0 0 0 0 0 0 0 0 
+44 37 1 0 0 0 1 0 0 0 0 2 0 0 0 
+45 38 1 0 0 0 1 0 0 0 0 0 0 0 0 
+46 39 1 0 0 0 1 0 0 0 0 0 0 0 0 
+47 39 1 0 0 0 1 0 0 0 0 2 0 0 0 
+48 41 1 0 0 0 1 0 0 0 0 0 0 0 0 
+49 41 1 0 0 0 1 0 0 0 0 1 0 0 0 
+50 41 1 0 0 0 1 0 0 0 0 1 0 0 0 
+51 41 1 0 0 0 1 0 0 0 0 0 0 0 0 
+cfn=copysign
+calls=1 9 23
+51 41 17 0 0 0 17 0 0 0 0 6 0 0 0 
+52 41 1 0 0 0 1 0 0 0 0 1 0 0 0 
+53 42 1 0 0 0 1 0 0 0 0 1 0 0 0 

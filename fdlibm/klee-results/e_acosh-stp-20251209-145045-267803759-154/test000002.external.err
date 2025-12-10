@@ -1,0 +1,8 @@
+Error: failed external call: __ieee754_log
+File: ./e_acosh.c
+Line: 55
+assembly.ll line: 56
+State: 6
+Stack: 
+	#000000056 in __ieee754_acosh(x=symbolic) at ./e_acosh.c:55
+	#100000143 in main() at ./e_acosh.c:73

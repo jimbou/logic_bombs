@@ -1,0 +1,4 @@
+klee --solver-backend=stp --output-dir=klee-results/k_standard-stp-20251209-154639-477052785-60806 --external-calls=all --watchdog --max-time=900 --emit-all-errors --write-cov k_standard.bc
+PID: 60817
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-09 15:46:39

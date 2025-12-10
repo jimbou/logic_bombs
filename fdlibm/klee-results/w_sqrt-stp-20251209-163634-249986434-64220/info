@@ -1,0 +1,4 @@
+klee --solver-backend=stp --output-dir=klee-results/w_sqrt-stp-20251209-163634-249986434-64220 --external-calls=all --watchdog --max-time=900 --emit-all-errors --write-cov w_sqrt.bc
+PID: 64231
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-09 16:36:34

@@ -1,0 +1,8 @@
+Error: failed external call: __ieee754_log
+File: ./e_lgamma_r.c
+Line: 245
+assembly.ll line: 200
+State: 9
+Stack: 
+	#000000200 in __ieee754_lgamma_r(x=symbolic, signgamp=100573963474312) at ./e_lgamma_r.c:245
+	#100000852 in main() at ./e_lgamma_r.c:314

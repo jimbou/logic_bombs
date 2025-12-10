@@ -1,0 +1,8 @@
+Error: failed external call: __ieee754_scalb
+File: ./s_significand.c
+Line: 29
+assembly.ll line: 19
+State: 1
+Stack: 
+	#000000019 in significand(x=symbolic) at ./s_significand.c:29
+	#100000043 in main() at ./s_significand.c:38

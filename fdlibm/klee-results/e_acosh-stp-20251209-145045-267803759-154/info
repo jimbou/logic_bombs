@@ -1,0 +1,23 @@
+klee --solver-backend=stp --output-dir=klee-results/e_acosh-stp-20251209-145045-267803759-154 --external-calls=all --watchdog --max-time=900 --emit-all-errors --write-cov e_acosh.bc
+PID: 165
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-09 14:50:45
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-09 14:50:45
+Elapsed: 00:00:00
+KLEE: done: explored paths = 6
+KLEE: done: avg. constructs per query = 36
+KLEE: done: total queries = 6
+KLEE: done: valid queries = 0
+KLEE: done: invalid queries = 6
+KLEE: done: query cex = 6
+
+KLEE: done: total instructions = 104
+KLEE: done: completed paths = 4
+KLEE: done: partially completed paths = 2
+KLEE: done: generated tests = 6

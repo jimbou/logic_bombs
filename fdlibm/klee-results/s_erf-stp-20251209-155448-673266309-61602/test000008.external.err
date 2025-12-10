@@ -1,0 +1,8 @@
+Error: failed external call: __ieee754_exp
+File: ./s_erf.c
+Line: 242
+assembly.ll line: 344
+State: 6
+Stack: 
+	#000000344 in erf(x=symbolic) at ./s_erf.c:242
+	#100000797 in main() at ./s_erf.c:318

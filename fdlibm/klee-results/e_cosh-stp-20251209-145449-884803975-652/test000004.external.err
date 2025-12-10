@@ -1,0 +1,8 @@
+Error: failed external call: __ieee754_exp
+File: ./e_cosh.c
+Line: 82
+assembly.ll line: 132
+State: 5
+Stack: 
+	#000000132 in __ieee754_cosh(x=symbolic) at ./e_cosh.c:82
+	#100000175 in main() at ./e_cosh.c:97

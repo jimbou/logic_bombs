@@ -20,3 +20,5 @@ for f in klee-out-5/test0000*.ktest; do
     export KTEST_FILE="$f"
     timeout 2 ./sha_simple_replay >> "$LOG" 2>&1
 done
+export KTEST_FILE=/home/klee/logic_bombs/logs/logic_bombs/claude/parallel_program/2thread_pp_l1/combined_ktests/test000003_ghost.ktest
+./ghost_coverage

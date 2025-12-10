@@ -1,0 +1,4 @@
+klee --solver-backend=stp --output-dir=klee-results/w_acosh-stp-20251209-161511-540627924-63506 --external-calls=all --watchdog --max-time=900 --emit-all-errors --write-cov w_acosh.bc
+PID: 63517
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-09 16:15:11

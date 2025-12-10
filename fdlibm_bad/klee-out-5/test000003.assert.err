@@ -1,0 +1,6 @@
+Error: ASSERTION FAIL: 0 && "acos > 1"
+File: /home/klee/logic_bombs/fdlibm/e_acos.c
+Line: 122
+assembly.ll line: 312
+Stack: 
+	#000000312 in main () at /home/klee/logic_bombs/fdlibm/e_acos.c:122

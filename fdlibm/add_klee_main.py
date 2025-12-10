@@ -41,11 +41,6 @@ BLACKLIST = {
 
 # ---------- STEP 3: FUNCTION DEFINITION MATCHER -------------
 
-# This matches *real* C function definitions:
-#   double foo(...)
-#   int bar(...)
-#   double __ieee754_acos(...)
-#
 FUNC_DEF_RE = re.compile(
     r"^\s*(?:double|int)\s+([a-zA-Z_][a-zA-Z0-9_]*)\s*\(",
     re.MULTILINE
@@ -81,49 +76,66 @@ for fname in os.listdir("."):
 
     ret, args = protos[func]
 
-    decls = []
+    cli_decls = []
     call_args = []
+    unsupported = False
 
     for i, a in enumerate(args):
+        a = a.replace("const", "").strip()
         v = f"a{i}"
 
-        a = a.replace("const", "").strip()
-
         if a == "double":
-            decls.append(f"    double {v};")
-            decls.append(f"    klee_make_symbolic(&{v}, sizeof({v}), \"{v}\");")
+            cli_decls.append(f"    double {v} = atof(argv[{i+1}]);")
             call_args.append(v)
 
         elif a == "int":
-            decls.append(f"    int {v};")
-            decls.append(f"    klee_make_symbolic(&{v}, sizeof({v}), \"{v}\");")
+            cli_decls.append(f"    int {v} = atoi(argv[{i+1}]);")
             call_args.append(v)
 
         elif a == "double*":
-            decls.append(f"    double {v};")
-            decls.append(f"    klee_make_symbolic(&{v}, sizeof({v}), \"{v}\");")
+            cli_decls.append(f"    double {v} = 0.0;")
             call_args.append(f"&{v}")
 
         elif a == "int*":
-            decls.append(f"    int {v};")
-            decls.append(f"    klee_make_symbolic(&{v}, sizeof({v}), \"{v}\");")
+            cli_decls.append(f"    int {v} = 0;")
             call_args.append(f"&{v}")
 
         else:
-            print(f"SKIP (unsupported arg type): {fname} -> {a}")
-            continue
+            print(f"SKIP (unsupported full signature): {fname} -> {a}")
+            unsupported = True
+            break
+
+    if unsupported:
+        continue
+
+    argc_check = f"""
+    if (argc != {len(args)+1}) {{
+        printf("Usage: %s {' '.join(['<arg>']*len(args))}\\n", argv[0]);
+        return 1;
+    }}
+"""
 
     if ret == "void":
         call = f"    {func}({', '.join(call_args)});"
     else:
-        call = f"    {ret} r = {func}({', '.join(call_args)});"
+        call = f"    {ret} r = {func}({', '.join(call_args)});\n    printf(\"%f\\n\", r);"
 
-    main = "\n\n#include <klee/klee.h>\n\nint main() {\n"
-    main += "\n".join(decls)
-    main += "\n\n" + call + "\n"
-    main += "    return 0;\n}\n"
+    main = f"""
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char** argv) {{
+{argc_check}
+{chr(10).join(cli_decls)}
+
+{call}
+
+    return 0;
+}}
+"""
 
     with open(fname, "w") as f:
         f.write(src.rstrip() + main)
 
-    print(f"PATCHED: {fname}  ->  main calls {func}({', '.join(call_args)})")
+    print(f"PATCHED: {fname}  ->  CLI main calls {func}({', '.join(call_args)})")

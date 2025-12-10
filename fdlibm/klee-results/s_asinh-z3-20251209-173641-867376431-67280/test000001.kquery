@@ -1,0 +1,10 @@
+array a0[8] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Sle 2146435072
+                  N0:(And w32 N1:(ReadLSB w32 0 a0)
+                              2147483647)))
+         (Eq false (Slt N0 1043333120))
+         (Slt 1102053376 N0)
+         (Eq 1157442766241792016
+             (ReadLSB w64 0 a0))]
+        false)

@@ -1,0 +1,7 @@
+Error: ASSERTION FAIL: 0 && "acos > 1"
+File: e_acos.c
+Line: 122
+assembly.ll line: 318
+State: 1
+Stack: 
+	#000000318 in main() at e_acos.c:122

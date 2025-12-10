@@ -1,0 +1,372 @@
+{
+  "src/external_functions/ln_ef_l2_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "invert`",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/external_functions/atof_ef_l2_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "model",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/external_functions/rand_ef_l2_klee_annotated.c": {
+    "klee_stp": "no_trigger",
+    "klee_z3": "no_trigger",
+    "klee_float_z3": "no_trigger",
+    "way": "invert",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/symbolic_jump/jmp_sj_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "no_trigger",
+    "way": "partition",
+    "done": "claude, gpt, deepseek",
+    "note": "coverage is tricked by asm but it does cover itt rhough replay"
+  },
+  "src/buffer_overflow/heap_bo_l1_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "impossible"
+  },
+  "src/contextual_symbolic_value/ping_csv_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "impossible",
+    "done": "could not do it because even though identifying corrct test cases it does not lead to correct replay",
+    "comment": ""
+  },
+  "src/covert_propogation/file_posix_cp_l1_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "partition",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/floating_point/float3_fp_l2_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "invert",
+    "done": "claude, gpt"
+  },
+  "src/symbolic_memory/stackoutofbound_sm_l2_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "klee"
+  },
+  "src/floating_point/float5_fp_l2_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "invert",
+    "done": "claude, gpt, deepseek "
+  },
+  "src/crypto_functions/aes_cf_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "invert",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/covert_propogation/file_cp_l1_klee_annotated.c": {
+    "klee_stp": "no_trigger",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "no_trigger",
+    "way": "partition",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/loop/collaz_lo_l2_klee_annotated.c": {
+    "klee_stp": "no_trigger",
+    "klee_z3": "no_trigger",
+    "klee_float_z3": "no_trigger",
+    "way": "partition",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/contextual_symbolic_value/syscall_csv_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "partition",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/parallel_program/forkpipe_pp_l1_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "model",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/parallel_program/mthread_pp_l2_klee_annotated.c": {
+    "klee_stp": "no_trigger",
+    "klee_z3": "no_trigger",
+    "klee_float_z3": "no_trigger",
+    "way": "model",
+    "done": "claude, gpt"
+  },
+  "src/floating_point/float4_fp_l2_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "model",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/covert_propogation/echo_cp_l1_klee_annotated.c": {
+    "klee_stp": "no_trigger",
+    "klee_z3": "no_trigger",
+    "klee_float_z3": "no_trigger",
+    "way": "model",
+    "done": "claude, gpt, deepseek",
+    "comment": "replay not deterministic de to memmory garbage"
+  },
+  "src/crypto_functions/sha_cf_klee_annotated.c": {
+    "klee_stp": "no_trigger",
+    "klee_z3": "no_trigger",
+    "klee_float_z3": "no_trigger",
+    "way": "partition",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/external_functions/sin_ef_l2_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "invert",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/covert_propogation/echofile_cp_l1_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "no_trigger",
+    "way": "model",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/loop/paraloop_lo_l2_klee_annotated.c": {
+    "klee_stp": "no_trigger",
+    "klee_z3": "no_trigger",
+    "klee_float_z3": "no_trigger",
+    "way": "model",
+    "done": "claude, gpt"
+  },
+  "src/symbolic_jump/arrayjmp_sj_l2_klee_annotated.c": {
+    "klee_stp": "no_trigger",
+    "klee_z3": "no_trigger",
+    "klee_float_z3": "no_trigger",
+    "way": "partition",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/parallel_program/forkshm_pp_l1_klee_annotated.c": {
+    "klee_stp": "no_trigger",
+    "klee_z3": "no_trigger",
+    "klee_float_z3": "no_trigger",
+    "way": "model",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/external_functions/atoi_ef_l2_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "klee"
+  },
+  "src/external_functions/pow_ef_l2_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "invert",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/parallel_program/2thread_pp_l2_klee_annotated.c": {
+    "klee_stp": "no_trigger",
+    "klee_z3": "no_trigger",
+    "klee_float_z3": "no_trigger",
+    "way": "model",
+    "done": "claude, gpt"
+  },
+  "src/covert_propogation/stack_cp_l1_klee_annotated.c": {
+    "klee_stp": "no_trigger",
+    "klee_z3": "no_trigger",
+    "klee_float_z3": "no_trigger",
+    "way": "model",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/buffer_overflow/stack_bo_l2_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "impossible"
+  },
+  "src/parallel_program/2thread_pp_l1_klee_annotated.c": {
+    "klee_stp": "no_trigger",
+    "klee_z3": "no_trigger",
+    "klee_float_z3": "no_trigger",
+    "way": "model",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/covert_propogation/socket_cp_l1_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "model see the normal too",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/loop/5n+1_lo_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_both",
+    "way": "invert ",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/buffer_overflow/stacknocrash_bo_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "partition",
+    "done": "claude"
+  },
+  "src/loop/7n+1_lo_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "invert ",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/symbolic_memory/heapoutofbound_sm_l2_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "partition see smart",
+    "done": "gpt, claude, deepseek"
+  },
+  "src/symbolic_memory/stackarray_sm_ln_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "no_trigger",
+    "klee_float_z3": "triggered_both",
+    "way": "exhaustive partition see smart",
+    "done": "gpt, claude, deepseek"
+  },
+  "src/buffer_overflow/stack_bo_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_only_no_bomb",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/contextual_symbolic_value/file_csv_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/contextual_symbolic_value/file_posix_csv_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/contextual_symbolic_value/pid_csv_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/covert_propogation/df2cf_cp_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/external_functions/printfloat_ef_l1_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_both",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/external_functions/printint_int_l1_klee_annotated.c": {
+    "klee_stp": "no_trigger",
+    "klee_z3": "no_trigger",
+    "klee_float_z3": "triggered_both",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/floating_point/float1_fp_l1_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_both",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/floating_point/float2_fp_l1_klee_annotated.c": {
+    "klee_stp": "triggered_only_no_bomb",
+    "klee_z3": "triggered_only_no_bomb",
+    "klee_float_z3": "triggered_both",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/integer_overflow/addint_to_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/integer_overflow/multiplyint_to_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/loop/collaz_lo_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/symbolic_jump/pointers_sj_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/symbolic_memory/malloc_sm_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/symbolic_memory/realloc_sm_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/symbolic_memory/stackarray_sm_l1_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  },
+  "src/symbolic_memory/stackarray_sm_l2_klee_annotated.c": {
+    "klee_stp": "triggered_both",
+    "klee_z3": "triggered_both",
+    "klee_float_z3": "triggered_both",
+    "way": "klee",
+    "done": "claude, gpt, deepseek"
+  }
+}

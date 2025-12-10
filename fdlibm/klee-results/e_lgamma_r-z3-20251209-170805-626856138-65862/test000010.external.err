@@ -1,0 +1,9 @@
+Error: failed external call: __kernel_sin
+File: ./e_lgamma_r.c
+Line: 170
+assembly.ll line: 694
+State: 8
+Stack: 
+	#000000694 in sin_pi(x=symbolic) at ./e_lgamma_r.c:170
+	#100000131 in __ieee754_lgamma_r(x=symbolic, signgamp=100573963474312) at ./e_lgamma_r.c:233
+	#200000852 in main() at ./e_lgamma_r.c:314

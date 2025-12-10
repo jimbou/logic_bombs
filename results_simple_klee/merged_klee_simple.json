@@ -533,13 +533,13 @@
   },
   "src/symbolic_memory/stackoutofbound_sm_l2_klee_annotated.bc": {
     "stp": {
-      "status": "triggered_only_no_bomb",
+      "status": "triggered_both",
       "ts": "2025-11-13T23:47:14Z",
       "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-stackoutofbound_sm_l2_klee_annotated-stp-20251113-234712-1353-19160",
       "log": "logs/stackoutofbound_sm_l2_klee_annotated/stp/runner_stdout.log"
     },
     "z3": {
-      "status": "triggered_only_no_bomb",
+      "status": "triggered_both",
       "ts": "2025-11-13T23:47:15Z",
       "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-stackoutofbound_sm_l2_klee_annotated-z3-20251113-234714-1353-10258",
       "log": "logs/stackoutofbound_sm_l2_klee_annotated/z3/runner_stdout.log"

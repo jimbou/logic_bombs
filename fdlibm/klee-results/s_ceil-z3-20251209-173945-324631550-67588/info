@@ -1,0 +1,23 @@
+klee --solver-backend=z3 --output-dir=klee-results/s_ceil-z3-20251209-173945-324631550-67588 --external-calls=all --watchdog --max-time=900 --emit-all-errors --write-cov s_ceil.bc
+PID: 67599
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-09 17:39:45
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-09 17:39:45
+Elapsed: 00:00:00
+KLEE: done: explored paths = 7
+KLEE: done: avg. constructs per query = 28
+KLEE: done: total queries = 13
+KLEE: done: valid queries = 5
+KLEE: done: invalid queries = 8
+KLEE: done: query cex = 13
+
+KLEE: done: total instructions = 222
+KLEE: done: completed paths = 7
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 7

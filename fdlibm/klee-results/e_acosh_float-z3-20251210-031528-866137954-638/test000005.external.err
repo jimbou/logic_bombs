@@ -1,0 +1,7 @@
+Error: failed external call: __ieee754_log
+File: /home/klee/logic_bombs/fdlibm/./e_acosh.c
+Line: 60
+assembly.ll line: 101
+Stack: 
+	#000000101 in __ieee754_acosh (x) at /home/klee/logic_bombs/fdlibm/./e_acosh.c:60
+	#100000144 in main () at /home/klee/logic_bombs/fdlibm/./e_acosh.c:73

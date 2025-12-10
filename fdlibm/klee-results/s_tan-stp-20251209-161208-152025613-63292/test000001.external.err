@@ -1,0 +1,8 @@
+Error: failed external call: __ieee754_rem_pio2
+File: ./s_tan.c
+Line: 68
+assembly.ll line: 56
+State: 3
+Stack: 
+	#000000056 in tan(x=symbolic) at ./s_tan.c:68
+	#100000094 in main() at ./s_tan.c:80

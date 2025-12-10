@@ -1,0 +1,4 @@
+klee --solver-backend=z3 --output-dir=klee-results/w_atanh-z3-20251209-180614-826326041-69694 --external-calls=all --watchdog --max-time=900 --emit-all-errors --write-cov w_atanh.bc
+PID: 69705
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-09 18:06:14

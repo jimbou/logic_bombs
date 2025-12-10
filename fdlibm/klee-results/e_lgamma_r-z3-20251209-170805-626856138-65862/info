@@ -1,0 +1,23 @@
+klee --solver-backend=z3 --output-dir=klee-results/e_lgamma_r-z3-20251209-170805-626856138-65862 --external-calls=all --watchdog --max-time=900 --emit-all-errors --write-cov e_lgamma_r.bc
+PID: 65873
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-09 17:08:05
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-09 17:08:05
+Elapsed: 00:00:00
+KLEE: done: explored paths = 16
+KLEE: done: avg. constructs per query = 45
+KLEE: done: total queries = 16
+KLEE: done: valid queries = 0
+KLEE: done: invalid queries = 16
+KLEE: done: query cex = 16
+
+KLEE: done: total instructions = 531
+KLEE: done: completed paths = 9
+KLEE: done: partially completed paths = 7
+KLEE: done: generated tests = 16

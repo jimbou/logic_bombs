@@ -1,0 +1,23 @@
+klee --solver-backend=stp --output-dir=klee-results/e_sinh-stp-20251209-152731-131014906-44499 --external-calls=all --watchdog --max-time=900 --emit-all-errors --write-cov e_sinh.bc
+PID: 44510
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-09 15:27:31
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-09 15:27:31
+Elapsed: 00:00:00
+KLEE: done: explored paths = 13
+KLEE: done: avg. constructs per query = 59
+KLEE: done: total queries = 20
+KLEE: done: valid queries = 5
+KLEE: done: invalid queries = 15
+KLEE: done: query cex = 20
+
+KLEE: done: total instructions = 234
+KLEE: done: completed paths = 8
+KLEE: done: partially completed paths = 5
+KLEE: done: generated tests = 13

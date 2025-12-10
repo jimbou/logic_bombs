@@ -1,0 +1,23 @@
+klee --solver-backend=stp --output-dir=klee-results/s_log1p-stp-20251209-160358-926543683-62489 --external-calls=all --watchdog --max-time=900 --emit-all-errors --write-cov s_log1p.bc
+PID: 62500
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-09 16:03:58
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-09 16:03:59
+Elapsed: 00:00:01
+KLEE: done: explored paths = 9
+KLEE: done: avg. constructs per query = 67
+KLEE: done: total queries = 18
+KLEE: done: valid queries = 9
+KLEE: done: invalid queries = 9
+KLEE: done: query cex = 18
+
+KLEE: done: total instructions = 620
+KLEE: done: completed paths = 9
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 9
