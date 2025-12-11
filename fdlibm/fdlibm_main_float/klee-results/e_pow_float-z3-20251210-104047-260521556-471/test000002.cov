@@ -1,0 +1,3 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_pow.c:122
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_pow.c:124
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_pow.c:309

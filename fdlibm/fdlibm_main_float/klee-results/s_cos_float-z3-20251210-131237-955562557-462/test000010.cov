@@ -1,0 +1,5 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_sin.c:68
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_rem_pio2.c:105
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_rem_pio2.c:106
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_rem_pio2.c:107
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_cos.c:72

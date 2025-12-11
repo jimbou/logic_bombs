@@ -1,0 +1,4 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_rint_main.c:8
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_rint_main.c:9
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_rint.c:73
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_rint.c:84

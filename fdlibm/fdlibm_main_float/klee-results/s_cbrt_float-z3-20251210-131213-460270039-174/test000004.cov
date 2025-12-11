@@ -1,0 +1,7 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_cbrt.c:58
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_cbrt.c:60
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_cbrt.c:61
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_cbrt.c:62
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_cbrt.c:63
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_cbrt.c:70
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_cbrt.c:71

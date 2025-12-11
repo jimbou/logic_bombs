@@ -1,0 +1,23 @@
+klee --solver-backend=z3 --output-dir=/home/klee/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_acos-z3-20251210-151500-579213703-25 --external-calls=all --watchdog --max-time=900 --max-solver-time=20 --emit-all-errors --write-cov e_acos.bc
+PID: 38
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-10 15:15:00
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-10 15:15:00
+Elapsed: 00:00:00
+KLEE: done: explored paths = 7
+KLEE: done: avg. constructs per query = 21
+KLEE: done: total queries = 7
+KLEE: done: valid queries = 0
+KLEE: done: invalid queries = 7
+KLEE: done: query cex = 7
+
+KLEE: done: total instructions = 6441
+KLEE: done: completed paths = 7
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 7

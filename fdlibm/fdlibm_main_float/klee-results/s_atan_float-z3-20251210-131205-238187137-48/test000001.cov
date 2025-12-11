@@ -1,0 +1,9 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:95
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:96
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:97
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:98
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:100
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:134
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_atan_main.c:6
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_atan_main.c:8
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_atan_main.c:9

@@ -1,0 +1,6 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_matherr.c:25
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_matherr.c:26
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_standard.c:496
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_standard.c:497
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_standard.c:500
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_standard.c:501

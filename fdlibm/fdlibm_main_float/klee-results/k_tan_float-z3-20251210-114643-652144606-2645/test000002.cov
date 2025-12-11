@@ -1,0 +1,11 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_tan.c:78
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_tan.c:79
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_tan.c:80
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_tan.c:81
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_tan.c:82
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_tan.c:83
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/k_tan_main.c:6
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/k_tan_main.c:8
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/k_tan_main.c:10
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/k_tan_main.c:12
+/home/user/klee/runtime/Intrinsic/fabs.c:12

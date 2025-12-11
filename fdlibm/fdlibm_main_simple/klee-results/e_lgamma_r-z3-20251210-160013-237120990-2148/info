@@ -1,0 +1,23 @@
+klee --solver-backend=z3 --output-dir=/home/klee/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_lgamma_r-z3-20251210-160013-237120990-2148 --external-calls=all --watchdog --max-time=900 --max-solver-time=20 --emit-all-errors --write-cov e_lgamma_r.bc
+PID: 2161
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-10 16:00:13
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-10 16:00:13
+Elapsed: 00:00:00
+KLEE: done: explored paths = 17
+KLEE: done: avg. constructs per query = 59
+KLEE: done: total queries = 40
+KLEE: done: valid queries = 23
+KLEE: done: invalid queries = 17
+KLEE: done: query cex = 40
+
+KLEE: done: total instructions = 1839
+KLEE: done: completed paths = 17
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 17

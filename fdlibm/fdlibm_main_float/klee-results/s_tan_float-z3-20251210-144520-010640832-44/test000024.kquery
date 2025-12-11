@@ -1,0 +1,23 @@
+array a0[8] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Sle N0:(And w32 N1:(ReadLSB w32 0 a0)
+                              2147483647)
+                  1072243195))
+         (Eq false (Sle 2146435072 N0))
+         (Eq false (Slt N0 1073928572))
+         (Sle N0 1094263291)
+         (Eq false
+             (Slt N2:(FPToSI w32 (FAdd w64 (FMul w64 N3:(FAbs w64 (ReadLSB w64 0 a0))
+                                                     6.3661977236758138E-1)
+                                           5.0E-1))
+                  32))
+         (Eq false
+             (Slt 16
+                  (Sub w32 (AShr w32 N0 20)
+                           (And w32 (AShr w32 (Extract w32 0 (FSub w64 (FSub w64 N3
+                                                                                 (FMul w64 N4:(SIToFP w64 N2) 1.5707963267341256E+0))
+                                                                       (FMul w64 N4 6.0771005065061922E-11)))
+                                              20)
+                                    2047))))
+         (Slt N1 0)]
+        false)

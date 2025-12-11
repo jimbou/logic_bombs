@@ -1,0 +1,8 @@
+/home/user/klee/runtime/Intrinsic/fabs.c:12
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_logb.c:30
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_logb.c:31
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_logb.c:32
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_logb.c:38
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_logb_main.c:6
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_logb_main.c:8
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_logb_main.c:9

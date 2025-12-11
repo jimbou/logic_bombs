@@ -1,0 +1,4 @@
+/home/user/klee/runtime/Intrinsic/fabs.c:12
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_fabs_main.c:6
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_fabs_main.c:8
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_fabs_main.c:9

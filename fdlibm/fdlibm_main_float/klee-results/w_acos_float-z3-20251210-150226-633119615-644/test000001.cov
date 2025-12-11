@@ -1,0 +1,5 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/w_acos.c:33
+/home/klee/logic_bombs/fdlibm/fdlibm_float/w_acos.c:39
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/w_acos_main.c:8
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/w_acos_main.c:9
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_acos.c:76

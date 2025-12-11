@@ -1,0 +1,21 @@
+klee --solver-backend=z3 --output-dir=/home/klee/logic_bombs/fdlibm/fdlibm_main_float/klee-results/s_significand_float-z3-20251210-140147-612740362-2204 --allow-external-sym-calls --watchdog --max-time=900 --max-solver-time=30 --emit-all-errors --write-cov s_significand_float.bc
+PID: 2218
+Started: 2025-12-10 14:01:47
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-10 14:02:05
+Elapsed: 00:00:18
+KLEE: done: explored paths = 68
+KLEE: done: avg. constructs per query = 68
+KLEE: done: total queries = 335
+KLEE: done: valid queries = 266
+KLEE: done: invalid queries = 69
+KLEE: done: query cex = 335
+
+KLEE: done: total instructions = 18880
+KLEE: done: completed paths = 68
+KLEE: done: generated tests = 68

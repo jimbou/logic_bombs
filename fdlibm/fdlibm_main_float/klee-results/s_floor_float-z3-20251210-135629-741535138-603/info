@@ -1,0 +1,21 @@
+klee --solver-backend=z3 --output-dir=/home/klee/logic_bombs/fdlibm/fdlibm_main_float/klee-results/s_floor_float-z3-20251210-135629-741535138-603 --allow-external-sym-calls --watchdog --max-time=900 --max-solver-time=30 --emit-all-errors --write-cov s_floor_float.bc
+PID: 617
+Started: 2025-12-10 13:56:29
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-10 13:56:31
+Elapsed: 00:00:02
+KLEE: done: explored paths = 16
+KLEE: done: avg. constructs per query = 32
+KLEE: done: total queries = 21
+KLEE: done: valid queries = 3
+KLEE: done: invalid queries = 18
+KLEE: done: query cex = 21
+
+KLEE: done: total instructions = 381
+KLEE: done: completed paths = 16
+KLEE: done: generated tests = 16

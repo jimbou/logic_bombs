@@ -1,0 +1,23 @@
+klee --solver-backend=z3 --output-dir=/home/klee/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_rem_pio2-z3-20251210-161743-334408473-2750 --external-calls=all --watchdog --max-time=900 --max-solver-time=20 --emit-all-errors --write-cov e_rem_pio2.bc
+PID: 2763
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-10 16:17:43
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-10 16:17:44
+Elapsed: 00:00:01
+KLEE: done: explored paths = 23
+KLEE: done: avg. constructs per query = 172
+KLEE: done: total queries = 124
+KLEE: done: valid queries = 98
+KLEE: done: invalid queries = 26
+KLEE: done: query cex = 124
+
+KLEE: done: total instructions = 17269
+KLEE: done: completed paths = 23
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 23

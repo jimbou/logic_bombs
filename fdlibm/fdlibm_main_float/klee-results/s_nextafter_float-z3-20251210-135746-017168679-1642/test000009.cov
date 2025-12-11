@@ -1,0 +1,6 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_nextafter.c:59
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_nextafter.c:60
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_nextafter.c:61
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_nextafter.c:62
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_nextafter.c:67
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_nextafter.c:68

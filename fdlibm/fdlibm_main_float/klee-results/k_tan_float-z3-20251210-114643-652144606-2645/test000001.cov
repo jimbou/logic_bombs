@@ -1,0 +1,5 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_tan.c:85
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_tan.c:86
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_tan.c:148
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/k_tan_main.c:12
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/k_tan_main.c:13

@@ -1,0 +1,5 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/e_atanh_main.c:8
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/e_atanh_main.c:9
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_atanh.c:58
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_atanh.c:59
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_atanh.c:68

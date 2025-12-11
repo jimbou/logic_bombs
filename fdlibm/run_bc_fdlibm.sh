@@ -151,6 +151,7 @@ run_one_file() {
       --allow-external-sym-calls \
       --watchdog \
       --max-time="${TIME_BUDGET}" \
+      --max-solver-time=20 \
       --emit-all-errors \
       --write-cov \
       "$(basename "$bc")"
@@ -163,6 +164,7 @@ run_one_file() {
       --external-calls=all \
       --watchdog \
       --max-time="${TIME_BUDGET}" \
+      --max-solver-time=20 \
       --emit-all-errors \
       --write-cov \
       "$(basename "$bc")"

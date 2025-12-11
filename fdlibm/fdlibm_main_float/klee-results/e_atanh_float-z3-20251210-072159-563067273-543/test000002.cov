@@ -1,0 +1,9 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/e_atanh_main.c:6
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/e_atanh_main.c:8
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_atanh.c:53
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_atanh.c:54
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_atanh.c:55
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_atanh.c:56
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_atanh.c:57
+/home/user/klee/runtime/Intrinsic/klee_overshift_check.c:21
+/home/user/klee/runtime/Intrinsic/klee_overshift_check.c:29

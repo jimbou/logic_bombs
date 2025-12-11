@@ -1,0 +1,11 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_sin.c:66
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_sin.c:67
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_sin.c:68
+/home/klee/logic_bombs/fdlibm/fdlibm_float/k_sin.c:74
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_rem_pio2.c:111
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_rem_pio2.c:112
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_rem_pio2.c:113
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_rem_pio2.c:114
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_rem_pio2.c:115
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_rem_pio2.c:120
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_cos.c:75

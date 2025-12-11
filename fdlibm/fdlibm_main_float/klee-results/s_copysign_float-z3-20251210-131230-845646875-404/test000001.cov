@@ -1,0 +1,6 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_copysign_main.c:6
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_copysign_main.c:8
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_copysign_main.c:10
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_copysign_main.c:11
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_copysign.c:29
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_copysign.c:30

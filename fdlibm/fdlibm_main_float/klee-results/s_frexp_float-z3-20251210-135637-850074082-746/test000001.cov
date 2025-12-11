@@ -1,0 +1,10 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_frexp.c:41
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_frexp.c:42
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_frexp.c:43
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_frexp.c:44
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_frexp.c:45
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_frexp.c:56
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_frexp_main.c:6
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_frexp_main.c:9
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_frexp_main.c:10
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_frexp_main.c:12

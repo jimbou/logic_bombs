@@ -1,0 +1,7 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:107
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:108
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:124
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:125
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:127
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:128
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:129

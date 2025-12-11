@@ -1,0 +1,6 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_tanh.c:57
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_tanh.c:58
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_tanh.c:61
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_tanh.c:62
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_tanh_main.c:6
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_tanh_main.c:8

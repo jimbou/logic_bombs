@@ -1,0 +1,23 @@
+klee --solver-backend=z3 --output-dir=/home/klee/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_atan2-z3-20251210-151634-127877073-483 --external-calls=all --watchdog --max-time=900 --max-solver-time=20 --emit-all-errors --write-cov e_atan2.bc
+PID: 496
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-10 15:16:34
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-10 15:16:34
+Elapsed: 00:00:00
+KLEE: done: explored paths = 30
+KLEE: done: avg. constructs per query = 74
+KLEE: done: total queries = 52
+KLEE: done: valid queries = 12
+KLEE: done: invalid queries = 40
+KLEE: done: query cex = 52
+
+KLEE: done: total instructions = 810
+KLEE: done: completed paths = 30
+KLEE: done: partially completed paths = 0
+KLEE: done: generated tests = 30
