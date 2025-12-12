@@ -1,0 +1,68 @@
+array a0[8] : w32 -> w8 = symbolic
+array a1[8] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Eq 0
+                 (Or w32 N0:(And w32 (ReadLSB w32 0 a1)
+                                     2147483647)
+                         N1:(ReadLSB w32 4 a1))))
+         (Eq false
+             (Sle 2146435072
+                  N2:(Xor w32 N3:(ReadLSB w32 0 a0)
+                              (And w32 N3 2147483648))))
+         (Eq false
+             (Ult 2146435072
+                  (Or w32 N0
+                          (LShr w32 (Or w32 N1 (Sub w32 0 N1))
+                                    31))))
+         (Eq false (Sle N2 N0))
+         (Eq false (Slt N2 1048576))
+         (Eq false (Slt N0 1048576))
+         (Eq false
+             (Eq 0
+                 N4:(Sub w32 (AShr w32 N2 20) (AShr w32 N0 20))))
+         (Eq false
+             (Ult N5:(ReadLSB w32 4 a0)
+                  N1))
+         (Eq false
+             (Slt N6:(Sub w32 (Or w32 (And w32 N2 1048575) 1048576)
+                              N7:(Or w32 (And w32 N0 1048575) 1048576))
+                  0))
+         (Eq false
+             (Eq 0
+                 (Or w32 N6 N8:(Sub w32 N5 N1))))
+         (Eq false (Eq 1 N4))
+         (Ult N9:(Add w32 N8 N8) N1)
+         (Eq false
+             (Slt (Add w32 4294967295
+                           N10:(Sub w32 (Add w32 (Add w32 N6 N6) (LShr w32 N8 31))
+                                        N7))
+                  0))
+         (Eq false (Eq 2 N4))
+         (Eq false
+             (Ult N11:(Add w32 N12:(Sub w32 N9 N1) N12)
+                  N1))
+         (Slt (Add w32 4294967294
+                       (Sub w32 N13:(Add w32 (Add w32 N10 N10) (LShr w32 N12 31))
+                                N7))
+              0)
+         (Eq false (Eq 3 N4))
+         (Eq false
+             (Ult N14:(Add w32 N11 N11) N1))
+         (Eq false
+             (Slt N15:(Add w32 4294967292
+                               N16:(Sub w32 (Add w32 (Add w32 N13 N13) (LShr w32 N11 31))
+                                            N7))
+                  0))
+         (Eq false
+             (Eq 0
+                 (Or w32 N15 N17:(Sub w32 N14 N1))))
+         (Eq false (Eq 4 N4))
+         (Eq false
+             (Ult N18:(Add w32 N17 N17) N1))
+         (Slt (Add w32 4294967288
+                       (Sub w32 (Add w32 (Add w32 N16 N16) (LShr w32 N17 31))
+                                N7))
+              0)
+         (Eq false (Eq 5 N4))
+         (Ult (Add w32 N18 N18) N1)]
+        false)

@@ -1,0 +1,112 @@
+array a0[8] : w32 -> w8 = symbolic
+array a1[8] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Slt 2146435072
+                  N0:(And w32 N1:(ReadLSB w32 0 a0)
+                              2147483647)))
+         (Eq false (Eq 2146435072 N0))
+         (Eq false (Slt N1 0))
+         (Eq 0
+             (ReadLSB w32 4 a1))
+         (Eq 1071644672
+             (ReadLSB w32 0 a1))
+         (Eq false (Sle N1 0))
+         (Eq false
+             (Eq 0 N2:(AShr w32 N1 20)))
+         (Eq 0
+             (And w32 (Add w32 4294966273 N2) 1))
+         (Sle 4718592
+              (Add w32 4286578688
+                       N3:(Add w32 N4:(Add w32 N5:(Add w32 N6:(Or w32 (And w32 N1 1048575) 1048576)
+                                                           (Add w32 N6
+                                                                    (LShr w32 (And w32 N7:(ReadLSB w32 4 a0)
+                                                                                       2147483648)
+                                                                              31)))
+                                               (Add w32 N5
+                                                        (LShr w32 (And w32 N8:(Add w32 N7 N7) 2147483648)
+                                                                  31)))
+                                   (Add w32 N4
+                                            (LShr w32 (And w32 N9:(Add w32 N8 N8) 2147483648)
+                                                      31)))))
+         (Sle 5505024
+              (Add w32 4268752896
+                       N10:(Add w32 N3
+                                    (Add w32 N3
+                                             (LShr w32 (And w32 N11:(Add w32 N9 N9) 2147483648)
+                                                       31)))))
+         (Eq false
+             (Sle 5832704
+                  (Add w32 4168089600
+                           N12:(Add w32 N13:(Add w32 N10
+                                                     (Add w32 N10
+                                                              (LShr w32 (And w32 N14:(Add w32 N11 N11) 2147483648)
+                                                                        31)))
+                                        (Add w32 N13
+                                                 (LShr w32 (And w32 N15:(Add w32 N14 N14) 2147483648)
+                                                           31))))))
+         (Eq false
+             (Sle 5799936
+                  (Add w32 4041211904
+                           N16:(Add w32 N12
+                                        (Add w32 N12
+                                                 (LShr w32 (And w32 N17:(Add w32 N15 N15) 2147483648)
+                                                           31))))))
+         (Sle 5783552
+              (Add w32 3787456512
+                       N18:(Add w32 N16
+                                    (Add w32 N16
+                                             (LShr w32 (And w32 N19:(Add w32 N17 N17) 2147483648)
+                                                       31)))))
+         (Sle 5808128
+              (Add w32 3268378624
+                       N20:(Add w32 N18
+                                    (Add w32 N18
+                                             (LShr w32 (And w32 N21:(Add w32 N19 N19) 2147483648)
+                                                       31)))))
+         (Sle 5820416
+              (Add w32 2230173696
+                       N22:(Add w32 N20
+                                    (Add w32 N20
+                                             (LShr w32 (And w32 N23:(Add w32 N21 N21) 2147483648)
+                                                       31)))))
+         (Eq false
+             (Sle 5826560
+                  (Add w32 153739264
+                           N24:(Add w32 N22
+                                        (Add w32 N22
+                                                 (LShr w32 (And w32 N25:(Add w32 N23 N23) 2147483648)
+                                                           31))))))
+         (Sle 5825536
+              (Add w32 307478528
+                       N26:(Add w32 N24
+                                    (Add w32 N24
+                                             (LShr w32 (And w32 N27:(Add w32 N25 N25) 2147483648)
+                                                       31)))))
+         (Eq false
+             (Sle 5827072
+                  (Add w32 603305984
+                           N28:(Add w32 N26
+                                        (Add w32 N26
+                                                 (LShr w32 (And w32 N29:(Add w32 N27 N27) 2147483648)
+                                                           31))))))
+         (Sle 5826816
+              (Add w32 1206611968
+                       N30:(Add w32 N28
+                                    (Add w32 N28
+                                             (LShr w32 (And w32 N31:(Add w32 N29 N29) 2147483648)
+                                                       31)))))
+         (Eq false
+             (Sle 5827200
+                  (Add w32 2401570304
+                           N32:(Add w32 N30
+                                        (Add w32 N30
+                                                 (LShr w32 (And w32 N33:(Add w32 N31 N31) 2147483648)
+                                                           31))))))
+         (Eq false
+             (Sle 5827136
+                  (Add w32 508173312
+                           (Add w32 N32
+                                    (Add w32 N32
+                                             (LShr w32 (And w32 (Add w32 N33 N33) 2147483648)
+                                                       31))))))]
+        false)

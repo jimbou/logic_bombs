@@ -1,0 +1,3 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_lgamma_r.c:223
+/home/klee/logic_bombs/fdlibm/fdlibm_float/w_gamma.c:36
+/home/klee/logic_bombs/fdlibm/fdlibm_float/w_gamma.c:37

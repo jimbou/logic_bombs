@@ -1,0 +1,21 @@
+array a0[8] : w32 -> w8 = symbolic
+array a1[8] : w32 -> w8 = symbolic
+(query [(Eq 0
+             (LShr w32 (Sub w32 2146435072
+                                (Or w32 (And w32 (ReadLSB w32 0 a0)
+                                                 2147483647)
+                                        (LShr w32 (Or w32 N0:(ReadLSB w32 4 a0)
+                                                          (Sub w32 0 N0))
+                                                  31)))
+                       31))
+         (Eq 0
+             (LShr w32 (Sub w32 2146435072
+                                (Or w32 (And w32 N1:(ReadLSB w32 0 a1)
+                                                 2147483647)
+                                        (LShr w32 (Or w32 N2:(ReadLSB w32 4 a1)
+                                                          (Sub w32 0 N2))
+                                                  31)))
+                       31))
+         (Eq 0
+             (ReadLSB w64 0 a1))]
+        false)

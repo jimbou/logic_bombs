@@ -1,0 +1,5 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_asinh.c:53
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_asinh.c:54
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_asinh.c:55
+/home/user/klee/runtime/Intrinsic/fabs.c:12
+/home/user/klee/runtime/Intrinsic/sqrt.c:12

@@ -1,0 +1,23 @@
+/tmp/klee_build130stp_z3/bin/klee --solver-backend=stp --output-dir=/home/klee/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_acosh-stp-20251211-230854-683186552-66846 --watchdog --max-time=900 --max-solver-time=20 --emit-all-errors --write-cov --external-calls=all /home/klee/logic_bombs/fdlibm/fdlibm_main_simple/e_acosh.bc
+PID: 15
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-11 23:08:54
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-11 23:08:55
+Elapsed: 00:00:01
+KLEE: done: explored paths = 6
+KLEE: done: avg. constructs per query = 52
+KLEE: done: total queries = 9
+KLEE: done: valid queries = 3
+KLEE: done: invalid queries = 6
+KLEE: done: query cex = 9
+
+KLEE: done: total instructions = 3310
+KLEE: done: completed paths = 5
+KLEE: done: partially completed paths = 1
+KLEE: done: generated tests = 6

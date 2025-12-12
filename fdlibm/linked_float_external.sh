@@ -3,11 +3,11 @@ set -uo pipefail
 
 
 
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/e_acos_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/e_acos.c z3 900 results_fdlibm_float_z3_linked_external.json
-sleep 30
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/e_acosh_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/e_acosh.c z3 900 results_fdlibm_float_z3_linked_external.json
-sleep 30
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/e_asin_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/e_asin.c z3 900 results_fdlibm_float_z3_linked_external.json
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/e_acos_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/e_acos.c z3 900 results_fdlibm_float_z3_linked_external.json
+# sleep 30
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/e_acosh_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/e_acosh.c z3 900 results_fdlibm_float_z3_linked_external.json
+# sleep 30
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/e_asin_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/e_asin.c z3 900 results_fdlibm_float_z3_linked_external.json
 # sleep 30
 # ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/e_atan2_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/e_atan2.c z3 900 results_fdlibm_float_z3_linked_external.json
 # sleep 30
@@ -115,34 +115,34 @@ sleep 30
 # sleep 30
 # ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_acos_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_acos.c z3 900 results_fdlibm_float_z3_linked_external.json
 # sleep 30
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_acosh_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_acosh.c z3 900 results_fdlibm_float_z3_linked_external.json
-sleep 30
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_asin_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_asin.c z3 900 results_fdlibm_float_z3_linked_external.json
-sleep 30
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_atan2_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_atan2.c z3 900 results_fdlibm_float_z3_linked_external.json
-sleep 30
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_atanh_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_atanh.c z3 900 results_fdlibm_float_z3_linked_external.json
-sleep 30
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_cosh_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_cosh.c z3 900 results_fdlibm_float_z3_linked_external.json
-sleep 30
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_exp_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_exp.c z3 900 results_fdlibm_float_z3_linked_external.json
-sleep 30
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_fmod_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_fmod.c z3 900 results_fdlibm_float_z3_linked_external.json
-sleep 30
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_gamma_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_gamma.c z3 900 results_fdlibm_float_z3_linked_external.json
-sleep 30
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_gamma_r_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_gamma_r.c z3 900 results_fdlibm_float_z3_linked_external.json
-sleep 30
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_hypot_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_hypot.c z3 900 results_fdlibm_float_z3_linked_external.json
-sleep 30
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_j0_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_j0.c z3 900 results_fdlibm_float_z3_linked_external.json
-sleep 30
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_j1_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_j1.c z3 900 results_fdlibm_float_z3_linked_external.json
-sleep 30
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_jn_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_jn.c z3 900 results_fdlibm_float_z3_linked_external.json
-sleep 30
-./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_lgamma_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_lgamma.c z3 900 results_fdlibm_float_z3_linked_external.json
-sleep 30
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_acosh_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_acosh.c z3 900 results_fdlibm_float_z3_linked_external.json
+# sleep 30
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_asin_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_asin.c z3 900 results_fdlibm_float_z3_linked_external.json
+# sleep 30
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_atan2_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_atan2.c z3 900 results_fdlibm_float_z3_linked_external.json
+# sleep 30
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_atanh_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_atanh.c z3 900 results_fdlibm_float_z3_linked_external.json
+# sleep 30
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_cosh_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_cosh.c z3 900 results_fdlibm_float_z3_linked_external.json
+# sleep 30
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_exp_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_exp.c z3 900 results_fdlibm_float_z3_linked_external.json
+# sleep 30
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_fmod_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_fmod.c z3 900 results_fdlibm_float_z3_linked_external.json
+# sleep 30
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_gamma_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_gamma.c z3 900 results_fdlibm_float_z3_linked_external.json
+# sleep 30
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_gamma_r_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_gamma_r.c z3 900 results_fdlibm_float_z3_linked_external.json
+# sleep 30
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_hypot_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_hypot.c z3 900 results_fdlibm_float_z3_linked_external.json
+# sleep 30
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_j0_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_j0.c z3 900 results_fdlibm_float_z3_linked_external.json
+# sleep 30
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_j1_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_j1.c z3 900 results_fdlibm_float_z3_linked_external.json
+# sleep 30
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_jn_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_jn.c z3 900 results_fdlibm_float_z3_linked_external.json
+# sleep 30
+# ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_lgamma_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_lgamma.c z3 900 results_fdlibm_float_z3_linked_external.json
+# sleep 30
 ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_lgamma_r_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_lgamma_r.c z3 900 results_fdlibm_float_z3_linked_external.json
 sleep 30
 ./run_bc_fdlibm_external.sh /home/jim/logic_bombs/fdlibm/fdlibm_main_float/w_log_float.bc /home/jim/logic_bombs/fdlibm/fdlibm_float/w_log.c z3 900 results_fdlibm_float_z3_linked_external.json

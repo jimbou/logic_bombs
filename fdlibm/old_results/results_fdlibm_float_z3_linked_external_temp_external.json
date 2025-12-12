@@ -1,0 +1,53 @@
+{
+  "s_sin_float": [
+    {
+      "solver": "z3",
+      "timestamp": "2025-12-11T03:41:28Z",
+      "status": "ok",
+      "exit_code": 0,
+      "source": "/home/jim/logic_bombs/fdlibm/fdlibm_float/s_sin.c",
+      "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_float/s_sin_float.bc",
+      "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_float/klee-results/s_sin_float-z3-20251211-033424-147844850-104572",
+      "total_coverable": 21,
+      "covered": 12,
+      "coverage_percent": 57.14,
+      "coverable_lines": [
+        "48",
+        "50",
+        "51",
+        "53",
+        "54",
+        "55",
+        "58",
+        "61",
+        "62",
+        "65",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78"
+      ],
+      "covered_lines": [
+        "54",
+        "58",
+        "61",
+        "62",
+        "65",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "75",
+        "78"
+      ]
+    }
+  ]
+}

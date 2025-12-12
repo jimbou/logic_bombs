@@ -1,0 +1,35 @@
+array a0[8] : w32 -> w8 = symbolic
+array a1[8] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Ult 2146435072
+                  (Or w32 N0:(And w32 N1:(ReadLSB w32 0 a1)
+                                      2147483647)
+                          (LShr w32 (Or w32 N2:(ReadLSB w32 4 a1)
+                                            (Sub w32 0 N2))
+                                    31))))
+         (Eq false
+             (Ult 2146435072
+                  (Or w32 N3:(And w32 N4:(ReadLSB w32 0 a0)
+                                      2147483647)
+                          (LShr w32 (Or w32 N5:(ReadLSB w32 4 a0)
+                                            (Sub w32 0 N5))
+                                    31))))
+         (Eq false
+             (Eq 0
+                 (Or w32 (Add w32 3222274048 N1) N2)))
+         (Eq false
+             (Eq 0 (Or w32 N3 N5)))
+         (Eq false
+             (Eq 0 (Or w32 N0 N2)))
+         (Eq false (Eq 2146435072 N0))
+         (Eq false (Eq 2146435072 N3))
+         (Eq false
+             (Slt 60
+                  N6:(AShr w32 (Sub w32 N3 N0) 20)))
+         (Eq false
+             (And (Slt N1 0) (Slt N6 4294967236)))
+         (Sle 1141899264
+              (And w32 (Extract w32 0 (FAbs w64 (FDiv w64 (ReadLSB w64 0 a0)
+                                                          (ReadLSB w64 0 a1))))
+                       2147483647))]
+        false)

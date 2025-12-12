@@ -1,0 +1,4 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_log10.c:83
+/home/klee/logic_bombs/fdlibm/fdlibm_float/e_log10.c:91
+/home/klee/logic_bombs/fdlibm/fdlibm_float/w_log10.c:32
+/home/klee/logic_bombs/fdlibm/fdlibm_float/w_log10.c:33

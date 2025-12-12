@@ -1,0 +1,9 @@
+Error: unimplemented intrinsic
+File: e_scalb.c
+Line: 46
+assembly.ll line: 13932
+State: 8
+Stack: 
+	#000013932 in __ieee754_scalb(x=symbolic, fn=13970166044099084288) at e_scalb.c:46
+	#100017176 in significand(x=symbolic) at s_significand.c:29
+	#200000140 in main() at s_significand_main.c:8

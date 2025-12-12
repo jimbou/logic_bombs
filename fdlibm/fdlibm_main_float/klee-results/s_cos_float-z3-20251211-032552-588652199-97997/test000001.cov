@@ -1,0 +1,4 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_cos.c:65
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_cos.c:78
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_cos_main.c:8
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_cos_main.c:9

@@ -1,0 +1,23 @@
+/tmp/klee_build130stp_z3/bin/klee --solver-backend=stp --output-dir=/home/klee/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_remainder-stp-20251212-012906-096439128-325234 --watchdog --max-time=900 --max-solver-time=20 --emit-all-errors --write-cov --external-calls=all /home/klee/logic_bombs/fdlibm/fdlibm_main_simple/w_remainder.bc
+PID: 15
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2025-12-12 01:29:06
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-12 01:44:12
+Elapsed: 00:15:06
+KLEE: done: explored paths = 21977
+KLEE: done: avg. constructs per query = 909
+KLEE: done: total queries = 55739
+KLEE: done: valid queries = 27262
+KLEE: done: invalid queries = 28477
+KLEE: done: query cex = 55739
+
+KLEE: done: total instructions = 918344
+KLEE: done: completed paths = 3632
+KLEE: done: partially completed paths = 18345
+KLEE: done: generated tests = 21977

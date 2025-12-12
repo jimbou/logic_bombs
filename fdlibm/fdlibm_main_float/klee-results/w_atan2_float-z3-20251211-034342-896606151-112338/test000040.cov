@@ -1,0 +1,6 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:109
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:110
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:111
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:112
+/home/klee/logic_bombs/fdlibm/fdlibm_float/s_atan.c:113
+/home/user/klee/runtime/Intrinsic/fabs.c:12
