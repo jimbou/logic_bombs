@@ -1,0 +1,13 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_log.c:96
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_log.c:97
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_log.c:99
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_log.c:100
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_log.c:101
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_log.c:103
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_log.c:104
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_log.c:105
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_log.c:106
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_log.c:107
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_log.c:139
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_j0.c:206
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_j0.c:207

@@ -1,0 +1,8 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/k_cos.c:75
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_rem_pio2.c:111
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_rem_pio2.c:112
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_rem_pio2.c:113
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_rem_pio2.c:114
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_rem_pio2.c:115
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_rem_pio2.c:120
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/s_sin.c:75

@@ -1,0 +1,4 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/k_cos.c:74
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_rem_pio2.c:105
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_rem_pio2.c:106
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_rem_pio2.c:107

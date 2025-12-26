@@ -11,7 +11,7 @@ DRIVER="/home/klee/logic_bombs/fdlibm/driver.c"
 EXE="fdlibm_cov_exe"
 PROFRAW="fdlibm.profraw"
 PROFDATA="fdlibm.profdata"
-OUT_JSON="fdlibm_coverable_lines.json"
+OUT_JSON="fdlibm_coverable_lines_no_brace.json"
 
 ############################
 # SANITY CHECKS
@@ -60,7 +60,6 @@ clang -O0 -g \
   -I "$FDLIBM_ROOT" \
   "$DRIVER" \
   "$FDLIBM_ROOT"/*.c \
-  -lm \
   -o "$EXE"
 
 ############################
@@ -85,37 +84,45 @@ for SRC in "$FDLIBM_ROOT"/*.c; do
     echo "  Processing $(basename "$SRC")"
 
     mapfile -t LINES < <(
-  "$LLVM_COV" show "$EXE" \
-    -instr-profile="$PROFDATA" \
-    --show-line-counts \
-    "$SRC" \
-  | awk -F'\\|' '
-      # format: lineno | count | source
-      # keep only if lineno is a number AND count contains a digit (i.e., executable)
-      $1 ~ /^[[:space:]]*[0-9]+[[:space:]]*$/ && $2 ~ /[0-9]/ {
-          gsub(/[[:space:]]/, "", $1);
-          print $1
-      }
-    ' | sort -n | uniq
-)
+        "$LLVM_COV" show "$EXE" \
+            -instr-profile="$PROFDATA" \
+            --show-line-counts \
+            "$SRC" \
+        | awk -F'\\|' '
+            # format: lineno | count | source
+            $1 ~ /^[[:space:]]*[0-9]+[[:space:]]*$/ && $2 ~ /[0-9]/ {
+                src = $3
+                gsub(/^[[:space:]]+|[[:space:]]+$/, "", src)
 
+                # Skip pure brace lines
+                if (src == "{" || src == "}") {
+                    next
+                }
 
+                gsub(/[[:space:]]/, "", $1)
+                print $1
+            }
+        ' \
+        | sort -n \
+        | uniq
+    )
 
     TOTAL=${#LINES[@]}
 
     jq \
-      --arg src "$SRC" \
-      --argjson total "$TOTAL" \
-      --argjson lines "$(printf '%s\n' "${LINES[@]}" | jq -R . | jq -s .)" \
-      '
-      .[$src] = {
-        total_coverable_lines: $total,
-        coverable_lines: $lines
-      }
-      ' "$OUT_JSON" > "$OUT_JSON.tmp"
+        --arg src "$SRC" \
+        --argjson total "$TOTAL" \
+        --argjson lines "$(printf '%s\n' "${LINES[@]}" | jq -R . | jq -s .)" \
+        '
+        .[$src] = {
+            total_coverable_lines: $total,
+            coverable_lines: $lines
+        }
+        ' "$OUT_JSON" > "$OUT_JSON.tmp"
 
     mv "$OUT_JSON.tmp" "$OUT_JSON"
 done
+
 
 ############################
 # CLEANUP (OPTIONAL)

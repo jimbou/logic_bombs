@@ -1,0 +1,23 @@
+Error: memory error: out of bound pointer
+File: /home/klee/logic_bombs/fdlibm/fdlibm_float/e_rem_pio2.c
+Line: 129
+assembly.ll line: 6447
+Stack: 
+	#000006447 in __ieee754_rem_pio2 (x, y=698884704) at /home/klee/logic_bombs/fdlibm/fdlibm_float/e_rem_pio2.c:129
+	#100014987 in sin (x) at /home/klee/logic_bombs/fdlibm/fdlibm_float/s_sin.c:69
+	#200002567 in __ieee754_j0 (x) at /home/klee/logic_bombs/fdlibm/fdlibm_float/e_j0.c:103
+	#300003488 in __ieee754_jn (n, x) at /home/klee/logic_bombs/fdlibm/fdlibm_float/e_jn.c:77
+	#400000150 in main () at /home/klee/logic_bombs/fdlibm/fdlibm_main_float/e_jn_main.c:10
+Info: 
+	address: (Add w64 692415920
+          (Mul w64 4
+                   (SExt w64 (Add w32 4294967295
+                                      (FPToSI w32 (FAdd w64 (FMul w64 (FAbs w64 (FAbs w64 (ReadLSB w64 0 a1)))
+                                                                      6.3661977236758138E-1)
+                                                            5.0E-1))))))
+	example: 692415916
+	range: [692415916, 692415916]
+	next: object at 692415920 of size 128
+		MO59[128] allocated at global:npio2_hw
+	prev: object at 692415440 of size 16
+		MO58[16] allocated at global:dp_h

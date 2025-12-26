@@ -1,0 +1,5 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_j1.c:168
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_j1.c:169
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_j1.c:170
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_j1.c:172
+/home/klee/logic_bombs/fdlibm/fdlibm_main_float/e_j1_main.c:13

@@ -96,5 +96,7 @@ int main() {
     klee_make_symbolic(&a1, sizeof(a1), "a1");
 
     double r = jn(a0, a1);
+
+	double r2 = yn(a0);
     return 0;
 }

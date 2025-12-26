@@ -1,0 +1,16 @@
+Error: memory error: out of bound pointer
+File: k_rem_pio2.c
+Line: 243
+assembly.ll line: 9757
+State: 320
+Stack: 
+	#000009757 in __kernel_rem_pio2(x=103982662503360, y=103982662051600, e0=symbolic, nx=3, prec=2, ipio2=103982655025088) at k_rem_pio2.c:243
+	#100009192 in __ieee754_rem_pio2(x=symbolic, y=103982662051600) at e_rem_pio2.c:172
+	#200008293 in sin(x=symbolic) at s_sin.c:69
+	#300010627 in __ieee754_y0(x=symbolic) at e_j0.c:186
+	#400012322 in __ieee754_yn(n=symbolic, x=symbolic) at e_jn.c:262
+	#500000166 in main() at e_jn_main.c:14
+Info: 
+	address: 103982662554780
+	next: object at 103982655025088 of size 264
+		MO165[264] allocated at global:two_over_pi

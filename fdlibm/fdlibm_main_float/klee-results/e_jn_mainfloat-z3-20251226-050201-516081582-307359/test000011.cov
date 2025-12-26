@@ -1,0 +1,6 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_jn.c:79
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_jn.c:80
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_jn.c:81
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_jn.c:82
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/e_jn.c:211
+/home/user/klee/runtime/Intrinsic/fabs.c:12

@@ -1,0 +1,14 @@
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/s_erf.c:224
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/s_erf.c:225
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/s_erf.c:277
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/s_erf.c:287
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/s_erf.c:288
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/s_erf.c:289
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/s_erf.c:290
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/s_erf.c:296
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/s_erf.c:297
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/s_erf.c:299
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/s_erf.c:302
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/s_erf.c:303
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/s_erf.c:304
+/home/klee/logic_bombs/fdlibm/fdlibm_coverage/s_erf.c:305

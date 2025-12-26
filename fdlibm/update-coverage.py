@@ -1,9 +1,9 @@
 import json
 from pathlib import Path
 
-LLVM_COV_JSON = "/home/jim/logic_bombs/fdlibm/fdlibm_coverable_lines.json"
-KLEE_JSON = "/home/jim/logic_bombs/fdlibm/results_fdlibm_klee_simple_stp.json"
-OUT_JSON = "/home/jim/logic_bombs/fdlibm/results_fdlibm_klee_simple_stp_updated.json"
+LLVM_COV_JSON = "/home/jim/logic_bombs/fdlibm/fdlibm_coverable_lines_no_brace.json"
+KLEE_JSON = "/home/jim/logic_bombs/fdlibm/results_fdlibm_klee_float_z3.json"
+OUT_JSON = "/home/jim/logic_bombs/fdlibm/results_fdlibm_klee_float_z3_updated.json"
 
 with open(LLVM_COV_JSON) as f:
     llvm_cov = json.load(f)

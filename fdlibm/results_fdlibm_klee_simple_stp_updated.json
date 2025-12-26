@@ -8,11 +8,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_acos.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_acos.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_acos-stp-20251211-230813-198854551-66190",
-      "total_coverable": 40,
-      "covered": 35,
-      "coverage_percent": 87.5,
+      "total_coverable": 35,
+      "covered": 34,
+      "coverage_percent": 97.14,
       "coverable_lines": [
-        "66",
         "67",
         "68",
         "69",
@@ -21,9 +20,7 @@
         "72",
         "73",
         "74",
-        "75",
         "76",
-        "77",
         "78",
         "79",
         "80",
@@ -49,9 +46,7 @@
         "100",
         "101",
         "102",
-        "103",
-        "104",
-        "105"
+        "103"
       ],
       "covered_lines": [
         "67",
@@ -87,8 +82,7 @@
         "100",
         "101",
         "102",
-        "103",
-        "105"
+        "103"
       ]
     }
   ],
@@ -101,11 +95,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_acosh.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_acosh.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_acosh-stp-20251211-230854-683186552-66846",
-      "total_coverable": 21,
-      "covered": 17,
-      "coverage_percent": 80.95,
+      "total_coverable": 18,
+      "covered": 16,
+      "coverage_percent": 88.89,
       "coverable_lines": [
-        "45",
         "46",
         "47",
         "48",
@@ -123,9 +116,7 @@
         "60",
         "61",
         "62",
-        "63",
-        "64",
-        "65"
+        "63"
       ],
       "covered_lines": [
         "46",
@@ -143,8 +134,7 @@
         "59",
         "60",
         "62",
-        "63",
-        "65"
+        "63"
       ]
     }
   ],
@@ -157,11 +147,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_asin.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_asin.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_asin-stp-20251211-230936-276693671-67510",
-      "total_coverable": 38,
-      "covered": 31,
-      "coverage_percent": 81.58,
+      "total_coverable": 34,
+      "covered": 30,
+      "coverage_percent": 88.24,
       "coverable_lines": [
-        "75",
         "76",
         "77",
         "78",
@@ -179,7 +168,6 @@
         "91",
         "92",
         "93",
-        "94",
         "96",
         "97",
         "98",
@@ -196,9 +184,7 @@
         "109",
         "110",
         "111",
-        "112",
-        "113",
-        "114"
+        "113"
       ],
       "covered_lines": [
         "76",
@@ -230,8 +216,7 @@
         "109",
         "110",
         "111",
-        "113",
-        "114"
+        "113"
       ]
     }
   ],
@@ -244,11 +229,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_atan2.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_atan2.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_atan2-stp-20251211-231017-860823994-68135",
-      "total_coverable": 53,
-      "covered": 42,
-      "coverage_percent": 79.25,
+      "total_coverable": 44,
+      "covered": 41,
+      "coverage_percent": 93.18,
       "coverable_lines": [
-        "62",
         "63",
         "64",
         "65",
@@ -267,8 +251,6 @@
         "81",
         "82",
         "83",
-        "84",
-        "85",
         "87",
         "90",
         "91",
@@ -277,16 +259,12 @@
         "94",
         "95",
         "96",
-        "97",
         "98",
         "99",
         "100",
         "101",
         "102",
         "103",
-        "104",
-        "105",
-        "106",
         "108",
         "111",
         "112",
@@ -298,9 +276,7 @@
         "118",
         "119",
         "120",
-        "121",
-        "122",
-        "123"
+        "121"
       ],
       "covered_lines": [
         "63",
@@ -343,8 +319,7 @@
         "117",
         "118",
         "119",
-        "121",
-        "123"
+        "121"
       ]
     }
   ],
@@ -357,11 +332,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_atanh.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_atanh.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_atanh-stp-20251211-231059-493065014-68776",
-      "total_coverable": 20,
-      "covered": 19,
-      "coverage_percent": 95.0,
+      "total_coverable": 18,
+      "covered": 18,
+      "coverage_percent": 100.0,
       "coverable_lines": [
-        "49",
         "50",
         "51",
         "52",
@@ -379,8 +353,7 @@
         "64",
         "65",
         "66",
-        "67",
-        "68"
+        "67"
       ],
       "covered_lines": [
         "50",
@@ -400,8 +373,7 @@
         "64",
         "65",
         "66",
-        "67",
-        "68"
+        "67"
       ]
     }
   ],
@@ -414,11 +386,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_cosh.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_cosh.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_cosh-stp-20251211-231141-113428470-69354",
-      "total_coverable": 27,
-      "covered": 22,
-      "coverage_percent": 81.48,
+      "total_coverable": 22,
+      "covered": 21,
+      "coverage_percent": 95.45,
       "coverable_lines": [
-        "49",
         "50",
         "51",
         "52",
@@ -430,11 +401,9 @@
         "64",
         "65",
         "66",
-        "67",
         "70",
         "71",
         "72",
-        "73",
         "76",
         "79",
         "80",
@@ -442,9 +411,7 @@
         "82",
         "83",
         "84",
-        "85",
-        "88",
-        "89"
+        "88"
       ],
       "covered_lines": [
         "50",
@@ -467,8 +434,7 @@
         "82",
         "83",
         "84",
-        "88",
-        "89"
+        "88"
       ]
     }
   ],
@@ -481,11 +447,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_exp.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_exp.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_exp-stp-20251211-231222-738997211-69959",
-      "total_coverable": 43,
-      "covered": 35,
-      "coverage_percent": 81.4,
+      "total_coverable": 35,
+      "covered": 32,
+      "coverage_percent": 91.43,
       "coverable_lines": [
-        "107",
         "108",
         "109",
         "110",
@@ -497,10 +462,8 @@
         "119",
         "120",
         "121",
-        "122",
         "123",
         "124",
-        "125",
         "128",
         "129",
         "130",
@@ -509,12 +472,9 @@
         "133",
         "134",
         "135",
-        "136",
         "137",
-        "138",
         "139",
         "140",
-        "141",
         "142",
         "145",
         "146",
@@ -525,9 +485,7 @@
         "151",
         "152",
         "153",
-        "154",
-        "155",
-        "156"
+        "154"
       ],
       "covered_lines": [
         "108",
@@ -543,7 +501,6 @@
         "121",
         "123",
         "124",
-        "125",
         "128",
         "129",
         "130",
@@ -553,7 +510,6 @@
         "134",
         "135",
         "137",
-        "138",
         "139",
         "140",
         "142",
@@ -563,8 +519,7 @@
         "148",
         "149",
         "150",
-        "151",
-        "156"
+        "151"
       ]
     }
   ],
@@ -577,11 +532,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_fmod.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_fmod.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_fmod-stp-20251211-231304-284455758-70533",
-      "total_coverable": 94,
-      "covered": 77,
-      "coverage_percent": 81.91,
+      "total_coverable": 80,
+      "covered": 75,
+      "coverage_percent": 93.75,
       "coverable_lines": [
-        "34",
         "35",
         "36",
         "38",
@@ -598,20 +552,17 @@
         "51",
         "52",
         "53",
-        "54",
         "57",
         "58",
         "59",
         "60",
         "61",
-        "62",
         "63",
         "66",
         "67",
         "68",
         "69",
         "70",
-        "71",
         "72",
         "75",
         "76",
@@ -623,8 +574,6 @@
         "82",
         "83",
         "84",
-        "85",
-        "86",
         "87",
         "88",
         "89",
@@ -635,8 +584,6 @@
         "94",
         "95",
         "96",
-        "97",
-        "98",
         "101",
         "102",
         "103",
@@ -645,8 +592,6 @@
         "106",
         "107",
         "108",
-        "109",
-        "110",
         "111",
         "112",
         "115",
@@ -654,7 +599,6 @@
         "117",
         "118",
         "119",
-        "120",
         "121",
         "122",
         "123",
@@ -668,13 +612,10 @@
         "131",
         "132",
         "133",
-        "134",
         "135",
         "136",
         "137",
-        "138",
-        "139",
-        "140"
+        "139"
       ],
       "covered_lines": [
         "35",
@@ -693,7 +634,6 @@
         "51",
         "52",
         "53",
-        "54",
         "57",
         "58",
         "59",
@@ -752,8 +692,7 @@
         "135",
         "136",
         "137",
-        "139",
-        "140"
+        "139"
       ]
     }
   ],
@@ -766,13 +705,11 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_gamma.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_gamma.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_gamma-stp-20251211-232855-543545255-117492",
-      "total_coverable": 3,
+      "total_coverable": 1,
       "covered": 1,
-      "coverage_percent": 33.33,
+      "coverage_percent": 100.0,
       "coverable_lines": [
-        "31",
-        "32",
-        "33"
+        "32"
       ],
       "covered_lines": [
         "32"
@@ -788,13 +725,11 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_gamma_r.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_gamma_r.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_gamma_r-stp-20251211-232937-150641756-118223",
-      "total_coverable": 3,
+      "total_coverable": 1,
       "covered": 0,
       "coverage_percent": 0.0,
       "coverable_lines": [
-        "30",
-        "31",
-        "32"
+        "31"
       ],
       "covered_lines": []
     }
@@ -808,11 +743,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_hypot.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_hypot.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_hypot-stp-20251211-233018-843528528-118940",
-      "total_coverable": 59,
-      "covered": 50,
-      "coverage_percent": 84.75,
+      "total_coverable": 52,
+      "covered": 47,
+      "coverage_percent": 90.38,
       "coverable_lines": [
-        "54",
         "55",
         "56",
         "58",
@@ -828,11 +762,9 @@
         "68",
         "69",
         "70",
-        "71",
         "73",
         "74",
         "75",
-        "76",
         "77",
         "78",
         "79",
@@ -847,8 +779,6 @@
         "88",
         "89",
         "90",
-        "91",
-        "92",
         "94",
         "95",
         "96",
@@ -864,13 +794,11 @@
         "106",
         "107",
         "108",
-        "109",
         "110",
         "111",
         "112",
         "113",
-        "114",
-        "115"
+        "114"
       ],
       "covered_lines": [
         "55",
@@ -891,7 +819,6 @@
         "73",
         "74",
         "75",
-        "76",
         "77",
         "78",
         "79",
@@ -906,7 +833,6 @@
         "88",
         "89",
         "90",
-        "92",
         "94",
         "95",
         "101",
@@ -921,8 +847,7 @@
         "111",
         "112",
         "113",
-        "114",
-        "115"
+        "114"
       ]
     }
   ],
@@ -933,13 +858,12 @@
       "status": "ok",
       "exit_code": 0,
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_j0.c",
-      "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_j0.bc",
-      "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_j0-stp-20251211-233100-545002556-119633",
-      "total_coverable": 104,
-      "covered": 11,
-      "coverage_percent": 10.58,
+      "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_j0_mainsimple.bc",
+      "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_j0_mainsimple-stp-20251226-052055-445085952-320715",
+      "total_coverable": 86,
+      "covered": 61,
+      "coverage_percent": 70.93,
       "coverable_lines": [
-        "94",
         "95",
         "96",
         "98",
@@ -955,20 +879,15 @@
         "108",
         "109",
         "110",
-        "111",
         "116",
         "117",
         "118",
         "119",
-        "120",
         "121",
-        "122",
         "123",
         "124",
         "125",
         "126",
-        "127",
-        "128",
         "129",
         "130",
         "131",
@@ -977,9 +896,6 @@
         "134",
         "135",
         "136",
-        "137",
-        "138",
-        "163",
         "164",
         "165",
         "167",
@@ -997,23 +913,17 @@
         "195",
         "196",
         "197",
-        "198",
         "199",
         "200",
         "201",
         "202",
-        "203",
         "204",
-        "205",
         "206",
         "207",
-        "208",
         "209",
         "210",
         "211",
         "212",
-        "213",
-        "326",
         "327",
         "328",
         "332",
@@ -1027,8 +937,6 @@
         "340",
         "341",
         "342",
-        "343",
-        "461",
         "462",
         "463",
         "467",
@@ -1041,8 +949,7 @@
         "474",
         "475",
         "476",
-        "477",
-        "478"
+        "477"
       ],
       "covered_lines": [
         "95",
@@ -1054,8 +961,7 @@
         "102",
         "123",
         "124",
-        "125",
-        "138"
+        "125"
       ]
     }
   ],
@@ -1066,13 +972,12 @@
       "status": "ok",
       "exit_code": 0,
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_j1.c",
-      "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_j1.bc",
-      "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_j1-stp-20251211-233142-100114784-120157",
-      "total_coverable": 98,
-      "covered": 10,
-      "coverage_percent": 10.2,
+      "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_j1_mainsimple.bc",
+      "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_j1_mainsimple-stp-20251226-052220-206719177-322595",
+      "total_coverable": 82,
+      "covered": 59,
+      "coverage_percent": 71.95,
       "coverable_lines": [
-        "95",
         "96",
         "97",
         "99",
@@ -1088,25 +993,19 @@
         "109",
         "110",
         "111",
-        "112",
         "117",
         "118",
         "119",
         "120",
-        "121",
         "122",
         "123",
-        "124",
         "125",
         "126",
-        "127",
         "128",
         "129",
         "130",
         "131",
         "132",
-        "133",
-        "164",
         "165",
         "166",
         "168",
@@ -1124,23 +1023,17 @@
         "181",
         "182",
         "183",
-        "184",
         "196",
         "197",
         "198",
         "199",
-        "200",
         "201",
-        "202",
         "203",
         "204",
-        "205",
         "206",
         "207",
         "208",
         "209",
-        "210",
-        "324",
         "325",
         "326",
         "330",
@@ -1154,8 +1047,6 @@
         "338",
         "339",
         "340",
-        "341",
-        "460",
         "461",
         "462",
         "466",
@@ -1168,8 +1059,7 @@
         "473",
         "474",
         "475",
-        "476",
-        "477"
+        "476"
       ],
       "covered_lines": [
         "96",
@@ -1181,7 +1071,7 @@
         "103",
         "125",
         "126",
-        "133"
+        "more see logs"
       ]
     }
   ],
@@ -1192,13 +1082,12 @@
       "status": "ok",
       "exit_code": 0,
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_jn.c",
-      "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_jn.bc",
-      "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_jn-stp-20251211-233223-659788640-120674",
-      "total_coverable": 131,
-      "covered": 20,
-      "coverage_percent": 15.27,
+      "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_jn_mainsimple.bc",
+      "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_jn_mainsimple-stp-20251226-052344-952581052-324469",
+      "total_coverable": 110,
+      "covered": 48,
+      "coverage_percent": 43.64,
       "coverable_lines": [
-        "59",
         "60",
         "61",
         "62",
@@ -1210,7 +1099,6 @@
         "73",
         "74",
         "75",
-        "76",
         "77",
         "78",
         "79",
@@ -1224,7 +1112,6 @@
         "101",
         "102",
         "103",
-        "104",
         "105",
         "106",
         "107",
@@ -1233,8 +1120,6 @@
         "110",
         "111",
         "112",
-        "113",
-        "114",
         "115",
         "116",
         "120",
@@ -1244,9 +1129,7 @@
         "124",
         "125",
         "126",
-        "127",
         "128",
-        "129",
         "130",
         "160",
         "161",
@@ -1257,7 +1140,6 @@
         "166",
         "167",
         "168",
-        "169",
         "170",
         "171",
         "172",
@@ -1272,7 +1154,6 @@
         "189",
         "190",
         "191",
-        "192",
         "193",
         "194",
         "195",
@@ -1284,15 +1165,8 @@
         "202",
         "203",
         "204",
-        "205",
-        "206",
-        "207",
         "208",
-        "209",
-        "210",
         "211",
-        "212",
-        "220",
         "221",
         "222",
         "223",
@@ -1306,7 +1180,6 @@
         "233",
         "234",
         "235",
-        "236",
         "237",
         "238",
         "239",
@@ -1316,7 +1189,6 @@
         "256",
         "257",
         "258",
-        "259",
         "260",
         "261",
         "262",
@@ -1325,10 +1197,7 @@
         "266",
         "267",
         "268",
-        "269",
-        "270",
-        "271",
-        "272"
+        "271"
       ],
       "covered_lines": [
         "60",
@@ -1342,7 +1211,6 @@
         "73",
         "74",
         "75",
-        "76",
         "77",
         "78",
         "79",
@@ -1350,7 +1218,7 @@
         "81",
         "82",
         "211",
-        "212"
+        "more see logs"
       ]
     }
   ],
@@ -1363,13 +1231,11 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_lgamma.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_lgamma.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_lgamma-stp-20251211-233305-299492692-121269",
-      "total_coverable": 3,
+      "total_coverable": 1,
       "covered": 1,
-      "coverage_percent": 33.33,
+      "coverage_percent": 100.0,
       "coverable_lines": [
-        "31",
-        "32",
-        "33"
+        "32"
       ],
       "covered_lines": [
         "32"
@@ -1385,11 +1251,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_lgamma_r.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_lgamma_r.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_lgamma_r-stp-20251211-233347-030391117-121997",
-      "total_coverable": 118,
-      "covered": 87,
-      "coverage_percent": 73.73,
+      "total_coverable": 105,
+      "covered": 82,
+      "coverage_percent": 78.1,
       "coverable_lines": [
-        "164",
         "165",
         "166",
         "168",
@@ -1408,8 +1273,6 @@
         "187",
         "188",
         "189",
-        "190",
-        "191",
         "192",
         "193",
         "194",
@@ -1419,10 +1282,7 @@
         "198",
         "199",
         "200",
-        "201",
         "202",
-        "203",
-        "212",
         "213",
         "214",
         "216",
@@ -1436,7 +1296,6 @@
         "226",
         "227",
         "228",
-        "229",
         "230",
         "231",
         "232",
@@ -1445,7 +1304,6 @@
         "235",
         "236",
         "237",
-        "238",
         "241",
         "243",
         "244",
@@ -1458,7 +1316,6 @@
         "251",
         "252",
         "253",
-        "254",
         "255",
         "256",
         "257",
@@ -1478,8 +1335,6 @@
         "271",
         "272",
         "273",
-        "274",
-        "275",
         "276",
         "277",
         "278",
@@ -1495,7 +1350,6 @@
         "288",
         "289",
         "290",
-        "291",
         "293",
         "294",
         "295",
@@ -1505,8 +1359,7 @@
         "299",
         "301",
         "302",
-        "303",
-        "304"
+        "303"
       ],
       "covered_lines": [
         "165",
@@ -1523,7 +1376,6 @@
         "192",
         "193",
         "202",
-        "203",
         "213",
         "214",
         "216",
@@ -1545,7 +1397,6 @@
         "235",
         "236",
         "237",
-        "238",
         "241",
         "243",
         "244",
@@ -1574,8 +1425,6 @@
         "271",
         "272",
         "273",
-        "274",
-        "275",
         "276",
         "277",
         "278",
@@ -1594,8 +1443,7 @@
         "299",
         "301",
         "302",
-        "303",
-        "304"
+        "303"
       ]
     }
   ],
@@ -1608,11 +1456,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_log.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_log.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_log-stp-20251211-233428-819368710-122719",
-      "total_coverable": 47,
-      "covered": 26,
-      "coverage_percent": 55.32,
+      "total_coverable": 42,
+      "covered": 24,
+      "coverage_percent": 57.14,
       "coverable_lines": [
-        "91",
         "92",
         "93",
         "94",
@@ -1625,7 +1472,6 @@
         "103",
         "104",
         "105",
-        "106",
         "107",
         "108",
         "109",
@@ -1639,7 +1485,6 @@
         "117",
         "118",
         "119",
-        "120",
         "121",
         "122",
         "123",
@@ -1656,9 +1501,7 @@
         "134",
         "135",
         "136",
-        "137",
-        "138",
-        "139"
+        "137"
       ],
       "covered_lines": [
         "92",
@@ -1673,7 +1516,6 @@
         "103",
         "104",
         "105",
-        "106",
         "107",
         "108",
         "109",
@@ -1685,8 +1527,7 @@
         "115",
         "117",
         "118",
-        "119",
-        "139"
+        "119"
       ]
     }
   ],
@@ -1699,11 +1540,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_log10.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_log10.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_log10-stp-20251211-233510-387330877-123270",
-      "total_coverable": 23,
-      "covered": 22,
-      "coverage_percent": 95.65,
+      "total_coverable": 20,
+      "covered": 20,
+      "coverage_percent": 100.0,
       "coverable_lines": [
-        "67",
         "68",
         "69",
         "70",
@@ -1716,7 +1556,6 @@
         "79",
         "80",
         "81",
-        "82",
         "83",
         "84",
         "85",
@@ -1724,8 +1563,7 @@
         "87",
         "88",
         "89",
-        "90",
-        "91"
+        "90"
       ],
       "covered_lines": [
         "68",
@@ -1740,7 +1578,6 @@
         "79",
         "80",
         "81",
-        "82",
         "83",
         "84",
         "85",
@@ -1748,8 +1585,7 @@
         "87",
         "88",
         "89",
-        "90",
-        "91"
+        "90"
       ]
     }
   ],
@@ -1762,11 +1598,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_pow.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_pow.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_pow-stp-20251211-233551-989684925-123834",
-      "total_coverable": 166,
-      "covered": 134,
-      "coverage_percent": 80.72,
+      "total_coverable": 148,
+      "covered": 126,
+      "coverage_percent": 85.14,
       "coverable_lines": [
-        "106",
         "107",
         "108",
         "109",
@@ -1791,9 +1626,6 @@
         "139",
         "140",
         "141",
-        "142",
-        "143",
-        "144",
         "147",
         "148",
         "149",
@@ -1802,16 +1634,12 @@
         "152",
         "153",
         "154",
-        "155",
         "156",
         "157",
-        "158",
         "159",
         "160",
         "161",
         "162",
-        "163",
-        "164",
         "166",
         "168",
         "169",
@@ -1822,10 +1650,7 @@
         "174",
         "175",
         "176",
-        "177",
         "178",
-        "179",
-        "180",
         "182",
         "185",
         "187",
@@ -1834,7 +1659,6 @@
         "192",
         "193",
         "194",
-        "195",
         "197",
         "198",
         "201",
@@ -1883,7 +1707,6 @@
         "253",
         "254",
         "255",
-        "256",
         "259",
         "260",
         "261",
@@ -1896,14 +1719,11 @@
         "268",
         "269",
         "270",
-        "271",
         "272",
         "273",
         "274",
         "275",
         "276",
-        "277",
-        "278",
         "282",
         "283",
         "284",
@@ -1915,7 +1735,6 @@
         "290",
         "291",
         "292",
-        "293",
         "294",
         "295",
         "296",
@@ -1930,8 +1749,7 @@
         "305",
         "306",
         "307",
-        "308",
-        "309"
+        "308"
       ],
       "covered_lines": [
         "107",
@@ -1958,9 +1776,6 @@
         "139",
         "140",
         "141",
-        "142",
-        "143",
-        "144",
         "147",
         "148",
         "149",
@@ -1974,8 +1789,6 @@
         "160",
         "161",
         "162",
-        "163",
-        "164",
         "166",
         "168",
         "169",
@@ -1985,7 +1798,6 @@
         "173",
         "175",
         "176",
-        "177",
         "178",
         "182",
         "185",
@@ -2051,7 +1863,6 @@
         "290",
         "291",
         "292",
-        "293",
         "294",
         "295",
         "296",
@@ -2066,8 +1877,7 @@
         "305",
         "306",
         "307",
-        "308",
-        "309"
+        "308"
       ]
     }
   ],
@@ -2080,11 +1890,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_rem_pio2.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_rem_pio2.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_rem_pio2-stp-20251211-235138-076997933-144893",
-      "total_coverable": 82,
-      "covered": 44,
-      "coverage_percent": 53.66,
+      "total_coverable": 70,
+      "covered": 42,
+      "coverage_percent": 60.0,
       "coverable_lines": [
-        "89",
         "90",
         "91",
         "92",
@@ -2102,7 +1911,6 @@
         "105",
         "106",
         "107",
-        "108",
         "109",
         "110",
         "111",
@@ -2113,10 +1921,7 @@
         "116",
         "117",
         "118",
-        "119",
         "120",
-        "121",
-        "122",
         "123",
         "124",
         "125",
@@ -2142,30 +1947,23 @@
         "145",
         "146",
         "147",
-        "148",
-        "149",
-        "150",
         "151",
         "152",
         "153",
-        "154",
         "158",
         "159",
-        "160",
         "162",
         "163",
         "164",
         "165",
         "166",
         "167",
-        "168",
         "169",
         "170",
         "171",
         "172",
         "173",
-        "174",
-        "175"
+        "174"
       ],
       "covered_lines": [
         "90",
@@ -2204,14 +2002,12 @@
         "165",
         "166",
         "167",
-        "168",
         "169",
         "170",
         "171",
         "172",
         "173",
-        "174",
-        "175"
+        "174"
       ]
     }
   ],
@@ -2224,11 +2020,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_remainder.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_remainder.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_remainder-stp-20251211-235222-821776899-145661",
-      "total_coverable": 35,
-      "covered": 27,
-      "coverage_percent": 77.14,
+      "total_coverable": 30,
+      "covered": 26,
+      "coverage_percent": 86.67,
       "coverable_lines": [
-        "38",
         "39",
         "40",
         "41",
@@ -2252,17 +2047,13 @@
         "64",
         "65",
         "66",
-        "67",
         "68",
         "69",
         "70",
         "71",
         "72",
-        "73",
-        "74",
         "75",
-        "76",
-        "77"
+        "76"
       ],
       "covered_lines": [
         "39",
@@ -2290,8 +2081,7 @@
         "69",
         "70",
         "75",
-        "76",
-        "77"
+        "76"
       ]
     }
   ],
@@ -2304,28 +2094,24 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_scalb.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_scalb.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_scalb-stp-20251212-000811-072160360-207283",
-      "total_coverable": 12,
-      "covered": 4,
+      "total_coverable": 9,
+      "covered": 3,
       "coverage_percent": 33.33,
       "coverable_lines": [
-        "37",
         "41",
         "42",
         "43",
         "44",
-        "45",
         "46",
         "47",
         "48",
         "49",
-        "50",
-        "51"
+        "50"
       ],
       "covered_lines": [
         "41",
         "42",
-        "46",
-        "51"
+        "46"
       ]
     }
   ],
@@ -2338,11 +2124,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_sinh.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_sinh.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_sinh-stp-20251212-000852-651267602-207818",
-      "total_coverable": 25,
-      "covered": 21,
-      "coverage_percent": 84.0,
+      "total_coverable": 21,
+      "covered": 20,
+      "coverage_percent": 95.24,
       "coverable_lines": [
-        "46",
         "47",
         "48",
         "49",
@@ -2357,16 +2142,13 @@
         "64",
         "65",
         "66",
-        "67",
         "70",
         "73",
         "74",
         "75",
         "76",
         "77",
-        "78",
-        "81",
-        "82"
+        "81"
       ],
       "covered_lines": [
         "47",
@@ -2388,8 +2170,7 @@
         "75",
         "76",
         "77",
-        "81",
-        "82"
+        "81"
       ]
     }
   ],
@@ -2402,11 +2183,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/e_sqrt.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/e_sqrt.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/e_sqrt-stp-20251212-000934-331128691-208437",
-      "total_coverable": 84,
-      "covered": 60,
-      "coverage_percent": 71.43,
+      "total_coverable": 71,
+      "covered": 54,
+      "coverage_percent": 76.06,
       "coverable_lines": [
-        "97",
         "98",
         "99",
         "100",
@@ -2415,29 +2195,24 @@
         "104",
         "107",
         "108",
-        "110",
         "112",
         "113",
         "114",
         "115",
-        "116",
         "118",
         "119",
         "120",
         "121",
         "122",
-        "123",
         "124",
         "125",
         "126",
         "127",
-        "128",
         "129",
         "130",
         "131",
         "132",
         "133",
-        "134",
         "135",
         "138",
         "139",
@@ -2449,11 +2224,9 @@
         "146",
         "147",
         "148",
-        "149",
         "150",
         "151",
         "152",
-        "153",
         "155",
         "156",
         "157",
@@ -2465,11 +2238,9 @@
         "163",
         "164",
         "165",
-        "166",
         "167",
         "168",
         "169",
-        "170",
         "173",
         "174",
         "175",
@@ -2480,16 +2251,13 @@
         "180",
         "181",
         "182",
-        "183",
-        "184",
         "185",
         "186",
         "187",
         "188",
         "189",
         "190",
-        "191",
-        "192"
+        "191"
       ],
       "covered_lines": [
         "98",
@@ -2504,7 +2272,6 @@
         "113",
         "114",
         "115",
-        "116",
         "118",
         "119",
         "120",
@@ -2514,13 +2281,11 @@
         "125",
         "126",
         "127",
-        "128",
         "129",
         "130",
         "131",
         "132",
         "133",
-        "134",
         "135",
         "138",
         "139",
@@ -2532,7 +2297,6 @@
         "146",
         "147",
         "148",
-        "149",
         "150",
         "151",
         "152",
@@ -2547,11 +2311,9 @@
         "163",
         "164",
         "165",
-        "166",
         "167",
         "168",
-        "169",
-        "192"
+        "169"
       ]
     }
   ],
@@ -2564,17 +2326,15 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/k_cos.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/k_cos.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/k_cos-stp-20251212-002524-551537036-229507",
-      "total_coverable": 23,
-      "covered": 10,
-      "coverage_percent": 43.48,
+      "total_coverable": 18,
+      "covered": 9,
+      "coverage_percent": 50.0,
       "coverable_lines": [
-        "70",
         "71",
         "72",
         "73",
         "74",
         "75",
-        "76",
         "77",
         "78",
         "79",
@@ -2585,12 +2345,9 @@
         "84",
         "85",
         "86",
-        "87",
         "88",
         "89",
-        "90",
-        "91",
-        "92"
+        "90"
       ],
       "covered_lines": [
         "71",
@@ -2601,8 +2358,7 @@
         "77",
         "78",
         "79",
-        "80",
-        "92"
+        "80"
       ]
     }
   ],
@@ -2615,11 +2371,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/k_sin.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/k_sin.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/k_sin-stp-20251212-002606-099633813-230037",
-      "total_coverable": 12,
-      "covered": 11,
-      "coverage_percent": 91.67,
+      "total_coverable": 10,
+      "covered": 10,
+      "coverage_percent": 100.0,
       "coverable_lines": [
-        "63",
         "64",
         "65",
         "66",
@@ -2629,8 +2384,7 @@
         "70",
         "71",
         "72",
-        "73",
-        "74"
+        "73"
       ],
       "covered_lines": [
         "64",
@@ -2642,8 +2396,7 @@
         "70",
         "71",
         "72",
-        "73",
-        "74"
+        "73"
       ]
     }
   ],
@@ -2656,12 +2409,11 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/k_standard.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/k_standard.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/k_standard-stp-20251212-002647-612297603-230592",
-      "total_coverable": 603,
-      "covered": 394,
-      "coverage_percent": 65.34,
+      "total_coverable": 528,
+      "covered": 354,
+      "coverage_percent": 67.05,
       "coverable_lines": [
         "20",
-        "83",
         "84",
         "85",
         "86",
@@ -2680,9 +2432,7 @@
         "105",
         "106",
         "107",
-        "108",
         "109",
-        "110",
         "111",
         "112",
         "114",
@@ -2693,9 +2443,7 @@
         "119",
         "120",
         "121",
-        "122",
         "123",
-        "124",
         "125",
         "126",
         "128",
@@ -2708,9 +2456,7 @@
         "135",
         "136",
         "137",
-        "138",
         "139",
-        "140",
         "141",
         "142",
         "144",
@@ -2723,7 +2469,6 @@
         "151",
         "152",
         "153",
-        "154",
         "155",
         "156",
         "158",
@@ -2736,7 +2481,6 @@
         "165",
         "166",
         "167",
-        "168",
         "169",
         "170",
         "172",
@@ -2749,7 +2493,6 @@
         "179",
         "180",
         "181",
-        "182",
         "183",
         "184",
         "186",
@@ -2759,7 +2502,6 @@
         "190",
         "191",
         "192",
-        "193",
         "194",
         "195",
         "197",
@@ -2773,9 +2515,7 @@
         "205",
         "206",
         "207",
-        "208",
         "209",
-        "210",
         "211",
         "212",
         "214",
@@ -2789,9 +2529,7 @@
         "222",
         "223",
         "224",
-        "225",
         "226",
-        "227",
         "228",
         "229",
         "231",
@@ -2805,9 +2543,7 @@
         "239",
         "240",
         "241",
-        "242",
         "243",
-        "244",
         "245",
         "246",
         "248",
@@ -2821,9 +2557,7 @@
         "256",
         "257",
         "258",
-        "259",
         "260",
-        "261",
         "262",
         "263",
         "265",
@@ -2837,9 +2571,7 @@
         "273",
         "274",
         "275",
-        "276",
         "277",
-        "278",
         "279",
         "280",
         "282",
@@ -2853,9 +2585,7 @@
         "290",
         "291",
         "292",
-        "293",
         "294",
-        "295",
         "296",
         "297",
         "299",
@@ -2868,7 +2598,6 @@
         "306",
         "307",
         "308",
-        "309",
         "310",
         "311",
         "313",
@@ -2882,9 +2611,7 @@
         "321",
         "322",
         "323",
-        "324",
         "325",
-        "326",
         "327",
         "328",
         "330",
@@ -2898,9 +2625,7 @@
         "338",
         "339",
         "340",
-        "341",
         "342",
-        "343",
         "344",
         "345",
         "347",
@@ -2914,9 +2639,7 @@
         "355",
         "356",
         "357",
-        "358",
         "359",
-        "360",
         "361",
         "362",
         "364",
@@ -2930,9 +2653,7 @@
         "372",
         "373",
         "374",
-        "375",
         "376",
-        "377",
         "378",
         "379",
         "381",
@@ -2946,9 +2667,7 @@
         "389",
         "390",
         "391",
-        "392",
         "393",
-        "394",
         "395",
         "396",
         "399",
@@ -2958,7 +2677,6 @@
         "403",
         "404",
         "405",
-        "406",
         "407",
         "408",
         "410",
@@ -2971,12 +2689,10 @@
         "417",
         "418",
         "419",
-        "420",
         "421",
         "422",
         "423",
         "424",
-        "425",
         "426",
         "427",
         "429",
@@ -2986,7 +2702,6 @@
         "433",
         "434",
         "435",
-        "436",
         "437",
         "438",
         "440",
@@ -3000,9 +2715,7 @@
         "448",
         "449",
         "450",
-        "451",
         "452",
-        "453",
         "454",
         "455",
         "457",
@@ -3016,9 +2729,7 @@
         "465",
         "466",
         "467",
-        "468",
         "469",
-        "470",
         "471",
         "472",
         "474",
@@ -3031,7 +2742,6 @@
         "481",
         "482",
         "483",
-        "484",
         "485",
         "486",
         "488",
@@ -3045,9 +2755,7 @@
         "496",
         "497",
         "498",
-        "499",
         "500",
-        "501",
         "502",
         "503",
         "505",
@@ -3061,9 +2769,7 @@
         "513",
         "514",
         "515",
-        "516",
         "517",
-        "518",
         "519",
         "520",
         "522",
@@ -3074,9 +2780,7 @@
         "527",
         "528",
         "529",
-        "530",
         "531",
-        "532",
         "533",
         "534",
         "536",
@@ -3087,9 +2791,7 @@
         "541",
         "542",
         "543",
-        "544",
         "545",
-        "546",
         "547",
         "548",
         "550",
@@ -3100,9 +2802,7 @@
         "555",
         "556",
         "557",
-        "558",
         "559",
-        "560",
         "561",
         "562",
         "564",
@@ -3113,9 +2813,7 @@
         "569",
         "570",
         "571",
-        "572",
         "573",
-        "574",
         "575",
         "576",
         "578",
@@ -3125,7 +2823,6 @@
         "582",
         "583",
         "584",
-        "585",
         "586",
         "587",
         "589",
@@ -3135,7 +2832,6 @@
         "593",
         "594",
         "595",
-        "596",
         "597",
         "598",
         "600",
@@ -3147,9 +2843,7 @@
         "606",
         "607",
         "608",
-        "609",
         "610",
-        "611",
         "612",
         "613",
         "615",
@@ -3161,9 +2855,7 @@
         "621",
         "622",
         "623",
-        "624",
         "625",
-        "626",
         "627",
         "628",
         "630",
@@ -3175,9 +2867,7 @@
         "636",
         "637",
         "638",
-        "639",
         "640",
-        "641",
         "642",
         "643",
         "645",
@@ -3189,9 +2879,7 @@
         "651",
         "652",
         "653",
-        "654",
         "655",
-        "656",
         "657",
         "658",
         "660",
@@ -3203,9 +2891,7 @@
         "666",
         "667",
         "668",
-        "669",
         "670",
-        "671",
         "672",
         "673",
         "675",
@@ -3217,9 +2903,7 @@
         "681",
         "682",
         "683",
-        "684",
         "685",
-        "686",
         "687",
         "688",
         "690",
@@ -3232,7 +2916,6 @@
         "697",
         "698",
         "699",
-        "700",
         "701",
         "702",
         "704",
@@ -3246,9 +2929,7 @@
         "712",
         "713",
         "714",
-        "715",
         "716",
-        "717",
         "718",
         "719",
         "722",
@@ -3258,11 +2939,8 @@
         "726",
         "727",
         "728",
-        "729",
         "730",
-        "731",
-        "732",
-        "733"
+        "732"
       ],
       "covered_lines": [
         "84",
@@ -3278,7 +2956,6 @@
         "105",
         "106",
         "109",
-        "110",
         "111",
         "114",
         "115",
@@ -3287,7 +2964,6 @@
         "119",
         "120",
         "123",
-        "124",
         "125",
         "128",
         "129",
@@ -3298,7 +2974,6 @@
         "135",
         "136",
         "139",
-        "140",
         "141",
         "144",
         "145",
@@ -3307,7 +2982,6 @@
         "150",
         "152",
         "153",
-        "154",
         "155",
         "158",
         "159",
@@ -3316,7 +2990,6 @@
         "164",
         "166",
         "167",
-        "168",
         "169",
         "172",
         "173",
@@ -3325,7 +2998,6 @@
         "178",
         "180",
         "181",
-        "182",
         "183",
         "186",
         "187",
@@ -3333,7 +3005,6 @@
         "189",
         "191",
         "192",
-        "193",
         "194",
         "197",
         "198",
@@ -3343,7 +3014,6 @@
         "205",
         "206",
         "209",
-        "210",
         "211",
         "214",
         "215",
@@ -3353,7 +3023,6 @@
         "222",
         "223",
         "226",
-        "227",
         "228",
         "231",
         "232",
@@ -3363,7 +3032,6 @@
         "239",
         "240",
         "243",
-        "244",
         "245",
         "248",
         "249",
@@ -3373,7 +3041,6 @@
         "256",
         "257",
         "260",
-        "261",
         "262",
         "265",
         "266",
@@ -3383,7 +3050,6 @@
         "273",
         "274",
         "277",
-        "278",
         "279",
         "282",
         "283",
@@ -3393,7 +3059,6 @@
         "290",
         "291",
         "294",
-        "295",
         "296",
         "299",
         "300",
@@ -3402,7 +3067,6 @@
         "305",
         "307",
         "308",
-        "309",
         "310",
         "313",
         "314",
@@ -3412,7 +3076,6 @@
         "321",
         "322",
         "325",
-        "326",
         "327",
         "330",
         "331",
@@ -3422,7 +3085,6 @@
         "338",
         "339",
         "342",
-        "343",
         "344",
         "347",
         "348",
@@ -3432,7 +3094,6 @@
         "355",
         "356",
         "359",
-        "360",
         "361",
         "364",
         "365",
@@ -3442,7 +3103,6 @@
         "372",
         "373",
         "376",
-        "377",
         "378",
         "381",
         "382",
@@ -3452,7 +3112,6 @@
         "389",
         "390",
         "393",
-        "394",
         "395",
         "399",
         "400",
@@ -3468,7 +3127,6 @@
         "421",
         "423",
         "424",
-        "425",
         "426",
         "429",
         "430",
@@ -3476,7 +3134,6 @@
         "432",
         "434",
         "435",
-        "436",
         "437",
         "440",
         "441",
@@ -3486,7 +3143,6 @@
         "448",
         "449",
         "452",
-        "453",
         "454",
         "457",
         "458",
@@ -3496,7 +3152,6 @@
         "465",
         "466",
         "469",
-        "470",
         "471",
         "474",
         "475",
@@ -3505,7 +3160,6 @@
         "480",
         "482",
         "483",
-        "484",
         "485",
         "488",
         "489",
@@ -3515,7 +3169,6 @@
         "496",
         "497",
         "500",
-        "501",
         "502",
         "505",
         "506",
@@ -3525,7 +3178,6 @@
         "513",
         "514",
         "517",
-        "518",
         "519",
         "522",
         "523",
@@ -3534,7 +3186,6 @@
         "527",
         "528",
         "531",
-        "532",
         "533",
         "536",
         "537",
@@ -3543,7 +3194,6 @@
         "541",
         "542",
         "545",
-        "546",
         "547",
         "550",
         "551",
@@ -3552,7 +3202,6 @@
         "555",
         "556",
         "559",
-        "560",
         "561",
         "564",
         "565",
@@ -3561,7 +3210,6 @@
         "569",
         "570",
         "573",
-        "574",
         "575",
         "578",
         "579",
@@ -3569,7 +3217,6 @@
         "581",
         "583",
         "584",
-        "585",
         "586",
         "589",
         "590",
@@ -3577,7 +3224,6 @@
         "592",
         "594",
         "595",
-        "596",
         "597",
         "600",
         "601",
@@ -3586,7 +3232,6 @@
         "605",
         "606",
         "610",
-        "611",
         "612",
         "615",
         "616",
@@ -3595,7 +3240,6 @@
         "620",
         "621",
         "625",
-        "626",
         "627",
         "630",
         "631",
@@ -3604,7 +3248,6 @@
         "635",
         "636",
         "640",
-        "641",
         "642",
         "645",
         "646",
@@ -3613,7 +3256,6 @@
         "650",
         "651",
         "655",
-        "656",
         "657",
         "660",
         "661",
@@ -3622,7 +3264,6 @@
         "665",
         "666",
         "670",
-        "671",
         "672",
         "675",
         "676",
@@ -3631,7 +3272,6 @@
         "680",
         "681",
         "685",
-        "686",
         "687",
         "690",
         "691",
@@ -3640,7 +3280,6 @@
         "696",
         "698",
         "699",
-        "700",
         "701",
         "704",
         "705",
@@ -3650,7 +3289,6 @@
         "712",
         "713",
         "716",
-        "717",
         "718",
         "722",
         "723",
@@ -3671,9 +3309,9 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/k_tan.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/k_tan.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/k_tan-stp-20251212-002729-564182701-231603",
-      "total_coverable": 67,
-      "covered": 54,
-      "coverage_percent": 80.6,
+      "total_coverable": 58,
+      "covered": 51,
+      "coverage_percent": 87.93,
       "coverable_lines": [
         "67",
         "68",
@@ -3700,20 +3338,14 @@
         "94",
         "95",
         "96",
-        "97",
-        "98",
-        "99",
-        "100",
         "101",
         "102",
         "103",
         "104",
-        "105",
         "106",
         "107",
         "108",
         "109",
-        "110",
         "111",
         "112",
         "118",
@@ -3728,7 +3360,6 @@
         "127",
         "128",
         "129",
-        "130",
         "131",
         "132",
         "133",
@@ -3739,9 +3370,7 @@
         "143",
         "144",
         "145",
-        "146",
-        "147",
-        "148"
+        "146"
       ],
       "covered_lines": [
         "74",
@@ -3767,12 +3396,10 @@
         "102",
         "103",
         "104",
-        "105",
         "106",
         "107",
         "108",
         "109",
-        "110",
         "111",
         "112",
         "118",
@@ -3796,8 +3423,7 @@
         "143",
         "144",
         "145",
-        "146",
-        "148"
+        "146"
       ]
     }
   ],
@@ -3810,11 +3436,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_asinh.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_asinh.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_asinh-stp-20251212-002811-213259227-232207",
-      "total_coverable": 20,
-      "covered": 17,
-      "coverage_percent": 85.0,
+      "total_coverable": 16,
+      "covered": 16,
+      "coverage_percent": 100.0,
       "coverable_lines": [
-        "42",
         "43",
         "44",
         "45",
@@ -3822,7 +3447,6 @@
         "47",
         "48",
         "49",
-        "50",
         "51",
         "52",
         "53",
@@ -3831,9 +3455,7 @@
         "56",
         "57",
         "58",
-        "59",
-        "60",
-        "61"
+        "60"
       ],
       "covered_lines": [
         "43",
@@ -3851,8 +3473,7 @@
         "56",
         "57",
         "58",
-        "60",
-        "61"
+        "60"
       ]
     }
   ],
@@ -3865,11 +3486,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_atan.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_atan.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_atan-stp-20251212-002852-922198278-232864",
-      "total_coverable": 41,
-      "covered": 29,
-      "coverage_percent": 70.73,
+      "total_coverable": 35,
+      "covered": 28,
+      "coverage_percent": 80.0,
       "coverable_lines": [
-        "91",
         "92",
         "93",
         "95",
@@ -3883,7 +3503,6 @@
         "103",
         "104",
         "105",
-        "106",
         "107",
         "108",
         "109",
@@ -3892,13 +3511,11 @@
         "112",
         "113",
         "114",
-        "115",
         "116",
         "117",
         "118",
         "119",
         "120",
-        "121",
         "122",
         "124",
         "125",
@@ -3907,9 +3524,7 @@
         "129",
         "130",
         "131",
-        "132",
-        "133",
-        "134"
+        "132"
       ],
       "covered_lines": [
         "92",
@@ -3939,8 +3554,7 @@
         "128",
         "129",
         "131",
-        "132",
-        "134"
+        "132"
       ]
     }
   ],
@@ -3953,11 +3567,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_cbrt.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_cbrt.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_cbrt-stp-20251212-002934-518311862-233423",
-      "total_coverable": 29,
-      "covered": 27,
-      "coverage_percent": 93.1,
+      "total_coverable": 26,
+      "covered": 25,
+      "coverage_percent": 96.15,
       "coverable_lines": [
-        "45",
         "46",
         "47",
         "48",
@@ -3971,7 +3584,6 @@
         "60",
         "61",
         "62",
-        "63",
         "64",
         "65",
         "69",
@@ -3984,8 +3596,7 @@
         "81",
         "82",
         "85",
-        "86",
-        "87"
+        "86"
       ],
       "covered_lines": [
         "46",
@@ -4001,7 +3612,6 @@
         "60",
         "61",
         "62",
-        "63",
         "65",
         "69",
         "70",
@@ -4013,8 +3623,7 @@
         "81",
         "82",
         "85",
-        "86",
-        "87"
+        "86"
       ]
     }
   ],
@@ -4027,11 +3636,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_ceil.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_ceil.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_ceil-stp-20251212-003016-115041540-233985",
-      "total_coverable": 42,
-      "covered": 25,
-      "coverage_percent": 59.52,
+      "total_coverable": 33,
+      "covered": 23,
+      "coverage_percent": 69.7,
       "coverable_lines": [
-        "37",
         "38",
         "39",
         "40",
@@ -4042,15 +3650,12 @@
         "45",
         "46",
         "47",
-        "48",
         "49",
         "50",
         "51",
         "52",
         "53",
         "54",
-        "55",
-        "56",
         "57",
         "58",
         "59",
@@ -4064,15 +3669,10 @@
         "67",
         "68",
         "69",
-        "70",
-        "71",
         "72",
-        "73",
-        "74",
         "75",
         "76",
-        "77",
-        "78"
+        "77"
       ],
       "covered_lines": [
         "38",
@@ -4085,7 +3685,6 @@
         "45",
         "46",
         "47",
-        "48",
         "49",
         "50",
         "51",
@@ -4098,8 +3697,7 @@
         "63",
         "75",
         "76",
-        "77",
-        "78"
+        "77"
       ]
     }
   ],
@@ -4112,14 +3710,12 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_copysign.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_copysign.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_copysign-stp-20251212-003057-671713041-234545",
-      "total_coverable": 4,
+      "total_coverable": 2,
       "covered": 2,
-      "coverage_percent": 50.0,
+      "coverage_percent": 100.0,
       "coverable_lines": [
-        "28",
         "29",
-        "30",
-        "31"
+        "30"
       ],
       "covered_lines": [
         "29",
@@ -4136,11 +3732,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_cos.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_cos.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_cos-stp-20251212-003139-216775975-235068",
-      "total_coverable": 18,
-      "covered": 12,
-      "coverage_percent": 66.67,
+      "total_coverable": 14,
+      "covered": 11,
+      "coverage_percent": 78.57,
       "coverable_lines": [
-        "53",
         "54",
         "55",
         "58",
@@ -4154,10 +3749,7 @@
         "72",
         "73",
         "74",
-        "75",
-        "76",
-        "77",
-        "78"
+        "75"
       ],
       "covered_lines": [
         "54",
@@ -4170,8 +3762,7 @@
         "70",
         "71",
         "72",
-        "75",
-        "78"
+        "75"
       ]
     }
   ],
@@ -4182,13 +3773,12 @@
       "status": "ok",
       "exit_code": 0,
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_erf.c",
-      "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_erf.bc",
+      "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_erf_mainsimple.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_erf-stp-20251212-003224-001434533-235862",
-      "total_coverable": 105,
-      "covered": 37,
-      "coverage_percent": 35.24,
+      "total_coverable": 88,
+      "covered": 77,
+      "coverage_percent": 87.50,
       "coverable_lines": [
-        "196",
         "197",
         "198",
         "199",
@@ -4196,28 +3786,23 @@
         "201",
         "202",
         "203",
-        "204",
         "206",
         "207",
         "208",
         "209",
         "210",
-        "211",
         "212",
         "213",
         "214",
         "215",
         "216",
-        "217",
         "218",
         "219",
         "220",
         "221",
         "222",
-        "223",
         "224",
         "225",
-        "226",
         "227",
         "228",
         "229",
@@ -4230,20 +3815,16 @@
         "236",
         "237",
         "238",
-        "239",
         "240",
         "241",
         "242",
         "243",
-        "244",
-        "252",
         "253",
         "254",
         "255",
         "256",
         "257",
         "259",
-        "260",
         "262",
         "263",
         "264",
@@ -4257,8 +3838,6 @@
         "272",
         "273",
         "274",
-        "275",
-        "276",
         "277",
         "278",
         "279",
@@ -4267,8 +3846,6 @@
         "282",
         "283",
         "284",
-        "285",
-        "286",
         "287",
         "288",
         "289",
@@ -4283,16 +3860,13 @@
         "298",
         "299",
         "300",
-        "301",
         "302",
         "303",
         "304",
         "305",
         "306",
         "307",
-        "308",
-        "309",
-        "310"
+        "308"
       ],
       "covered_lines": [
         "197",
@@ -4330,8 +3904,7 @@
         "240",
         "241",
         "242",
-        "243",
-        "244"
+        "243"
       ]
     }
   ],
@@ -4344,11 +3917,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_expm1.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_expm1.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_expm1-stp-20251212-003305-656806831-236455",
-      "total_coverable": 74,
-      "covered": 46,
-      "coverage_percent": 62.16,
+      "total_coverable": 62,
+      "covered": 42,
+      "coverage_percent": 67.74,
       "coverable_lines": [
-        "135",
         "136",
         "137",
         "138",
@@ -4362,14 +3934,10 @@
         "149",
         "150",
         "151",
-        "152",
         "153",
-        "154",
         "155",
         "156",
         "157",
-        "158",
-        "159",
         "162",
         "163",
         "164",
@@ -4381,14 +3949,11 @@
         "170",
         "171",
         "172",
-        "173",
         "174",
         "175",
-        "176",
         "177",
         "178",
         "179",
-        "180",
         "181",
         "184",
         "185",
@@ -4407,7 +3972,6 @@
         "198",
         "199",
         "200",
-        "201",
         "202",
         "203",
         "204",
@@ -4418,10 +3982,7 @@
         "209",
         "210",
         "211",
-        "212",
-        "213",
-        "214",
-        "215"
+        "214"
       ],
       "covered_lines": [
         "136",
@@ -4438,9 +3999,7 @@
         "150",
         "151",
         "153",
-        "154",
         "155",
-        "159",
         "162",
         "163",
         "164",
@@ -4452,7 +4011,6 @@
         "172",
         "174",
         "175",
-        "176",
         "177",
         "178",
         "179",
@@ -4468,8 +4026,7 @@
         "193",
         "194",
         "195",
-        "196",
-        "215"
+        "196"
       ]
     }
   ],
@@ -4482,14 +4039,12 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_fabs.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_fabs.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_fabs-stp-20251212-003347-245631318-237051",
-      "total_coverable": 4,
+      "total_coverable": 2,
       "covered": 0,
       "coverage_percent": 0.0,
       "coverable_lines": [
-        "26",
         "27",
-        "28",
-        "29"
+        "28"
       ],
       "covered_lines": []
     }
@@ -4503,15 +4058,13 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_finite.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_finite.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_finite-stp-20251212-003428-762000081-237574",
-      "total_coverable": 5,
+      "total_coverable": 3,
       "covered": 0,
       "coverage_percent": 0.0,
       "coverable_lines": [
-        "27",
         "28",
         "29",
-        "30",
-        "31"
+        "30"
       ],
       "covered_lines": []
     }
@@ -4525,11 +4078,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_floor.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_floor.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_floor-stp-20251212-003510-325937870-238091",
-      "total_coverable": 43,
-      "covered": 24,
-      "coverage_percent": 55.81,
+      "total_coverable": 34,
+      "covered": 22,
+      "coverage_percent": 64.71,
       "coverable_lines": [
-        "37",
         "38",
         "39",
         "40",
@@ -4541,15 +4093,12 @@
         "46",
         "47",
         "48",
-        "49",
         "50",
         "51",
         "52",
         "53",
         "54",
         "55",
-        "56",
-        "57",
         "58",
         "59",
         "60",
@@ -4563,15 +4112,10 @@
         "68",
         "69",
         "70",
-        "71",
-        "72",
         "73",
-        "74",
-        "75",
         "76",
         "77",
-        "78",
-        "79"
+        "78"
       ],
       "covered_lines": [
         "38",
@@ -4583,7 +4127,6 @@
         "44",
         "45",
         "46",
-        "49",
         "50",
         "51",
         "52",
@@ -4596,8 +4139,7 @@
         "64",
         "76",
         "77",
-        "78",
-        "79"
+        "78"
       ]
     }
   ],
@@ -4610,11 +4152,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_frexp.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_frexp.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_frexp-stp-20251212-003551-870644229-238666",
-      "total_coverable": 18,
-      "covered": 17,
-      "coverage_percent": 94.44,
+      "total_coverable": 15,
+      "covered": 15,
+      "coverage_percent": 100.0,
       "coverable_lines": [
-        "39",
         "40",
         "41",
         "42",
@@ -4626,12 +4167,10 @@
         "48",
         "49",
         "50",
-        "51",
         "52",
         "53",
         "54",
-        "55",
-        "56"
+        "55"
       ],
       "covered_lines": [
         "40",
@@ -4645,12 +4184,10 @@
         "48",
         "49",
         "50",
-        "51",
         "52",
         "53",
         "54",
-        "55",
-        "56"
+        "55"
       ]
     }
   ],
@@ -4663,11 +4200,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_ilogb.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_ilogb.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_ilogb-stp-20251212-003633-473780030-239186",
-      "total_coverable": 18,
-      "covered": 14,
-      "coverage_percent": 77.78,
+      "total_coverable": 14,
+      "covered": 13,
+      "coverage_percent": 92.86,
       "coverable_lines": [
-        "28",
         "29",
         "31",
         "32",
@@ -4679,12 +4215,9 @@
         "38",
         "39",
         "40",
-        "41",
         "42",
-        "43",
         "44",
-        "45",
-        "46"
+        "45"
       ],
       "covered_lines": [
         "29",
@@ -4699,8 +4232,7 @@
         "40",
         "42",
         "44",
-        "45",
-        "46"
+        "45"
       ]
     }
   ],
@@ -4713,18 +4245,16 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_isnan.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_isnan.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_isnan-stp-20251212-003715-055253778-239791",
-      "total_coverable": 8,
+      "total_coverable": 6,
       "covered": 6,
-      "coverage_percent": 75.0,
+      "coverage_percent": 100.0,
       "coverable_lines": [
-        "27",
         "28",
         "29",
         "30",
         "31",
         "32",
-        "33",
-        "34"
+        "33"
       ],
       "covered_lines": [
         "28",
@@ -4745,20 +4275,17 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_ldexp.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_ldexp.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_ldexp-stp-20251212-003756-602402418-240316",
-      "total_coverable": 6,
-      "covered": 2,
-      "coverage_percent": 33.33,
+      "total_coverable": 4,
+      "covered": 1,
+      "coverage_percent": 25.0,
       "coverable_lines": [
-        "23",
         "24",
         "25",
         "26",
-        "27",
-        "28"
+        "27"
       ],
       "covered_lines": [
-        "24",
-        "28"
+        "24"
       ]
     }
   ],
@@ -4771,11 +4298,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_log1p.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_log1p.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_log1p-stp-20251212-003838-197236462-240838",
-      "total_coverable": 59,
-      "covered": 50,
-      "coverage_percent": 84.75,
+      "total_coverable": 50,
+      "covered": 47,
+      "coverage_percent": 94.0,
       "coverable_lines": [
-        "105",
         "106",
         "107",
         "109",
@@ -4785,17 +4311,14 @@
         "114",
         "115",
         "116",
-        "117",
         "118",
         "119",
         "120",
         "121",
         "122",
         "123",
-        "124",
         "125",
         "126",
-        "127",
         "128",
         "129",
         "130",
@@ -4809,7 +4332,6 @@
         "138",
         "139",
         "140",
-        "141",
         "142",
         "143",
         "144",
@@ -4817,9 +4339,7 @@
         "146",
         "147",
         "148",
-        "149",
         "150",
-        "151",
         "152",
         "153",
         "154",
@@ -4827,13 +4347,11 @@
         "156",
         "157",
         "158",
-        "159",
         "160",
         "161",
         "162",
         "163",
-        "164",
-        "165"
+        "164"
       ],
       "covered_lines": [
         "106",
@@ -4851,7 +4369,6 @@
         "121",
         "125",
         "126",
-        "127",
         "128",
         "129",
         "130",
@@ -4873,7 +4390,6 @@
         "147",
         "148",
         "150",
-        "151",
         "152",
         "153",
         "154",
@@ -4884,8 +4400,7 @@
         "161",
         "162",
         "163",
-        "164",
-        "165"
+        "164"
       ]
     }
   ],
@@ -4898,11 +4413,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_logb.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_logb.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_logb-stp-20251212-003919-774576822-241433",
-      "total_coverable": 11,
-      "covered": 9,
-      "coverage_percent": 81.82,
+      "total_coverable": 9,
+      "covered": 8,
+      "coverage_percent": 88.89,
       "coverable_lines": [
-        "28",
         "29",
         "30",
         "31",
@@ -4911,8 +4425,7 @@
         "34",
         "35",
         "36",
-        "37",
-        "38"
+        "37"
       ],
       "covered_lines": [
         "29",
@@ -4922,8 +4435,7 @@
         "33",
         "34",
         "35",
-        "37",
-        "38"
+        "37"
       ]
     }
   ],
@@ -4936,11 +4448,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_modf.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_modf.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_modf-stp-20251212-004001-361566452-241969",
-      "total_coverable": 43,
-      "covered": 34,
-      "coverage_percent": 79.07,
+      "total_coverable": 37,
+      "covered": 33,
+      "coverage_percent": 89.19,
       "coverable_lines": [
-        "38",
         "39",
         "40",
         "41",
@@ -4962,8 +4473,6 @@
         "57",
         "58",
         "59",
-        "60",
-        "61",
         "62",
         "63",
         "64",
@@ -4979,10 +4488,7 @@
         "74",
         "75",
         "76",
-        "77",
-        "78",
-        "79",
-        "80"
+        "77"
       ],
       "covered_lines": [
         "39",
@@ -5017,8 +4523,7 @@
         "73",
         "75",
         "76",
-        "77",
-        "80"
+        "77"
       ]
     }
   ],
@@ -5031,11 +4536,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_nextafter.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_nextafter.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_nextafter-stp-20251212-004042-961900939-242530",
-      "total_coverable": 48,
-      "covered": 29,
-      "coverage_percent": 60.42,
+      "total_coverable": 40,
+      "covered": 28,
+      "coverage_percent": 70.0,
       "coverable_lines": [
-        "29",
         "30",
         "31",
         "33",
@@ -5053,7 +4557,6 @@
         "46",
         "47",
         "48",
-        "49",
         "50",
         "51",
         "52",
@@ -5061,7 +4564,6 @@
         "54",
         "55",
         "56",
-        "57",
         "58",
         "59",
         "60",
@@ -5069,8 +4571,6 @@
         "62",
         "63",
         "64",
-        "65",
-        "66",
         "67",
         "68",
         "69",
@@ -5078,11 +4578,8 @@
         "71",
         "72",
         "73",
-        "74",
-        "75",
         "76",
-        "77",
-        "78"
+        "77"
       ],
       "covered_lines": [
         "30",
@@ -5112,8 +4609,7 @@
         "68",
         "69",
         "76",
-        "77",
-        "78"
+        "77"
       ]
     }
   ],
@@ -5126,11 +4622,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_rint.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_rint.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_rint-stp-20251212-004124-551028805-243093",
-      "total_coverable": 43,
+      "total_coverable": 38,
       "covered": 0,
       "coverage_percent": 0.0,
       "coverable_lines": [
-        "42",
         "43",
         "44",
         "45",
@@ -5157,8 +4652,6 @@
         "66",
         "67",
         "68",
-        "69",
-        "70",
         "71",
         "72",
         "73",
@@ -5167,12 +4660,10 @@
         "76",
         "77",
         "78",
-        "79",
         "80",
         "81",
         "82",
-        "83",
-        "84"
+        "83"
       ],
       "covered_lines": []
     }
@@ -5186,11 +4677,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_scalbn.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_scalbn.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_scalbn-stp-20251212-004206-098182939-243612",
-      "total_coverable": 25,
-      "covered": 24,
-      "coverage_percent": 96.0,
+      "total_coverable": 22,
+      "covered": 22,
+      "coverage_percent": 100.0,
       "coverable_lines": [
-        "39",
         "40",
         "41",
         "42",
@@ -5201,7 +4691,6 @@
         "47",
         "48",
         "49",
-        "50",
         "51",
         "52",
         "53",
@@ -5213,8 +4702,7 @@
         "59",
         "60",
         "61",
-        "62",
-        "63"
+        "62"
       ],
       "covered_lines": [
         "40",
@@ -5227,7 +4715,6 @@
         "47",
         "48",
         "49",
-        "50",
         "51",
         "52",
         "53",
@@ -5239,8 +4726,7 @@
         "59",
         "60",
         "61",
-        "62",
-        "63"
+        "62"
       ]
     }
   ],
@@ -5253,13 +4739,11 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_significand.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_significand.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_significand-stp-20251212-004247-663118990-244172",
-      "total_coverable": 3,
+      "total_coverable": 1,
       "covered": 1,
-      "coverage_percent": 33.33,
+      "coverage_percent": 100.0,
       "coverable_lines": [
-        "28",
-        "29",
-        "30"
+        "29"
       ],
       "covered_lines": [
         "29"
@@ -5275,11 +4759,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_sin.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_sin.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_sin-stp-20251212-004330-245703954-244839",
-      "total_coverable": 18,
-      "covered": 12,
-      "coverage_percent": 66.67,
+      "total_coverable": 14,
+      "covered": 11,
+      "coverage_percent": 78.57,
       "coverable_lines": [
-        "53",
         "54",
         "55",
         "58",
@@ -5293,10 +4776,7 @@
         "72",
         "73",
         "74",
-        "75",
-        "76",
-        "77",
-        "78"
+        "75"
       ],
       "covered_lines": [
         "54",
@@ -5309,8 +4789,7 @@
         "70",
         "71",
         "72",
-        "75",
-        "78"
+        "75"
       ]
     }
   ],
@@ -5323,11 +4802,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_tan.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_tan.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_tan-stp-20251212-004414-950457226-245633",
-      "total_coverable": 12,
-      "covered": 9,
-      "coverage_percent": 75.0,
+      "total_coverable": 9,
+      "covered": 8,
+      "coverage_percent": 88.89,
       "coverable_lines": [
-        "52",
         "53",
         "54",
         "57",
@@ -5336,9 +4814,7 @@
         "64",
         "67",
         "68",
-        "69",
-        "71",
-        "72"
+        "69"
       ],
       "covered_lines": [
         "53",
@@ -5348,8 +4824,7 @@
         "61",
         "64",
         "68",
-        "69",
-        "72"
+        "69"
       ]
     }
   ],
@@ -5362,11 +4837,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/s_tanh.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_tanh.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_tanh-stp-20251212-004459-609632176-246442",
-      "total_coverable": 24,
-      "covered": 20,
-      "coverage_percent": 83.33,
+      "total_coverable": 19,
+      "covered": 19,
+      "coverage_percent": 100.0,
       "coverable_lines": [
-        "52",
         "53",
         "54",
         "57",
@@ -5374,7 +4848,6 @@
         "61",
         "62",
         "63",
-        "64",
         "67",
         "68",
         "69",
@@ -5384,12 +4857,9 @@
         "73",
         "74",
         "75",
-        "76",
         "78",
         "79",
-        "80",
-        "81",
-        "82"
+        "81"
       ],
       "covered_lines": [
         "53",
@@ -5410,8 +4880,7 @@
         "75",
         "78",
         "79",
-        "81",
-        "82"
+        "81"
       ]
     }
   ],
@@ -5424,11 +4893,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_acos.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_acos.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_acos-stp-20251212-004541-258081215-247031",
-      "total_coverable": 10,
-      "covered": 4,
-      "coverage_percent": 40.0,
+      "total_coverable": 8,
+      "covered": 3,
+      "coverage_percent": 37.5,
       "coverable_lines": [
-        "27",
         "31",
         "32",
         "33",
@@ -5436,14 +4904,12 @@
         "35",
         "36",
         "37",
-        "38",
-        "39"
+        "38"
       ],
       "covered_lines": [
         "31",
         "32",
-        "33",
-        "39"
+        "33"
       ]
     }
   ],
@@ -5456,11 +4922,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_acosh.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_acosh.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_acosh-stp-20251212-004622-836634420-247658",
-      "total_coverable": 10,
-      "covered": 4,
-      "coverage_percent": 40.0,
+      "total_coverable": 8,
+      "covered": 3,
+      "coverage_percent": 37.5,
       "coverable_lines": [
-        "27",
         "31",
         "32",
         "33",
@@ -5468,14 +4933,12 @@
         "35",
         "36",
         "37",
-        "38",
-        "39"
+        "38"
       ],
       "covered_lines": [
         "31",
         "32",
-        "33",
-        "39"
+        "33"
       ]
     }
   ],
@@ -5488,11 +4951,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_asin.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_asin.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_asin-stp-20251212-004704-523791707-248345",
-      "total_coverable": 10,
-      "covered": 4,
-      "coverage_percent": 40.0,
+      "total_coverable": 8,
+      "covered": 3,
+      "coverage_percent": 37.5,
       "coverable_lines": [
-        "29",
         "33",
         "34",
         "35",
@@ -5500,14 +4962,12 @@
         "37",
         "38",
         "39",
-        "40",
-        "41"
+        "40"
       ],
       "covered_lines": [
         "33",
         "34",
-        "35",
-        "41"
+        "35"
       ]
     }
   ],
@@ -5520,11 +4980,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_atan2.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_atan2.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_atan2-stp-20251212-004746-157715444-248958",
-      "total_coverable": 10,
-      "covered": 4,
-      "coverage_percent": 40.0,
+      "total_coverable": 8,
+      "covered": 3,
+      "coverage_percent": 37.5,
       "coverable_lines": [
-        "28",
         "32",
         "33",
         "34",
@@ -5532,14 +4991,12 @@
         "36",
         "37",
         "38",
-        "39",
-        "40"
+        "39"
       ],
       "covered_lines": [
         "32",
         "33",
-        "34",
-        "40"
+        "34"
       ]
     }
   ],
@@ -5552,11 +5009,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_atanh.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_atanh.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_atanh-stp-20251212-004827-708415854-249612",
-      "total_coverable": 14,
-      "covered": 4,
-      "coverage_percent": 28.57,
+      "total_coverable": 12,
+      "covered": 3,
+      "coverage_percent": 25.0,
       "coverable_lines": [
-        "26",
         "30",
         "31",
         "32",
@@ -5568,14 +5024,12 @@
         "38",
         "39",
         "40",
-        "41",
-        "42"
+        "41"
       ],
       "covered_lines": [
         "30",
         "31",
-        "32",
-        "42"
+        "32"
       ]
     }
   ],
@@ -5588,11 +5042,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_cosh.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_cosh.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_cosh-stp-20251212-004909-327635238-250192",
-      "total_coverable": 10,
-      "covered": 4,
-      "coverage_percent": 40.0,
+      "total_coverable": 8,
+      "covered": 3,
+      "coverage_percent": 37.5,
       "coverable_lines": [
-        "26",
         "30",
         "31",
         "32",
@@ -5600,14 +5053,12 @@
         "34",
         "35",
         "36",
-        "37",
-        "38"
+        "37"
       ],
       "covered_lines": [
         "30",
         "31",
-        "32",
-        "38"
+        "32"
       ]
     }
   ],
@@ -5620,11 +5071,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_exp.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_exp.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_exp-stp-20251212-004950-969201120-250789",
-      "total_coverable": 13,
-      "covered": 4,
-      "coverage_percent": 30.77,
+      "total_coverable": 10,
+      "covered": 3,
+      "coverage_percent": 30.0,
       "coverable_lines": [
-        "33",
         "37",
         "38",
         "39",
@@ -5633,16 +5083,13 @@
         "42",
         "43",
         "44",
-        "45",
         "46",
-        "47",
-        "48"
+        "47"
       ],
       "covered_lines": [
         "37",
         "38",
-        "39",
-        "48"
+        "39"
       ]
     }
   ],
@@ -5655,11 +5102,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_fmod.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_fmod.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_fmod-stp-20251212-005032-569828916-251371",
-      "total_coverable": 10,
-      "covered": 4,
-      "coverage_percent": 40.0,
+      "total_coverable": 8,
+      "covered": 3,
+      "coverage_percent": 37.5,
       "coverable_lines": [
-        "27",
         "31",
         "32",
         "33",
@@ -5667,14 +5113,12 @@
         "35",
         "36",
         "37",
-        "38",
-        "39"
+        "38"
       ],
       "covered_lines": [
         "31",
         "32",
-        "33",
-        "39"
+        "33"
       ]
     }
   ],
@@ -5687,11 +5131,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_gamma.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_gamma.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_gamma-stp-20251212-010623-825396560-297646",
-      "total_coverable": 13,
-      "covered": 4,
-      "coverage_percent": 30.77,
+      "total_coverable": 11,
+      "covered": 3,
+      "coverage_percent": 27.27,
       "coverable_lines": [
-        "31",
         "35",
         "36",
         "37",
@@ -5702,14 +5145,12 @@
         "42",
         "43",
         "44",
-        "45",
-        "46"
+        "45"
       ],
       "covered_lines": [
         "35",
         "36",
-        "37",
-        "46"
+        "37"
       ]
     }
   ],
@@ -5722,11 +5163,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_gamma_r.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_gamma_r.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_gamma_r-stp-20251212-010705-441439009-298368",
-      "total_coverable": 13,
+      "total_coverable": 11,
       "covered": 0,
       "coverage_percent": 0.0,
       "coverable_lines": [
-        "27",
         "31",
         "32",
         "33",
@@ -5737,8 +5177,7 @@
         "38",
         "39",
         "40",
-        "41",
-        "42"
+        "41"
       ],
       "covered_lines": []
     }
@@ -5752,11 +5191,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_hypot.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_hypot.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_hypot-stp-20251212-010747-053025689-299100",
-      "total_coverable": 10,
-      "covered": 4,
-      "coverage_percent": 40.0,
+      "total_coverable": 8,
+      "covered": 3,
+      "coverage_percent": 37.5,
       "coverable_lines": [
-        "27",
         "31",
         "32",
         "33",
@@ -5764,14 +5202,12 @@
         "35",
         "36",
         "37",
-        "38",
-        "39"
+        "38"
       ],
       "covered_lines": [
         "31",
         "32",
-        "33",
-        "39"
+        "33"
       ]
     }
   ],
@@ -5784,11 +5220,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_j0.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_j0.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_j0-stp-20251212-010828-731723927-299798",
-      "total_coverable": 25,
-      "covered": 3,
-      "coverage_percent": 12.0,
+      "total_coverable": 20,
+      "covered": 2,
+      "coverage_percent": 10.0,
       "coverable_lines": [
-        "26",
         "30",
         "31",
         "32",
@@ -5796,8 +5231,6 @@
         "34",
         "35",
         "36",
-        "37",
-        "45",
         "49",
         "50",
         "51",
@@ -5806,18 +5239,15 @@
         "55",
         "56",
         "58",
-        "59",
         "60",
         "61",
         "62",
         "63",
-        "64",
-        "65"
+        "64"
       ],
       "covered_lines": [
         "30",
-        "31",
-        "37"
+        "31"
       ]
     }
   ],
@@ -5830,11 +5260,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_j1.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_j1.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_j1-stp-20251212-010910-258000151-300322",
-      "total_coverable": 26,
-      "covered": 4,
-      "coverage_percent": 15.38,
+      "total_coverable": 21,
+      "covered": 3,
+      "coverage_percent": 14.29,
       "coverable_lines": [
-        "26",
         "30",
         "31",
         "32",
@@ -5843,8 +5272,6 @@
         "35",
         "36",
         "37",
-        "38",
-        "46",
         "50",
         "51",
         "52",
@@ -5853,19 +5280,16 @@
         "56",
         "57",
         "59",
-        "60",
         "61",
         "62",
         "63",
         "64",
-        "65",
-        "66"
+        "65"
       ],
       "covered_lines": [
         "30",
         "31",
-        "32",
-        "38"
+        "32"
       ]
     }
   ],
@@ -5878,11 +5302,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_jn.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_jn.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_jn-stp-20251212-010951-792694303-300861",
-      "total_coverable": 26,
-      "covered": 4,
-      "coverage_percent": 15.38,
+      "total_coverable": 21,
+      "covered": 3,
+      "coverage_percent": 14.29,
       "coverable_lines": [
-        "48",
         "52",
         "53",
         "54",
@@ -5891,8 +5314,6 @@
         "57",
         "58",
         "59",
-        "60",
-        "68",
         "72",
         "73",
         "74",
@@ -5901,19 +5322,16 @@
         "78",
         "79",
         "81",
-        "82",
         "83",
         "84",
         "85",
         "86",
-        "87",
-        "88"
+        "87"
       ],
       "covered_lines": [
         "52",
         "53",
-        "54",
-        "60"
+        "54"
       ]
     }
   ],
@@ -5926,11 +5344,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_lgamma.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_lgamma.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_lgamma-stp-20251212-011033-347635567-301461",
-      "total_coverable": 13,
-      "covered": 4,
-      "coverage_percent": 30.77,
+      "total_coverable": 11,
+      "covered": 3,
+      "coverage_percent": 27.27,
       "coverable_lines": [
-        "31",
         "35",
         "36",
         "37",
@@ -5941,14 +5358,12 @@
         "42",
         "43",
         "44",
-        "45",
-        "46"
+        "45"
       ],
       "covered_lines": [
         "35",
         "36",
-        "37",
-        "46"
+        "37"
       ]
     }
   ],
@@ -5961,11 +5376,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_lgamma_r.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_lgamma_r.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_lgamma_r-stp-20251212-011115-010856383-302179",
-      "total_coverable": 13,
-      "covered": 4,
-      "coverage_percent": 30.77,
+      "total_coverable": 11,
+      "covered": 3,
+      "coverage_percent": 27.27,
       "coverable_lines": [
-        "27",
         "31",
         "32",
         "33",
@@ -5976,14 +5390,12 @@
         "38",
         "39",
         "40",
-        "41",
-        "42"
+        "41"
       ],
       "covered_lines": [
         "31",
         "32",
-        "33",
-        "42"
+        "33"
       ]
     }
   ],
@@ -5996,11 +5408,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_log.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_log.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_log-stp-20251212-011156-652906178-302902",
-      "total_coverable": 10,
-      "covered": 4,
-      "coverage_percent": 40.0,
+      "total_coverable": 8,
+      "covered": 3,
+      "coverage_percent": 37.5,
       "coverable_lines": [
-        "27",
         "31",
         "32",
         "33",
@@ -6008,14 +5419,12 @@
         "35",
         "36",
         "37",
-        "38",
-        "39"
+        "38"
       ],
       "covered_lines": [
         "31",
         "32",
-        "33",
-        "39"
+        "33"
       ]
     }
   ],
@@ -6028,11 +5437,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_log10.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_log10.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_log10-stp-20251212-011238-222988305-303459",
-      "total_coverable": 13,
-      "covered": 4,
-      "coverage_percent": 30.77,
+      "total_coverable": 11,
+      "covered": 3,
+      "coverage_percent": 27.27,
       "coverable_lines": [
-        "27",
         "31",
         "32",
         "33",
@@ -6043,14 +5451,12 @@
         "38",
         "39",
         "40",
-        "41",
-        "42"
+        "41"
       ],
       "covered_lines": [
         "31",
         "32",
-        "33",
-        "42"
+        "33"
       ]
     }
   ],
@@ -6063,11 +5469,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_pow.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_pow.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_pow-stp-20251212-011319-852465678-304046",
-      "total_coverable": 30,
-      "covered": 4,
-      "coverage_percent": 13.33,
+      "total_coverable": 24,
+      "covered": 3,
+      "coverage_percent": 12.5,
       "coverable_lines": [
-        "28",
         "32",
         "33",
         "34",
@@ -6076,33 +5481,27 @@
         "37",
         "38",
         "39",
-        "40",
         "41",
         "42",
         "43",
         "44",
         "45",
         "46",
-        "47",
         "48",
         "49",
         "50",
         "51",
         "52",
         "53",
-        "54",
-        "55",
         "56",
         "57",
         "58",
-        "59",
-        "60"
+        "59"
       ],
       "covered_lines": [
         "32",
         "33",
-        "34",
-        "60"
+        "34"
       ]
     }
   ],
@@ -6115,11 +5514,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_remainder.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_remainder.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_remainder-stp-20251212-012906-096439128-325234",
-      "total_coverable": 10,
-      "covered": 4,
-      "coverage_percent": 40.0,
+      "total_coverable": 8,
+      "covered": 3,
+      "coverage_percent": 37.5,
       "coverable_lines": [
-        "26",
         "30",
         "31",
         "32",
@@ -6127,14 +5525,12 @@
         "34",
         "35",
         "36",
-        "37",
-        "38"
+        "37"
       ],
       "covered_lines": [
         "30",
         "31",
-        "32",
-        "38"
+        "32"
       ]
     }
   ],
@@ -6147,32 +5543,27 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_scalb.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_scalb.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_scalb-stp-20251212-014454-515565846-386181",
-      "total_coverable": 16,
-      "covered": 4,
+      "total_coverable": 12,
+      "covered": 3,
       "coverage_percent": 25.0,
       "coverable_lines": [
-        "38",
         "42",
         "43",
         "44",
         "45",
         "46",
-        "47",
         "48",
         "49",
-        "50",
         "51",
         "52",
         "53",
         "54",
-        "55",
-        "56"
+        "55"
       ],
       "covered_lines": [
         "42",
         "43",
-        "44",
-        "56"
+        "44"
       ]
     }
   ],
@@ -6185,11 +5576,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_sinh.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_sinh.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_sinh-stp-20251212-014536-019189034-386717",
-      "total_coverable": 10,
-      "covered": 4,
-      "coverage_percent": 40.0,
+      "total_coverable": 8,
+      "covered": 3,
+      "coverage_percent": 37.5,
       "coverable_lines": [
-        "26",
         "30",
         "31",
         "32",
@@ -6197,14 +5587,12 @@
         "34",
         "35",
         "36",
-        "37",
-        "38"
+        "37"
       ],
       "covered_lines": [
         "30",
         "31",
-        "32",
-        "38"
+        "32"
       ]
     }
   ],
@@ -6217,11 +5605,10 @@
       "source": "/home/jim/logic_bombs/fdlibm/fdlibm_simple/w_sqrt.c",
       "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/w_sqrt.bc",
       "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/w_sqrt-stp-20251212-014617-646757939-387347",
-      "total_coverable": 10,
-      "covered": 4,
-      "coverage_percent": 40.0,
+      "total_coverable": 8,
+      "covered": 3,
+      "coverage_percent": 37.5,
       "coverable_lines": [
-        "26",
         "30",
         "31",
         "32",
@@ -6229,14 +5616,36 @@
         "34",
         "35",
         "36",
-        "37",
-        "38"
+        "37"
       ],
       "covered_lines": [
         "30",
         "31",
-        "32",
-        "38"
+        "32"
+      ]
+    }
+  ],
+  "s_matherr": [
+    {
+      "solver": "z3",
+      "timestamp": "2025-12-26T05:19:43Z",
+      "status": "ok",
+      "exit_code": 0,
+      "source": "/home/jim/logic_bombs/fdlibm/fdlibm_coverage/s_matherr.c",
+      "bc": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/s_matherr_mainsimple.bc",
+      "outdir": "/home/jim/logic_bombs/fdlibm/fdlibm_main_simple/klee-results/s_matherr_mainsimple-stp-20251226-053928-260492891-345299",
+      "total_coverable": 3,
+      "covered": 3,
+      "coverage_percent": 100.00,
+      "coverable_lines": [
+        "23",
+        "24",
+        "25"
+      ],
+      "covered_lines": [
+        "23",
+        "24",
+        "25"
       ]
     }
   ]

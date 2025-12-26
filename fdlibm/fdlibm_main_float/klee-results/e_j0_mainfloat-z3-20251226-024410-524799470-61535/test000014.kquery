@@ -1,0 +1,20 @@
+array a0[8] : w32 -> w8 = symbolic
+array chooser[4] : w32 -> w8 = symbolic
+(query [(Eq 0
+             (ReadLSB w32 0 chooser))
+         (Eq false
+             (Sle 2146435072
+                  N0:(And w32 N1:(ReadLSB w32 0 a0)
+                              2147483647)))
+         (Sle 1073741824 N0)
+         (Eq false
+             (Sle N2:(And w32 (Extract w32 0 N3:(FAbs w64 (ReadLSB w64 0 a0)))
+                              2147483647)
+                  1072243195))
+         (Eq false (Slt N2 1073928572))
+         (Sle N2 1094263291)
+         (Eq false
+             (Slt (FPToSI w32 (FAdd w64 (FMul w64 (FAbs w64 N3) 6.3661977236758138E-1)
+                                        5.0E-1))
+                  32))]
+        false)

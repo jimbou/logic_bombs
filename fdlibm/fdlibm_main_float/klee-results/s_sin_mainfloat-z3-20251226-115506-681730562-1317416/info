@@ -1,0 +1,21 @@
+/usr/local/bin/klee --solver-backend=z3 --output-dir=/home/klee/logic_bombs/fdlibm/fdlibm_main_float/klee-results/s_sin_mainfloat-z3-20251226-115506-681730562-1317416 --watchdog --max-time=900 --max-solver-time=20 --emit-all-errors --write-cov --allow-external-sym-calls /home/klee/logic_bombs/fdlibm/fdlibm_main_float/s_sin_mainfloat.bc
+PID: 24
+Started: 2025-12-26 11:55:07
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-26 12:10:09
+Elapsed: 00:15:02
+KLEE: done: explored paths = 36
+KLEE: done: avg. constructs per query = 58
+KLEE: done: total queries = 99
+KLEE: done: valid queries = 51
+KLEE: done: invalid queries = 42
+KLEE: done: query cex = 99
+
+KLEE: done: total instructions = 1102
+KLEE: done: completed paths = 36
+KLEE: done: generated tests = 36

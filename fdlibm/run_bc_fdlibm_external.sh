@@ -41,7 +41,6 @@ command -v jq >/dev/null || { echo "jq is required"; exit 1; }
 # ============================
 
 BLACKLIST=(
-  "s_matherr.c"
   "s_lib_version.c"
   "s_signgam.c"
   "k_rem_pio2.c"
@@ -89,20 +88,32 @@ update_json_atomic() {
 # COVERABLE LINE EXTRACTION
 # ============================
 
+# extract_coverable_lines() {
+#   local src="$1"
+#   awk '
+#     BEGIN { in_main=0 }
+#     /^[[:space:]]*int[[:space:]]+main[[:space:]]*\(/ { in_main=1 }
+#     in_main==1 { next }
+
+#     /^[[:space:]]*#/ { next }
+#     /^[[:space:]]*\/\// { next }
+#     /^[[:space:]]*\/\*/,/\*\// { next }
+#     /^[[:space:]]*$/ { next }
+
+#     { print FNR }
+#   ' "$src"
+# }
 extract_coverable_lines() {
-  local src="$1"
-  awk '
-    BEGIN { in_main=0 }
-    /^[[:space:]]*int[[:space:]]+main[[:space:]]*\(/ { in_main=1 }
-    in_main==1 { next }
+    local src="$1"
+    local json="/home/jim/logic_bombs/fdlibm/fdlibm_coverable_lines_no_brace.json"
+    local base
+    base=$(basename "$src")
 
-    /^[[:space:]]*#/ { next }
-    /^[[:space:]]*\/\// { next }
-    /^[[:space:]]*\/\*/,/\*\// { next }
-    /^[[:space:]]*$/ { next }
-
-    { print FNR }
-  ' "$src"
+    jq -r --arg base "$base" '
+      to_entries[]
+      | select(.key | endswith($base))
+      | .value.coverable_lines[]
+    ' "$json"
 }
 
 extract_covered_lines() {
@@ -162,7 +173,7 @@ run_one_file() {
   # -------------------------
   local container klee_bin mode_flag
 
-  if [[ "$bc" == *_float.bc ]]; then
+  if [[ "$bc" == *float.bc ]]; then
     container="logic_float"
     klee_bin="/usr/local/bin/klee"
     mode_flag="--allow-external-sym-calls"

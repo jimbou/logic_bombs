@@ -1,0 +1,6 @@
+Error: failed external call: __ieee754_yn
+File: /home/klee/logic_bombs/fdlibm/fdlibm_main_float/e_jn_main.c
+Line: 14
+assembly.ll line: 49
+Stack: 
+	#000000049 in main () at /home/klee/logic_bombs/fdlibm/fdlibm_main_float/e_jn_main.c:14

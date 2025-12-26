@@ -1,0 +1,6 @@
+Error: failed external call: __ieee754_j0
+File: /home/klee/logic_bombs/fdlibm/fdlibm_main_float/e_j0_main.c
+Line: 11
+assembly.ll line: 39
+Stack: 
+	#000000039 in main () at /home/klee/logic_bombs/fdlibm/fdlibm_main_float/e_j0_main.c:11

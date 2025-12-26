@@ -1,0 +1,20 @@
+array a0[8] : w32 -> w8 = symbolic
+array chooser[4] : w32 -> w8 = symbolic
+(query [(Ult N0:(ReadLSB w32 0 chooser)
+              2)
+         (Eq false (Eq 0 N0))
+         (Eq false
+             (Sle 2146435072
+                  N1:(And w32 N2:(ReadLSB w32 0 a0)
+                              2147483647)))
+         (Eq false
+             (Eq 0
+                 (Or w32 N1
+                         (ReadLSB w32 4 a0))))
+         (Eq false (Slt N2 0))
+         (Sle 1073741824 N1)
+         (Eq false (Slt N1 1073928572))
+         (Sle N1 1094263291)
+         (Eq 1073928572
+             (ReadLSB w64 0 a0))]
+        false)

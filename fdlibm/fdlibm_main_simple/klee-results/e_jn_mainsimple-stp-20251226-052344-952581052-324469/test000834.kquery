@@ -1,0 +1,71 @@
+array a0[4] : w32 -> w8 = symbolic
+array a1[8] : w32 -> w8 = symbolic
+array chooser[4] : w32 -> w8 = symbolic
+array const_arr1[264] : w32 -> w8 = [131 249 162 0 68 78 110 0 252 41 21 0 209 87 39 0 221 52 245 0 98 219 192 0 60 153 149 0 65 144 67 0 99 81 254 0 187 222 171 0 183 97 197 0 58 110 36 0 210 77 66 0 73 6 224 0 9 234 46 0 28 146 209 0 235 29 254 0 41 177 28 0 232 62 167 0 245 53 130 0 68 187 46 0 156 233 132 0 180 38 112 0 65 126 95 0 214 145 57 0 83 131 57 0 156 244 57 0 139 95 132 0 40 249 189 0 248 31 59 0 222 255 151 0 15 152 5 0 17 47 239 0 10 90 139 0 109 31 109 0 207 126 54 0 9 203 39 0 70 79 183 0 158 102 63 0 45 234 95 0 186 39 117 0 229 235 199 0 61 123 241 0 247 57 7 0 146 82 138 0 251 107 234 0 31 177 95 0 8 93 141 0 48 3 86 0 123 252 70 0 240 171 107 0 32 188 207 0 54 244 154 0 227 169 29 0 94 97 145 0 8 27 230 0 133 153 101 0 160 20 95 0 141 64 104 0 128 216 255 0 39 115 77 0 6 6 49 0 202 86 21 0 201 168 115 0 123 226 96 0 107 140 192 0]
+(query [(Ult N0:(ReadLSB w32 0 chooser)
+              2)
+         (Eq false (Eq 0 N0))
+         (Eq false
+             (Ult 2146435072
+                  (Or w32 N1:(And w32 N2:(ReadLSB w32 0 a1)
+                                      2147483647)
+                          (LShr w32 (Or w32 N3:(ReadLSB w32 4 a1)
+                                            (Sub w32 0 N3))
+                                    31))))
+         (Eq false
+             (Eq 0 (Or w32 N1 N3)))
+         (Eq false (Slt N2 0))
+         (Eq false
+             (Slt N4:(ReadLSB w32 0 a0)
+                  0))
+         (Eq false (Eq 0 N4))
+         (Eq false (Eq 1 N4))
+         (Eq false (Eq 2146435072 N1))
+         (Sle 1389363200 N1)
+         (Eq 1 (And w32 N4 3))
+         (Eq 1096810496
+             (Concat w64 N5:(Read w8 7 a1)
+                         (Concat w56 N6:(Read w8 6 a1)
+                                     (Concat w48 N7:(Read w8 5 a1)
+                                                 (Concat w40 N8:(Read w8 4 a1)
+                                                             (Sub w32 N1
+                                                                      (Shl w32 (Add w32 4294966250 N9:(AShr w32 N1 20))
+                                                                               20)))))))
+         (Eq 11263675
+             (ReadLSB w32 N10:(Extract w32 0 (Mul w64 4
+                                                      (SExt w64 (Add w32 4294967294
+                                                                         N11:(SDiv w32 (Add w32 4294966247 N9) 24))))) const_arr1))
+         (Eq 12935607
+             (ReadLSB w32 N12:(Extract w32 0 (Mul w64 4
+                                                      (SExt w64 (Add w32 4294967295 N11)))) const_arr1))
+         (Eq 2387514
+             (ReadLSB w32 N13:(Extract w32 0 (Mul w64 4 (SExt w64 N11))) const_arr1))
+         (Eq 4345298
+             (ReadLSB w32 N14:(Extract w32 0 (Mul w64 4
+                                                      (SExt w64 N15:(Add w32 1 N11)))) const_arr1))
+         (Eq 14681673
+             (ReadLSB w32 N16:(Extract w32 0 (Mul w64 4
+                                                      (SExt w64 (Add w32 2 N11)))) const_arr1))
+         (Eq 3074569
+             (ReadLSB w32 N17:(Extract w32 0 (Mul w64 4
+                                                      (SExt w64 (Add w32 3 N11)))) const_arr1))
+         (Eq 13734428
+             (ReadLSB w32 N18:(Extract w32 0 (Mul w64 4
+                                                      (SExt w64 (Add w32 4 N11)))) const_arr1))
+         (Slt 0
+              N19:(Add w32 4294966259
+                           N20:(Sub w32 N9 (Mul w32 24 N15))))
+         (Eq 226853440216629248
+             (Concat w64 3
+                         (Concat w56 37
+                                     (Concat w48 242
+                                                 (Concat w40 0
+                                                             (Or w32 (Shl w32 N19 20) 2147483648))))))
+         (Eq 226853440222920704
+             (Concat w64 3
+                         (Concat w56 37
+                                     (Concat w48 242
+                                                 (Concat w40 0
+                                                             (Or w32 (Shl w32 (Sub w32 1049 N20) 20)
+                                                                     2147483648))))))]
+        false)
