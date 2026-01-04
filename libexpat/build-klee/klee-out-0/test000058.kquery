@@ -1,0 +1,14 @@
+array model_version[4] : w32 -> w8 = symbolic
+array xml_input[128] : w32 -> w8 = symbolic
+(query [(Eq 1
+             (ReadLSB w32 0 model_version))
+         (Eq 15360
+             (Or w32 (Shl w32 (ZExt w32 (Read w8 0 xml_input))
+                              8)
+                     (ZExt w32 (Read w8 1 xml_input))))
+         (Eq 255 (Read w8 3 xml_input))
+         (Eq false
+             (Ult (Add w32 4294967042
+                           (ZExt w32 (Read w8 2 xml_input)))
+                  2))]
+        false)

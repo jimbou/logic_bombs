@@ -1,0 +1,21 @@
+klee --libc=uclibc --posix-runtime expat_klee_float.bc
+PID: 396
+Started: 2026-01-02 04:58:39
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2026-01-02 04:59:27
+Elapsed: 00:00:48
+KLEE: done: explored paths = 94
+KLEE: done: avg. constructs per query = 37
+KLEE: done: total queries = 194
+KLEE: done: valid queries = 38
+KLEE: done: invalid queries = 156
+KLEE: done: query cex = 194
+
+KLEE: done: total instructions = 18571
+KLEE: done: completed paths = 94
+KLEE: done: generated tests = 94

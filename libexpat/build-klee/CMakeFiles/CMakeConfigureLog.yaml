@@ -1,0 +1,1020 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:40 (project)"
+    message: |
+      The system is: Linux - 6.14.0-37-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:40 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/sbin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/3.27.9/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:40 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-WuGHNg"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-WuGHNg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-WuGHNg'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_bac7a/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_bac7a.dir/build.make CMakeFiles/cmTC_bac7a.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-WuGHNg'
+        Building C object CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o
+        /usr/sbin/cc   -v -o CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o -c /home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/sbin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release
+        Thread model: posix
+        gcc version 6.2.1 20160830 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/cc1 -quiet -v /home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccwAgUtj.s
+        GNU C11 (GCC) version 6.2.1 20160830 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 6.2.1 20160830, GMP version 6.1.1, MPFR version 3.1.4-p1, MPC version 1.0.3, isl version 0.15
+        warning: GMP header version 6.1.1 differs from library version 6.1.2.
+        warning: MPFR header version 3.1.4-p1 differs from library version 3.1.5-p2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/user/klee/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/include-fixed
+         /usr/include
+        End of search list.
+        GNU C11 (GCC) version 6.2.1 20160830 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 6.2.1 20160830, GMP version 6.1.1, MPFR version 3.1.4-p1, MPC version 1.0.3, isl version 0.15
+        warning: GMP header version 6.1.1 differs from library version 6.1.2.
+        warning: MPFR header version 3.1.4-p1 differs from library version 3.1.5-p2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 35faea4b6ca2adb5ecb2c189bf050ca9
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o /tmp/ccwAgUtj.s
+        GNU assembler version 2.27 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.27
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_bac7a
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bac7a.dir/link.txt --verbose=1
+        /usr/sbin/cc  -v CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o -o cmTC_bac7a 
+        Using built-in specs.
+        COLLECT_GCC=/usr/sbin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release
+        Thread model: posix
+        gcc version 6.2.1 20160830 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bac7a' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUuwqii.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_bac7a /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../.. CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bac7a' '-mtune=generic' '-march=x86-64'
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-WuGHNg'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:40 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/user/klee/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/home/user/klee/include] ==> [/home/user/klee/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/home/user/klee/include;/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:40 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-WuGHNg']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_bac7a/fast]
+        ignore line: [/usr/sbin/make  -f CMakeFiles/cmTC_bac7a.dir/build.make CMakeFiles/cmTC_bac7a.dir/build]
+        ignore line: [make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-WuGHNg']
+        ignore line: [Building C object CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/sbin/cc   -v -o CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o -c /home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/sbin/cc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c c++ ada fortran go lto objc obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 6.2.1 20160830 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/cc1 -quiet -v /home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccwAgUtj.s]
+        ignore line: [GNU C11 (GCC) version 6.2.1 20160830 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 6.2.1 20160830  GMP version 6.1.1  MPFR version 3.1.4-p1  MPC version 1.0.3  isl version 0.15]
+        ignore line: [warning: GMP header version 6.1.1 differs from library version 6.1.2.]
+        ignore line: [warning: MPFR header version 3.1.4-p1 differs from library version 3.1.5-p2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/user/klee/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C11 (GCC) version 6.2.1 20160830 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 6.2.1 20160830  GMP version 6.1.1  MPFR version 3.1.4-p1  MPC version 1.0.3  isl version 0.15]
+        ignore line: [warning: GMP header version 6.1.1 differs from library version 6.1.2.]
+        ignore line: [warning: MPFR header version 3.1.4-p1 differs from library version 3.1.5-p2.]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 35faea4b6ca2adb5ecb2c189bf050ca9]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o /tmp/ccwAgUtj.s]
+        ignore line: [GNU assembler version 2.27 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.27]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_bac7a]
+        ignore line: [/home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bac7a.dir/link.txt --verbose=1]
+        ignore line: [/usr/sbin/cc  -v CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o -o cmTC_bac7a ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/sbin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c c++ ada fortran go lto objc obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 6.2.1 20160830 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_bac7a' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUuwqii.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_bac7a /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtbegin.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../.. CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtend.o /usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccUuwqii.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_bac7a] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtbegin.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../..]
+          arg [CMakeFiles/cmTC_bac7a.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtend.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtend.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crt1.o] ==> [/usr/lib/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/crt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtbegin.o;/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1/crtend.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/6.2.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "ConfigureChecks.cmake:9 (check_include_file)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for dlfcn.h"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-BqQtvm"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-BqQtvm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_DLFCN_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-BqQtvm'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_930ac/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_930ac.dir/build.make CMakeFiles/cmTC_930ac.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-BqQtvm'
+        Building C object CMakeFiles/cmTC_930ac.dir/CheckIncludeFile.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_930ac.dir/CheckIncludeFile.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-BqQtvm/CheckIncludeFile.c
+        Linking C executable cmTC_930ac
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_930ac.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_930ac.dir/CheckIncludeFile.c.o -o cmTC_930ac 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-BqQtvm'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "ConfigureChecks.cmake:10 (check_include_file)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for fcntl.h"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-YiEwms"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-YiEwms"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_FCNTL_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-YiEwms'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_501de/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_501de.dir/build.make CMakeFiles/cmTC_501de.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-YiEwms'
+        Building C object CMakeFiles/cmTC_501de.dir/CheckIncludeFile.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_501de.dir/CheckIncludeFile.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-YiEwms/CheckIncludeFile.c
+        Linking C executable cmTC_501de
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_501de.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_501de.dir/CheckIncludeFile.c.o -o cmTC_501de 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-YiEwms'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "ConfigureChecks.cmake:11 (check_include_file)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for inttypes.h"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-dxnmny"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-dxnmny"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-dxnmny'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_3a8dd/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_3a8dd.dir/build.make CMakeFiles/cmTC_3a8dd.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-dxnmny'
+        Building C object CMakeFiles/cmTC_3a8dd.dir/CheckIncludeFile.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_3a8dd.dir/CheckIncludeFile.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-dxnmny/CheckIncludeFile.c
+        Linking C executable cmTC_3a8dd
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a8dd.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_3a8dd.dir/CheckIncludeFile.c.o -o cmTC_3a8dd 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-dxnmny'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "ConfigureChecks.cmake:12 (check_include_file)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for memory.h"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-2ZoHxE"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-2ZoHxE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_MEMORY_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-2ZoHxE'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_27201/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_27201.dir/build.make CMakeFiles/cmTC_27201.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-2ZoHxE'
+        Building C object CMakeFiles/cmTC_27201.dir/CheckIncludeFile.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_27201.dir/CheckIncludeFile.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-2ZoHxE/CheckIncludeFile.c
+        Linking C executable cmTC_27201
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27201.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_27201.dir/CheckIncludeFile.c.o -o cmTC_27201 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-2ZoHxE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "ConfigureChecks.cmake:13 (check_include_file)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-Ao9FQK"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-Ao9FQK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-Ao9FQK'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_872aa/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_872aa.dir/build.make CMakeFiles/cmTC_872aa.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-Ao9FQK'
+        Building C object CMakeFiles/cmTC_872aa.dir/CheckIncludeFile.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_872aa.dir/CheckIncludeFile.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-Ao9FQK/CheckIncludeFile.c
+        Linking C executable cmTC_872aa
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_872aa.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_872aa.dir/CheckIncludeFile.c.o -o cmTC_872aa 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-Ao9FQK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "ConfigureChecks.cmake:14 (check_include_file)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for stdlib.h"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-089hmR"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-089hmR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STDLIB_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-089hmR'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_3f8f0/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_3f8f0.dir/build.make CMakeFiles/cmTC_3f8f0.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-089hmR'
+        Building C object CMakeFiles/cmTC_3f8f0.dir/CheckIncludeFile.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_3f8f0.dir/CheckIncludeFile.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-089hmR/CheckIncludeFile.c
+        Linking C executable cmTC_3f8f0
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f8f0.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_3f8f0.dir/CheckIncludeFile.c.o -o cmTC_3f8f0 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-089hmR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "ConfigureChecks.cmake:15 (check_include_file)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for strings.h"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-MWpC5X"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-MWpC5X"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STRINGS_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-MWpC5X'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_fc6ef/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_fc6ef.dir/build.make CMakeFiles/cmTC_fc6ef.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-MWpC5X'
+        Building C object CMakeFiles/cmTC_fc6ef.dir/CheckIncludeFile.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_fc6ef.dir/CheckIncludeFile.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-MWpC5X/CheckIncludeFile.c
+        Linking C executable cmTC_fc6ef
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc6ef.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_fc6ef.dir/CheckIncludeFile.c.o -o cmTC_fc6ef 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-MWpC5X'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "ConfigureChecks.cmake:16 (check_include_file)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for string.h"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-BHId54"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-BHId54"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STRING_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-BHId54'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_f5e62/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_f5e62.dir/build.make CMakeFiles/cmTC_f5e62.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-BHId54'
+        Building C object CMakeFiles/cmTC_f5e62.dir/CheckIncludeFile.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_f5e62.dir/CheckIncludeFile.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-BHId54/CheckIncludeFile.c
+        Linking C executable cmTC_f5e62
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5e62.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_f5e62.dir/CheckIncludeFile.c.o -o cmTC_f5e62 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-BHId54'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "ConfigureChecks.cmake:17 (check_include_file)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for sys/stat.h"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-TitThc"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-TitThc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_STAT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-TitThc'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_47748/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_47748.dir/build.make CMakeFiles/cmTC_47748.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-TitThc'
+        Building C object CMakeFiles/cmTC_47748.dir/CheckIncludeFile.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_47748.dir/CheckIncludeFile.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-TitThc/CheckIncludeFile.c
+        Linking C executable cmTC_47748
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47748.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_47748.dir/CheckIncludeFile.c.o -o cmTC_47748 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-TitThc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "ConfigureChecks.cmake:18 (check_include_file)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-aMJqJj"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-aMJqJj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-aMJqJj'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_6343e/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_6343e.dir/build.make CMakeFiles/cmTC_6343e.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-aMJqJj'
+        Building C object CMakeFiles/cmTC_6343e.dir/CheckIncludeFile.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_6343e.dir/CheckIncludeFile.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-aMJqJj/CheckIncludeFile.c
+        Linking C executable cmTC_6343e
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6343e.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_6343e.dir/CheckIncludeFile.c.o -o cmTC_6343e 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-aMJqJj'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "ConfigureChecks.cmake:19 (check_include_file)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZZGRpr"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZZGRpr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZZGRpr'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_37f54/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_37f54.dir/build.make CMakeFiles/cmTC_37f54.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZZGRpr'
+        Building C object CMakeFiles/cmTC_37f54.dir/CheckIncludeFile.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_37f54.dir/CheckIncludeFile.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZZGRpr/CheckIncludeFile.c
+        Linking C executable cmTC_37f54
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37f54.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_37f54.dir/CheckIncludeFile.c.o -o cmTC_37f54 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZZGRpr'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "ConfigureChecks.cmake:21 (check_symbol_exists)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for getpagesize"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-E0hbiz"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-E0hbiz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_GETPAGESIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-E0hbiz'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_8863a/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_8863a.dir/build.make CMakeFiles/cmTC_8863a.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-E0hbiz'
+        Building C object CMakeFiles/cmTC_8863a.dir/CheckSymbolExists.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_8863a.dir/CheckSymbolExists.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-E0hbiz/CheckSymbolExists.c
+        /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-E0hbiz/CheckSymbolExists.c: In function 'main':
+        /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-E0hbiz/CheckSymbolExists.c:8:19: error: 'getpagesize' undeclared (first use in this function)
+           return ((int*)(&getpagesize))[argc];
+                           ^~~~~~~~~~~
+        /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-E0hbiz/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+        make[1]: *** [CMakeFiles/cmTC_8863a.dir/build.make:78: CMakeFiles/cmTC_8863a.dir/CheckSymbolExists.c.o] Error 1
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-E0hbiz'
+        make: *** [Makefile:127: cmTC_8863a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "ConfigureChecks.cmake:22 (check_symbol_exists)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for mmap"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-S4pYeH"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-S4pYeH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_MMAP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-S4pYeH'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_3929a/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_3929a.dir/build.make CMakeFiles/cmTC_3929a.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-S4pYeH'
+        Building C object CMakeFiles/cmTC_3929a.dir/CheckSymbolExists.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_3929a.dir/CheckSymbolExists.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-S4pYeH/CheckSymbolExists.c
+        Linking C executable cmTC_3929a
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3929a.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_3929a.dir/CheckSymbolExists.c.o -o cmTC_3929a 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-S4pYeH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "ConfigureChecks.cmake:23 (check_symbol_exists)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for getrandom"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-fi7KoP"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-fi7KoP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_GETRANDOM"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-fi7KoP'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_0f6d2/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_0f6d2.dir/build.make CMakeFiles/cmTC_0f6d2.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-fi7KoP'
+        Building C object CMakeFiles/cmTC_0f6d2.dir/CheckSymbolExists.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_0f6d2.dir/CheckSymbolExists.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-fi7KoP/CheckSymbolExists.c
+        /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-fi7KoP/CheckSymbolExists.c:2:24: fatal error: sys/random.h: No such file or directory
+         #include <sys/random.h>
+                                ^
+        compilation terminated.
+        make[1]: *** [CMakeFiles/cmTC_0f6d2.dir/build.make:78: CMakeFiles/cmTC_0f6d2.dir/CheckSymbolExists.c.o] Error 1
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-fi7KoP'
+        make: *** [Makefile:127: cmTC_0f6d2/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "ConfigureChecks.cmake:31 (check_symbol_exists)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for arc4random_buf"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-KHg8FX"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-KHg8FX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_ARC4RANDOM_BUF"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-KHg8FX'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_f84a7/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_f84a7.dir/build.make CMakeFiles/cmTC_f84a7.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-KHg8FX'
+        Building C object CMakeFiles/cmTC_f84a7.dir/CheckSymbolExists.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_f84a7.dir/CheckSymbolExists.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-KHg8FX/CheckSymbolExists.c
+        /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-KHg8FX/CheckSymbolExists.c: In function 'main':
+        /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-KHg8FX/CheckSymbolExists.c:8:19: error: 'arc4random_buf' undeclared (first use in this function)
+           return ((int*)(&arc4random_buf))[argc];
+                           ^~~~~~~~~~~~~~
+        /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-KHg8FX/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+        make[1]: *** [CMakeFiles/cmTC_f84a7.dir/build.make:78: CMakeFiles/cmTC_f84a7.dir/CheckSymbolExists.c.o] Error 1
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-KHg8FX'
+        make: *** [Makefile:127: cmTC_f84a7/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "ConfigureChecks.cmake:33 (check_symbol_exists)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for arc4random"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-FOGA55"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-FOGA55"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_ARC4RANDOM"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-FOGA55'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_581e9/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_581e9.dir/build.make CMakeFiles/cmTC_581e9.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-FOGA55'
+        Building C object CMakeFiles/cmTC_581e9.dir/CheckSymbolExists.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_581e9.dir/CheckSymbolExists.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-FOGA55/CheckSymbolExists.c
+        /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-FOGA55/CheckSymbolExists.c: In function 'main':
+        /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-FOGA55/CheckSymbolExists.c:8:19: error: 'arc4random' undeclared (first use in this function)
+           return ((int*)(&arc4random))[argc];
+                           ^~~~~~~~~~
+        /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-FOGA55/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+        make[1]: *** [CMakeFiles/cmTC_581e9.dir/build.make:78: CMakeFiles/cmTC_581e9.dir/CheckSymbolExists.c.o] Error 1
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-FOGA55'
+        make: *** [Makefile:127: cmTC_581e9/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "ConfigureChecks.cmake:38 (check_include_files)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for 4 include files stdlib.h, ..., float.h"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZeSWAe"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZeSWAe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "STDC_HEADERS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZeSWAe'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_5a95c/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_5a95c.dir/build.make CMakeFiles/cmTC_5a95c.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZeSWAe'
+        Building C object CMakeFiles/cmTC_5a95c.dir/STDC_HEADERS.c.o
+        /usr/sbin/cc   -std=c99 -o CMakeFiles/cmTC_5a95c.dir/STDC_HEADERS.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZeSWAe/STDC_HEADERS.c
+        Linking C executable cmTC_5a95c
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a95c.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_5a95c.dir/STDC_HEADERS.c.o -o cmTC_5a95c 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZeSWAe'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "ConfigureChecks.cmake:49 (check_c_source_compiles)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Performing Test HAVE_OFF_T"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ur47hn"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ur47hn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_OFF_T"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ur47hn'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_ec705/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_ec705.dir/build.make CMakeFiles/cmTC_ec705.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ur47hn'
+        Building C object CMakeFiles/cmTC_ec705.dir/src.c.o
+        /usr/sbin/cc -DHAVE_OFF_T  -std=c99 -o CMakeFiles/cmTC_ec705.dir/src.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ur47hn/src.c
+        Linking C executable cmTC_ec705
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec705.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_ec705.dir/src.c.o -o cmTC_ec705 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ur47hn'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "ConfigureChecks.cmake:63 (check_c_source_compiles)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Performing Test HAVE_SYSCALL_GETRANDOM"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-GX0Y8v"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-GX0Y8v"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYSCALL_GETRANDOM"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-GX0Y8v'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_2c10f/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_2c10f.dir/build.make CMakeFiles/cmTC_2c10f.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-GX0Y8v'
+        Building C object CMakeFiles/cmTC_2c10f.dir/src.c.o
+        /usr/sbin/cc -DHAVE_SYSCALL_GETRANDOM  -std=c99 -o CMakeFiles/cmTC_2c10f.dir/src.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-GX0Y8v/src.c
+        Linking C executable cmTC_2c10f
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c10f.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_2c10f.dir/src.c.o -o cmTC_2c10f 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-GX0Y8v'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "ConfigureChecks.cmake:79 (check_c_compiler_flag)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Performing Test _FLAG_DETECTION_UNUSABLE"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZI7p9E"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZI7p9E"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_FLAG_DETECTION_UNUSABLE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZI7p9E'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_cdbdc/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_cdbdc.dir/build.make CMakeFiles/cmTC_cdbdc.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZI7p9E'
+        Building C object CMakeFiles/cmTC_cdbdc.dir/src.c.o
+        /usr/sbin/cc -D_FLAG_DETECTION_UNUSABLE  -std=c99   -no-such-thing -o CMakeFiles/cmTC_cdbdc.dir/src.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZI7p9E/src.c
+        cc: error: unrecognized command line option '-no-such-thing'; did you mean '-Wno-surprising'?
+        make[1]: *** [CMakeFiles/cmTC_cdbdc.dir/build.make:78: CMakeFiles/cmTC_cdbdc.dir/src.c.o] Error 1
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ZI7p9E'
+        make: *** [Makefile:127: cmTC_cdbdc/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "ConfigureChecks.cmake:90 (check_c_compiler_flag)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Performing Test FLAG_WSTRICT_ALIASING"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-WALgfO"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-WALgfO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "FLAG_WSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-WALgfO'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_ce637/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_ce637.dir/build.make CMakeFiles/cmTC_ce637.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-WALgfO'
+        Building C object CMakeFiles/cmTC_ce637.dir/src.c.o
+        /usr/sbin/cc -DFLAG_WSTRICT_ALIASING  -std=c99   -Wstrict-aliasing=3 -o CMakeFiles/cmTC_ce637.dir/src.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-WALgfO/src.c
+        Linking C executable cmTC_ce637
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce637.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_ce637.dir/src.c.o -o cmTC_ce637 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-WALgfO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "ConfigureChecks.cmake:91 (check_c_compiler_flag)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Performing Test FLAG_VISIBILITY"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ShpLAX"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ShpLAX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "FLAG_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ShpLAX'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_eea5c/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_eea5c.dir/build.make CMakeFiles/cmTC_eea5c.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ShpLAX'
+        Building C object CMakeFiles/cmTC_eea5c.dir/src.c.o
+        /usr/sbin/cc -DFLAG_VISIBILITY  -std=c99   -fvisibility=hidden -o CMakeFiles/cmTC_eea5c.dir/src.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ShpLAX/src.c
+        Linking C executable cmTC_eea5c
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eea5c.dir/link.txt --verbose=1
+        /usr/sbin/cc CMakeFiles/cmTC_eea5c.dir/src.c.o -o cmTC_eea5c 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-ShpLAX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/user/cmake-3.27.9-linux-x86_64/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "ConfigureChecks.cmake:94 (check_library_exists)"
+      - "CMakeLists.txt:276 (include)"
+    checks:
+      - "Looking for cos in m"
+    directories:
+      source: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-CA9C76"
+      binary: "/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-CA9C76"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "_EXPAT_LIBM_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-CA9C76'
+        
+        Run Build Command(s): /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/sbin/make -f Makefile cmTC_d778f/fast
+        /usr/sbin/make  -f CMakeFiles/cmTC_d778f.dir/build.make CMakeFiles/cmTC_d778f.dir/build
+        make[1]: Entering directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-CA9C76'
+        Building C object CMakeFiles/cmTC_d778f.dir/CheckFunctionExists.c.o
+        /usr/sbin/cc   -DCHECK_FUNCTION_EXISTS=cos -std=c99 -o CMakeFiles/cmTC_d778f.dir/CheckFunctionExists.c.o -c /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-CA9C76/CheckFunctionExists.c
+        <command-line>:0:23: warning: conflicting types for built-in function 'cos'
+        /home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-CA9C76/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
+           CHECK_FUNCTION_EXISTS(void);
+           ^~~~~~~~~~~~~~~~~~~~~
+        Linking C executable cmTC_d778f
+        /home/user/cmake-3.27.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d778f.dir/link.txt --verbose=1
+        /usr/sbin/cc  -DCHECK_FUNCTION_EXISTS=cos CMakeFiles/cmTC_d778f.dir/CheckFunctionExists.c.o -o cmTC_d778f  -lm 
+        make[1]: Leaving directory '/home/klee/logic_bombs/libexpat/build-klee/CMakeFiles/CMakeScratch/TryCompile-CA9C76'
+        
+      exitCode: 0
+...
