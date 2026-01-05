@@ -1,0 +1,31 @@
+array arg0[33] : w32 -> w8 = symbolic
+array model_version[4] : w32 -> w8 = symbolic
+(query [(Eq 1
+             (ReadLSB w32 0 model_version))
+         (Eq 45 (Read w8 0 arg0))
+         (Eq 115 (Read w8 1 arg0))
+         (Eq 119 (Read w8 2 arg0))
+         (Eq 115 (Read w8 3 arg0))
+         (Eq 78 (Read w8 4 arg0))
+         (Eq false
+             (Eq 113 N0:(Read w8 5 arg0)))
+         (Eq false (Eq 115 N0))
+         (Eq false (Eq 0 N0))
+         (Eq false (Eq 119 N0))
+         (Eq false (Eq 120 N0))
+         (Eq false (Eq 99 N0))
+         (Eq false (Eq 116 N0))
+         (Eq false (Eq 101 N0))
+         (Eq false (Eq 110 N0))
+         (Eq false (Eq 78 N0))
+         (Eq false (Eq 103 N0))
+         (Eq false (Eq 107 N0))
+         (Eq false (Eq 98 N0))
+         (Eq false (Eq 109 N0))
+         (Eq false (Eq 100 N0))
+         (Eq false (Eq 112 N0))
+         (Eq false (Eq 104 N0))
+         (Eq false (Eq 118 N0))
+         (Eq false (Eq 114 N0))
+         (Eq false (Eq 97 N0))]
+        false)

@@ -1,0 +1,262 @@
+[
+  {
+    "bench": "AVERAGE_e_",
+    "klee_stp": 72.88,
+    "klee_z3": 72.84,
+    "klee_float_z3": 62.7,
+    "concollmic_deepseek": 41.61,
+    "concollmic_claude": 42.93,
+    "concollmic_gpt": 39.23
+  },
+  {
+    "bench": "e_j1",
+    "average_coverage": 10.55,
+    "klee_stp": 10.98,
+    "klee_z3": 10.98,
+    "klee_float_z3": 12.2,
+    "concollmic_deepseek": 9.71,
+    "concollmic_claude": 9.71,
+    "concollmic_gpt": 9.71,
+    "way":"partition big fiorst and potential inversion for small remianing parts"
+  },
+  {
+    "bench": "e_j0",
+    "average_coverage": 12.25,
+    "klee_stp": 11.63,
+    "klee_z3": 11.63,
+    "klee_float_z3": 16.28,
+    "concollmic_deepseek": 11.32,
+    "concollmic_claude": 11.32,
+    "concollmic_gpt": 11.32,
+    "way":"partition big first and potential inversion for small remianing parts"
+  },
+  {
+    "bench": "e_jn",
+    "average_coverage": 12.35,
+    "klee_stp": 16.36,
+    "klee_z3": 16.36,
+    "klee_float_z3": 17.27,
+    "concollmic_deepseek": 1.38,
+    "concollmic_claude": 22.07,
+    "concollmic_gpt": 0.69,
+    "way":"partition big fiorst and potential inversion for small remianing parts"
+  },
+  {
+    "bench": "e_lgamma_r",
+    "average_coverage": 28.73,
+    "klee_stp": 78.1,
+    "klee_z3": 78.1,
+    "klee_float_z3": 16.19,
+    "concollmic_deepseek": 0.0,
+    "concollmic_claude": 0.0,
+    "concollmic_gpt": 0.0,
+    "way":"model with lo, hi, potential inversion for the switches with i and n" 
+  },
+  {
+    "bench": "e_rem_pio2",
+    "average_coverage": 36.74,
+    "klee_stp": 60.0,
+    "klee_z3": 70.0,
+    "klee_float_z3": 45.71,
+    "concollmic_deepseek": 26.32,
+    "concollmic_claude": 9.21,
+    "concollmic_gpt": 9.21,
+    "way":"model with high, model for the 3 branches"
+  },
+  {
+    "bench": "e_sinh",
+    "average_coverage": 43.25,
+    "klee_stp": 95.24,
+    "klee_z3": 100.0,
+    "klee_float_z3": 42.86,
+    "concollmic_deepseek": 7.14,
+    "concollmic_claude": 7.14,
+    "concollmic_gpt": 7.14,
+    "way":"done with z3?"
+  },
+  {
+    "bench": "e_atanh",
+    "average_coverage": 43.64,
+    "klee_stp": 100.0,
+    "klee_z3": 100.0,
+    "klee_float_z3": 44.44,
+    "concollmic_deepseek": 4.35,
+    "concollmic_claude": 4.35,
+    "concollmic_gpt": 8.7,
+    "way":"done with z3?"
+  },
+  {
+    "bench": "e_pow",
+    "average_coverage": 49.17,
+    "klee_stp": 85.14,
+    "klee_z3": 31.76,
+    "klee_float_z3": 29.05,
+    "concollmic_deepseek": 49.06,
+    "concollmic_claude": 49.06,
+    "concollmic_gpt": 50.94,
+    "model":"model with lo, hi"
+  },
+  {
+    "bench": "e_gamma_r",
+    "average_coverage": 50.0,
+    "klee_stp": 0.0,
+    "klee_z3": 0.0,
+    "klee_float_z3": 0.0,
+    "concollmic_deepseek": 100.0,
+    "concollmic_claude": 100.0,
+    "concollmic_gpt": 100.0
+  },
+  {
+    "bench": "e_scalb",
+    "average_coverage": 50.12,
+    "klee_stp": 33.33,
+    "klee_z3": 33.33,
+    "klee_float_z3": 77.78,
+    "concollmic_deepseek": 43.75,
+    "concollmic_claude": 56.25,
+    "concollmic_gpt": 56.25,
+    "way":"model finite,rint"
+  },
+  {
+    "bench": "e_acosh",
+    "average_coverage": 53.12,
+    "klee_stp": 88.89,
+    "klee_z3": 88.89,
+    "klee_float_z3": 77.78,
+    "concollmic_deepseek": 21.05,
+    "concollmic_claude": 21.05,
+    "concollmic_gpt": 21.05
+  },
+  {
+    "bench": "e_acos",
+    "average_coverage": 53.87,
+    "klee_stp": 97.14,
+    "klee_z3": 97.14,
+    "klee_float_z3": 91.43,
+    "concollmic_deepseek": 12.5,
+    "concollmic_claude": 12.5,
+    "concollmic_gpt": 12.5
+  },
+  {
+    "bench": "e_asin",
+    "average_coverage": 54.87,
+    "klee_stp": 88.24,
+    "klee_z3": 88.24,
+    "klee_float_z3": 91.18,
+    "concollmic_deepseek": 20.51,
+    "concollmic_claude": 20.51,
+    "concollmic_gpt": 20.51
+  },
+  {
+    "bench": "e_cosh",
+    "average_coverage": 56.59,
+    "klee_stp": 95.45,
+    "klee_z3": 95.45,
+    "klee_float_z3": 40.91,
+    "concollmic_deepseek": 34.62,
+    "concollmic_claude": 38.46,
+    "concollmic_gpt": 34.62
+  },
+  {
+    "bench": "e_log",
+    "average_coverage": 56.6,
+    "klee_stp": 57.14,
+    "klee_z3": 57.14,
+    "klee_float_z3": 88.1,
+    "concollmic_deepseek": 34.88,
+    "concollmic_claude": 67.44,
+    "concollmic_gpt": 34.88,
+    "way":"model with lo, hi"
+  },
+  {
+    "bench": "e_atan2",
+    "average_coverage": 64.56,
+    "klee_stp": 93.18,
+    "klee_z3": 93.18,
+    "klee_float_z3": 84.09,
+    "concollmic_deepseek": 35.38,
+    "concollmic_claude": 46.15,
+    "concollmic_gpt": 35.38
+  },
+  {
+    "bench": "e_exp",
+    "average_coverage": 66.89,
+    "klee_stp": 91.43,
+    "klee_z3": 94.29,
+    "klee_float_z3": 88.57,
+    "concollmic_deepseek": 56.76,
+    "concollmic_claude": 18.92,
+    "concollmic_gpt": 51.35
+  },
+  {
+    "bench": "e_fmod",
+    "average_coverage": 69.52,
+    "klee_stp": 93.75,
+    "klee_z3": 92.5,
+    "klee_float_z3": 85.0,
+    "concollmic_deepseek": 64.71,
+    "concollmic_claude": 65.88,
+    "concollmic_gpt": 15.29,
+    "way":"partition for lines 83 84"
+  },
+  {
+    "bench": "e_hypot",
+    "average_coverage": 70.21,
+    "klee_stp": 90.38,
+    "klee_z3": 100.0,
+    "klee_float_z3": 98.08,
+    "concollmic_deepseek": 44.26,
+    "concollmic_claude": 47.54,
+    "concollmic_gpt": 40.98
+  },
+  {
+    "bench": "e_remainder",
+    "average_coverage": 72.86,
+    "klee_stp": 86.67,
+    "klee_z3": 93.33,
+    "klee_float_z3": 80.0,
+    "concollmic_deepseek": 60.0,
+    "concollmic_claude": 57.14,
+    "concollmic_gpt": 60.0
+  },
+  {
+    "bench": "e_sqrt",
+    "average_coverage": 83.72,
+    "klee_stp": 76.06,
+    "klee_z3": 95.77,
+    "klee_float_z3": 92.96,
+    "concollmic_deepseek": 79.17,
+    "concollmic_claude": 79.17,
+    "concollmic_gpt": 79.17
+  },
+  {
+    "bench": "e_log10",
+    "average_coverage": 89.17,
+    "klee_stp": 100.0,
+    "klee_z3": 100.0,
+    "klee_float_z3": 85.0,
+    "concollmic_deepseek": 81.82,
+    "concollmic_claude": 86.36,
+    "concollmic_gpt": 81.82
+  },
+  {
+    "bench": "e_gamma",
+    "average_coverage": 100.0,
+    "klee_stp": 100.0,
+    "klee_z3": 100.0,
+    "klee_float_z3": 100.0,
+    "concollmic_deepseek": 100.0,
+    "concollmic_claude": 100.0,
+    "concollmic_gpt": 100.0
+  },
+  {
+    "bench": "e_lgamma",
+    "average_coverage": 100.0,
+    "klee_stp": 100.0,
+    "klee_z3": 100.0,
+    "klee_float_z3": 100.0,
+    "concollmic_deepseek": 100.0,
+    "concollmic_claude": 100.0,
+    "concollmic_gpt": 100.0
+  }
+]

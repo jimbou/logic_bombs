@@ -1,0 +1,8 @@
+Error: failed external call: parse_xml_from_buffer
+File: /home/klee/logic_bombs/libexpat/expat/xmlwf/xmlwf_harness.c
+Line: 12
+assembly.ll line: 776
+Stack: 
+	#000000776 in __user_main (argc=1, argv=868282528) at /home/klee/logic_bombs/libexpat/expat/xmlwf/xmlwf_harness.c:12
+	#100073403 in __uClibc_main (main=822033984, argc=1, argv=868282528, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#200076543 in main (=1, =868282528)

@@ -1,0 +1,51 @@
+[
+  {
+    "bench": "AVERAGE_k_",
+    "klee_stp": 76.25,
+    "klee_z3": 76.25,
+    "klee_float_z3": 74.23,
+    "concollmic_deepseek": 59.98,
+    "concollmic_claude": 50.58,
+    "concollmic_gpt": 62.27
+  },
+  {
+    "bench": "k_standard",
+    "average_coverage": 40.06,
+    "klee_stp": 67.05,
+    "klee_z3": 67.05,
+    "klee_float_z3": 59.47,
+    "concollmic_deepseek": 14.39,
+    "concollmic_claude": 14.02,
+    "concollmic_gpt": 18.37
+  },
+  {
+    "bench": "k_cos",
+    "average_coverage": 57.22,
+    "klee_stp": 50.0,
+    "klee_z3": 50.0,
+    "klee_float_z3": 83.33,
+    "concollmic_deepseek": 60.0,
+    "concollmic_claude": 40.0,
+    "concollmic_gpt": 60.0
+  },
+  {
+    "bench": "k_tan",
+    "average_coverage": 72.42,
+    "klee_stp": 87.93,
+    "klee_z3": 87.93,
+    "klee_float_z3": 74.14,
+    "concollmic_deepseek": 65.52,
+    "concollmic_claude": 48.28,
+    "concollmic_gpt": 70.69
+  },
+  {
+    "bench": "k_sin",
+    "average_coverage": 96.67,
+    "klee_stp": 100.0,
+    "klee_z3": 100.0,
+    "klee_float_z3": 80.0,
+    "concollmic_deepseek": 100.0,
+    "concollmic_claude": 100.0,
+    "concollmic_gpt": 100.0
+  }
+]

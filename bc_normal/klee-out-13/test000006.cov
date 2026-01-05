@@ -1,0 +1,14 @@
+:0
+libc/string/strncmp.c:17
+libc/string/strncmp.c:30
+libc/string/strncmp.c:32
+libc/string/strncmp.c:33
+libc/string/strncmp.c:34
+libc/string/strncmp.c:35
+libc/string/strdup.c:23
+libc/string/strdup.c:25
+libc/string/strdup.c:26
+libc/string/strdup.c:28
+libc/string/strdup.c:29
+libc/string/strdup.c:30
+libc/string/strdup.c:32

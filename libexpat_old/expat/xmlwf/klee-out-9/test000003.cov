@@ -1,0 +1,4 @@
+/home/user/uclibc/libc/stdio/fprintf.c:19
+/home/klee/logic_bombs/libexpat/expat/xmlwf/xmlwf.c:950
+/home/klee/logic_bombs/libexpat/expat/xmlwf/xmlwf.c:1150
+/home/klee/logic_bombs/libexpat/expat/xmlwf/xmlwf.c:1157

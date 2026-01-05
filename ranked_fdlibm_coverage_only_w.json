@@ -1,0 +1,241 @@
+[
+  {
+    "bench": "AVERAGE_w_",
+    "klee_stp": 28.38,
+    "klee_z3": 28.38,
+    "klee_float_z3": 17.98,
+    "concollmic_deepseek": 32.62,
+    "concollmic_claude": 32.62,
+    "concollmic_gpt": 25.1
+  },
+  {
+    "bench": "w_pow",
+    "average_coverage": 7.48,
+    "klee_stp": 12.5,
+    "klee_z3": 12.5,
+    "klee_float_z3": 8.33,
+    "concollmic_deepseek": 3.85,
+    "concollmic_claude": 3.85,
+    "concollmic_gpt": 3.85
+  },
+  {
+    "bench": "w_jn",
+    "average_coverage": 8.53,
+    "klee_stp": 14.29,
+    "klee_z3": 14.29,
+    "klee_float_z3": 9.52,
+    "concollmic_deepseek": 4.35,
+    "concollmic_claude": 4.35,
+    "concollmic_gpt": 4.35
+  },
+  {
+    "bench": "w_j0",
+    "average_coverage": 9.54,
+    "klee_stp": 10.0,
+    "klee_z3": 10.0,
+    "klee_float_z3": 10.0,
+    "concollmic_deepseek": 9.09,
+    "concollmic_claude": 9.09,
+    "concollmic_gpt": 9.09
+  },
+  {
+    "bench": "w_gamma_r",
+    "average_coverage": 12.5,
+    "klee_stp": 0.0,
+    "klee_z3": 0.0,
+    "klee_float_z3": 0.0,
+    "concollmic_deepseek": 25.0,
+    "concollmic_claude": 25.0,
+    "concollmic_gpt": 25.0
+  },
+  {
+    "bench": "w_j1",
+    "average_coverage": 12.87,
+    "klee_stp": 14.29,
+    "klee_z3": 14.29,
+    "klee_float_z3": 9.52,
+    "concollmic_deepseek": 13.04,
+    "concollmic_claude": 13.04,
+    "concollmic_gpt": 13.04
+  },
+  {
+    "bench": "w_scalb",
+    "average_coverage": 14.68,
+    "klee_stp": 25.0,
+    "klee_z3": 25.0,
+    "klee_float_z3": 16.67,
+    "concollmic_deepseek": 7.14,
+    "concollmic_claude": 7.14,
+    "concollmic_gpt": 7.14
+  },
+  {
+    "bench": "w_atanh",
+    "average_coverage": 18.8,
+    "klee_stp": 25.0,
+    "klee_z3": 25.0,
+    "klee_float_z3": 16.67,
+    "concollmic_deepseek": 23.08,
+    "concollmic_claude": 23.08,
+    "concollmic_gpt": 0.0
+  },
+  {
+    "bench": "w_exp",
+    "average_coverage": 21.67,
+    "klee_stp": 30.0,
+    "klee_z3": 30.0,
+    "klee_float_z3": 20.0,
+    "concollmic_deepseek": 25.0,
+    "concollmic_claude": 25.0,
+    "concollmic_gpt": 0.0
+  },
+  {
+    "bench": "w_log10",
+    "average_coverage": 23.66,
+    "klee_stp": 27.27,
+    "klee_z3": 27.27,
+    "klee_float_z3": 18.18,
+    "concollmic_deepseek": 23.08,
+    "concollmic_claude": 23.08,
+    "concollmic_gpt": 23.08
+  },
+  {
+    "bench": "w_lgamma_r",
+    "average_coverage": 24.62,
+    "klee_stp": 27.27,
+    "klee_z3": 27.27,
+    "klee_float_z3": 18.18,
+    "concollmic_deepseek": 25.0,
+    "concollmic_claude": 25.0,
+    "concollmic_gpt": 25.0
+  },
+  {
+    "bench": "w_sqrt",
+    "average_coverage": 29.17,
+    "klee_stp": 37.5,
+    "klee_z3": 37.5,
+    "klee_float_z3": 0.0,
+    "concollmic_deepseek": 33.33,
+    "concollmic_claude": 33.33,
+    "concollmic_gpt": 33.33
+  },
+  {
+    "bench": "w_gamma",
+    "average_coverage": 31.56,
+    "klee_stp": 27.27,
+    "klee_z3": 27.27,
+    "klee_float_z3": 18.18,
+    "concollmic_deepseek": 58.33,
+    "concollmic_claude": 58.33,
+    "concollmic_gpt": 0.0
+  },
+  {
+    "bench": "w_acos",
+    "average_coverage": 33.33,
+    "klee_stp": 37.5,
+    "klee_z3": 37.5,
+    "klee_float_z3": 25.0,
+    "concollmic_deepseek": 33.33,
+    "concollmic_claude": 33.33,
+    "concollmic_gpt": 33.33
+  },
+  {
+    "bench": "w_acosh",
+    "average_coverage": 33.33,
+    "klee_stp": 37.5,
+    "klee_z3": 37.5,
+    "klee_float_z3": 25.0,
+    "concollmic_deepseek": 33.33,
+    "concollmic_claude": 33.33,
+    "concollmic_gpt": 33.33
+  },
+  {
+    "bench": "w_asin",
+    "average_coverage": 33.33,
+    "klee_stp": 37.5,
+    "klee_z3": 37.5,
+    "klee_float_z3": 25.0,
+    "concollmic_deepseek": 33.33,
+    "concollmic_claude": 33.33,
+    "concollmic_gpt": 33.33
+  },
+  {
+    "bench": "w_atan2",
+    "average_coverage": 33.33,
+    "klee_stp": 37.5,
+    "klee_z3": 37.5,
+    "klee_float_z3": 25.0,
+    "concollmic_deepseek": 33.33,
+    "concollmic_claude": 33.33,
+    "concollmic_gpt": 33.33
+  },
+  {
+    "bench": "w_hypot",
+    "average_coverage": 33.33,
+    "klee_stp": 37.5,
+    "klee_z3": 37.5,
+    "klee_float_z3": 25.0,
+    "concollmic_deepseek": 33.33,
+    "concollmic_claude": 33.33,
+    "concollmic_gpt": 33.33
+  },
+  {
+    "bench": "w_remainder",
+    "average_coverage": 33.33,
+    "klee_stp": 37.5,
+    "klee_z3": 37.5,
+    "klee_float_z3": 25.0,
+    "concollmic_deepseek": 33.33,
+    "concollmic_claude": 33.33,
+    "concollmic_gpt": 33.33
+  },
+  {
+    "bench": "w_sinh",
+    "average_coverage": 33.33,
+    "klee_stp": 37.5,
+    "klee_z3": 37.5,
+    "klee_float_z3": 25.0,
+    "concollmic_deepseek": 33.33,
+    "concollmic_claude": 33.33,
+    "concollmic_gpt": 33.33
+  },
+  {
+    "bench": "w_log",
+    "average_coverage": 38.89,
+    "klee_stp": 37.5,
+    "klee_z3": 37.5,
+    "klee_float_z3": 25.0,
+    "concollmic_deepseek": 66.67,
+    "concollmic_claude": 66.67,
+    "concollmic_gpt": 0.0
+  },
+  {
+    "bench": "w_lgamma",
+    "average_coverage": 45.46,
+    "klee_stp": 27.27,
+    "klee_z3": 27.27,
+    "klee_float_z3": 18.18,
+    "concollmic_deepseek": 66.67,
+    "concollmic_claude": 66.67,
+    "concollmic_gpt": 66.67
+  },
+  {
+    "bench": "w_cosh",
+    "average_coverage": 50.0,
+    "klee_stp": 37.5,
+    "klee_z3": 37.5,
+    "klee_float_z3": 25.0,
+    "concollmic_deepseek": 66.67,
+    "concollmic_claude": 66.67,
+    "concollmic_gpt": 66.67
+  },
+  {
+    "bench": "w_fmod",
+    "average_coverage": 50.0,
+    "klee_stp": 37.5,
+    "klee_z3": 37.5,
+    "klee_float_z3": 25.0,
+    "concollmic_deepseek": 66.67,
+    "concollmic_claude": 66.67,
+    "concollmic_gpt": 66.67
+  }
+]

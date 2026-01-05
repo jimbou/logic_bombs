@@ -1,0 +1,7 @@
+/home/user/uclibc/libc/stdlib/_strtod.c:224
+/home/user/uclibc/libc/stdlib/_strtod.c:255
+/home/user/uclibc/libc/stdlib/_strtod.c:256
+/home/user/uclibc/libc/stdlib/_strtod.c:257
+/home/user/uclibc/libc/stdlib/_strtod.c:537
+/home/klee/logic_bombs/libexpat/expat/xmlwf/xmlwf.c:1101
+/home/klee/logic_bombs/libexpat/expat/xmlwf/xmlwf.c:1105

@@ -1,0 +1,15 @@
+array argc[4] : w32 -> w8 = symbolic
+array argv_1[16] : w32 -> w8 = symbolic
+(query [(Sle 1
+              N0:(ReadLSB w32 0 argc))
+         (Sle N0 4)
+         (Slt 1 N0)
+         (Slt 2 N0)
+         (Eq false (Slt 3 N0))
+         (Eq 45 (Read w8 0 argv_1))
+         (Eq 112 (Read w8 1 argv_1))
+         (Eq 115 (Read w8 2 argv_1))
+         (Eq 99 (Read w8 3 argv_1))
+         (Eq 107 (Read w8 4 argv_1))
+         (Eq 98 (Read w8 5 argv_1))]
+        false)

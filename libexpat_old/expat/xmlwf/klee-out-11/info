@@ -1,0 +1,18 @@
+klee --libc=uclibc --search=nurs:covnew --write-cov --allow-external-sym-calls xmlwf.bc
+PID: 1107
+Started: 2025-12-30 00:46:32
+BEGIN searcher description
+WeightedRandomSearcher::CoveringNew
+END searcher description
+Finished: 2025-12-30 00:46:33
+Elapsed: 00:00:01
+KLEE: done: explored paths = 1662
+KLEE: done: avg. constructs per query = 8
+KLEE: done: total queries = 99
+KLEE: done: valid queries = 9
+KLEE: done: invalid queries = 90
+KLEE: done: query cex = 99
+
+KLEE: done: total instructions = 19066
+KLEE: done: completed paths = 1662
+KLEE: done: generated tests = 1646

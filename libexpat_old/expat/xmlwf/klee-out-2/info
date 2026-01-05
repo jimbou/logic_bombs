@@ -1,0 +1,21 @@
+klee --libc=uclibc --write-cov --posix-runtime xmlwf.bc --sym-arg 32 --sym-arg 1024
+PID: 869
+Started: 2025-12-30 00:15:35
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2025-12-30 00:16:10
+Elapsed: 00:00:35
+KLEE: done: explored paths = 51058
+KLEE: done: avg. constructs per query = 22
+KLEE: done: total queries = 736
+KLEE: done: valid queries = 140
+KLEE: done: invalid queries = 596
+KLEE: done: query cex = 736
+
+KLEE: done: total instructions = 480249
+KLEE: done: completed paths = 51058
+KLEE: done: generated tests = 50464

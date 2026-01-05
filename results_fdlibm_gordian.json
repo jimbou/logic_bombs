@@ -1,0 +1,458 @@
+[
+  {
+    "bench": "s_fabs",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_pow",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_jn",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_j0",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_j1",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_finite",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_j0",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_jn",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_gamma_r",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_j1",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_scalb",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_atanh",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_exp",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_log10",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_erf",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_lgamma_r",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_lgamma_r",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_sqrt",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_gamma",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_acos",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_acosh",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_asin",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_atan2",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_hypot",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_remainder",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_sinh",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_rem_pio2",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_rint",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_log",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "k_standard",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_sinh",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_atanh",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_lgamma",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_isnan",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_pow",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_gamma_r",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_cosh",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "w_fmod",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_scalb",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_atan",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_expm1",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_acosh",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_acos",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_modf",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_asin",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_ceil",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_cosh",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_log",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "k_cos",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_floor",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_sin",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_scalbn",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_atan2",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_tanh",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_log1p",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_exp",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_cos",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_fmod",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_hypot",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_cbrt",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_nextafter",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_ldexp",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "k_tan",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_remainder",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_asinh",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_logb",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_tan",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_sqrt",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_ilogb",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_log10",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "k_sin",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_frexp",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_gamma",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "e_lgamma",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_copysign",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  },
+  {
+    "bench": "s_significand",
+    "gordian_deepseek": 0.0,
+    "gordian_claude": 0.0,
+    "gordian_gpt": 0.0
+  }
+]

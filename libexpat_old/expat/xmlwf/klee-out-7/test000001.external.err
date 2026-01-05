@@ -1,0 +1,8 @@
+Error: failed external call: xmlwf_main
+File: /home/klee/logic_bombs/libexpat/expat/xmlwf/xmlwf_harness.c
+Line: 21
+assembly.ll line: 1324
+Stack: 
+	#000001324 in __user_main () at /home/klee/logic_bombs/libexpat/expat/xmlwf/xmlwf_harness.c:21
+	#100004992 in __uClibc_main (main=219645856, argc=1, argv=237379584, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#200007741 in main (=1, =237379584)

@@ -1,0 +1,5 @@
+/home/klee/logic_bombs/libexpat/expat/xmlwf/xmlwf.c:1100
+/home/klee/logic_bombs/libexpat/expat/xmlwf/xmlwf.c:1101
+/home/klee/logic_bombs/libexpat/expat/xmlwf/xmlwf.c:1103
+/home/klee/logic_bombs/libexpat/expat/xmlwf/xmlwf.c:1104
+/home/user/uclibc/libc/stdlib/_strtod.c:224

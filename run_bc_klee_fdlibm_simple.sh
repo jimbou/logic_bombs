@@ -30,7 +30,6 @@ command -v jq >/dev/null || { echo "jq is required"; exit 1; }
 # ============================
 
 BLACKLIST=(
-  "s_matherr.c"
   "s_lib_version.c"
   "s_signgam.c"
   "k_rem_pio2.c"

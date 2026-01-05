@@ -1,0 +1,8 @@
+Error: failed external call: XML_ParserCreate
+File: /home/klee/logic_bombs/libexpat/expat/xmlwf/xmlwf.c
+Line: 1173
+assembly.ll line: 2243
+Stack: 
+	#000002243 in __user_main (argc=3, argv=1031408800) at /home/klee/logic_bombs/libexpat/expat/xmlwf/xmlwf.c:1173
+	#100011948 in __uClibc_main (main=1016340976, argc=3, argv=1031408800, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#200014960 in main (=3, =1031408800)
