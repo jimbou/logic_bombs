@@ -2,8 +2,8 @@ import os
 import json
 from collections import defaultdict
 
-COV_DIR = "/home/jim/logic_bombs/libexpat/build/xml_z3_normal"
-COVERABLE_JSON = "/home/jim/logic_bombs/libexpat/build/xmlwf_coverable_lines.json"
+COV_DIR = "/home/jim/logic_bombs/libexpat/build-klee/xml_sz3_float"
+COVERABLE_JSON = "/home/jim/logic_bombs/xmlwf_coverable_lines.json"
 
 print("[debug] COV_DIR =", COV_DIR)
 
@@ -86,7 +86,7 @@ for fname in sorted(coverable_lines):
 
     print(fname)
     print(f"  Covered: {len(hit)} / {len(cov)}")
-
+    print(f"  Coverage: {len(hit) / len(cov) * 100:.2f}%")
     if hit:
         print(f"  Sample hits: {sorted(list(hit))[:10]}")
     else:
