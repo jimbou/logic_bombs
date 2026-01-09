@@ -1,0 +1,16 @@
+Error: reached "unreachable" instruction
+Stack: 
+	#000011344 in bc_vm_jmp()
+	#100010346 in bc_vm_handleError(e=28, file=106227922798912, fline=1918, line=1)
+	#200065261 in bc_parse_stmt(p=106227923738632)
+	#300030026 in bc_parse_parse(p=106227923738632)
+	#400036396 in bc_vm_process(text=106227925289216, mode=0)
+	#500035245 in bc_vm_exprs()
+	#600032340 in bc_vm_exec()
+	#700030847 in bc_vm_boot(argc=3, argv=106227924393152)
+	#800029256 in bc_main(argc=3, argv=106227924393152)
+	#900070331 in real_main(argc=3, argv=106227924393152)
+	#1000070869 in __klee_posix_wrapped_main()
+	#1100008013 in __user_main(argcPtr=1, argvPtr=106227917280896, envp=106227917280912) at klee_src/runtime/POSIX/klee_init_env.c:245
+	#1200001331 in __uClibc_main(106227922830728, 1, 106227917280896, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#1300001496 in main(1, 106227917280896)

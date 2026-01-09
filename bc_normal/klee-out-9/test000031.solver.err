@@ -1,0 +1,22 @@
+Error: Query timed out (fork).
+File: libc/string/strncmp.c
+Line: 35
+assembly.ll line: 73009
+State: 5827
+Stack: 
+	#000073009 in strncmp(106227861506307, 106227911310111, 8) at libc/string/strncmp.c:35
+	#100067735 in bc_lex_identifier(l=106227923738632)
+	#200029807 in bc_lex_token(l=106227923738632)
+	#300037666 in bc_lex_next(l=106227923738632)
+	#400038669 in bc_lex_text(l=106227923738632, text=106227861506304, mode=0)
+	#500038560 in bc_parse_text(p=106227923738632, text=106227861506304, mode=0)
+	#600036349 in bc_vm_process(text=106227861506304, mode=0)
+	#700035232 in bc_vm_exprs()
+	#800032340 in bc_vm_exec()
+	#900030847 in bc_vm_boot(argc=3, argv=106227924393152)
+	#1000029256 in bc_main(argc=3, argv=106227924393152)
+	#1100070331 in real_main(argc=3, argv=106227924393152)
+	#1200070869 in __klee_posix_wrapped_main()
+	#1300008013 in __user_main(argcPtr=1, argvPtr=106227917280896, envp=106227917280912) at klee_src/runtime/POSIX/klee_init_env.c:245
+	#1400001331 in __uClibc_main(106227922830728, 1, 106227917280896, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#1500001496 in main(1, 106227917280896)

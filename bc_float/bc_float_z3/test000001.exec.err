@@ -1,0 +1,9 @@
+Error: inline assembly is unsupported
+Stack: 
+	#000011944 in bc_history_init (h=869897464)
+	#100050332 in bc_vm_boot (argc=3, argv=870206576)
+	#200001839 in bc_main (argc=3, argv=870206576)
+	#300018205 in real_main (argc=3, argv=870206576)
+	#400052872 in __user_main (argc=1, argv=869320352)
+	#500056165 in __uClibc_main (main=834636912, argc=1, argv=869320352, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#600057669 in main (=1, =869320352)

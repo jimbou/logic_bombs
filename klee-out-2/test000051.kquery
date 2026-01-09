@@ -1,0 +1,206 @@
+array bc_expr[64] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Eq 0 N0:(Read w8 0 bc_expr)))
+         (Sle 32 N1:(SExt w32 N0))
+         (Sle N1 126)
+         (Eq false
+             (Eq 0 N2:(Read w8 1 bc_expr)))
+         (Sle 32 N3:(SExt w32 N2))
+         (Sle N3 126)
+         (Eq false
+             (Eq 0 N4:(Read w8 2 bc_expr)))
+         (Sle 32 N5:(SExt w32 N4))
+         (Sle N5 126)
+         (Eq false
+             (Eq 0 N6:(Read w8 3 bc_expr)))
+         (Sle 32 N7:(SExt w32 N6))
+         (Sle N7 126)
+         (Eq false
+             (Eq 0 N8:(Read w8 4 bc_expr)))
+         (Sle 32 N9:(SExt w32 N8))
+         (Sle N9 126)
+         (Eq false
+             (Eq 0 N10:(Read w8 5 bc_expr)))
+         (Sle 32 N11:(SExt w32 N10))
+         (Sle N11 126)
+         (Eq false
+             (Eq 0 N12:(Read w8 6 bc_expr)))
+         (Sle 32 N13:(SExt w32 N12))
+         (Sle N13 126)
+         (Eq false
+             (Eq 0 N14:(Read w8 7 bc_expr)))
+         (Sle 32 N15:(SExt w32 N14))
+         (Sle N15 126)
+         (Eq false
+             (Eq 0 N16:(Read w8 8 bc_expr)))
+         (Sle 32 N17:(SExt w32 N16))
+         (Sle N17 126)
+         (Eq false
+             (Eq 0 N18:(Read w8 9 bc_expr)))
+         (Sle 32 N19:(SExt w32 N18))
+         (Sle N19 126)
+         (Eq false
+             (Eq 0 N20:(Read w8 10 bc_expr)))
+         (Sle 32 N21:(SExt w32 N20))
+         (Sle N21 126)
+         (Eq false
+             (Eq 0 N22:(Read w8 11 bc_expr)))
+         (Sle 32 N23:(SExt w32 N22))
+         (Sle N23 126)
+         (Eq false
+             (Eq 0 N24:(Read w8 12 bc_expr)))
+         (Sle 32 N25:(SExt w32 N24))
+         (Sle N25 126)
+         (Eq false
+             (Eq 0 N26:(Read w8 13 bc_expr)))
+         (Sle 32 N27:(SExt w32 N26))
+         (Sle N27 126)
+         (Eq false
+             (Eq 0 N28:(Read w8 14 bc_expr)))
+         (Sle 32 N29:(SExt w32 N28))
+         (Sle N29 126)
+         (Eq false
+             (Eq 0 N30:(Read w8 15 bc_expr)))
+         (Sle 32 N31:(SExt w32 N30))
+         (Sle N31 126)
+         (Eq false
+             (Eq 0 N32:(Read w8 16 bc_expr)))
+         (Sle 32 N33:(SExt w32 N32))
+         (Sle N33 126)
+         (Eq false
+             (Eq 0 N34:(Read w8 17 bc_expr)))
+         (Sle 32 N35:(SExt w32 N34))
+         (Sle N35 126)
+         (Eq false
+             (Eq 0 N36:(Read w8 18 bc_expr)))
+         (Sle 32 N37:(SExt w32 N36))
+         (Sle N37 126)
+         (Eq false
+             (Eq 0 N38:(Read w8 19 bc_expr)))
+         (Sle 32 N39:(SExt w32 N38))
+         (Sle N39 126)
+         (Eq false
+             (Eq 0 N40:(Read w8 20 bc_expr)))
+         (Sle 32 N41:(SExt w32 N40))
+         (Sle N41 126)
+         (Eq false
+             (Eq 0 N42:(Read w8 21 bc_expr)))
+         (Sle 32 N43:(SExt w32 N42))
+         (Sle N43 126)
+         (Eq false
+             (Eq 0 N44:(Read w8 22 bc_expr)))
+         (Sle 32 N45:(SExt w32 N44))
+         (Sle N45 126)
+         (Eq false
+             (Eq 0 N46:(Read w8 23 bc_expr)))
+         (Sle 32 N47:(SExt w32 N46))
+         (Sle N47 126)
+         (Eq false
+             (Eq 0 N48:(Read w8 24 bc_expr)))
+         (Sle 32 N49:(SExt w32 N48))
+         (Sle N49 126)
+         (Eq false
+             (Eq 0 N50:(Read w8 25 bc_expr)))
+         (Sle 32 N51:(SExt w32 N50))
+         (Sle N51 126)
+         (Eq false
+             (Eq 0 N52:(Read w8 26 bc_expr)))
+         (Sle 32 N53:(SExt w32 N52))
+         (Sle N53 126)
+         (Eq false
+             (Eq 0 N54:(Read w8 27 bc_expr)))
+         (Sle 32 N55:(SExt w32 N54))
+         (Sle N55 126)
+         (Eq false
+             (Eq 0 N56:(Read w8 28 bc_expr)))
+         (Sle 32 N57:(SExt w32 N56))
+         (Sle N57 126)
+         (Eq false
+             (Eq 0 N58:(Read w8 29 bc_expr)))
+         (Sle 32 N59:(SExt w32 N58))
+         (Sle N59 126)
+         (Eq false
+             (Eq 0 N60:(Read w8 30 bc_expr)))
+         (Sle 32 N61:(SExt w32 N60))
+         (Sle N61 126)
+         (Eq false
+             (Eq 0 N62:(Read w8 31 bc_expr)))
+         (Sle 32 N63:(SExt w32 N62))
+         (Sle N63 126)
+         (Eq false
+             (Eq 0 N64:(Read w8 32 bc_expr)))
+         (Sle 32 N65:(SExt w32 N64))
+         (Sle N65 126)
+         (Eq false
+             (Eq 0 N66:(Read w8 33 bc_expr)))
+         (Sle 32 N67:(SExt w32 N66))
+         (Sle N67 126)
+         (Eq false
+             (Eq 0 N68:(Read w8 34 bc_expr)))
+         (Sle 32 N69:(SExt w32 N68))
+         (Sle N69 126)
+         (Eq false
+             (Eq 0 N70:(Read w8 35 bc_expr)))
+         (Sle 32 N71:(SExt w32 N70))
+         (Sle N71 126)
+         (Eq false
+             (Eq 0 N72:(Read w8 36 bc_expr)))
+         (Sle 32 N73:(SExt w32 N72))
+         (Sle N73 126)
+         (Eq false
+             (Eq 0 N74:(Read w8 37 bc_expr)))
+         (Sle 32 N75:(SExt w32 N74))
+         (Sle N75 126)
+         (Eq false
+             (Eq 0 N76:(Read w8 38 bc_expr)))
+         (Sle 32 N77:(SExt w32 N76))
+         (Sle N77 126)
+         (Eq false
+             (Eq 0 N78:(Read w8 39 bc_expr)))
+         (Sle 32 N79:(SExt w32 N78))
+         (Sle N79 126)
+         (Eq false
+             (Eq 0 N80:(Read w8 40 bc_expr)))
+         (Sle 32 N81:(SExt w32 N80))
+         (Sle N81 126)
+         (Eq false
+             (Eq 0 N82:(Read w8 41 bc_expr)))
+         (Sle 32 N83:(SExt w32 N82))
+         (Sle N83 126)
+         (Eq false
+             (Eq 0 N84:(Read w8 42 bc_expr)))
+         (Sle 32 N85:(SExt w32 N84))
+         (Sle N85 126)
+         (Eq false
+             (Eq 0 N86:(Read w8 43 bc_expr)))
+         (Sle 32 N87:(SExt w32 N86))
+         (Sle N87 126)
+         (Eq false
+             (Eq 0 N88:(Read w8 44 bc_expr)))
+         (Sle 32 N89:(SExt w32 N88))
+         (Sle N89 126)
+         (Eq false
+             (Eq 0 N90:(Read w8 45 bc_expr)))
+         (Sle 32 N91:(SExt w32 N90))
+         (Sle N91 126)
+         (Eq false
+             (Eq 0 N92:(Read w8 46 bc_expr)))
+         (Sle 32 N93:(SExt w32 N92))
+         (Sle N93 126)
+         (Eq false
+             (Eq 0 N94:(Read w8 47 bc_expr)))
+         (Sle 32 N95:(SExt w32 N94))
+         (Sle N95 126)
+         (Eq false
+             (Eq 0 N96:(Read w8 48 bc_expr)))
+         (Sle 32 N97:(SExt w32 N96))
+         (Sle N97 126)
+         (Eq false
+             (Eq 0 N98:(Read w8 49 bc_expr)))
+         (Sle 32 N99:(SExt w32 N98))
+         (Sle N99 126)
+         (Eq false
+             (Eq 0 N100:(Read w8 50 bc_expr)))
+         (Eq false
+             (Sle 32 (SExt w32 N100)))]
+        false)

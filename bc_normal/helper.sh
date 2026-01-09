@@ -23,13 +23,18 @@ done
 # src/ (exclude main.c and fuzz sources)
 for f in src/*.c; do
   case "$f" in
-    src/main.c|src/*fuzz*.c) continue ;;
+    src/main_old.c|src/*fuzz*.c) continue ;;
   esac
   clang $TARGET -emit-llvm $COPT $COMMON -c "$f" -o "src/$(basename "${f%.c}").o"
 done
 
 # compile replacement main
-clang $TARGET -emit-llvm $COPT $COMMON -c harness_main.c -o harness_main.o
+clang $TARGET -emit-llvm $COPT $COMMON -c harness_main1.c -o harness_main.o
 
 # link
 llvm-link gen/*.o src/*.o harness_main.o -o bc_klee.bc
+
+
+ klee --libc=uclibc --posix-runtime --external-calls=all --max-time=900s --emit-all-errors --max-solver-time=60 --solver-backend=z3 --output-dir=/home/klee/logic_bombs/bc_normal/klee-normal-z3 /home/klee/logic_bombs/bc_normal/tmp_harness1.bc
+
+  klee --libc=uclibc --posix-runtime --external-calls=all --max-time=900s --emit-all-errors --max-solver-time=60 --solver-backend=stp --output-dir=/home/klee/logic_bombs/bc_normal/klee-normal-stp /home/klee/logic_bombs/bc_normal/tmp_harness1.bc

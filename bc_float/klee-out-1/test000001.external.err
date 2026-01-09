@@ -1,0 +1,5 @@
+Error: failed external call: real_main
+Stack: 
+	#000052698 in __user_main (argc=1, argv=513368288)
+	#100055993 in __uClibc_main (main=478738208, argc=1, argv=513368288, app_init=0, app_fini=0, rtld_fini=0, stack_end=0) at /home/user/uclibc/libc/misc/internals/__uClibc_main.c:401
+	#200057497 in main (=1, =513368288)

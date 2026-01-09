@@ -1,0 +1,15 @@
+array bc_stdin_bytes[128] : w32 -> w8 = symbolic
+(query [(Eq 10 (Read w8 0 bc_stdin_bytes))
+         (Eq 32 (Read w8 1 bc_stdin_bytes))
+         (Eq 10 (Read w8 2 bc_stdin_bytes))
+         (Eq 9 (Read w8 3 bc_stdin_bytes))
+         (Eq 10 (Read w8 4 bc_stdin_bytes))
+         (Eq 10 (Read w8 5 bc_stdin_bytes))
+         (Eq 10 (Read w8 6 bc_stdin_bytes))
+         (Eq 10 (Read w8 7 bc_stdin_bytes))
+         (Eq 10 (Read w8 8 bc_stdin_bytes))
+         (Eq 9 (Read w8 9 bc_stdin_bytes))
+         (Eq 10 (Read w8 10 bc_stdin_bytes))
+         (Eq false
+             (Eq 10 (Read w8 11 bc_stdin_bytes)))]
+        false)

@@ -1,0 +1,8 @@
+Error: ASSERTION FAIL: !v->len || !v->v[v->len - 1]
+Stack: 
+	#000055778 in bc_vec_concat(v=103579764639224, str=103579763695080)
+	#100001521 in bc_args_exprs(str=103579764820672)
+	#200000934 in bc_args(argc=3, argv=103579764961664, exit_exprs=true, scale=103579764587216, ibase=103579764587248, obase=103579764587280)
+	#300058700 in bc_vm_boot(argc=3, argv=103579764961664)
+	#400001736 in bc_main(argc=3, argv=103579764961664)
+	#500061965 in main(argc=1, argv=103579746642464)

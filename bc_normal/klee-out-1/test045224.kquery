@@ -1,0 +1,50 @@
+array bc_expr[64] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Eq 0 N0:(Read w8 0 bc_expr)))
+         (Sle 32 N1:(ZExt w32 N0))
+         (Sle N1 126)
+         (Eq false
+             (Eq 0 N2:(Read w8 1 bc_expr)))
+         (Sle 32 N3:(ZExt w32 N2))
+         (Sle N3 126)
+         (Eq false
+             (Eq 0 N4:(Read w8 2 bc_expr)))
+         (Sle 32 N5:(ZExt w32 N4))
+         (Sle N5 126)
+         (Eq 0 (Read w8 3 bc_expr))
+         (Eq false
+             (Eq 0 N6:(Read w8 4 bc_expr)))
+         (Sle 32 N7:(ZExt w32 N6))
+         (Sle N7 126)
+         (Eq false
+             (Eq 0 N8:(Read w8 5 bc_expr)))
+         (Sle 32 N9:(ZExt w32 N8))
+         (Sle N9 126)
+         (Eq false
+             (Eq 0 N10:(Read w8 6 bc_expr)))
+         (Sle 32 N11:(ZExt w32 N10))
+         (Sle N11 126)
+         (Eq 0 (Read w8 7 bc_expr))
+         (Eq false
+             (Eq 0 N12:(Read w8 8 bc_expr)))
+         (Sle 32 N13:(ZExt w32 N12))
+         (Sle N13 126)
+         (Eq false
+             (Eq 0 N14:(Read w8 9 bc_expr)))
+         (Sle 32 N15:(ZExt w32 N14))
+         (Sle N15 126)
+         (Eq 0 (Read w8 10 bc_expr))
+         (Eq false
+             (Eq 0 N16:(Read w8 11 bc_expr)))
+         (Sle 32 N17:(ZExt w32 N16))
+         (Sle N17 126)
+         (Eq false
+             (Eq 0 N18:(Read w8 12 bc_expr)))
+         (Sle 32 N19:(ZExt w32 N18))
+         (Sle N19 126)
+         (Eq false
+             (Eq 0 N20:(Read w8 13 bc_expr)))
+         (Sle 32 N21:(ZExt w32 N20))
+         (Sle N21 126)
+         (Eq 0 (Read w8 14 bc_expr))]
+        false)

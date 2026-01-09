@@ -1,0 +1,4 @@
+Error: invalid klee_assume call (provably false)
+Stack: 
+	#000062055 in assume_printable_cstr(s=103579764820672, n=64)
+	#100061855 in main(argc=1, argv=103579746642464)

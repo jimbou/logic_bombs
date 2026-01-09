@@ -1,0 +1,20 @@
+klee --libc=uclibc --posix-runtime --search=bfs --write-cov --emit-all-errors --external-calls=all --max-time=900 jq_parse.bc
+PID: 14576
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2026-01-08 08:13:08
+BEGIN searcher description
+BFSSearcher
+END searcher description
+Finished: 2026-01-08 08:13:13
+Elapsed: 00:00:05
+KLEE: done: explored paths = 1116
+KLEE: done: avg. constructs per query = 50
+KLEE: done: total queries = 313
+KLEE: done: valid queries = 88
+KLEE: done: invalid queries = 225
+KLEE: done: query cex = 313
+
+KLEE: done: total instructions = 10492364
+KLEE: done: completed paths = 220
+KLEE: done: partially completed paths = 896
+KLEE: done: generated tests = 1116

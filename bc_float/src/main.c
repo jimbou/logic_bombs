@@ -53,7 +53,7 @@
 #include <dc.h>
 
 int
-main(int argc, const char* argv[])
+real_main(int argc, const char* argv[])
 {
 	BcStatus s;
 	char* name;

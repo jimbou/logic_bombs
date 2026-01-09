@@ -1,0 +1,52 @@
+array bc_expr[64] : w32 -> w8 = symbolic
+(query [(Eq false
+             (Eq 92
+                 (Extract w8 0 (Add w32 32
+                                        (URem w32 (ZExt w32 (Read w8 62 bc_expr))
+                                                  95)))))
+         (Eq 47
+             (Extract w8 0 (Add w32 32
+                                    (URem w32 (ZExt w32 (Read w8 0 bc_expr))
+                                              95))))
+         (Eq 42
+             (Extract w8 0 (Add w32 32
+                                    (URem w32 (ZExt w32 (Read w8 1 bc_expr))
+                                              95))))
+         (Eq false
+             (Eq 42
+                 (Extract w8 0 (Add w32 32
+                                        (URem w32 (ZExt w32 (Read w8 2 bc_expr))
+                                                  95)))))
+         (Eq false
+             (Eq 42
+                 (Extract w8 0 (Add w32 32
+                                        (URem w32 (ZExt w32 (Read w8 3 bc_expr))
+                                                  95)))))
+         (Eq 42
+             (Extract w8 0 (Add w32 32
+                                    (URem w32 (ZExt w32 (Read w8 4 bc_expr))
+                                              95))))
+         (Eq false
+             (Extract 0 (ZExt w8 (Eq 47
+                                     N0:(Extract w8 0 (Add w32 32
+                                                               (URem w32 (ZExt w32 (Read w8 5 bc_expr))
+                                                                         95)))))))
+         (Eq false (Eq 42 N0))
+         (Eq 42
+             (Extract w8 0 (Add w32 32
+                                    (URem w32 (ZExt w32 (Read w8 6 bc_expr))
+                                              95))))
+         (Extract 0 (ZExt w8 (Eq 47
+                                 (Extract w8 0 (Add w32 32
+                                                        (URem w32 (ZExt w32 (Read w8 7 bc_expr))
+                                                                  95))))))
+         (Eq 61
+             (Extract w8 0 (Add w32 32
+                                    (URem w32 (ZExt w32 (Read w8 8 bc_expr))
+                                              95))))
+         (Eq false
+             (Eq 61
+                 (Extract w8 0 (Add w32 32
+                                        (URem w32 (ZExt w32 (Read w8 9 bc_expr))
+                                                  95)))))]
+        false)
