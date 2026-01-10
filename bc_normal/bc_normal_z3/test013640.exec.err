@@ -1,0 +1,27 @@
+Error: reached "unreachable" instruction
+File: src/vm.c
+Line: 115
+assembly.ll line: 11389
+State: 14236
+Stack: 
+	#000011389 in bc_vm_jmp() at src/vm.c:115
+	#100010384 in bc_vm_handleError(e=25, file=104009475733088, fline=49, line=symbolic) at src/vm.c:447
+	#200068589 in bc_lex_invalidChar(l=104009498468360, c=symbolic)
+	#300030409 in bc_lex_token(l=104009498468360)
+	#400038431 in bc_lex_next(l=104009498468360)
+	#500064360 in bc_parse_name(p=104009498468360, type=104010114370784, can_assign=104010109936016, flags=6)
+	#600063836 in bc_parse_incdec(p=104009498468360, prev=104010114370784, can_assign=104010109936016, nexs=104010015897456, flags=2)
+	#700062464 in bc_parse_expr_err(p=104009498468360, flags=2, next.coerce=724181508)
+	#800062160 in bc_parse_expr_status(p=104009498468360, flags=2, next.coerce=724181508)
+	#900066464 in bc_parse_stmt(p=104009498468360)
+	#1000030573 in bc_parse_parse(p=104009498468360)
+	#1100037155 in bc_vm_process(text=104009412888960, mode=0) at src/vm.c:1038
+	#1200035971 in bc_vm_exprs() at src/vm.c:1318
+	#1300032953 in bc_vm_exec() at src/vm.c:1486
+	#1400031419 in bc_vm_boot(argc=3, argv=104009499161056) at src/vm.c:1740
+	#1500029803 in bc_main(argc=3, argv=104009499161056)
+	#1600071643 in real_main(argc=3, argv=104009499161056) at src/main.c:112
+	#1700072187 in __klee_posix_wrapped_main()
+	#1800008013 in __user_main(argcPtr=1, argvPtr=104009412203264, envp=104009412203280) at klee_src/runtime/POSIX/klee_init_env.c:245
+	#1900001331 in __uClibc_main(104009497629416, 1, 104009412203264, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#2000001496 in main(1, 104009412203264)

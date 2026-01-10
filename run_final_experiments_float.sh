@@ -4,7 +4,7 @@ set -euo pipefail
 # =========================
 # CONFIG
 # =========================
-CONTAINER="klee_logic_bombs_float"   # <-- CHANGE HERE IF NEEDED
+CONTAINER="logic_float"   # <-- CHANGE HERE IF NEEDED
 TIME_LIMIT=900
 
 # =========================

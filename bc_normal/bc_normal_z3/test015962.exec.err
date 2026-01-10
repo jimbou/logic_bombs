@@ -1,0 +1,21 @@
+Error: reached "unreachable" instruction
+File: src/vm.c
+Line: 115
+assembly.ll line: 11389
+State: 29376
+Stack: 
+	#000011389 in bc_vm_jmp() at src/vm.c:115
+	#100010384 in bc_vm_handleError(e=28, file=104009475732288, fline=969, line=symbolic) at src/vm.c:447
+	#200037885 in bc_parse_endBody(p=104009498468360, brace=true)
+	#300066477 in bc_parse_stmt(p=104009498468360)
+	#400030573 in bc_parse_parse(p=104009498468360)
+	#500037155 in bc_vm_process(text=104009500590080, mode=0) at src/vm.c:1038
+	#600035984 in bc_vm_exprs() at src/vm.c:1323
+	#700032953 in bc_vm_exec() at src/vm.c:1486
+	#800031419 in bc_vm_boot(argc=3, argv=104009499161056) at src/vm.c:1740
+	#900029803 in bc_main(argc=3, argv=104009499161056)
+	#1000071643 in real_main(argc=3, argv=104009499161056) at src/main.c:112
+	#1100072187 in __klee_posix_wrapped_main()
+	#1200008013 in __user_main(argcPtr=1, argvPtr=104009412203264, envp=104009412203280) at klee_src/runtime/POSIX/klee_init_env.c:245
+	#1300001331 in __uClibc_main(104009497629416, 1, 104009412203264, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#1400001496 in main(1, 104009412203264)

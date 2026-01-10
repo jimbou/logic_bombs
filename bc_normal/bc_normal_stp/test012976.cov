@@ -1,0 +1,8 @@
+:0
+src/vm.c:1314
+src/vm.c:1315
+src/vm.c:1323
+src/read.c:125
+src/read.c:126
+src/read.c:128
+libc/string/strchr.c:26

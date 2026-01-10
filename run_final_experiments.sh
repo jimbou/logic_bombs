@@ -45,37 +45,37 @@ stop_container
 #remove all the output dirs from previous runs
 # ------------------------------------------------------------
 # 1) jq – Z3
-# ------------------------------------------------------------
-run_klee "
-klee \
-  --libc=uclibc \
-  --posix-runtime \
-  --solver-backend=z3 \
-  --write-cov \
-  --emit-all-errors \
-  --external-calls=all \
-  --max-solver-time=20 \
-  --max-time=900 \
-  --output-dir=/home/klee/logic_bombs/jq_normal/jq_normal_z3 \
-  /home/klee/logic_bombs/jq_normal/jq_parse.bc
-"
+# # ------------------------------------------------------------
+# run_klee "
+# klee \
+#   --libc=uclibc \
+#   --posix-runtime \
+#   --solver-backend=z3 \
+#   --write-cov \
+#   --emit-all-errors \
+#   --external-calls=all \
+#   --max-solver-time=20 \
+#   --max-time=900 \
+#   --output-dir=/home/klee/logic_bombs/jq_normal/jq_normal_z3 \
+#   /home/klee/logic_bombs/jq_normal/jq_parse.bc
+# "
 
-# ------------------------------------------------------------
-# 2) jq – STP
-# ------------------------------------------------------------
-run_klee "
-klee \
-  --libc=uclibc \
-  --posix-runtime \
-  --solver-backend=stp \
-  --write-cov \
-  --emit-all-errors \
-  --external-calls=all \
-  --max-solver-time=20 \
-  --max-time=900 \
-  --output-dir=/home/klee/logic_bombs/jq_normal/jq_normal_stp \
-  /home/klee/logic_bombs/jq_normal/jq_parse.bc
-"
+# # ------------------------------------------------------------
+# # 2) jq – STP
+# # ------------------------------------------------------------
+# run_klee "
+# klee \
+#   --libc=uclibc \
+#   --posix-runtime \
+#   --solver-backend=stp \
+#   --write-cov \
+#   --emit-all-errors \
+#   --external-calls=all \
+#   --max-solver-time=20 \
+#   --max-time=900 \
+#   --output-dir=/home/klee/logic_bombs/jq_normal/jq_normal_stp \
+#   /home/klee/logic_bombs/jq_normal/jq_parse.bc
+# "
 
 # ------------------------------------------------------------
 # 3) bc – STP
@@ -91,7 +91,7 @@ klee \
   --max-solver-time=20 \
   --max-time=900 \
   --output-dir=/home/klee/logic_bombs/bc_normal/bc_normal_stp \
-  /home/klee/logic_bombs/bc_normal/klee_executable.bc
+  /home/klee/logic_bombs/bc_normal/bc_klee1.bc
 "
 
 # ------------------------------------------------------------
@@ -108,7 +108,7 @@ klee \
   --max-solver-time=20 \
   --max-time=900 \
   --output-dir=/home/klee/logic_bombs/bc_normal/bc_normal_z3 \
-  /home/klee/logic_bombs/bc_normal/klee_executable.bc
+  /home/klee/logic_bombs/bc_normal/bc_klee1.bc
 "
 
 echo " All KLEE runs completed."

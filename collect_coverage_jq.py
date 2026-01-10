@@ -6,27 +6,32 @@ from collections import defaultdict
 # Configuration
 ############################################
 
-KLEE_OUT_DIR = Path("/home/jim/logic_bombs/jq_normal/klee-out-2")
+KLEE_OUT_DIR = Path("/home/jim/logic_bombs/jq_float/jq_float_z3")
 COVERABLE_JSON = Path("/home/jim/logic_bombs/jq_all_coverable_lines.json")
-OUT_JSON = "results_jq_normal_z3.json"
+OUT_JSON = "/home/jim/logic_bombs/jq_float/results_jq_float_z3_temp.json"
 
 ############################################
 # Helpers
 ############################################
+FILES_OF_INTEREST = {
+    "jv_parse.c",
+    "jv.c",
+    "jv_unicode.c",
+    "jv_alloc.c",
+    "jv_aux.c",
+}
 
 def load_coverable_lines():
-    """
-    Load coverable lines per file from jq_all_coverable_lines.json
-    Returns dict: { filename -> set(line_numbers) }
-    """
     with open(COVERABLE_JSON, "r") as f:
         data = json.load(f)
 
     coverable = {}
     for fname, info in data.items():
-        coverable[fname] = set(map(int, info["coverable_linenos"]))
+        if fname in FILES_OF_INTEREST:
+            coverable[fname] = set(map(int, info["coverable_linenos"]))
 
     return coverable
+
 
 
 def parse_cov_file(path: Path):
@@ -69,7 +74,9 @@ def main():
     for cov in cov_files:
         per_file = parse_cov_file(cov)
         for fname, lines in per_file.items():
-            total_covered[fname].update(lines)
+            if fname in FILES_OF_INTEREST:
+                total_covered[fname].update(lines)
+
 
     # Compute coverage for ALL coverable lines
     result = {}

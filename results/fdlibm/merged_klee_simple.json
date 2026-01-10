@@ -1,0 +1,744 @@
+{
+  "src/covert_propogation/df2cf_cp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T13:32:16Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-df2cf_cp_l1_klee_annotated-stp-20251113-133215-25-9874",
+      "log": "logs/df2cf_cp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T13:32:17Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-df2cf_cp_l1_klee_annotated-z3-20251113-133216-25-25920",
+      "log": "logs/df2cf_cp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/covert_propogation/file_cp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T13:48:50Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-file_cp_l1_klee_annotated-stp-20251113-133217-136-7132",
+      "log": "logs/file_cp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T13:48:51Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-file_cp_l1_klee_annotated-z3-20251113-134850-136-18353",
+      "log": "logs/file_cp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/covert_propogation/stack_cp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T13:48:52Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-stack_cp_l1_klee_annotated-stp-20251113-134851-203-12201",
+      "log": "logs/stack_cp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T13:48:53Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-stack_cp_l1_klee_annotated-z3-20251113-134852-203-23345",
+      "log": "logs/stack_cp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/covert_propogation/echo_cp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T13:48:54Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-echo_cp_l1_klee_annotated-stp-20251113-134853-241-13901",
+      "log": "logs/echo_cp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T13:48:55Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-echo_cp_l1_klee_annotated-z3-20251113-134854-241-19349",
+      "log": "logs/echo_cp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/covert_propogation/echofile_cp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T13:48:56Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-echofile_cp_l1_klee_annotated-stp-20251113-134855-320-11907",
+      "log": "logs/echofile_cp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T14:05:27Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-echofile_cp_l1_klee_annotated-z3-20251113-134856-320-28308",
+      "log": "logs/echofile_cp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/covert_propogation/socket_cp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T14:05:28Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-socket_cp_l1_klee_annotated-stp-20251113-140527-395-8758",
+      "log": "logs/socket_cp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T14:05:29Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-socket_cp_l1_klee_annotated-z3-20251113-140528-395-21546",
+      "log": "logs/socket_cp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/covert_propogation/file_posix_cp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T14:05:30Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-file_posix_cp_l1_klee_annotated-stp-20251113-140529-433-11804",
+      "log": "logs/file_posix_cp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T14:05:32Z",
+      "outdir": "/home/klee/logic_bombs/src/covert_propogation/klee-out-file_posix_cp_l1_klee_annotated-z3-20251113-140530-433-24743",
+      "log": "logs/file_posix_cp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/loop/collaz_lo_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T14:20:32Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-collaz_lo_l2_klee_annotated-stp-20251113-140532-471-17227",
+      "log": "logs/collaz_lo_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T14:35:34Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-collaz_lo_l2_klee_annotated-z3-20251113-142032-471-8415",
+      "log": "logs/collaz_lo_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/floating_point/float2_fp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T21:31:37Z",
+      "outdir": "/home/klee/logic_bombs/src/floating_point/klee-out-float2_fp_l1_klee_annotated-stp-20251113-213136-25-31130",
+      "log": "logs/float2_fp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T21:31:38Z",
+      "outdir": "/home/klee/logic_bombs/src/floating_point/klee-out-float2_fp_l1_klee_annotated-z3-20251113-213137-25-13614",
+      "log": "logs/float2_fp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/floating_point/float5_fp_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T21:31:39Z",
+      "outdir": "/home/klee/logic_bombs/src/floating_point/klee-out-float5_fp_l2_klee_annotated-stp-20251113-213138-64-27370",
+      "log": "logs/float5_fp_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T21:31:40Z",
+      "outdir": "/home/klee/logic_bombs/src/floating_point/klee-out-float5_fp_l2_klee_annotated-z3-20251113-213139-64-11049",
+      "log": "logs/float5_fp_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/floating_point/float3_fp_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T21:31:42Z",
+      "outdir": "/home/klee/logic_bombs/src/floating_point/klee-out-float3_fp_l2_klee_annotated-stp-20251113-213140-102-10851",
+      "log": "logs/float3_fp_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T21:31:43Z",
+      "outdir": "/home/klee/logic_bombs/src/floating_point/klee-out-float3_fp_l2_klee_annotated-z3-20251113-213142-102-8648",
+      "log": "logs/float3_fp_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/floating_point/float1_fp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T21:31:44Z",
+      "outdir": "/home/klee/logic_bombs/src/floating_point/klee-out-float1_fp_l1_klee_annotated-stp-20251113-213143-140-9079",
+      "log": "logs/float1_fp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T21:31:45Z",
+      "outdir": "/home/klee/logic_bombs/src/floating_point/klee-out-float1_fp_l1_klee_annotated-z3-20251113-213144-140-2226",
+      "log": "logs/float1_fp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/floating_point/float4_fp_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T21:31:46Z",
+      "outdir": "/home/klee/logic_bombs/src/floating_point/klee-out-float4_fp_l2_klee_annotated-stp-20251113-213145-179-26660",
+      "log": "logs/float4_fp_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T21:31:47Z",
+      "outdir": "/home/klee/logic_bombs/src/floating_point/klee-out-float4_fp_l2_klee_annotated-z3-20251113-213146-179-15545",
+      "log": "logs/float4_fp_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/external_functions/rand_ef_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T21:49:59Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-rand_ef_l2_klee_annotated-stp-20251113-213147-217-17363",
+      "log": "logs/rand_ef_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T22:06:31Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-rand_ef_l2_klee_annotated-z3-20251113-214959-217-20830",
+      "log": "logs/rand_ef_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/external_functions/printfloat_ef_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T22:06:32Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-printfloat_ef_l1_klee_annotated-stp-20251113-220631-344-31381",
+      "log": "logs/printfloat_ef_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T22:06:33Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-printfloat_ef_l1_klee_annotated-z3-20251113-220632-344-7100",
+      "log": "logs/printfloat_ef_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/external_functions/printint_int_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T22:06:34Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-printint_int_l1_klee_annotated-stp-20251113-220633-383-4406",
+      "log": "logs/printint_int_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T22:06:35Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-printint_int_l1_klee_annotated-z3-20251113-220634-383-25061",
+      "log": "logs/printint_int_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/external_functions/pow_ef_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T22:06:36Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-pow_ef_l2_klee_annotated-stp-20251113-220635-423-9041",
+      "log": "logs/pow_ef_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T22:06:37Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-pow_ef_l2_klee_annotated-z3-20251113-220636-423-2492",
+      "log": "logs/pow_ef_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/external_functions/atoi_ef_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T22:06:38Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-atoi_ef_l2_klee_annotated-stp-20251113-220637-462-16574",
+      "log": "logs/atoi_ef_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T22:06:39Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-atoi_ef_l2_klee_annotated-z3-20251113-220638-462-14059",
+      "log": "logs/atoi_ef_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/external_functions/ln_ef_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T22:06:40Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-ln_ef_l2_klee_annotated-stp-20251113-220639-500-3191",
+      "log": "logs/ln_ef_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T22:06:41Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-ln_ef_l2_klee_annotated-z3-20251113-220640-500-31609",
+      "log": "logs/ln_ef_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/external_functions/atof_ef_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T22:06:42Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-atof_ef_l2_klee_annotated-stp-20251113-220641-539-30725",
+      "log": "logs/atof_ef_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T22:06:43Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-atof_ef_l2_klee_annotated-z3-20251113-220642-539-28992",
+      "log": "logs/atof_ef_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/external_functions/sin_ef_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T22:06:44Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-sin_ef_l2_klee_annotated-stp-20251113-220643-577-8210",
+      "log": "logs/sin_ef_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T22:06:45Z",
+      "outdir": "/home/klee/logic_bombs/src/external_functions/klee-out-sin_ef_l2_klee_annotated-z3-20251113-220644-577-32366",
+      "log": "logs/sin_ef_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/contextual_symbolic_value/ping_csv_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T22:33:02Z",
+      "outdir": "/home/klee/logic_bombs/src/contextual_symbolic_value/klee-out-ping_csv_klee_annotated-stp-20251113-221307-889-27219",
+      "log": "logs/ping_csv_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T22:49:20Z",
+      "outdir": "/home/klee/logic_bombs/src/contextual_symbolic_value/klee-out-ping_csv_klee_annotated-z3-20251113-223302-889-10886",
+      "log": "logs/ping_csv_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/contextual_symbolic_value/syscall_csv_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T22:49:21Z",
+      "outdir": "/home/klee/logic_bombs/src/contextual_symbolic_value/klee-out-syscall_csv_klee_annotated-stp-20251113-224920-150038-23951",
+      "log": "logs/syscall_csv_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T22:49:23Z",
+      "outdir": "/home/klee/logic_bombs/src/contextual_symbolic_value/klee-out-syscall_csv_klee_annotated-z3-20251113-224921-150038-25888",
+      "log": "logs/syscall_csv_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/contextual_symbolic_value/pid_csv_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T22:49:24Z",
+      "outdir": "/home/klee/logic_bombs/src/contextual_symbolic_value/klee-out-pid_csv_klee_annotated-stp-20251113-224923-150083-3184",
+      "log": "logs/pid_csv_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T22:49:25Z",
+      "outdir": "/home/klee/logic_bombs/src/contextual_symbolic_value/klee-out-pid_csv_klee_annotated-z3-20251113-224924-150083-23612",
+      "log": "logs/pid_csv_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/contextual_symbolic_value/file_posix_csv_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T22:49:26Z",
+      "outdir": "/home/klee/logic_bombs/src/contextual_symbolic_value/klee-out-file_posix_csv_klee_annotated-stp-20251113-224925-150128-9066",
+      "log": "logs/file_posix_csv_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T22:49:27Z",
+      "outdir": "/home/klee/logic_bombs/src/contextual_symbolic_value/klee-out-file_posix_csv_klee_annotated-z3-20251113-224926-150128-21994",
+      "log": "logs/file_posix_csv_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/contextual_symbolic_value/file_csv_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T22:49:28Z",
+      "outdir": "/home/klee/logic_bombs/src/contextual_symbolic_value/klee-out-file_csv_klee_annotated-stp-20251113-224927-150337-698",
+      "log": "logs/file_csv_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T22:49:29Z",
+      "outdir": "/home/klee/logic_bombs/src/contextual_symbolic_value/klee-out-file_csv_klee_annotated-z3-20251113-224928-150337-5017",
+      "log": "logs/file_csv_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/parallel_program/2thread_pp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T23:43:57Z",
+      "outdir": "/home/klee/logic_bombs/src/parallel_program/klee-out-2thread_pp_l1_klee_annotated-stp-20251113-234354-25-18483",
+      "log": "logs/2thread_pp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T23:43:59Z",
+      "outdir": "/home/klee/logic_bombs/src/parallel_program/klee-out-2thread_pp_l1_klee_annotated-z3-20251113-234357-25-12585",
+      "log": "logs/2thread_pp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/parallel_program/forkshm_pp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T23:44:00Z",
+      "outdir": "/home/klee/logic_bombs/src/parallel_program/klee-out-forkshm_pp_l1_klee_annotated-stp-20251113-234359-64-26395",
+      "log": "logs/forkshm_pp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T23:44:01Z",
+      "outdir": "/home/klee/logic_bombs/src/parallel_program/klee-out-forkshm_pp_l1_klee_annotated-z3-20251113-234400-64-20156",
+      "log": "logs/forkshm_pp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/parallel_program/mthread_pp_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T23:44:03Z",
+      "outdir": "/home/klee/logic_bombs/src/parallel_program/klee-out-mthread_pp_l2_klee_annotated-stp-20251113-234401-98-11281",
+      "log": "logs/mthread_pp_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T23:44:05Z",
+      "outdir": "/home/klee/logic_bombs/src/parallel_program/klee-out-mthread_pp_l2_klee_annotated-z3-20251113-234403-98-16429",
+      "log": "logs/mthread_pp_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/parallel_program/2thread_pp_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T23:44:07Z",
+      "outdir": "/home/klee/logic_bombs/src/parallel_program/klee-out-2thread_pp_l2_klee_annotated-stp-20251113-234405-138-17118",
+      "log": "logs/2thread_pp_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T23:44:09Z",
+      "outdir": "/home/klee/logic_bombs/src/parallel_program/klee-out-2thread_pp_l2_klee_annotated-z3-20251113-234407-138-1049",
+      "log": "logs/2thread_pp_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/parallel_program/forkpipe_pp_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T23:44:10Z",
+      "outdir": "/home/klee/logic_bombs/src/parallel_program/klee-out-forkpipe_pp_l1_klee_annotated-stp-20251113-234409-178-4275",
+      "log": "logs/forkpipe_pp_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T23:44:11Z",
+      "outdir": "/home/klee/logic_bombs/src/parallel_program/klee-out-forkpipe_pp_l1_klee_annotated-z3-20251113-234410-178-3852",
+      "log": "logs/forkpipe_pp_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_jump/pointers_sj_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T23:44:13Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_jump/klee-out-pointers_sj_l1_klee_annotated-stp-20251113-234411-216-11776",
+      "log": "logs/pointers_sj_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T23:44:14Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_jump/klee-out-pointers_sj_l1_klee_annotated-z3-20251113-234413-216-31645",
+      "log": "logs/pointers_sj_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_jump/arrayjmp_sj_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T23:44:16Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_jump/klee-out-arrayjmp_sj_l2_klee_annotated-stp-20251113-234414-376-30640",
+      "log": "logs/arrayjmp_sj_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-13T23:44:17Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_jump/klee-out-arrayjmp_sj_l2_klee_annotated-z3-20251113-234416-376-29438",
+      "log": "logs/arrayjmp_sj_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_jump/jmp_sj_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T23:44:18Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_jump/klee-out-jmp_sj_l1_klee_annotated-stp-20251113-234417-505-23555",
+      "log": "logs/jmp_sj_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T23:44:19Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_jump/klee-out-jmp_sj_l1_klee_annotated-z3-20251113-234418-505-27032",
+      "log": "logs/jmp_sj_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/buffer_overflow/heap_bo_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T23:47:04Z",
+      "outdir": "/home/klee/logic_bombs/src/buffer_overflow/klee-out-heap_bo_l1_klee_annotated-stp-20251113-234703-677-11312",
+      "log": "logs/heap_bo_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T23:47:05Z",
+      "outdir": "/home/klee/logic_bombs/src/buffer_overflow/klee-out-heap_bo_l1_klee_annotated-z3-20251113-234704-677-10713",
+      "log": "logs/heap_bo_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/buffer_overflow/stacknocrash_bo_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T23:47:07Z",
+      "outdir": "/home/klee/logic_bombs/src/buffer_overflow/klee-out-stacknocrash_bo_l1_klee_annotated-stp-20251113-234705-797-20332",
+      "log": "logs/stacknocrash_bo_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T23:47:08Z",
+      "outdir": "/home/klee/logic_bombs/src/buffer_overflow/klee-out-stacknocrash_bo_l1_klee_annotated-z3-20251113-234707-797-12608",
+      "log": "logs/stacknocrash_bo_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/buffer_overflow/stack_bo_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T23:47:09Z",
+      "outdir": "/home/klee/logic_bombs/src/buffer_overflow/klee-out-stack_bo_l1_klee_annotated-stp-20251113-234708-1160-2364",
+      "log": "logs/stack_bo_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T23:47:10Z",
+      "outdir": "/home/klee/logic_bombs/src/buffer_overflow/klee-out-stack_bo_l1_klee_annotated-z3-20251113-234709-1160-28511",
+      "log": "logs/stack_bo_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/buffer_overflow/stack_bo_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T23:47:11Z",
+      "outdir": "/home/klee/logic_bombs/src/buffer_overflow/klee-out-stack_bo_l2_klee_annotated-stp-20251113-234710-1257-27970",
+      "log": "logs/stack_bo_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T23:47:12Z",
+      "outdir": "/home/klee/logic_bombs/src/buffer_overflow/klee-out-stack_bo_l2_klee_annotated-z3-20251113-234711-1257-30279",
+      "log": "logs/stack_bo_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_memory/stackoutofbound_sm_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T23:47:14Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-stackoutofbound_sm_l2_klee_annotated-stp-20251113-234712-1353-19160",
+      "log": "logs/stackoutofbound_sm_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T23:47:15Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-stackoutofbound_sm_l2_klee_annotated-z3-20251113-234714-1353-10258",
+      "log": "logs/stackoutofbound_sm_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_memory/heapoutofbound_sm_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T23:47:17Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-heapoutofbound_sm_l2_klee_annotated-stp-20251113-234715-1481-12836",
+      "log": "logs/heapoutofbound_sm_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-13T23:47:18Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-heapoutofbound_sm_l2_klee_annotated-z3-20251113-234717-1481-23660",
+      "log": "logs/heapoutofbound_sm_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_memory/realloc_sm_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T23:47:20Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-realloc_sm_l1_klee_annotated-stp-20251113-234718-1608-14598",
+      "log": "logs/realloc_sm_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T23:47:21Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-realloc_sm_l1_klee_annotated-z3-20251113-234720-1608-30288",
+      "log": "logs/realloc_sm_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_memory/malloc_sm_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T23:47:23Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-malloc_sm_l1_klee_annotated-stp-20251113-234721-1744-11827",
+      "log": "logs/malloc_sm_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T23:47:24Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-malloc_sm_l1_klee_annotated-z3-20251113-234723-1744-2547",
+      "log": "logs/malloc_sm_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_memory/stackarray_sm_ln_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-13T23:47:46Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-stackarray_sm_ln_klee_annotated-stp-20251113-234724-1878-1202",
+      "log": "logs/stackarray_sm_ln_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T00:03:01Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-stackarray_sm_ln_klee_annotated-z3-20251113-234746-1878-25915",
+      "log": "logs/stackarray_sm_ln_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_memory/stackarray_sm_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T00:03:05Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-stackarray_sm_l2_klee_annotated-stp-20251114-000302-2322-18469",
+      "log": "logs/stackarray_sm_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T00:03:07Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-stackarray_sm_l2_klee_annotated-z3-20251114-000305-2322-29240",
+      "log": "logs/stackarray_sm_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/symbolic_memory/stackarray_sm_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T00:03:09Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-stackarray_sm_l1_klee_annotated-stp-20251114-000307-2524-15399",
+      "log": "logs/stackarray_sm_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T00:03:10Z",
+      "outdir": "/home/klee/logic_bombs/src/symbolic_memory/klee-out-stackarray_sm_l1_klee_annotated-z3-20251114-000309-2524-17112",
+      "log": "logs/stackarray_sm_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/loop/collaz_lo_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T02:34:11Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-collaz_lo_l1_klee_annotated-stp-20251114-021910-2657-6705",
+      "log": "logs/collaz_lo_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T02:49:13Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-collaz_lo_l1_klee_annotated-z3-20251114-023411-2657-18074",
+      "log": "logs/collaz_lo_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/loop/5n+1_lo_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T03:04:14Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-5n+1_lo_l1_klee_annotated-stp-20251114-024913-16875-16746",
+      "log": "logs/5n+1_lo_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T03:19:15Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-5n+1_lo_l1_klee_annotated-z3-20251114-030414-16875-14123",
+      "log": "logs/5n+1_lo_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/loop/7n+1_lo_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T03:51:04Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-7n+1_lo_l1_klee_annotated-stp-20251114-033603-27374-29490",
+      "log": "logs/7n+1_lo_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T03:51:04Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-7n+1_lo_l1_klee_annotated-z3-20251114-033603-27374-29490",
+      "log": "logs/7n+1_lo_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/loop/paraloop_lo_l2_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T04:25:10Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-paraloop_lo_l2_klee_annotated-stp-20251114-042508-25-18048",
+      "log": "logs/paraloop_lo_l2_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T04:25:12Z",
+      "outdir": "/home/klee/logic_bombs/src/loop/klee-out-paraloop_lo_l2_klee_annotated-z3-20251114-042510-25-24773",
+      "log": "logs/paraloop_lo_l2_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/integer_overflow/addint_to_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T04:25:14Z",
+      "outdir": "/home/klee/logic_bombs/src/integer_overflow/klee-out-addint_to_l1_klee_annotated-stp-20251114-042512-90-3524",
+      "log": "logs/addint_to_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T04:25:15Z",
+      "outdir": "/home/klee/logic_bombs/src/integer_overflow/klee-out-addint_to_l1_klee_annotated-z3-20251114-042514-90-12754",
+      "log": "logs/addint_to_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/integer_overflow/multiplyint_to_l1_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T04:25:16Z",
+      "outdir": "/home/klee/logic_bombs/src/integer_overflow/klee-out-multiplyint_to_l1_klee_annotated-stp-20251114-042515-136-27903",
+      "log": "logs/multiplyint_to_l1_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_both",
+      "ts": "2025-11-14T04:25:17Z",
+      "outdir": "/home/klee/logic_bombs/src/integer_overflow/klee-out-multiplyint_to_l1_klee_annotated-z3-20251114-042516-136-15297",
+      "log": "logs/multiplyint_to_l1_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/crypto_functions/aes_cf_klee_annotated.bc": {
+    "stp": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T04:25:18Z",
+      "outdir": "/home/klee/logic_bombs/src/crypto_functions/klee-out-aes_cf_klee_annotated-stp-20251114-042517-186-10487",
+      "log": "logs/aes_cf_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "triggered_only_no_bomb",
+      "ts": "2025-11-14T04:25:19Z",
+      "outdir": "/home/klee/logic_bombs/src/crypto_functions/klee-out-aes_cf_klee_annotated-z3-20251114-042518-186-29452",
+      "log": "logs/aes_cf_klee_annotated/z3/runner_stdout.log"
+    }
+  },
+  "src/crypto_functions/sha_cf_klee_annotated.bc": {
+    "stp": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T04:25:20Z",
+      "outdir": "/home/klee/logic_bombs/src/crypto_functions/klee-out-sha_cf_klee_annotated-stp-20251114-042519-386-2766",
+      "log": "logs/sha_cf_klee_annotated/stp/runner_stdout.log"
+    },
+    "z3": {
+      "status": "no_trigger",
+      "ts": "2025-11-14T04:25:21Z",
+      "outdir": "/home/klee/logic_bombs/src/crypto_functions/klee-out-sha_cf_klee_annotated-z3-20251114-042520-386-24238",
+      "log": "logs/sha_cf_klee_annotated/z3/runner_stdout.log"
+    }
+  }
+}

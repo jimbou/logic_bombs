@@ -1,0 +1,100 @@
+array bc_expr[64] : w32 -> w8 = symbolic
+array const_arr1[768] : w32 -> w8 = [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 3 32 2 32 2 32 2 32 2 32 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 2 0 1 96 4 192 4 192 4 192 4 192 4 192 4 192 4 192 4 192 4 192 4 192 4 192 4 192 4 192 4 192 4 192 8 216 8 216 8 216 8 216 8 216 8 216 8 216 8 216 8 216 8 216 4 192 4 192 4 192 4 192 4 192 4 192 4 192 8 213 8 213 8 213 8 213 8 213 8 213 8 197 8 197 8 197 8 197 8 197 8 197 8 197 8 197 8 197 8 197 8 197 8 197 8 197 8 197 8 197 8 197 8 197 8 197 8 197 8 197 4 192 4 192 4 192 4 192 4 192 4 192 8 214 8 214 8 214 8 214 8 214 8 214 8 198 8 198 8 198 8 198 8 198 8 198 8 198 8 198 8 198 8 198 8 198 8 198 8 198 8 198 8 198 8 198 8 198 8 198 8 198 8 198 4 192 4 192 4 192 4 192 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+(query [(Eq false
+             (Eq 92
+                 (Extract w8 0 (Add w32 32
+                                        (URem w32 (ZExt w32 (Read w8 62 bc_expr))
+                                                  95)))))
+         (Eq 32
+             (Extract w8 0 (Add w32 32
+                                    (URem w32 (ZExt w32 (Read w8 0 bc_expr))
+                                              95))))
+         (Eq false
+             (Eq 0
+                 (And w32 (ZExt w32 (ReadLSB w16 N0:(Extract w32 0 (Add w64 256
+                                                                            (Mul w64 2
+                                                                                     (SExt w64 (SExt w32 (Extract w8 0 (Add w32 32
+                                                                                                                                (URem w32 (ZExt w32 (Read w8 1 bc_expr))
+                                                                                                                                          95)))))))) const_arr1))
+                          8192)))
+         (Eq false
+             (Eq 0
+                 (And w32 (ZExt w32 (ReadLSB w16 N1:(Extract w32 0 (Add w64 256
+                                                                            (Mul w64 2
+                                                                                     (SExt w64 (SExt w32 (Extract w8 0 (Add w32 32
+                                                                                                                                (URem w32 (ZExt w32 (Read w8 2 bc_expr))
+                                                                                                                                          95)))))))) const_arr1))
+                          8192)))
+         (Eq 47
+             (Extract w8 0 (Add w32 32
+                                    (URem w32 (ZExt w32 (Read w8 3 bc_expr))
+                                              95))))
+         (Eq 42
+             (Extract w8 0 (Add w32 32
+                                    (URem w32 (ZExt w32 (Read w8 4 bc_expr))
+                                              95))))
+         (Eq false
+             (Eq 42
+                 (Extract w8 0 (Add w32 32
+                                        (URem w32 (ZExt w32 (Read w8 5 bc_expr))
+                                                  95)))))
+         (Eq false
+             (Eq 42
+                 (Extract w8 0 (Add w32 32
+                                        (URem w32 (ZExt w32 (Read w8 6 bc_expr))
+                                                  95)))))
+         (Eq 42
+             (Extract w8 0 (Add w32 32
+                                    (URem w32 (ZExt w32 (Read w8 7 bc_expr))
+                                              95))))
+         (Eq 42
+             (Extract w8 0 (Add w32 32
+                                    (URem w32 (ZExt w32 (Read w8 8 bc_expr))
+                                              95))))
+         (Eq 42
+             (Extract w8 0 (Add w32 32
+                                    (URem w32 (ZExt w32 (Read w8 9 bc_expr))
+                                              95))))
+         (Extract 0 (ZExt w8 (Eq 47
+                                 (Extract w8 0 (Add w32 32
+                                                        (URem w32 (ZExt w32 (Read w8 10 bc_expr))
+                                                                  95))))))
+         (Or (Eq 57
+                 N2:(Extract w8 0 (Add w32 32
+                                           (URem w32 (ZExt w32 (Read w8 11 bc_expr))
+                                                     95))))
+             (Or (Eq 56 N2)
+                 (Or (Eq 55 N2)
+                     (Or (Eq 54 N2)
+                         (Or (Eq 53 N2)
+                             (Or (Eq 52 N2)
+                                 (Or (Eq 51 N2)
+                                     (Or (Eq 50 N2)
+                                         (Or (Eq 49 N2)
+                                             (Or (Eq 48 N2)
+                                                 (Or (Eq 90 N2)
+                                                     (Or (Eq 89 N2)
+                                                         (Or (Eq 88 N2)
+                                                             (Or (Eq 87 N2)
+                                                                 (Or (Eq 86 N2)
+                                                                     (Or (Eq 85 N2)
+                                                                         (Or (Eq 84 N2)
+                                                                             (Or (Eq 83 N2)
+                                                                                 (Or (Eq 82 N2)
+                                                                                     (Or (Eq 81 N2)
+                                                                                         (Or (Eq 80 N2)
+                                                                                             (Or (Eq 79 N2)
+                                                                                                 (Or (Eq 78 N2)
+                                                                                                     (Or (Eq 77 N2)
+                                                                                                         (Or (Eq 76 N2)
+                                                                                                             (Or (Eq 75 N2)
+                                                                                                                 (Or (Eq 74 N2)
+                                                                                                                     (Or (Eq 73 N2)
+                                                                                                                         (Or (Eq 72 N2)
+                                                                                                                             (Or (Eq 71 N2)
+                                                                                                                                 (Or (Eq 70 N2)
+                                                                                                                                     (Or (Eq 69 N2)
+                                                                                                                                         (Or (Eq 68 N2)
+                                                                                                                                             (Or (Eq 67 N2)
+                                                                                                                                                 (Or (Eq 66 N2) (Eq 65 N2))))))))))))))))))))))))))))))))))))]
+        false)

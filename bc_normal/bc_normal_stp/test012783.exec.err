@@ -1,0 +1,23 @@
+Error: reached "unreachable" instruction
+File: src/vm.c
+Line: 115
+assembly.ll line: 11389
+State: 15109
+Stack: 
+	#000011389 in bc_vm_jmp() at src/vm.c:115
+	#100010384 in bc_vm_handleError(e=28, file=107690214544208, fline=772, line=symbolic) at src/vm.c:447
+	#200063904 in bc_parse_incdec(p=107690237222920, prev=107690800505768, can_assign=107690800510008, nexs=107690800506392, flags=2)
+	#300062464 in bc_parse_expr_err(p=107690237222920, flags=2, next.coerce=724181508)
+	#400062160 in bc_parse_expr_status(p=107690237222920, flags=2, next.coerce=724181508)
+	#500066464 in bc_parse_stmt(p=107690237222920)
+	#600030573 in bc_parse_parse(p=107690237222920)
+	#700037155 in bc_vm_process(text=107690169053568, mode=0) at src/vm.c:1038
+	#800035971 in bc_vm_exprs() at src/vm.c:1318
+	#900032953 in bc_vm_exec() at src/vm.c:1486
+	#1000031419 in bc_vm_boot(argc=3, argv=107690237922688) at src/vm.c:1740
+	#1100029803 in bc_main(argc=3, argv=107690237922688)
+	#1200071643 in real_main(argc=3, argv=107690237922688) at src/main.c:112
+	#1300072187 in __klee_posix_wrapped_main()
+	#1400008013 in __user_main(argcPtr=1, argvPtr=107690168021760, envp=107690168021776) at klee_src/runtime/POSIX/klee_init_env.c:245
+	#1500001331 in __uClibc_main(107690236383976, 1, 107690168021760, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#1600001496 in main(1, 107690168021760)

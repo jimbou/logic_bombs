@@ -2,8 +2,8 @@ import re
 import json
 from pathlib import Path
 
-TXT_PATH = "/home/jim/logic_bombs/bc_normal/llvm_cov_output.txt"
-OUT_JSON = "bc_all_coverable_lines.json"
+TXT_PATH = "/home/jim/logic_bombs/bc_normal/bc_normal_ze_replay/llvm_cov_output.txt"
+OUT_JSON = "/home/jim/logic_bombs/bc_normal/bc_all_coverable_lines_replayable_z3.json"
 
 SRC_DIR = Path("/home/jim/logic_bombs/bc_normal/src")
 BC_COVERAGE_FILES = sorted(p.name for p in SRC_DIR.glob("*.c"))

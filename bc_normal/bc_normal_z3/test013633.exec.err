@@ -1,0 +1,20 @@
+Error: reached "unreachable" instruction
+File: src/vm.c
+Line: 115
+assembly.ll line: 11389
+State: 13614
+Stack: 
+	#000011389 in bc_vm_jmp() at src/vm.c:115
+	#100010384 in bc_vm_handleError(e=28, file=104009475732288, fline=1927, line=symbolic) at src/vm.c:447
+	#200066597 in bc_parse_stmt(p=104009498468360)
+	#300030573 in bc_parse_parse(p=104009498468360)
+	#400037155 in bc_vm_process(text=104009412888960, mode=0) at src/vm.c:1038
+	#500035971 in bc_vm_exprs() at src/vm.c:1318
+	#600032953 in bc_vm_exec() at src/vm.c:1486
+	#700031419 in bc_vm_boot(argc=3, argv=104009499161056) at src/vm.c:1740
+	#800029803 in bc_main(argc=3, argv=104009499161056)
+	#900071643 in real_main(argc=3, argv=104009499161056) at src/main.c:112
+	#1000072187 in __klee_posix_wrapped_main()
+	#1100008013 in __user_main(argcPtr=1, argvPtr=104009412203264, envp=104009412203280) at klee_src/runtime/POSIX/klee_init_env.c:245
+	#1200001331 in __uClibc_main(104009497629416, 1, 104009412203264, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#1300001496 in main(1, 104009412203264)

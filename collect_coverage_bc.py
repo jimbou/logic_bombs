@@ -1,6 +1,4 @@
-
 import json
-import re
 from pathlib import Path
 from collections import defaultdict
 
@@ -8,9 +6,9 @@ from collections import defaultdict
 # Configuration
 ############################################
 
-COV_DIR = Path("/home/jim/logic_bombs/bc_normal/klee-out-10")  # can be empty
+COV_DIR = Path("/home/jim/logic_bombs/bc_float/bc_float_z3")
 COVERABLE_JSON = Path("/home/jim/logic_bombs/bc_all_coverable_lines.json")
-OUT_JSON = "bc_klee_coverage_summary.json"
+OUT_JSON = "/home/jim/logic_bombs/bc_float/results_bc_z3.json"
 
 FILES_OF_INTEREST = {
     "lex.c",
@@ -40,32 +38,29 @@ def load_coverable():
 
 def parse_cov_file(path: Path):
     """
-    Parse a single .cov file.
-    Returns dict: { filename -> set(covered_lines) }
+    Parse KLEE-style .cov file:
+    Each line is:
+        src/file.c:LINE
     """
     covered = defaultdict(set)
-    current_file = None
 
     with open(path, "r", errors="ignore") as f:
         for line in f:
             line = line.strip()
 
-            if line.startswith("SF:"):
-                current_file = Path(line[3:]).name
+            # Skip junk lines like ":0"
+            if ":" not in line:
+                continue
 
-            elif line.startswith("DA:") and current_file:
-                m = re.match(r"DA:(\d+),(\d+)", line)
-                if not m:
-                    continue
+            file_part, line_part = line.rsplit(":", 1)
 
-                lineno = int(m.group(1))
-                count = int(m.group(2))
+            if not line_part.isdigit():
+                continue
 
-                if count > 0:
-                    covered[current_file].add(lineno)
+            fname = Path(file_part).name
+            lineno = int(line_part)
 
-            elif line == "end_of_record":
-                current_file = None
+            covered[fname].add(lineno)
 
     return covered
 
@@ -77,7 +72,6 @@ def parse_cov_file(path: Path):
 def main():
     coverable = load_coverable()
 
-    # Aggregate covered lines across all .cov files
     total_covered = defaultdict(set)
 
     cov_files = list(COV_DIR.glob("*.cov"))
@@ -85,9 +79,11 @@ def main():
 
     for cov in cov_files:
         per_file = parse_cov_file(cov)
+
         for fname, lines in per_file.items():
             if fname in FILES_OF_INTEREST:
                 total_covered[fname].update(lines)
+
 
     # Compute coverage
     result = {}

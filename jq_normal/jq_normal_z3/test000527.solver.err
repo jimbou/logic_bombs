@@ -1,0 +1,18 @@
+Error: Query timed out (fork).
+File: src/jv_unicode.c
+Line: 41
+assembly.ll line: 13179
+State: 56204
+Stack: 
+	#000013179 in jvp_utf8_next(in=symbolic, end=99771186866215, codepoint_ret=99771126287520) at src/jv_unicode.c:41
+	#100012994 in jvp_string_copy_replace_bad(data=99771186866176, length=39) at src/jv.c:1122
+	#200012829 in jv_string_sized(str=99771186866176, len=39) at src/jv.c:1282
+	#300012727 in jv_string_vfmt(fmt=99770906988000, ap=99771174224352) at src/jv.c:1541
+	#400012645 in jv_string_fmt(fmt=99770906988000) at src/jv.c:1554
+	#500011247 in jv_parse_sized_custom_flags(string=99770908239872, length=7, flags=0) at src/jv_parse.c:895
+	#600010959 in jv_parse_sized(string=99770908239872, length=7) at src/jv_parse.c:904
+	#700010276 in jv_parse(string=99770908239872) at src/jv_parse.c:908
+	#800010235 in __klee_posix_wrapped_main(argc=1, argv=99770907949728) at klee_harness_jq.c:10
+	#900008502 in __user_main(argcPtr=1, argvPtr=99770784831488, envp=99770784831504) at klee_src/runtime/POSIX/klee_init_env.c:245
+	#1000001820 in __uClibc_main(99770906217568, 1, 99770784831488, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#1100001985 in main(1, 99770784831488)

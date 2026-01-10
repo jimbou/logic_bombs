@@ -1,0 +1,14 @@
+:0
+src/vm.c:842
+src/vm.c:844
+src/vm.c:846
+src/vm.c:848
+src/vm.c:850
+src/vm.c:859
+libc/string/strdup.c:23
+libc/string/strdup.c:25
+libc/string/strdup.c:26
+libc/string/strdup.c:28
+libc/string/strdup.c:29
+libc/string/strdup.c:30
+libc/string/strdup.c:32

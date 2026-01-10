@@ -1,0 +1,8 @@
+array json_input[256] : w32 -> w8 = symbolic
+(query [(Eq 0 (Read w8 5 json_input))
+         (Eq 10 (Read w8 0 json_input))
+         (Eq 10 (Read w8 1 json_input))
+         (Eq 69 (Read w8 3 json_input))
+         (Eq 45 (Read w8 4 json_input))
+         (Eq 56 (Read w8 2 json_input))]
+        false)

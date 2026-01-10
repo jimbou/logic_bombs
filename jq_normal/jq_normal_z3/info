@@ -1,0 +1,4 @@
+klee --libc=uclibc --posix-runtime --solver-backend=z3 --write-cov --emit-all-errors --external-calls=all --max-solver-time=20 --max-time=900 --output-dir=/home/klee/logic_bombs/jq_normal/jq_normal_z3 /home/klee/logic_bombs/jq_normal/jq_parse.bc
+PID: 9
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2026-01-09 10:09:40

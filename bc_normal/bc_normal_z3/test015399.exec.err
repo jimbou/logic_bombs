@@ -1,0 +1,22 @@
+Error: reached "unreachable" instruction
+File: src/vm.c
+Line: 115
+assembly.ll line: 11389
+State: 14482
+Stack: 
+	#000011389 in bc_vm_jmp() at src/vm.c:115
+	#100010384 in bc_vm_handleError(e=29, file=104009475732288, fline=2175, line=symbolic) at src/vm.c:447
+	#200062635 in bc_parse_expr_err(p=104009498468360, flags=2, next.coerce=724181508)
+	#300062160 in bc_parse_expr_status(p=104009498468360, flags=2, next.coerce=724181508)
+	#400066464 in bc_parse_stmt(p=104009498468360)
+	#500030573 in bc_parse_parse(p=104009498468360)
+	#600037155 in bc_vm_process(text=104009412888960, mode=0) at src/vm.c:1038
+	#700035971 in bc_vm_exprs() at src/vm.c:1318
+	#800032953 in bc_vm_exec() at src/vm.c:1486
+	#900031419 in bc_vm_boot(argc=3, argv=104009499161056) at src/vm.c:1740
+	#1000029803 in bc_main(argc=3, argv=104009499161056)
+	#1100071643 in real_main(argc=3, argv=104009499161056) at src/main.c:112
+	#1200072187 in __klee_posix_wrapped_main()
+	#1300008013 in __user_main(argcPtr=1, argvPtr=104009412203264, envp=104009412203280) at klee_src/runtime/POSIX/klee_init_env.c:245
+	#1400001331 in __uClibc_main(104009497629416, 1, 104009412203264, 0, 0, 0, 0) at libc/misc/internals/__uClibc_main.c:401
+	#1500001496 in main(1, 104009412203264)
